@@ -1,2 +1,1 @@
-# xfce-theme-kali
-
+# kali-themes

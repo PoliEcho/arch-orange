@@ -1,0 +1,16 @@
+Source: kali-themes
+Section: misc
+Priority: optional
+Maintainer: Kali Developers <devel@kali.org>
+Uploaders: Daniel Ruiz de Alegría <daniel@drasite.com>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.3.0
+Vcs-Git: https://gitlab.com/kalilinux/packages/kali-themes.git
+Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
+
+Package: kali-themes
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, gtk2-engines-murrine
+Description: Kali Themes
+ This package contains multiple themes for kali. It includes Window themes,
+ Icon themes, Color Schemes, Desktop Backgrounds and more.
