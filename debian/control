@@ -17,3 +17,25 @@ Description: Kali Themes (data files)
  .
  This package only contains the actual files, it doesn't change any system
  setting and doesn't enable any Kali theme by default.
+
+Package: kali-desktop-base
+Architecture: all
+Depends: kali-theme-common (= ${source:Version}),
+ desktop-base (>= 10.0.3),
+ ${misc:Depends}
+Description: Kali version of Debian's desktop-base package
+ This package provides hooks into the various alternatives defined
+ by Debian's desktop-base to provide consistent Kali branding through
+ the whole distribution.
+
+Package: kali-theme
+Architecture: all
+Depends: kali-desktop-base (= ${source:Version}),
+ ${misc:Depends}
+Description: Configure all desktops to use the Kali theme
+ Installing this package should configure most desktops to use the Kali theme
+ by default.
+ .
+ The actual artwork files are provided by kali-theme-common but this package
+ provides configuration files and other settings for each desktop so that
+ they use the Kali theme by default.
