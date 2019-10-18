@@ -1,4 +1,5 @@
-Backgrounds/* usr/share/backgrounds
-Color-Schemes/* usr/share
+Backgrounds/* usr/share/backgrounds/
+Color-Schemes/* usr/share/
 Icon-Theme/* usr/share/icons/
 Window-Theme/* usr/share/themes/
+Grub-Theme/* boot/grub/themes/
