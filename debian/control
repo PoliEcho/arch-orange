@@ -3,8 +3,10 @@ Section: misc
 Priority: optional
 Maintainer: Kali Developers <devel@kali.org>
 Uploaders: Daniel Ruiz de Alegría <daniel@drasite.com>, Raphaël Hertzog <raphael@offensive-security.com>
-Build-Depends: debhelper-compat (= 12)
-Standards-Version: 4.4.0
+Build-Depends: debhelper-compat (= 12),
+ librsvg2-bin,
+ optipng,
+Standards-Version: 4.4.1
 Vcs-Git: https://gitlab.com/kalilinux/packages/kali-themes.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 

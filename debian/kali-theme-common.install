@@ -3,3 +3,8 @@ Color-Schemes/* usr/share/
 Icon-Theme/* usr/share/icons/
 Window-Theme/* usr/share/themes/
 Grub-Theme/* boot/grub/themes/
+usr/share/desktop-base/
+usr/share/icons/
+usr/share/plymouth/
+usr/share/gnome-background-properties/
+usr/share/wallpapers/
