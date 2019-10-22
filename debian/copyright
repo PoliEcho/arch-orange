@@ -3,7 +3,7 @@ Upstream-Name: kali-themes
 Source: https://gitlab.com/kalilinux/packages/kali-themes.git
 
 Files: *
-Copyright: 2019 Offensive Security
+Copyright: 2015-2019 Offensive Security
 License: GPL-3.0+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -23,6 +23,9 @@ License: GPL-3.0+
  Public License can be found in `/usr/share/common-licenses/GPL-3'.
 Comments: Beware some of the graphical elements are protected by the
  trademark law. See: https://www.kali.org/trademark-policy/
+ .
+ The initial theme has been created by Jared Sot <ravefinity@gmail.com> for
+ Offensive Security.
  .
  The theme has been created by Daniel Ruiz de Alegría <daniel@drasite.com> for
  Offensive Security.

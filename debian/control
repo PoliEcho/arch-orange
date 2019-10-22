@@ -13,6 +13,8 @@ Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 Package: kali-theme-common
 Architecture: all
 Depends: ${misc:Depends}, gtk2-engines-murrine
+Conflicts: gnome-theme-kali
+Replaces: gnome-theme-kali
 Description: Kali Themes (data files)
  This package contains multiple themes for kali. It includes graphical toolkit
  themes, icon themes, color schemes, desktop backgrounds and more.
