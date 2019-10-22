@@ -14,7 +14,8 @@ Package: kali-theme-common
 Architecture: all
 Depends: ${misc:Depends}, gtk2-engines-murrine
 Conflicts: gnome-theme-kali
-Replaces: gnome-theme-kali
+Breaks: desktop-base (<< 10.0.3+kali2)
+Replaces: gnome-theme-kali, desktop-base (<< 10.0.3+kali2)
 Description: Kali Themes (data files)
  This package contains multiple themes for kali. It includes graphical toolkit
  themes, icon themes, color schemes, desktop backgrounds and more.

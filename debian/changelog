@@ -1,3 +1,9 @@
+kali-themes (2019.4.1) kali-experimental; urgency=medium
+
+  * Add missing Breaks and Replaces desktop-base
+
+ -- Sophie Brun <sophie@offensive-security.com>  Tue, 22 Oct 2019 16:23:59 +0200
+
 kali-themes (2019.4.0) kali-experimental; urgency=low
 
   * Initial Release.
