@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    remove)
+        rm -f /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+	dpkg-divert --rename --package kali-theme \
+	            --divert /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml.original \
+		    --remove /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+    ;;
+esac
+
+#DEBHELPER#

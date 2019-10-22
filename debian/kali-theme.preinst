@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    install)
+	dpkg-divert --rename --package kali-theme \
+		    --divert /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml.original\
+		    --add /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+    ;;
+esac
+
+#DEBHELPER#
