@@ -3,6 +3,7 @@ Color-Schemes/* usr/share/
 Icon-Theme/* usr/share/icons/
 Window-Theme/* usr/share/themes/
 Grub-Theme/* boot/grub/themes/
+Plymouth-Theme/* usr/share/plymouth/themes
 usr/share/desktop-base/
 usr/share/icons/
 usr/share/plymouth/
