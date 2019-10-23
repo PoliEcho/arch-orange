@@ -2,11 +2,18 @@
 
 set -e
 
+DIVERT_FILE="/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml"
+
 case "$1" in
     install)
+	if [ "$(dpkg-divert --listpackage $DIVERT_FILE)" = "kali-defaults" ]; then
+	    dpkg-divert --rename --package kali-defaults \
+		--divert $DIVERT_FILE.original \
+                --remove $DIVERT_FILE
+	fi
 	dpkg-divert --rename --package kali-theme \
-		    --divert /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml.original\
-		    --add /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+		    --divert $DIVERT_FILE.original \
+		    --add $DIVERT_FILE
     ;;
 esac
 
