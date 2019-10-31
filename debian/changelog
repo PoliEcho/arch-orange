@@ -1,3 +1,9 @@
+kali-themes (2019.4.4) kali-experimental; urgency=medium
+
+  * Fix debian/kali-theme.preinst for xfce
+
+ -- Sophie Brun <sophie@offensive-security.com>  Thu, 31 Oct 2019 17:43:17 +0100
+
 kali-themes (2019.4.3) kali-experimental; urgency=medium
 
   * Fix debian/kali-theme-common.postinst
