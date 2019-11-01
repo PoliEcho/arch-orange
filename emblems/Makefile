@@ -42,6 +42,16 @@ install:
 			$(INSTALL_DATA) $${PNG_SOURCE} $${EMBLEMS_DIR}/$${EMBLEM}.png ; \
 		done ; \
 	done
+	# TODO remove installing to _legacy early in bullseye cycle
+	for RES in $(RESOLUTIONS_LEGACY) ; do \
+		EMBLEMS_DIR=$(DESTDIR)/$(TARGET_DIR_LEGACY)/$${RES}x$${RES}/emblems ; \
+		install -d $${EMBLEMS_DIR} ; \
+		for EMBLEM in $(EMBLEMS) ; do \
+			PNG_SOURCE=$${EMBLEM}-$${RES}x$${RES}.png ; \
+			$(INSTALL_DATA) $${PNG_SOURCE} $${EMBLEMS_DIR}/$${EMBLEM}.png ; \
+			$(INSTALL_DATA) $${EMBLEM}.icon $${EMBLEMS_DIR}/ ; \
+		done ; \
+	done
 	# Install SVG emblems in the scalable emblems dir
 	for EMBLEM in $(EMBLEMS) ; do \
 		EMBLEMS_DIR=$(DESTDIR)/$(TARGET_DIR_SCALABLE) ; \
