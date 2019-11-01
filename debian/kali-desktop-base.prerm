@@ -24,8 +24,6 @@ kali 2560x1440.svg
 kali 2560x1600.svg
 kali 3840x2160.svg
 EOF
-    # *Last* remove background *highest priority* alternatives for active theme
-    update-alternatives --remove desktop-background /usr/share/desktop-base/active-theme/wallpaper/contents/images/1920x1080.svg
 
     # Remove desktop-background.xml alternatives
     # For theme packages
@@ -36,10 +34,6 @@ EOF
     done << EOF
 kali
 EOF
-    # *Lastly* remove *highest priority* alternative for active theme
-    update-alternatives --remove \
-        desktop-background.xml \
-        /usr/share/desktop-base/active-theme/wallpaper/gnome-background.xml
 
     # Remove desktop-lockscreen.xml alternatives
     # For theme packages
@@ -50,10 +44,6 @@ EOF
     done << EOF
 kali
 EOF
-    # *Last* remove *highest priority* alternative for active theme
-    update-alternatives --remove \
-        desktop-lockscreen.xml \
-        /usr/share/desktop-base/active-theme/lockscreen/gnome-background.xml
 
     # Remove Plasma 5/KDE wallpaper alternatives
     # For theme packages
@@ -64,10 +54,6 @@ EOF
     done << EOF
 kali
 EOF
-    # *Last* remove *highest priority* alternative for active theme
-    update-alternatives --remove \
-        desktop-plasma5-wallpaper \
-        /usr/share/desktop-base/active-theme/wallpaper
 
     # Remove login theme alternatives
     # For theme packages
@@ -79,10 +65,6 @@ EOF
     done << EOF
 kali background.svg
 EOF
-    # *Last* remove *highest priority* alternative for active theme
-    update-alternatives --remove \
-        desktop-login-background \
-        /usr/share/desktop-base/active-theme/login/background.svg
 
     # Remove GRUB alternatives
     # Remove alternative for the GRUB background/colors config
@@ -105,25 +87,6 @@ EOF
 kali 4x3
 kali 16x9
 EOF
-    ## *Lastly* remove *highest priority* alternative
-    num_grub_efi_installed=$(dpkg-query --list "grub-efi*" 2> /dev/null | grep "^i" | wc -l)
-    if [ $num_grub_efi_installed -gt 0 ] ; then
-        remove_first_ratio=4x3
-        remove_last_ratio=16x9
-    else
-        remove_first_ratio=16x9
-        remove_last_ratio=4x3
-    fi
-    update-alternatives --remove \
-        desktop-grub.sh \
-        /usr/share/desktop-base/active-theme/grub/grub_background.sh
-    update-alternatives --remove \
-        desktop-grub \
-        /usr/share/desktop-base/active-theme/grub/grub-$remove_first_ratio.png
-    update-alternatives --remove \
-        desktop-grub \
-        /usr/share/desktop-base/active-theme/grub/grub-$remove_last_ratio.png
-
 
     # Remove theme package alternatives
     while read theme; do
@@ -133,10 +96,6 @@ EOF
     done << EOF
 kali
 EOF
-    ## *Lastly* remove *highest priority* alternative
-    update-alternatives --remove \
-        desktop-theme \
-        /usr/share/desktop-base/futureprototype-theme
 
 fi
 

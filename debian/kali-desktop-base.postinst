@@ -196,8 +196,9 @@ EOF
 
 fi
 
-# Set Kali as default plymouth theme
-if [ "${1}" = "configure" ] && dpkg --compare-versions "$2" lt "10.0.2+kali3"; then
+# Set Kali as default plymouth theme (on initial install and upgrade from
+# old version)
+if [ "${1}" = "configure" ] && dpkg --compare-versions "$2" lt "2019.4.0"; then
     if which plymouth-set-default-theme > /dev/null; then
         plymouth-set-default-theme kali
 	if which update-initramfs > /dev/null; then
