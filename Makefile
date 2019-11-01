@@ -1,7 +1,7 @@
 SUBDIRS=Grub-Background/kali emblems kali-logos
 
 build:
-	$(foreach SUBDIR,$(SUBDIRS),make -C $(SUBDIR) build &&) true
+	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) build &&) true
 	# We populate desktop-base subdirectory with stuff to be installed into
 	# kali-desktop-base in the file structure expected by desktop-base
 	rm -rf desktop-base
@@ -13,13 +13,13 @@ build:
 	ln -s /usr/share/plymouth/themes/kali desktop-base/kali-theme/plymouth
 
 clean:
-	$(foreach SUBDIR,$(SUBDIRS),make -C $(SUBDIR) clean &&) true
+	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) clean &&) true
 	rm -rf desktop-base/*
 
 install:
 	# We use debhelper to install most files, but some subdirectories
 	# install files by themselves
-	$(foreach SUBDIR,$(SUBDIRS),make -C $(SUBDIR) install &&) true
+	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) install &&) true
 	# And we need a few supplementary symlinks for good integration
 	# KDE looks into /usr/share/wallpapers
 	install -d $(DESTDIR)/usr/share/wallpapers
