@@ -5,7 +5,7 @@ set -e
 if [ "$1" = "configure" ]; then
     for file in /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
     do
-        orig_file="/usr/share/kali-theme-common/$(basename $file)"
+        orig_file="/usr/share/kali-themes-common/$(basename $file)"
         if [ ! -e $file ] && [ -e $orig_file ]; then
             echo "Installing $orig_file as $file"
             mkdir -p $(dirname $file)

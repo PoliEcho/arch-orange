@@ -12,7 +12,7 @@ case "$1" in
 		--divert $DIVERT_FILE.original \
                 --remove $DIVERT_FILE
 	fi
-	dpkg-divert --rename --package kali-theme \
+	dpkg-divert --rename --package kali-themes \
 		    --divert $DIVERT_FILE.original \
 		    --add $DIVERT_FILE
     ;;

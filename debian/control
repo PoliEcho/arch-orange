@@ -10,7 +10,7 @@ Standards-Version: 4.4.1
 Vcs-Git: https://gitlab.com/kalilinux/packages/kali-themes.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 
-Package: kali-theme-common
+Package: kali-themes-common
 Architecture: all
 Depends: ${misc:Depends}, gtk2-engines-murrine
 Conflicts: gnome-theme-kali
@@ -26,7 +26,7 @@ Description: Kali Themes (data files)
 
 Package: kali-desktop-base
 Architecture: all
-Depends: kali-theme-common (= ${source:Version}),
+Depends: kali-themes-common (= ${source:Version}),
  desktop-base (>= 10.0.3),
  ${misc:Depends}
 Description: Kali version of Debian's desktop-base package
@@ -34,7 +34,7 @@ Description: Kali version of Debian's desktop-base package
  by Debian's desktop-base to provide consistent Kali branding through
  the whole distribution.
 
-Package: kali-theme
+Package: kali-themes
 Architecture: all
 Depends: kali-desktop-base (= ${source:Version}),
  ${misc:Depends}
@@ -44,6 +44,6 @@ Description: Configure all desktops to use the Kali theme
  Installing this package should configure most desktops to use the Kali theme
  by default.
  .
- The actual artwork files are provided by kali-theme-common but this package
+ The actual artwork files are provided by kali-themes-common but this package
  provides configuration files and other settings for each desktop so that
  they use the Kali theme by default.

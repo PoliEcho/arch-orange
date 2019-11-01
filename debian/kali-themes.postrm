@@ -5,7 +5,7 @@ set -e
 case "$1" in
     remove)
         rm -f /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
-	dpkg-divert --rename --package kali-theme \
+	dpkg-divert --rename --package kali-themes \
 	            --divert /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml.original \
 		    --remove /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
     ;;
