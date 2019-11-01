@@ -1,3 +1,18 @@
+kali-themes (2019.4.5) kali-experimental; urgency=medium
+
+  [ Sophie Brun ]
+  * Add missing Provides
+  * Change name to kali-themes and kali-themes-common
+
+  [ Raphaël Hertzog ]
+  * Put both plymouth themes in the same directory
+  * Rename emblems-debian directory into emblems
+  * Split kali-theme into multiple top-level directories
+  * Drop executable permissions on many icons
+  * Review maintainer scripts
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Fri, 01 Nov 2019 19:51:44 +0100
+
 kali-themes (2019.4.4) kali-experimental; urgency=medium
 
   * Fix debian/kali-theme.preinst for xfce
