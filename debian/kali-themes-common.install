@@ -3,10 +3,11 @@ Color-Schemes/* usr/share/
 Icon-Theme/* usr/share/icons/
 Window-Theme/* usr/share/themes/
 Grub-Theme/* boot/grub/themes/
-Plymouth-Theme/* usr/share/plymouth/themes
-usr/share/desktop-base/
-usr/share/icons/
-usr/share/plymouth/
-usr/share/gnome-background-properties/
-usr/share/wallpapers/
+Plymouth-Theme/* usr/share/plymouth/themes/
+Gnome-Backgrounds/* usr/share/gnome-background-properties/
+desktop-base/* usr/share/desktop-base/
 xfce/xsettings.xml usr/share/kali-themes-common/
+# Those are created by "make install"
+usr/share/desktop-base/kali-logos/
+usr/share/icons/
+usr/share/wallpapers/

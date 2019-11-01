@@ -10,8 +10,8 @@ clean:
 	rm -f grub-4x3.png grub-16x9.png
 
 install:
-	install -d $(DESTDIR)/$(dir)
-	$(INSTALL) $(wildcard *.png *.sh) $(DESTDIR)/$(dir)
+	# Do nothing, installed by top-level makefile into desktop-base
+	# directory
 
 grub-4x3.png: grub-4x3.svg
 	rsvg-convert $< > $@
