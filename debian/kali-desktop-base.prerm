@@ -13,16 +13,16 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
             desktop-background \
             /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
     done << EOF
-kali 1024x768.svg
-kali 1280x720.svg
-kali 1280x800.svg
-kali 1280x1024.svg
-kali 1600x1200.svg
-kali 1920x1080.svg
-kali 1920x1200.svg
-kali 2560x1440.svg
-kali 2560x1600.svg
-kali 3840x2160.svg
+kali 1024x768.png
+kali 1280x720.png
+kali 1280x800.png
+kali 1280x1024.png
+kali 1600x1200.png
+kali 1920x1080.png
+kali 1920x1200.png
+kali 2560x1440.png
+kali 2560x1600.png
+kali 3840x2160.png
 EOF
 
     # Remove desktop-background.xml alternatives

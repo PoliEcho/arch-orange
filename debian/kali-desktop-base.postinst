@@ -45,16 +45,16 @@ EOF
             desktop-background \
             /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
     done << EOF
-kali 1024x768.svg 67
-kali 1280x720.svg 67
-kali 1280x800.svg 67
-kali 1280x1024.svg 67
-kali 1600x1200.svg 67
-kali 1920x1080.svg 67
-kali 1920x1200.svg 67
-kali 2560x1440.svg 67
-kali 2560x1600.svg 67
-kali 3840x2160.svg 67
+kali 1024x768.png 67
+kali 1280x720.png 67
+kali 1280x800.png 67
+kali 1280x1024.png 67
+kali 1600x1200.png 67
+kali 1920x1080.png 67
+kali 1920x1200.png 67
+kali 2560x1440.png 67
+kali 2560x1600.png 67
+kali 3840x2160.png 67
 EOF
 
     # Set up an alternative for the XML version of the background
@@ -194,6 +194,26 @@ EOF
         update-initramfs -u
     fi
 
+fi
+
+# Remove old alternatives on *.svg We use *.png now.
+if [ "${1}" = "configure" ] && dpkg --compare-versions "$2" lt "2019.4.6"; then
+    while read theme filename; do
+        update-alternatives --remove \
+            desktop-background \
+            /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
+    done << EOF
+kali 1024x768.svg
+kali 1280x720.svg
+kali 1280x800.svg
+kali 1280x1024.svg
+kali 1600x1200.svg
+kali 1920x1080.svg
+kali 1920x1200.svg
+kali 2560x1440.svg
+kali 2560x1600.svg
+kali 3840x2160.svg
+EOF
 fi
 
 # Set Kali as default plymouth theme (on initial install and upgrade from
