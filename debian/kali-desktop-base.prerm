@@ -1,103 +1,49 @@
 #!/bin/sh
 set -e
 
-if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
+if [ "$1" = "remove" ]; then
     # Remove vendor logos alternative, all slaves get removed automatically
     update-alternatives --remove \
             vendor-logos \
             /usr/share/desktop-base/kali-logos
 
     # Remove background alternatives for theme packages
-    while read theme filename; do
-        update-alternatives --remove \
-            desktop-background \
-            /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
-    done << EOF
-kali 1024x768.png
-kali 1280x720.png
-kali 1280x800.png
-kali 1280x1024.png
-kali 1600x1200.png
-kali 1920x1080.png
-kali 1920x1200.png
-kali 2560x1440.png
-kali 2560x1600.png
-kali 3840x2160.png
-EOF
+    update-alternatives --remove \
+	desktop-background \
+	/usr/share/backgrounds/kali/kali-logo-16x9.png
 
     # Remove desktop-background.xml alternatives
-    # For theme packages
-    while read theme; do
-        update-alternatives --remove \
-            desktop-background.xml \
-            /usr/share/desktop-base/$theme-theme/wallpaper/gnome-background.xml $priority
-    done << EOF
-kali
-EOF
+    update-alternatives --remove \
+	desktop-background.xml \
+	/usr/share/backgrounds/kali/kali-logo.xml
 
     # Remove desktop-lockscreen.xml alternatives
-    # For theme packages
-    while read theme; do
-        update-alternatives --remove \
-            desktop-lockscreen.xml \
-            /usr/share/desktop-base/$theme-theme/lockscreen/gnome-background.xml $priority
-    done << EOF
-kali
-EOF
+    update-alternatives --remove \
+	desktop-lockscreen.xml \
+	/usr/share/backgrounds/kali/kali-rings.xml
 
     # Remove Plasma 5/KDE wallpaper alternatives
-    # For theme packages
-    while read theme; do
-        update-alternatives --remove \
-            desktop-plasma5-wallpaper \
-            /usr/share/desktop-base/$theme-theme/wallpaper
-    done << EOF
-kali
-EOF
+    update-alternatives --remove \
+	desktop-plasma5-wallpaper \
+	/usr/share/wallpapers/KaliLogo
 
     # Remove login theme alternatives
-    # For theme packages
-    # Alternative for theme packages
-    while read theme background; do
-        update-alternatives --remove \
-            desktop-login-background \
-            /usr/share/desktop-base/$theme-theme/login/$background
-    done << EOF
-kali background.svg
-EOF
+    update-alternatives --remove \
+	desktop-login-background \
+	/usr/share/backgrounds/kali/kali-rings.svg
 
     # Remove GRUB alternatives
-    # Remove alternative for the GRUB background/colors config
-    while read theme priority; do
-        update-alternatives --remove \
-            desktop-grub.sh \
-            /usr/share/desktop-base/$theme-theme/grub/grub_background.sh
-    done << EOF
-kali
-EOF
-    # Remove background alternatives
-    while read theme ratio; do
-        update-alternatives --remove \
-            desktop-grub.sh \
-            /usr/share/desktop-base/$theme-theme/grub/grub_background.sh
-        update-alternatives --remove \
-            desktop-grub \
-            /usr/share/desktop-base/$theme-theme/grub/grub-$ratio.png
-    done << EOF
-kali 4x3
-kali 16x9
-EOF
+    update-alternatives --remove \
+	desktop-grub \
+	/boot/grub/themes/kali/grub-4x3.png
+    update-alternatives --remove \
+	desktop-grub \
+	/boot/grub/themes/kali/grub-16x9.png
 
     # Remove theme package alternatives
-    while read theme; do
-        update-alternatives --remove \
-            desktop-theme \
-            /usr/share/desktop-base/$theme-theme
-    done << EOF
-kali
-EOF
-
+    update-alternatives --remove \
+	desktop-theme \
+	/usr/share/desktop-base/kali-theme
 fi
 
-# Tag to allow some debhelper commands to inject relevant code
 #DEBHELPER#

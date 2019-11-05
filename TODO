@@ -1,2 +1,4 @@
 - Add the missing files in kali-logos (compare to
   /usr/share/desktop-base/debian-logos/).
+- Create /boot/grub/themes/kali/grub-background.png image by copying over
+  either the 4x3 or 16x9 version depending on screen size.

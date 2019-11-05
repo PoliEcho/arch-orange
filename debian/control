@@ -27,8 +27,8 @@ Description: Kali Themes (data files)
 Package: kali-desktop-base
 Architecture: all
 Depends: kali-themes-common (= ${source:Version}),
- desktop-base (>= 10.0.3),
  ${misc:Depends}
+Provides: desktop-base (= 10.0.3)
 Description: Kali version of Debian's desktop-base package
  This package provides hooks into the various alternatives defined
  by Debian's desktop-base to provide consistent Kali branding through
@@ -36,7 +36,7 @@ Description: Kali version of Debian's desktop-base package
 
 Package: kali-themes
 Architecture: all
-Depends: kali-desktop-base (= ${source:Version}),
+Depends: kali-themes-common (= ${source:Version}),
  ${misc:Depends}
 Breaks: kali-defaults (<< 2019.4.0)
 Replaces: kali-defaults (<< 2019.4.0)
