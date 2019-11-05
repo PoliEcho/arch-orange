@@ -1,4 +1,4 @@
-SUBDIRS=Grub-Background/kali emblems kali-logos
+SUBDIRS=emblems kali-logos
 
 build:
 	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) build &&) true
@@ -6,7 +6,7 @@ build:
 	# kali-desktop-base in the file structure expected by desktop-base
 	rm -rf desktop-base
 	mkdir -p desktop-base/kali-theme/grub
-	cp Grub-Background/kali/*.png Grub-Background/kali/*.sh desktop-base/kali-theme/grub/
+	cp Grub-Background/kali-2019/*.png Grub-Background/kali-2019/*.sh desktop-base/kali-theme/grub/
 	cp -a LockScreen/kali desktop-base/kali-theme/lockscreen
 	cp -a Wallpapers/kali desktop-base/kali-theme/wallpaper
 	cp -a LoginScreen/kali desktop-base/kali-theme/login
@@ -20,10 +20,5 @@ install:
 	# We use debhelper to install most files, but some subdirectories
 	# install files by themselves
 	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) install &&) true
-	# And we need a few supplementary symlinks for good integration
-	# KDE looks into /usr/share/wallpapers
-	install -d $(DESTDIR)/usr/share/wallpapers
-	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/kali-theme/wallpaper Kali
-	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/kali-theme/lockscreen KaliLockScreen
 
 include Makefile.inc
