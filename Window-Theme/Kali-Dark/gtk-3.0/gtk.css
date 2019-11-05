@@ -4857,6 +4857,12 @@ wnck-pager {
   wnck-pager:hover {
     background-color: black; }
 
+/* Thunar */
+.thunar .warning {
+  opacity: 0;
+  font-size: 0;
+  margin: -10px 0; }
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
