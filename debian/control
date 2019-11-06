@@ -31,9 +31,9 @@ Depends: kali-themes-common (= ${source:Version}),
  ${misc:Depends}
 Provides: desktop-base (= 10.0.3)
 Description: Kali version of Debian's desktop-base package
- This package provides hooks into the various alternatives defined
- by Debian's desktop-base to provide consistent Kali branding through
- the whole distribution.
+ This empty package provides hooks into the various alternatives defined by
+ Debian's desktop-base to provide consistent Kali branding through the whole
+ distribution.
 
 Package: kali-themes
 Architecture: all
@@ -62,5 +62,5 @@ Depends: kali-themes
 Description: Transitional package to install kali-themes
  All the theme related files have been moved to kali-themes.
  .
- This package can be safely removed once kali-themes is installed on the
+ This dummy package can be safely removed once kali-themes is installed on the
  system.
