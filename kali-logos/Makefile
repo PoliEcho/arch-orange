@@ -1,4 +1,4 @@
-dir = usr/share/desktop-base/kali-logos
+dir = usr/share/images/kali-logos
 
 .PHONY: build clean install
 
