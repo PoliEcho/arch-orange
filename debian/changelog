@@ -1,8 +1,23 @@
 kali-themes (2019.4.6) kali-experimental; urgency=medium
 
-  * Replace SVG by PNG
+  [ Daniel Ruiz de Alegría ]
+  * Add new grub backgrounds
+  * Add new login screen background
+  * Add new lock screen backgrounds
+  * Add new wallpapers screen background
 
- -- Sophie Brun <sophie@offensive-security.com>  Mon, 04 Nov 2019 14:08:11 +0100
+  [ Raphaël Hertzog ]
+  * Update kali-desktop-base alternatives to point to the new theme.
+    Handle properly upgrade from old desktop-base as well as from old
+    kali-desktop-base.
+  * Install all configuration files provided by Daniel
+  * Add gsettings for mousepad
+  * Add new dependencies for kali-themes
+  * Drop remaining files from the former themes
+  * Add gnome-theme-kali transitional package
+  * Use 16x9 background in GRUB
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Wed, 06 Nov 2019 21:49:54 +0100
 
 kali-themes (2019.4.5) kali-experimental; urgency=medium
 
