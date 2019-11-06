@@ -1,3 +1,11 @@
+kali-themes (2019.4.7) kali-experimental; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Update new kali icon themes with latest changes
+  * Update new kali window themes with latest changes
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Thu, 07 Nov 2019 00:19:39 +0100
+
 kali-themes (2019.4.6) kali-experimental; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
