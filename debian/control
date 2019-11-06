@@ -58,7 +58,8 @@ Description: Configure all desktops to use the Kali theme
 
 Package: gnome-theme-kali
 Architecture: all
-Depends: kali-themes
+Depends: kali-themes,
+ ${misc:Depends}
 Description: Transitional package to install kali-themes
  All the theme related files have been moved to kali-themes.
  .
