@@ -48,6 +48,8 @@ if [ "$1" = "configure" ]; then
 	# Install remaining new files
         install_all
     fi
+    # Rebuild the grub configuration with our config changes
+    update-grub || true
 fi
 
 #DEBHELPER#
