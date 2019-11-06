@@ -28,7 +28,7 @@ Package: kali-desktop-base
 Architecture: all
 Depends: kali-themes-common (= ${source:Version}),
  ${misc:Depends}
-Provides: desktop-base (= 10.0.3)
+Provides: desktop-base (= 10.0.3+kali3)
 Description: Kali version of Debian's desktop-base package
  This empty package provides hooks into the various alternatives defined by
  Debian's desktop-base to provide consistent Kali branding through the whole
