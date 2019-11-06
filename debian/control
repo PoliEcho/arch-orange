@@ -12,7 +12,8 @@ Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 
 Package: kali-themes-common
 Architecture: all
-Depends: ${misc:Depends}, gtk2-engines-murrine
+Depends: ${misc:Depends}
+Suggests: gtk2-engines-murrine
 Conflicts: gnome-theme-kali
 Breaks: desktop-base (<< 10.0.3+kali2)
 Replaces: gnome-theme-kali, desktop-base (<< 10.0.3+kali2)
@@ -37,6 +38,13 @@ Description: Kali version of Debian's desktop-base package
 Package: kali-themes
 Architecture: all
 Depends: kali-themes-common (= ${source:Version}),
+# gsettings and other config files reference those fonts
+ fonts-cantarell,
+ fonts-firacode,
+# The GTK theme uses this engine
+ gtk2-engines-murrine,
+# Needed for QT_QPA_PLATFORMTHEME=gtk2 to have an effect
+ qt5-style-plugins,
  ${misc:Depends}
 Breaks: kali-defaults (<< 2019.4.0)
 Replaces: kali-defaults (<< 2019.4.0)
