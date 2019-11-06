@@ -7,6 +7,5 @@ Grub-Theme/* boot/grub/themes/
 Plymouth-Theme/* usr/share/plymouth/themes/
 desktop-base/* usr/share/desktop-base/kali-theme/
 kali-logos/* usr/images/kali-logos/
-xfce/xsettings.xml usr/share/kali-themes-common/
 # Those are created by "make install"
 usr/share/icons/

@@ -1,8 +1,3 @@
-#!/bin/sh
-
-set -e
-
-FILES_TO_DIVERT="
 /etc/lightdm/lightdm-gtk-greeter.conf
 /etc/xdg/qterminal.org/qterminal.ini
 /etc/xdg/xfce4/panel/default.xml
@@ -13,17 +8,3 @@ FILES_TO_DIVERT="
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
-" # END FILES_TO_DIVERT
-
-case "$1" in
-    remove)
-	for file in $FILES_TO_DIVERT; do
-	    rm -f "$file"
-	    dpkg-divert --rename --package kali-themes \
-	            --divert "$file.original" \
-		    --remove "$file"
-	done
-    ;;
-esac
-
-#DEBHELPER#

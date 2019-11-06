@@ -2,3 +2,12 @@
 
 %:
 	dh $@ 
+
+override_dh_install:
+	dh_install
+	# Move config files that we divert into /usr/share/kali-themes/etc/*
+	# and let them be installed by the postinst
+	for file in $(shell cat files-to-divert); do \
+	    mkdir -p debian/kali-themes/usr/share/kali-themes$$(dirname $$file); \
+	    mv debian/kali-themes$$file debian/kali-themes/usr/share/kali-themes$$file; \
+	done

@@ -2,3 +2,5 @@
   /usr/share/desktop-base/debian-logos/).
 - Create /boot/grub/themes/kali/grub-background.png image by copying over
   either the 4x3 or 16x9 version depending on screen size.
+- Transitional package for gnome-theme-kali.
+- Add all integrations for theme-dev and https://gitlab.com/kalilinux/packages/kali-themes/issues/1#note_233150942

@@ -2,17 +2,52 @@
   
 set -e
 
-if [ "$1" = "configure" ]; then
-    for file in /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+FILES_TO_DIVERT="
+/etc/lightdm/lightdm-gtk-greeter.conf
+/etc/xdg/qterminal.org/qterminal.ini
+/etc/xdg/xfce4/panel/default.xml
+/etc/xdg/xfce4/terminal/terminalrc
+/etc/xdg/xfce4/whiskermenu/defaults.rc
+/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+" # END FILES_TO_DIVERT
+
+install_all() {
+    local opt=$1
+    for file in $FILES_TO_DIVERT
     do
-        orig_file="/usr/share/kali-themes-common/$(basename $file)"
-        if [ ! -e $file ] && [ -e $orig_file ]; then
-            echo "Installing $orig_file as $file"
-            mkdir -p $(dirname $file)
-            cp $orig_file $file
-        fi
+       install_config_file "$file" "$opt"
     done
-    dconf update || true
+}
+
+install_config_file() {
+    local file=$1
+    local opt=$2
+    local orig_file="/usr/share/kali-themes$file"
+    if [ "$opt" = "force" ] || ([ ! -e $file ] && [ -e $orig_file ]); then
+	echo "Installing $orig_file as $file"
+	mkdir -p $(dirname $file)
+	cp $orig_file $file
+    fi
+}
+
+if [ "$1" = "configure" ]; then
+    if [ -z "$2" ]; then
+	# Initial install
+        install_all force
+    else
+        # Upgrade
+        if dpkg --compare-versions "$2" lt "2019.4.6"; then
+	    # Those files have been updated, force install them
+	    install_config_file /etc/xdg/xfce4/terminal/terminalrc force
+	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml force
+	fi
+	# Install remaining new files
+        install_all
+    fi
 fi
 
 #DEBHELPER#
