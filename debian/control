@@ -14,9 +14,9 @@ Package: kali-themes-common
 Architecture: all
 Depends: ${misc:Depends}
 Suggests: gtk2-engines-murrine
-Conflicts: gnome-theme-kali
+Conflicts: gnome-theme-kali (<< 2019.4)
 Breaks: desktop-base (<< 10.0.3+kali2)
-Replaces: gnome-theme-kali, desktop-base (<< 10.0.3+kali2)
+Replaces: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
 Provides: gnome-theme-kali
 Description: Kali Themes (data files)
  This package contains multiple themes for kali. It includes graphical toolkit
@@ -55,3 +55,12 @@ Description: Configure all desktops to use the Kali theme
  The actual artwork files are provided by kali-themes-common but this package
  provides configuration files and other settings for each desktop so that
  they use the Kali theme by default.
+
+Package: gnome-theme-kali
+Architecture: all
+Depends: kali-themes
+Description: Transitional package to install kali-themes
+ All the theme related files have been moved to kali-themes.
+ .
+ This package can be safely removed once kali-themes is installed on the
+ system.
