@@ -14,8 +14,7 @@ Package: kali-themes-common
 Architecture: all
 Depends: ${misc:Depends}
 Suggests: gtk2-engines-murrine
-Conflicts: gnome-theme-kali (<< 2019.4)
-Breaks: desktop-base (<< 10.0.3+kali2)
+Breaks: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
 Replaces: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
 Provides: gnome-theme-kali
 Description: Kali Themes (data files)
