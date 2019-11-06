@@ -17,7 +17,7 @@ kali-themes (2019.4.6) kali-experimental; urgency=medium
   * Add gnome-theme-kali transitional package
   * Use 16x9 background in GRUB
 
- -- Raphaël Hertzog <raphael@offensive-security.com>  Wed, 06 Nov 2019 21:49:54 +0100
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Thu, 07 Nov 2019 00:07:57 +0100
 
 kali-themes (2019.4.5) kali-experimental; urgency=medium
 
