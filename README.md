@@ -34,6 +34,4 @@ target location by the postinst script (see debian/kali-themes.postinst).
 
 When you add a new file that needs to be diverted, you can update
 the list in "files-to-divert" and run "debian/update-maintainer-scripts"
-to update the list of files in the 3 maintainer scripts. But you also
-need to add a snippet in debian/kali-themes.preinst to setup the new
-diversion on upgrade.
+to update the list of files in the 3 maintainer scripts.

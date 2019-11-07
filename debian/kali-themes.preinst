@@ -16,15 +16,6 @@ FILES_TO_DIVERT="
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 " # END FILES_TO_DIVERT
 
-setup_diversion_on_upgrade() {
-    local prev_version="$1"
-    local ref_version="$2"
-    local file="$3"
-    if dpkg --compare-versions "$prev_version" lt "$ref_version"; then
-	setup_diversion "$file"
-    fi
-}
-
 setup_diversion() {
     local file="$1"
     dpkg-divert --rename --package kali-themes \
@@ -49,10 +40,11 @@ case "$1" in
     ;;
     upgrade)
 	# Dynamically add new diversions when required on upgrade
-	# Example to divert /etc/xdg/xfce4/panel/default.xml when you
-	# upgrade from a version older than 2019.4.6:
-	# setup_diversion_on_upgrade "$2" 2019.4.6 /etc/xdg/xfce4/panel/default.xml
-	setup_diversion_on_upgrade "$2" 2019.4.9 /etc/plymouth/plymouthd.conf
+	for file in $FILES_TO_DIVERT; do
+	    if [ -z "$(dpkg-divert --listpackage "$file")" ]; then
+		setup_diversion "$file"
+	    fi
+	done
     ;;
 esac
 
