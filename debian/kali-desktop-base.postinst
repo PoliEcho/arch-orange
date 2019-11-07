@@ -68,18 +68,18 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
         grub_first_ratio="4x3"
         grub_second_ratio="16x9"
     fi
-    active_grub_first_ratio=/boot/grub/themes/kali/grub-${grub_first_ratio}.png
-    active_grub_second_ratio=/boot/grub/themes/kali/grub-${grub_second_ratio}.png
+    active_grub_first_ratio=/usr/share/grub/themes/kali/grub-${grub_first_ratio}.png
+    active_grub_second_ratio=/usr/share/grub/themes/kali/grub-${grub_second_ratio}.png
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-grub.png \
 	desktop-grub ${active_grub_first_ratio} 200 \
 	--slave /usr/share/desktop-base/grub_background.sh \
-	desktop-grub.sh /boot/grub/themes/kali/grub_background.sh
+	desktop-grub.sh /usr/share/grub/themes/kali/grub_background.sh
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-grub.png \
 	desktop-grub ${active_grub_second_ratio} 190 \
 	--slave /usr/share/desktop-base/grub_background.sh \
-	desktop-grub.sh /boot/grub/themes/kali/grub_background.sh
+	desktop-grub.sh /usr/share/grub/themes/kali/grub_background.sh
 
     # Apply GRUB background update into /boot
     # Try detecting active grub packages (so not -doc, -common, -bin) as a hint
