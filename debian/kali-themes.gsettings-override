@@ -1,4 +1,4 @@
-# Change default terminal color
+# Change default gnome-terminal color
 [org.gnome.Terminal.Legacy.Profile]
 use-theme-colors=false
 foreground-color='#FFFFFF'
@@ -10,11 +10,11 @@ background-transparency-percent=15
 # Change desktop settings
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'
-theme='Kali-X'
+theme='Kali-Light'
 
 [org.gnome.desktop.interface]
-icon-theme='Vibrancy-Kali'
-gtk-theme='Kali-X'
+icon-theme='Flat-Remix-Blue-Light'
+gtk-theme='Kali-Light'
 
 [org.gnome.shell.extensions.user-theme]
 name='Kali-X'
