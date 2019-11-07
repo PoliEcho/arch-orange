@@ -7,6 +7,8 @@ kali-themes (2019.4.9) kali-experimental; urgency=medium
   * Always add the missing diversions on upgrade
   * Add empty directories to kali-desktop-base so that update-alternatives can
     create symlinks in them.
+  * Force upgrade of kali-desktop-xfce to 2019.4.16 to ensure we have
+    whiskerplugin.
 
   [ Daniel Ruiz de Alegría ]
   * Fix light variant qterminal theme
