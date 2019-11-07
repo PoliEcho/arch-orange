@@ -1,3 +1,24 @@
+kali-themes (2019.4.8) kali-experimental; urgency=medium
+
+  * Drop 1920x1080 from the list of resolutions to try for GRUB
+  * Fix path to background images in XFCE and lightdm config
+  * Fix gsettings to actually enable the correct theme
+  * Add gsettings overriding the background images for GNOME
+  * Update files with latest changes from Daniel
+  * Change priority of gsettings to be above kali-defaults/desktop-base
+  * Move all files installed below /usr/share in the same directory.
+    Also move the grub theme to /usr/share/grub/themes/kali/ as installing
+    files in /boot/ is problematic on arm where /boot is often a vfat
+    partition that doesn't support hardlinks as required by dpkg.
+  * Instead copy grub theme to /boot during postinst.
+    The goal is to not break ARM images using vfat for /boot while
+    still providing the theme in /boot so that it can be available
+    even when /usr/share/ is not available.
+  * Fix path to grub backgrounds in update-alternatives calls
+  * Use dark theme by default in GNOME too
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Thu, 07 Nov 2019 10:57:41 +0100
+
 kali-themes (2019.4.7) kali-experimental; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
