@@ -1,3 +1,20 @@
+kali-themes (2019.4.9) kali-experimental; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Add the logo-text and logo-text-version variants as symlinks to logo.svg
+  * Configure gdm to display our logo
+  * Move plymouth theme setting to kali-themes
+  * Always add the missing diversions on upgrade
+
+  [ Daniel Ruiz de Alegría ]
+  * Fix light variant qterminal theme
+  * Fix grub fallback background color
+  * Add kali-logo and kali-rings svg backgrounds
+  * Enable whiskermenu sub-categories
+  * Fix kali-blue-matrix background
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Thu, 07 Nov 2019 15:49:36 +0100
+
 kali-themes (2019.4.8) kali-experimental; urgency=medium
 
   * Drop 1920x1080 from the list of resolutions to try for GRUB
