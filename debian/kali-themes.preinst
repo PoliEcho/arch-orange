@@ -4,6 +4,7 @@ set -e
 
 FILES_TO_DIVERT="
 /etc/lightdm/lightdm-gtk-greeter.conf
+/etc/plymouth/plymouthd.conf
 /etc/xdg/qterminal.org/qterminal.ini
 /etc/xdg/xfce4/panel/default.xml
 /etc/xdg/xfce4/terminal/terminalrc
@@ -50,7 +51,8 @@ case "$1" in
 	# Dynamically add new diversions when required on upgrade
 	# Example to divert /etc/xdg/xfce4/panel/default.xml when you
 	# upgrade from a version older than 2019.4.6:
-	# setup_diversion_on_upgrade $2 2019.4.6 /etc/xdg/xfce4/panel/default.xml
+	# setup_diversion_on_upgrade "$2" 2019.4.6 /etc/xdg/xfce4/panel/default.xml
+	setup_diversion_on_upgrade "$2" 2019.4.9 /etc/plymouth/plymouthd.conf
     ;;
 esac
 

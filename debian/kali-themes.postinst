@@ -4,6 +4,7 @@ set -e
 
 FILES_TO_DIVERT="
 /etc/lightdm/lightdm-gtk-greeter.conf
+/etc/plymouth/plymouthd.conf
 /etc/xdg/qterminal.org/qterminal.ini
 /etc/xdg/xfce4/panel/default.xml
 /etc/xdg/xfce4/terminal/terminalrc
@@ -56,6 +57,10 @@ if [ "$1" = "configure" ]; then
     # Rebuild the grub configuration with our config changes
     if which update-grub >/dev/null; then
 	update-grub || true
+    fi
+    # Rebuild the initrd for plymouth
+    if which update-initramfs >/dev/null; then
+	update-initramfs -u
     fi
 fi
 
