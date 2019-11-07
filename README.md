@@ -4,13 +4,20 @@ This package joins together all files that are related to theming
 and configuration of the visual appearance. They were formerly split
 across gnome-theme-kali, kali-defaults and desktop-base.
 
+## file structure
+
+All "data" files (`share/*` and what's built in the kali-logos and emblems
+directory) are provided by kali-themes-common while the configuration
+files (`etc/*`) are provided by kali-themes.
+
 ## desktop-base integration
 
 desktop-base integration is provided by kali-desktop-base through
 registration of various files in alternatives defined by the desktop-base
 package. The files are not installed in /usr/share/desktop-base/
 except for a symlink tree mimicking a "destkop-base theme". That symlink
-tree is pre-built in the "desktop-base" directory in the source package.
+tree is pre-built in the "share/desktop-base/kali-themes" directory in the
+source package.
 
 The kali-themes-common package is also installing various symlinks
 trees to mimick directories that are traditionnally handled by
