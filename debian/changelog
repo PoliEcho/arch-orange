@@ -5,6 +5,8 @@ kali-themes (2019.4.9) kali-experimental; urgency=medium
   * Configure gdm to display our logo
   * Move plymouth theme setting to kali-themes
   * Always add the missing diversions on upgrade
+  * Add empty directories to kali-desktop-base so that update-alternatives can
+    create symlinks in them.
 
   [ Daniel Ruiz de Alegría ]
   * Fix light variant qterminal theme
