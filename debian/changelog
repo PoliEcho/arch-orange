@@ -16,6 +16,8 @@ kali-themes (2019.4.8) kali-experimental; urgency=medium
     even when /usr/share/ is not available.
   * Fix path to grub backgrounds in update-alternatives calls
   * Use dark theme by default in GNOME too
+  * Drop the "Provides: desktop-base" on kali-desktop-base so that we can
+    still force the installation of desktop-base with a Depends on it.
 
  -- Raphaël Hertzog <raphael@offensive-security.com>  Thu, 07 Nov 2019 10:57:41 +0100
 
