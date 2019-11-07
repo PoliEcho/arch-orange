@@ -16,8 +16,15 @@ theme='Kali-Light'
 icon-theme='Flat-Remix-Blue-Light'
 gtk-theme='Kali-Light'
 
-[org.gnome.shell.extensions.user-theme]
-name='Kali-X'
+# Manually set background and login screen for GNOME (so that
+# kali-desktop-base is not required)
+[org.gnome.desktop.background]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/kali/kali-logo.xml'
+
+[org.gnome.desktop.screensaver]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/kali/kali-rings.xml'
 
 # Change mousepad editor settings
 [org.xfce.mousepad.preferences.view]
