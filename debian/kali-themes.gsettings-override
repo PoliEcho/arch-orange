@@ -10,11 +10,11 @@ background-transparency-percent=15
 # Change desktop settings
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'
-theme='Kali-Light'
+theme='Kali-Dark'
 
 [org.gnome.desktop.interface]
-icon-theme='Flat-Remix-Blue-Light'
-gtk-theme='Kali-Light'
+icon-theme='Flat-Remix-Blue-Dark'
+gtk-theme='Kali-Dark'
 
 # Manually set background and login screen for GNOME (so that
 # kali-desktop-base is not required)
