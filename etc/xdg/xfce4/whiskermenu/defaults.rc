@@ -1,5 +1,6 @@
 launcher-show-description=false
 button-icon=kali-panel-menu
 position-search-alternate=true
+load-hierarchy=true
 menu-width=500
 menu-height=600
