@@ -6,5 +6,6 @@
     <property name="theme" type="string" value="Kali-Dark"/>
     <property name="title_font" type="string" value="Cantarell Bold 9"/>
     <property name="easy_click" type="string" value="Super"/>
+    <property name="workspace_count" type="int" value="2"/>
   </property>
 </channel>
