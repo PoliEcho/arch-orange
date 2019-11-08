@@ -1,3 +1,18 @@
+kali-themes (2019.4.10) kali-experimental; urgency=medium
+
+  * Configure qterminal as the default terminal and firefox-esr as the default
+    browser
+  * Disable profile edition when clicking on user face in menu
+  * Tweak the default apps shown in the favorites section of XFCE
+  * Force the upgrade of kali-menu to 2019.4.4 or higher.
+  * Reduce number of default workspaces to 2
+  * Add lockscreen and logout buttons in the panel
+  * Force update of all config files on upgrade files.
+    It's an extra safety to have a clean start and it makes it easier
+    for others to test.
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Fri, 08 Nov 2019 19:19:51 +0100
+
 kali-themes (2019.4.9) kali-experimental; urgency=medium
 
   [ Raphaël Hertzog ]
