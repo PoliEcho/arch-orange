@@ -4,3 +4,4 @@ position-search-alternate=true
 load-hierarchy=true
 menu-width=500
 menu-height=600
+show-command-profile=false
