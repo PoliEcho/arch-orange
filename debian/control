@@ -46,7 +46,9 @@ Depends: kali-themes-common (= ${source:Version}),
 # For boot-time splash screen
  plymouth-label,
  ${misc:Depends}
-Breaks: kali-defaults (<< 2019.4.0), kali-desktop-xfce (<< 2019.4.16)
+Breaks: kali-defaults (<< 2019.4.0),
+ kali-desktop-xfce (<< 2019.4.16),
+ kali-menu (<< 2019.4.4)
 Replaces: kali-defaults (<< 2019.4.0)
 Description: Configure all desktops to use the Kali theme
  Installing this package should configure most desktops to use the Kali theme
