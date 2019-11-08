@@ -5,6 +5,7 @@ set -e
 FILES_TO_DIVERT="
 /etc/lightdm/lightdm-gtk-greeter.conf
 /etc/plymouth/plymouthd.conf
+/etc/xdg/xfce4/helpers.rc
 /etc/xdg/qterminal.org/qterminal.ini
 /etc/xdg/xfce4/panel/default.xml
 /etc/xdg/xfce4/terminal/terminalrc
