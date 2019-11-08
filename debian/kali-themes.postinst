@@ -39,16 +39,14 @@ install_config_file() {
 if [ "$1" = "configure" ]; then
     if [ -z "$2" ]; then
 	# Initial install
-        install_all force
+	install_all force
     else
-        # Upgrade
-        if dpkg --compare-versions "$2" lt "2019.4.6"; then
-	    # Those files have been updated, force install them
-	    install_config_file /etc/xdg/xfce4/terminal/terminalrc force
-	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml force
+	# Upgrade all files once
+	if dpkg --compare-versions "$2" lt "2019.4.10"; then
+	    install_all force
 	fi
 	# Install remaining new files
-        install_all
+	install_all
     fi
     # Copy grub theme to /boot
     mkdir -p /boot/grub/themes/kali
