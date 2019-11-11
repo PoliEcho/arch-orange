@@ -1,3 +1,20 @@
+kali-themes (2019.4.11) kali-experimental; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Add kali light background and replace kali rings for login and lock screen
+  * Add new grub backgrounds
+  * Minify backgrounds
+  * Fix background gradient banding
+  * Replace Qterminal background transparency with window transparency
+  * Move panel action buttons position and force symbolic icons
+
+  [ Raphaël Hertzog ]
+  * Set environment variables in /etc/X11/Xsession.d/90kali-themes too
+  * Don't use any background image for qterminal, just transparency
+  * Force upgrade all config files again
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Mon, 11 Nov 2019 14:05:52 +0100
+
 kali-themes (2019.4.10) kali-experimental; urgency=medium
 
   * Configure qterminal as the default terminal and firefox-esr as the default
