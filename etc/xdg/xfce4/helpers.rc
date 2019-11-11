@@ -1,5 +1,5 @@
 # Default applications in Kali
-WebBrowser=firefox-esr
+WebBrowser=firefox
 MailReader=thunderbird
 TerminalEmulator=qterminal
 FileManager=Thunar
