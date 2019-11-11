@@ -4870,6 +4870,11 @@ popover.emoji-completion .emoji:hover {
     box-shadow: inset 0 4px 0 #2777ff;
     background: #ffffff; }
 
+/* XFCE4 panel action buttons */
+#XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {
+  -gtk-icon-style: symbolic;
+  -gtk-icon-transform: scale(0.7); }
+
 /* XFCE4 workspace switcher */
 wnck-pager {
   background-color: white; }

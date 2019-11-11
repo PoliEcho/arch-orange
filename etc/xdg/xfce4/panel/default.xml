@@ -27,6 +27,7 @@
         <value type="int" value="15"/>
         <value type="int" value="16"/>
         <value type="int" value="17"/>
+        <value type="int" value="18"/>
       </property>
     </property>
   </property>
@@ -67,11 +68,8 @@
     <property name="plugin-13" type="string" value="pulseaudio"/>
     <property name="plugin-14" type="string" value="notification-plugin"/>
     <property name="plugin-15" type="string" value="power-manager-plugin"/>
-    <property name="plugin-16" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-17" type="string" value="pager"/>
-    <property name="plugin-18" type="string" value="actions">
+    <property name="plugin-16" type="string" value="separator"/>
+    <property name="plugin-17" type="string" value="actions">
       <property name="appearance" type="uint" value="0"/>
       <property name="items" type="array">
         <value type="string" value="+lock-screen"/>
@@ -88,5 +86,6 @@
         <value type="string" value="-logout-dialog"/>
       </property>
     </property>
+    <property name="plugin-18" type="string" value="pager"/>
   </property>
 </channel>
