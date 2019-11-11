@@ -20,7 +20,7 @@ if [ "$1" = "remove" ]; then
     # Remove desktop-lockscreen.xml alternatives
     update-alternatives --remove \
 	desktop-lockscreen.xml \
-	/usr/share/backgrounds/kali/kali-rings.xml
+	/usr/share/backgrounds/kali/kali-light.xml
 
     # Remove Plasma 5/KDE wallpaper alternatives
     update-alternatives --remove \
@@ -30,7 +30,7 @@ if [ "$1" = "remove" ]; then
     # Remove login theme alternatives
     update-alternatives --remove \
 	desktop-login-background \
-	/usr/share/backgrounds/kali/kali-rings.svg
+	/usr/share/backgrounds/kali/kali-light.svg
 
     # Remove GRUB alternatives
     update-alternatives --remove \

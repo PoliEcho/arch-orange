@@ -24,7 +24,7 @@ picture-uri='file:///usr/share/backgrounds/kali/kali-logo.xml'
 
 [org.gnome.desktop.screensaver]
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/kali/kali-rings.xml'
+picture-uri='file:///usr/share/backgrounds/kali/kali-light.xml'
 
 # Change mousepad editor settings
 [org.xfce.mousepad.preferences.view]

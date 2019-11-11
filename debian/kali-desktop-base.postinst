@@ -42,7 +42,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
     # (for GNOME)
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-lockscreen.xml \
-	desktop-lockscreen.xml /usr/share/backgrounds/kali/kali-rings.xml 200
+	desktop-lockscreen.xml /usr/share/backgrounds/kali/kali-light.xml 200
 
     # Set up an alternative for the wallpaper for Plasma 5/KDE
     update-alternatives --install \
@@ -52,7 +52,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
     # Login theme
     # Highest priority for active theme
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
-	desktop-login-background /usr/share/backgrounds/kali/kali-rings.svg 200
+	desktop-login-background /usr/share/backgrounds/kali/kali-light.svg 200
 
     # Set up an alternative for the GRUB background/colors config
     # Highest priority for active theme

@@ -9,8 +9,15 @@
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
+    <name>Kali Light</name>
+    <filename>/usr/share/backgrounds/kali/kali-light.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
     <name>Kali Rings</name>
-    <filename>/usr/share/backgrounds/kali/kali-rings.xml</filename>
+    <filename>/usr/share/backgrounds/kali/kali-rings.png</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
