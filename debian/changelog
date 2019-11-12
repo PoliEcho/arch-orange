@@ -1,3 +1,14 @@
+kali-themes (2019.4.12) kali-experimental; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Put back debian-sensible-browser as default browser
+  * Force upgrade all config files with this version
+
+  [ Daniel Ruiz de Alegría ]
+  * Move kali light background logo position
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Tue, 12 Nov 2019 11:19:21 +0100
+
 kali-themes (2019.4.11) kali-experimental; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
