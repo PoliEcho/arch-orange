@@ -42,7 +42,7 @@ if [ "$1" = "configure" ]; then
 	install_all force
     else
 	# Upgrade all files once
-	if dpkg --compare-versions "$2" lt "2019.4.12"; then
+	if dpkg --compare-versions "$2" lt "2019.4.13"; then
 	    install_all force
 	fi
 	# Install remaining new files
