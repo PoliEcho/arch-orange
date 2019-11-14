@@ -1,7 +1,7 @@
 
 # Global Property
 title-text: ""
-desktop-image: "/usr/share/grub/themes/kali/grub-16x9.png"
+desktop-image: "grub-16x9.png"
 desktop-color: "#2f5595"
 terminal-font: "Unifont Regular 16"
 terminal-left: "0"

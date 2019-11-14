@@ -51,8 +51,6 @@ if [ "$1" = "configure" ]; then
     # Copy grub theme to /boot
     mkdir -p /boot/grub/themes/kali
     cp -r /usr/share/grub/themes/kali/* /boot/grub/themes/kali/
-    sed -i -e 's|/usr/share/grub/themes/|/boot/grub/themes/|g' \
-	/boot/grub/themes/kali/theme.txt
     # Rebuild the grub configuration with our config changes
     if which update-grub >/dev/null; then
 	update-grub || true
