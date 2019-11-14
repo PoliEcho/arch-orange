@@ -1,3 +1,13 @@
+kali-themes (2019.4.13) kali-experimental; urgency=medium
+
+  * Add dependency on sensible-utils to please lintian
+  * Use relative path for the background picture in the grub theme
+  * Add kazam to the XFCE panel
+  * Force upgrade all config files
+  * Configure CTRL+Print in XFCE to start kazam
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Thu, 14 Nov 2019 10:42:57 +0100
+
 kali-themes (2019.4.12) kali-experimental; urgency=medium
 
   [ Raphaël Hertzog ]
