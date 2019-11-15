@@ -1,3 +1,12 @@
+kali-themes (2019.4.14) kali-experimental; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Move virtual desktops view to the left side
+  * Move kazam shortcut to Super + PtrSc
+  * Add screenshot shorcuts
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Fri, 15 Nov 2019 16:31:57 +0100
+
 kali-themes (2019.4.13) kali-experimental; urgency=medium
 
   * Add dependency on sensible-utils to please lintian
