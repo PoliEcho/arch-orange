@@ -7,5 +7,7 @@
     <property name="title_font" type="string" value="Cantarell Bold 9"/>
     <property name="easy_click" type="string" value="Super"/>
     <property name="workspace_count" type="int" value="2"/>
+    <property name="cycle_workspaces" type="bool" value="false"/>
+    <property name="scroll_workspaces" type="bool" value="false"/>
   </property>
 </channel>
