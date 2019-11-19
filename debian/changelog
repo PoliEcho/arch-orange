@@ -1,3 +1,15 @@
+kali-themes (2019.4.15) kali-experimental; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Show qterminal menu
+  * Fix xfwm4 square corner while window content is loading
+
+  [ Raphaël Hertzog ]
+  * Configure the default avatar
+  * Force upgrade all config files
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Tue, 19 Nov 2019 10:58:42 +0100
+
 kali-themes (2019.4.14) kali-experimental; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
