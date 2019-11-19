@@ -48,6 +48,10 @@ if [ "$1" = "configure" ]; then
 	# Install remaining new files
 	install_all
     fi
+    # Configure /root/.face to have a red-background avatar
+    if [ ! -e /root/.face ]; then
+	cp /usr/share/icons/Flat-Remix-Blue-Dark/apps/scalable/avatar-root.svg /root/.face
+    fi
     # Copy grub theme to /boot
     mkdir -p /boot/grub/themes/kali
     cp -r /usr/share/grub/themes/kali/* /boot/grub/themes/kali/
