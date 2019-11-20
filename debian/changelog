@@ -1,3 +1,16 @@
+kali-themes (2019.4.17) kali-experimental; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Show generic application names
+  * Switch the whiskermenu to have categories on the left
+  * Move close/max/min buttons on the left of windows
+  * Force upgrade config files
+
+  [ Daniel Ruiz de Alegría ]
+  * Add kali-bugs and kali-docs icons
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Wed, 20 Nov 2019 18:35:16 +0100
+
 kali-themes (2019.4.16) kali-experimental; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
