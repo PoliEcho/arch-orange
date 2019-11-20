@@ -1,3 +1,12 @@
+kali-themes (2019.4.16) kali-experimental; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Disable workspace cycling via desktop scrolling or window dragging
+  * Fix terminal dark color not visible with dark color-scheme
+  * Add new Flat-Remix kali custom icons
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Wed, 20 Nov 2019 13:40:58 +0100
+
 kali-themes (2019.4.15) kali-experimental; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
