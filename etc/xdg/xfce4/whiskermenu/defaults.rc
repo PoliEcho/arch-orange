@@ -2,6 +2,7 @@ launcher-show-name=false
 launcher-show-description=false
 button-icon=kali-panel-menu
 position-search-alternate=true
+position-categories-alternate=true
 load-hierarchy=true
 menu-width=500
 menu-height=600
