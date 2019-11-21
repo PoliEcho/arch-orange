@@ -1,3 +1,12 @@
+kali-themes (2019.4.18) kali-experimental; urgency=medium
+
+  * Disable generic names but still use a generic name for mousepad in
+    favorites section
+  * Force upgrade config files
+  * Revert "Move close/max/min buttons on the left of windows"
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Thu, 21 Nov 2019 15:23:17 +0100
+
 kali-themes (2019.4.17) kali-experimental; urgency=medium
 
   [ Raphaël Hertzog ]
