@@ -16,7 +16,7 @@ style "default" {
   GtkWidget::new-tooltip-style = 1 #for compatibility
 
   GtkSeparatorMenuItem::horizontal-padding = 3
-  GtkSeparatorMenuItem::wide-separators = 1
+  GtkSeparatorMenuItem::wide-separators = 0
   GtkSeparatorMenuItem::separator-height = 1
 
   GtkButton::child-displacement-y = 0
@@ -689,21 +689,17 @@ style "menu" {
   bg[NORMAL] = @menu_bg
   bg[INSENSITIVE] = @menu_bg
   bg[PRELIGHT] = @menu_bg
-
-  engine "pixmap" { # For menus that use horizontal lines rather than gtkseparator
-
-    image {
-      function = HLINE
-      file = "assets/null.png"
-      border = { 0, 0, 0, 0 }
-      stretch = TRUE
-    }
-  }
 }
 
 style "menu_framed_box" {
+  engine "pixmap" {
 
-  engine "adwaita" {
+    image {
+      function = BOX
+      file = "assets/menu.png"
+      border = { 1, 1, 1, 1 }
+      stretch = TRUE
+    }
   }
 }
 
