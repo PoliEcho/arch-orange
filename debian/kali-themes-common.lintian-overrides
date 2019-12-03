@@ -1,0 +1,7 @@
+# This is fine, we use "TryExec" to hide it when it's not available
+desktop-command-not-in-package usr/share/applications/xfce-text-editor.desktop mousepad
+# We don't want this desktop file to be easily found in searches as it
+# duplicates another desktop file. It's here mainly to appear in the
+# Xfce favorite section under a generic name that we control ("Text
+# Editor" instead of "Mousepad")
+desktop-entry-lacks-keywords-entry usr/share/applications/xfce-text-editor.desktop
