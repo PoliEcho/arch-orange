@@ -1,3 +1,24 @@
+kali-themes (2020.1.0) kali-dev; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Add xfwm4 HiDPI themes
+  * Reduce whiskermenu height to avoid cutting icons
+  * Add updated Flat-Remix desktop icon
+  * Increase whiskermenu size
+  * Add compton configuration file
+  * Add terminal brighter bold colors
+  * Improve GTK2 themes menu toolbar design
+  * Qterminal hide tab bar with only one tab
+  * Improve GTK2 themes menu design
+  * Lighten actions and symbolic icons for Flat-Remix dark icon theme
+
+  [ Raphaël Hertzog ]
+  * Avoid conffiles prompts for newly diverted files during upgrades
+  * Add /etc/xdg/compton.conf to the list of diverted files
+  * Force upgrade the modified configuration files
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Tue, 03 Dec 2019 15:06:00 +0100
+
 kali-themes (2019.4.18) kali-experimental; urgency=medium
 
   * Disable generic names but still use a generic name for mousepad in
