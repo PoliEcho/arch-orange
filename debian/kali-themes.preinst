@@ -19,7 +19,15 @@ FILES_TO_DIVERT="
 
 setup_diversion() {
     local file="$1"
-    dpkg-divert --rename --package kali-themes \
+    divert_opts="--rename"
+    if [ -e "$file" ]; then
+	if dpkg --search "$file" >/dev/null 2>&1; then
+	    # Keep original file to avoid spurious dpkg prompt
+	    cp "$file" "$file.original"
+	    divert_opts="--no-rename"
+	fi
+    fi
+    dpkg-divert $divert_opts --package kali-themes \
 		--divert "$file.original" \
 		--add "$file"
 }
