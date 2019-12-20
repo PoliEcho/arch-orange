@@ -1,0 +1,49 @@
+/* XFCE4 PANEL */
+.xfce4-panel {
+  &.background {
+    background: transparentize($bg_color, if($variant=='light', .1, .2));
+  }
+
+  button {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    background: transparent;
+    color: if($variant=='light', darken($fg_color, 10%), $fg_color);
+
+    $_highlight_bg_color: if($variant=='light', $bg_color, rgba(black, .2));
+
+    &:hover {
+      background: $_highlight_bg_color;
+    }
+
+    &:not(#whiskermenu-button) {
+      &:checked, &:active {
+        box-shadow: inset 0 4px 0 $selected_bg_color;
+        background: $_highlight_bg_color;
+      }
+    }
+  }
+}
+
+/* XFCE4 panel action buttons */
+#XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {
+  -gtk-icon-style: symbolic;
+  -gtk-icon-transform: scale(.7);
+}
+
+/* XFCE4 workspace switcher */
+wnck-pager {
+  background-color: lighten($base_color, 10%);
+  &:selected { background-color: darken($bg_color, 20%); }
+  &:hover { background-color: darken($bg_color, 20%); }
+}
+
+/* Thunar */
+// Hide root user warning
+.thunar .warning {
+  opacity: 0;
+  font-size: 0;
+  margin: -10px 0;
+}
