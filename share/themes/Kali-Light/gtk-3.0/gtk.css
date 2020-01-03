@@ -4869,6 +4869,8 @@ popover.emoji-completion .emoji:hover {
   .xfce4-panel button:not(#whiskermenu-button):checked, .xfce4-panel button:not(#whiskermenu-button):active {
     box-shadow: inset 0 4px 0 #2777ff;
     background: #ffffff; }
+.xfce4-panel.vertical button:not(#whiskermenu-button):checked, .xfce4-panel.vertical button:not(#whiskermenu-button):active {
+  box-shadow: inset 4px 0 0 #2777ff; }
 
 /* XFCE4 panel action buttons */
 #XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {
