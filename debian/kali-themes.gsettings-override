@@ -1,11 +1,11 @@
 # Change default gnome-terminal color
 [org.gnome.Terminal.Legacy.Profile]
-use-theme-colors=false
-foreground-color='#FFFFFF'
-background-color='#000000'
+use-theme-colors=true
 scrollback-unlimited=true
 use-transparent-background=true
-background-transparency-percent=15
+background-transparency-percent=5
+palette=['#1F2229', '#D41919', '#5EBDAB', '#FEA44C', '#367bf0', '#BF2E5D', '#49AEE6', '#E6E6E6', '#8C42AB', '#EC0101', '#47D4B9', '#FF8A18', '#277FFF', '#D71655', '#05A1F7', '#FFFFFF']
+bold-is-bright=true
 
 # Change desktop settings
 [org.gnome.desktop.wm.preferences]
