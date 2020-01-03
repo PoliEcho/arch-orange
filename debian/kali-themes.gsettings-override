@@ -15,6 +15,7 @@ theme='Kali-Dark'
 [org.gnome.desktop.interface]
 icon-theme='Flat-Remix-Blue-Dark'
 gtk-theme='Kali-Dark'
+monospace-font-name='Fira Code Medium 10'
 
 # Manually set background and login screen for GNOME (so that
 # kali-desktop-base is not required)
