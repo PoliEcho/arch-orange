@@ -26,6 +26,9 @@ picture-uri='file:///usr/share/backgrounds/kali/kali-logo.xml'
 picture-options='zoom'
 picture-uri='file:///usr/share/backgrounds/kali/kali-light.xml'
 
+[org.gnome.gedit.preferences.editor]
+scheme='Kali-Dark'
+
 # Change mousepad editor settings
 [org.xfce.mousepad.preferences.view]
 color-scheme='Kali-Dark'
