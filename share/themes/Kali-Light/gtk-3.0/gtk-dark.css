@@ -4834,6 +4834,10 @@ popover.emoji-completion contents row box {
 popover.emoji-completion .emoji:hover {
   background: #2e313d; }
 
+/* Nautilus */
+@define-color disk_space_unknown #383c4a;
+@define-color disk_space_used #2777ff;
+@define-color disk_space_free white;
 /* XFCE4 PANEL */
 .xfce4-panel.background {
   background: rgba(35, 37, 46, 0.8); }

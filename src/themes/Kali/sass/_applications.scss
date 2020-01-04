@@ -1,4 +1,10 @@
+
+/* Nautilus */
 @import url('applications/nautilus/Adwaita.css');
+
+@define-color disk_space_unknown #383c4a;
+@define-color disk_space_used #{"" +$selected_bg_color};
+@define-color disk_space_free white;
 
 /* XFCE4 PANEL */
 .xfce4-panel {
