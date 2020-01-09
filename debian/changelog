@@ -1,3 +1,20 @@
+kali-themes (2020.1.1) kali-dev; urgency=medium
+
+  * Add Firefox and Chrome to compton shadow-exclusion
+  * Change terminal color-scheme white color
+  * Update Flat-Remix icon theme
+  * Add source files
+  * Set Kali-Dark as default color-scheme for gedit
+  * Customize gnome-terminal
+  * Change gnome-shell monospace font
+  * Change checked button indicator position according to xfce4-panel orientation
+  * Change selected widget outline style
+  * Add nautilus custom styles
+  * Change nautilus diskspace colors
+  * Add new gnome-shell dark/light themes
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Thu, 09 Jan 2020 15:19:46 +0100
+
 kali-themes (2020.1.0) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
