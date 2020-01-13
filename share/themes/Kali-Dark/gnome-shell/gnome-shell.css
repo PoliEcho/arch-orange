@@ -692,6 +692,10 @@ StScrollBar {
   background-color: #23252e;
   border: 1px solid #0d0e11;
   border-radius: 12px; }
+  .osd-window StIcon,
+  .resize-popup StIcon,
+  .switcher-list StIcon, .workspace-switcher-container StIcon {
+    icon-shadow: rgba(0, 0, 0, 0.7) 0 1px 6px; }
 
 .modal-dialog StEntry, .prompt-dialog StEntry, .audio-device-selection-dialog StEntry, .access-dialog StEntry, .geolocation-dialog StEntry, .extension-dialog StEntry, .inhibit-shortcuts-dialog StEntry, .nm-dialog StEntry, .notification-banner StEntry {
   color: #eeeeec;

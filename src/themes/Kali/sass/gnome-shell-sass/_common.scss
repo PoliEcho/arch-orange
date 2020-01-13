@@ -777,6 +777,10 @@ StScrollBar {
   background-color: $bg_color;
   border: 1px solid if($variant=='light', transparentize(black, 0.85), $borders_color);
   border-radius: 12px;
+
+  StIcon {
+    icon-shadow: transparentize(black, .3) 0 1px 6px;
+  }
 }
 
 %bubble-entry {
