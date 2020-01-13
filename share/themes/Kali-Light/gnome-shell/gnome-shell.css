@@ -586,8 +586,8 @@ StScrollBar {
   .osd-window .level {
     height: 0.6em;
     -barlevel-height: 0.6em;
-    -barlevel-background-color: rgba(92, 97, 108, 0.8);
-    -barlevel-active-background-color: #eeeeec;
+    -barlevel-background-color: rgba(92, 97, 108, 0.5);
+    -barlevel-active-background-color: black;
     -barlevel-overdrive-color: #d41919;
     -barlevel-overdrive-separator-width: 0.2em; }
 

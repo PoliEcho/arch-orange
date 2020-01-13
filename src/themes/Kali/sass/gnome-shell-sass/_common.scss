@@ -656,8 +656,8 @@ StScrollBar {
   .level {
     height: 0.6em;
     -barlevel-height: 0.6em;
-    -barlevel-background-color: transparentize($fg_color, if($variant=='light', 0.2, 0.9));
-    -barlevel-active-background-color: $osd_fg_color;
+    -barlevel-background-color: transparentize($fg_color, if($variant=='light', 0.5, 0.9));
+    -barlevel-active-background-color: if($variant=='light', black, white);
     -barlevel-overdrive-color: $destructive_color;
     -barlevel-overdrive-separator-width: 0.2em;
   }
