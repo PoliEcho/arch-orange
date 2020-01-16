@@ -52,10 +52,3 @@ wnck-pager {
   &:hover { background-color: darken($bg_color, 20%); }
 }
 
-/* Thunar */
-// Hide root user warning
-.thunar .warning {
-  opacity: 0;
-  font-size: 0;
-  margin: -10px 0;
-}
