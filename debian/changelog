@@ -1,3 +1,20 @@
+kali-themes (2020.1.2) kali-dev; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Add kali-logo icon
+  * Increase whiskermenu height to fit all default kali categories
+  * Fix light gnome-shell theme, volume dialog's barlevel not visible
+  * Gnome-shell themes: add shadow to icons in osd dialogs
+  * Add kali app icons
+  * Recover thunar root user warning
+  * Chage gdm logo background to white
+  * Fix network-card app icon
+  * Add category icons to sync Flat-Remix theme
+  * Update kali emblem icon
+  * Configure Kali-Dark gnome-shell theme
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Fri, 17 Jan 2020 04:21:47 +0100
+
 kali-themes (2020.1.1) kali-dev; urgency=medium
 
   * Add Firefox and Chrome to compton shadow-exclusion
