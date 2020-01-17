@@ -12,6 +12,9 @@ bold-is-bright=true
 button-layout='appmenu:minimize,maximize,close'
 theme='Kali-Dark'
 
+[org.gnome.shell.extensions.user-theme]
+name='Kali-Dark'
+
 [org.gnome.desktop.interface]
 icon-theme='Flat-Remix-Blue-Dark'
 gtk-theme='Kali-Dark'
