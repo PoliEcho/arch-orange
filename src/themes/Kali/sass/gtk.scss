@@ -7,7 +7,8 @@
 $variant: 'light';
 
 @import 'gtk-sass/_colors';
-@import 'gtk-sass/_drawing';
-@import 'gtk-sass/_common';
+@import 'gtk-sass/upstream/_drawing';
+@import 'gtk-sass/upstream/_common';
+@import 'gtk-sass/_common-tweaks';
 @import 'gtk-sass/_applications';
-@import 'gtk-sass/_colors-public';
+@import 'gtk-sass/upstream/_colors-public';
