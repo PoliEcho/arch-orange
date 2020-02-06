@@ -2341,7 +2341,7 @@ notebook > header {
   padding: 1px;
   border-color: #0d0e11;
   border-width: 1px;
-  background-color: #181a20; }
+  background-color: #1b1d24; }
   notebook > header:backdrop {
     border-color: #111317;
     background-color: #1d1f26; }
@@ -2671,7 +2671,7 @@ switch {
   border: 1px solid #0d0e11;
   border-radius: 14px;
   color: #eeeeec;
-  background-color: #181a20;
+  background-color: #1b1d24;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   /* only show i / o for the accessible theme */ }
   switch:checked {
@@ -3068,7 +3068,7 @@ treeview.view radio:selected {
 scale trough, scale fill, progressbar trough {
   border: 1px solid #0d0e11;
   border-radius: 3px;
-  background-color: #181a20; }
+  background-color: #1b1d24; }
   scale trough:disabled, scale fill:disabled, progressbar trough:disabled {
     background-color: #252730; }
   scale trough:backdrop, scale fill:backdrop, progressbar trough:backdrop {
