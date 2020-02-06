@@ -9,8 +9,8 @@
 %button_active,
 button:active,
 button:checked, {
-  background: if($variant == 'light', image(darken($bg_color, 7%)), image(darken($bg_color, 14%)));
-  box-shadow: inset 0 3px 3px -2px transparentize($shadow_color, 0.03);
+  background: $dark_fill;
+  box-shadow: inset 0 3px 5px -4px $shadow_color;
 }
 
 %slider_active {

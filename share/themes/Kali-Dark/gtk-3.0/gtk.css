@@ -4700,8 +4700,8 @@ headerbar button.toggle:active,
 headerbar button.toggle:checked,
 button:active,
 button:checked {
-  background: image(#040405);
-  box-shadow: inset 0 3px 3px -2px rgba(0, 0, 0, 0.27); }
+  background: #1b1d24;
+  box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.3); }
 
 switch:hover slider, scale slider:active {
   background-image: image(#0f1014); }
