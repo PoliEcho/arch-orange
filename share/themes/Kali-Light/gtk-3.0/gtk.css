@@ -4751,6 +4751,45 @@ switch:backdrop slider {
 switch:backdrop:checked slider {
   border-color: #2777ff; }
 
+/*************************
+ * Check and Radio items *
+ *************************/
+check,
+radio {
+  background-image: linear-gradient(to bottom, white 20%, #fafafa 90%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
+  check:checked:disabled,
+  radio:checked:disabled, check:indeterminate:disabled,
+  radio:indeterminate:disabled, check:backdrop:checked:disabled,
+  radio:backdrop:checked:disabled, check:backdrop:indeterminate:disabled,
+  radio:backdrop:indeterminate:disabled, check:disabled, check:disabled:backdrop,
+  radio:disabled,
+  radio:disabled:backdrop {
+    border-color: #d1d1d1;
+    background-image: image(#ffffff); }
+  check:checked,
+  radio:checked {
+    background-image: linear-gradient(to bottom, #2777ff 20%, #1d71ff 90%);
+    border-color: #0051da;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07); }
+    check:checked:active,
+    radio:checked:active {
+      box-shadow: none; }
+    check:checked:backdrop,
+    radio:checked:backdrop {
+      background-image: image(#2777ff); }
+  check:indeterminate,
+  radio:indeterminate {
+    background-image: linear-gradient(to bottom, #2777ff 20%, #1d71ff 90%);
+    border-color: #0051da;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07); }
+    check:indeterminate:active,
+    radio:indeterminate:active {
+      box-shadow: none; }
+    check:indeterminate:backdrop,
+    radio:indeterminate:backdrop {
+      background-image: image(#2777ff); }
+
 /************
  * GtkScale *
  ************/
