@@ -2226,7 +2226,7 @@ menubar,
 menu, .menu, .context-menu {
   margin: 4px;
   padding: 4px 0px;
-  background-color: #262933;
+  background-color: #20222a;
   border: 1px solid #0d0e11; }
   .csd menu,
   .csd .menu,
@@ -2271,7 +2271,7 @@ menu, .menu, .context-menu {
     min-height: 16px;
     min-width: 16px;
     padding: 4px;
-    background-color: #262933;
+    background-color: #20222a;
     border-radius: 0; }
     menu > arrow.top, .menu > arrow.top, .context-menu > arrow.top {
       margin-top: -4px;
