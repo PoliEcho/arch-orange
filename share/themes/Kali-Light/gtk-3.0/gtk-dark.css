@@ -4685,11 +4685,12 @@ popover.emoji-completion .emoji:hover {
   background: #2e313d; }
 
 * {
-  outline-color: alpha(currentColor,0.07);
   outline-style: solid;
-  outline-offset: -2px;
+  outline-offset: -4px;
   outline-width: 2px;
-  -gtk-outline-radius: 6px; }
+  -gtk-outline-radius: 3px; }
+  *, *:hover, *:active, *:checked, *:focus, * button, * button:hover, * button:active, * button:checked, * button:focus {
+    outline-color: alpha(currentColor,0.07); }
 
 .titlebar stackswitcher button:checked:active, .titlebar stackswitcher button:checked,
 .titlebar button.toggle:active,
