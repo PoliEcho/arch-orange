@@ -3,3 +3,4 @@ Type=Application
 Name=Xcape Super Key Bind
 Exec=xcape -e 'Super_L=Control_L|Escape'
 Terminal=false
+OnlyShowIn=XFCE;
