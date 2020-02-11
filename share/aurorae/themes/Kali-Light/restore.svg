@@ -1,0 +1,22 @@
+<svg version="1.1" viewBox="0 0 81 16" xmlns="http://www.w3.org/2000/svg">
+	<g id="active-center">
+		<path d="m8 0.75c-4.0041 0-7.25 3.2459-7.25 7.25s3.2459 7.25 7.25 7.25 7.25-3.2459 7.25-7.25-3.2459-7.25-7.25-7.25z" fill="none"/>
+		<path d="m4 4v8h8v-8zm1.9942 2h4.0117v4h-4.0117z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#5c616c" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:fill markers stroke;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+	</g>
+	<g id="hover-center" transform="translate(76.896 -6.3051)">
+		<path d="m-36.271 7.3051c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7z" opacity=".08" stroke="#000" stroke-width=".5"/>
+		<path d="m-40.271 10.305v8h8v-8zm1.9942 2h4.0117v4h-4.0117z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#5c616c" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:fill markers stroke;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+	</g>
+	<g id="pressed-center" transform="translate(74.346 -.88136)">
+		<path d="m-50.034 1.8814c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7z" fill="#fff" opacity=".7" stroke="#5c616c" stroke-width=".5"/>
+		<path d="m-54.034 4.8814v8h8v-8zm1.9942 2h4.0117v4h-4.0117z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#5c616c" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:fill markers stroke;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+	</g>
+	<g id="deactivated-center" transform="translate(48.938 .25)" opacity=".5">
+		<path d="m8 0.75c-4.0041 0-7.25 3.2459-7.25 7.25s3.2459 7.25 7.25 7.25 7.25-3.2459 7.25-7.25-3.2459-7.25-7.25-7.25z" fill="none"/>
+		<path d="m4 4v8h8v-8zm1.9942 2h4.0117v4h-4.0117z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#5c616c" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:fill markers stroke;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+	</g>
+	<g id="inactive-center" transform="translate(65.25 .25)" opacity=".5">
+		<path d="m8 0.75c-4.0041 0-7.25 3.2459-7.25 7.25s3.2459 7.25 7.25 7.25 7.25-3.2459 7.25-7.25-3.2459-7.25-7.25-7.25z" fill="none" style=""/>
+		<path d="m4 4v8h8v-8zm1.9942 2h4.0117v4h-4.0117z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#5c616c" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:fill markers stroke;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+	</g>
+</svg>
