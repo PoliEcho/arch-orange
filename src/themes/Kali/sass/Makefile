@@ -1,4 +1,4 @@
-SCSS=scss --no-cache --quiet --sourcemap=none
+SCSS=sassc
 THEMES_DIR=../../../../share/themes/
 
 .PHONY: install clean
