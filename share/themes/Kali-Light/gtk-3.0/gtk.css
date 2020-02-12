@@ -2,6 +2,7 @@
  * Check and Radio buttons *
  ***************************/
 @import url("applications/nautilus/Adwaita.css");
+@import url("applications/gedit/Adwaita.css");
 * {
   padding: 0;
   -GtkToolButton-icon-spacing: 4;
@@ -5051,6 +5052,7 @@ decoration {
 .xfce4-panel.vertical button:not(#whiskermenu-button):checked, .xfce4-panel.vertical button:not(#whiskermenu-button):active {
   box-shadow: inset 4px 0 0 #2777ff; }
 
+/* Gedit */
 /* XFCE4 panel action buttons */
 #XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {
   -gtk-icon-style: symbolic;

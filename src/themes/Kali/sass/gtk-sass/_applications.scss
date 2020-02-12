@@ -39,6 +39,9 @@
   }
 }
 
+/* Gedit */
+@import url('applications/gedit/Adwaita.css');
+
 /* XFCE4 panel action buttons */
 #XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {
   -gtk-icon-style: symbolic;
