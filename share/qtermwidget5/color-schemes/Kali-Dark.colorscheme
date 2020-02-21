@@ -1,5 +1,7 @@
 [General]
 Description=Kali
+Blur=true
+Opacity=0.95
 
 [Background]
 Color=35,37,46
