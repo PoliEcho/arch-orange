@@ -43,8 +43,6 @@ Depends: kali-themes-common (= ${source:Version}),
  sensible-utils,
 # The GTK theme uses this engine
  gtk2-engines-murrine,
-# Needed for QT_QPA_PLATFORMTHEME=gtk2 to have an effect
- qt5-style-plugins,
 # For boot-time splash screen
  plymouth-label,
  ${misc:Depends}
