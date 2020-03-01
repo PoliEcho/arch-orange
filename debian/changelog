@@ -1,3 +1,31 @@
+kali-themes (2020.2.0) kali-dev; urgency=medium
+
+  * Fix network card app icon
+  * Refactor GTK3 theme to depend on upstream scss code
+  * GTK3 theme: Lighten dark-fill color
+  * GTK3 theme: Increase dark theme's shadow color opacity
+  * GTK3 theme: Change checked button background and inset shadow
+  * GTK3 theme: Improve selected widget outline
+  * GTK3 theme: Make dark theme menus more visible
+  * GTK3 theme: Redesign check and radio widgets
+  * Make xcape autorun file only launch for Xfce
+  * GTK3 theme: Add Gedit custom widget styles
+  * Replace SCSS ruby-sass compiler with libsass
+  * GTK3 theme: Update Nautilus widget styles
+  * GTK3 theme: Make button outline darker than text outline
+  * Move qt5-style-plugins dependency to kali-meta
+  * Fix qt autoHiDPI malfunction
+  * Update WPScan app icon
+  * Add theHarvester app icon
+  * Add wfuzz app icon
+  * Add 188 app symlinks
+  * Fix network app icons wrongly linked to zenmap
+  * Move user avatar to kali-defaults
+  * Add preferences-desktop-cursors app icon
+  * Replace gtk2 qt style plugin with qt5ct
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Sun, 01 Mar 2020 17:09:24 +0100
+
 kali-themes (2020.1.2) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
