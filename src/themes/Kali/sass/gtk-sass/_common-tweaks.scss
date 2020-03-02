@@ -264,5 +264,8 @@ decoration {
 
 // Window Close button
 button.titlebutton {
-  &:backdrop { border-color: transparent; }
+  &:backdrop {
+    background: transparent;
+    &:not(:hover) { border-color: transparent; }
+  }
 }

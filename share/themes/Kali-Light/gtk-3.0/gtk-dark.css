@@ -5532,7 +5532,9 @@ decoration {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(13, 14, 17, 0.65); }
 
 button.titlebutton:backdrop {
-  border-color: transparent; }
+  background: transparent; }
+  button.titlebutton:backdrop:not(:hover) {
+    border-color: transparent; }
 
 /* Nautilus */
 @define-color disk_space_unknown #383c4a;
