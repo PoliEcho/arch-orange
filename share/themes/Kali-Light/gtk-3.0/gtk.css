@@ -5311,12 +5311,27 @@ headerbar {
   background: #fafafa -gtk-scaled(url("assets/kali-headerbar-logo.png"), url("assets/kali-headerbar-logo@2.png")), linear-gradient(to top, whitesmoke, #fcfcfc);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.8);
   background-repeat: no-repeat;
-  background-position: left; }
+  background-position: left;
+  background-size: auto 150%; }
   .titlebar:backdrop,
   headerbar:backdrop {
     background-image: -gtk-scaled(url("assets/kali-headerbar-logo.png"), url("assets/kali-headerbar-logo@2.png"));
     background-repeat: no-repeat;
     background-position: left; }
+  .titlebar.default-decoration,
+  headerbar.default-decoration {
+    min-height: 0;
+    padding: 3px;
+    border: 0; }
+    .titlebar.default-decoration:backdrop,
+    headerbar.default-decoration:backdrop {
+      background-color: #fafafa; }
+    .titlebar.default-decoration button.titlebutton,
+    headerbar.default-decoration button.titlebutton {
+      min-height: 20px;
+      min-width: 20px;
+      margin: 0 4px;
+      padding: 0; }
 
 /**************
  * GtkInfoBar *
@@ -5553,6 +5568,9 @@ decoration {
     border-width: 0; }
   messagedialog.csd decoration {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0); }
+
+button.titlebutton:not(.appmenu) {
+  margin: 0; }
 
 button.titlebutton:backdrop {
   background: transparent; }

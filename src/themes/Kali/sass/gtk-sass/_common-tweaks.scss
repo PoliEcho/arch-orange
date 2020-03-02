@@ -108,6 +108,7 @@ headerbar {
                           $ov: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png')));
   background-repeat: no-repeat;
   background-position: left;
+  background-size: auto 150%;
 
   &:backdrop {
     background-image: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png'));
@@ -118,6 +119,21 @@ headerbar {
   stackswitcher button:checked,
   button.toggle {
     &:active, &:checked { @extend %button_active; }
+  }
+
+  &.default-decoration {
+    min-height: 0;
+    padding: 3px;
+    border: 0;
+
+    &:backdrop { background-color: $base_color; }
+
+    button.titlebutton {
+      min-height: 20px;
+      min-width: 20px;
+      margin: 0 4px;
+      padding: 0;
+    }
   }
 }
 
@@ -264,6 +280,7 @@ decoration {
 
 // Window Close button
 button.titlebutton {
+  &:not(.appmenu) { margin: 0; }
   &:backdrop {
     background: transparent;
     &:not(:hover) { border-color: transparent; }
