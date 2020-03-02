@@ -5540,6 +5540,9 @@ decoration {
   messagedialog.csd decoration {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
 
+button.titlebutton:backdrop {
+  border-color: transparent; }
+
 /* Nautilus */
 @define-color disk_space_unknown #383c4a;
 @define-color disk_space_used #2777ff;

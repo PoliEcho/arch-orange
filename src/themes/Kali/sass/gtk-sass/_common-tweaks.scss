@@ -234,3 +234,8 @@ decoration {
 
   messagedialog.csd & { box-shadow: 0 1px 4px transparentize(black, 0.8); }
 }
+
+// Window Close button
+button.titlebutton {
+  &:backdrop { border-color: transparent; }
+}
