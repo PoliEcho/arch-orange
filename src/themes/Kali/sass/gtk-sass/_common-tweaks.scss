@@ -221,18 +221,45 @@ messagedialog .titlebar:backdrop { background-image: none; }
  * Window Decorations *
  *********************/
 decoration {
-  box-shadow: 0 2px 8px 0 transparentize(black, 0.6);
+  $_border_width: 1px;
+  border-radius: $window_radius+$_border_width $window_radius+$_border_width $button_radius $button_radius;
+  border: $_border_width solid $base_color;
+
+  $_wm_border: if($variant=='light', transparentize(black, 0.9), transparentize($borders_color, 0.25));
+
+  box-shadow: 0 2px 8px 0 transparentize(black, 0.6),
+              0 0 0 1px $_wm_border;
 
   &:backdrop {
     box-shadow: 0 2px 8px 0 transparent,
                 0 0 0 3px if($variant == 'light', transparentize(black, .85), transparentize(black, .75));
   }
 
-  .ssd & { box-shadow: none; }
+  .maximized &,
+  .fullscreen &,
+  .tiled &,
+  .tiled-top &,
+  .tiled-right &,
+  .tiled-bottom &,
+  .tiled-left & { border-width: 0; }
 
-  .csd.popup & { box-shadow: 0 1px 4px transparentize(black, 0.8); }
+  .popup & { border-width: 0; }
 
-  messagedialog.csd & { box-shadow: 0 1px 4px transparentize(black, 0.8); }
+  .ssd & {
+    box-shadow: 0 0 0 1px $_wm_border;
+    border-width: 0;
+  }
+
+  .csd.popup & {
+    box-shadow: 0 1px 4px transparentize(black, 0.8),
+                0 0 0 1px transparentize($_wm_border, 0.1);
+    border-width: 0;
+  }
+
+  messagedialog.csd & {
+    box-shadow: 0 1px 4px transparentize(black, 0.8),
+                0 0 0 1px transparentize($_wm_border, 0.1);
+  }
 }
 
 // Window Close button
