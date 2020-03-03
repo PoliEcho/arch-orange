@@ -23,6 +23,13 @@ kali-themes (2020.2.0) kali-dev; urgency=medium
   * Move user avatar to kali-defaults
   * Add preferences-desktop-cursors app icon
   * Replace gtk2 qt style plugin with qt5ct
+  * GTK3: remove titlebutton backdrop border
+  * GTK3: Roud bottom decoration edges
+  * GTK3: remove titlebutton backdrop background
+  * GTK3: reduce non csd headerbar height
+
+  [ Raphaël Hertzog ]
+  * Force upgrade of kali-desktop-xfce to 2020.2.11
 
  -- Daniel Ruiz de Alegría <daniel@drasite.com>  Sun, 01 Mar 2020 17:09:24 +0100
 
