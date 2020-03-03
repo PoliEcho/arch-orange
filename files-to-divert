@@ -1,3 +1,4 @@
+/etc/gtk-2.0/gtkrc
 /etc/lightdm/lightdm-gtk-greeter.conf
 /etc/plymouth/plymouthd.conf
 /etc/xdg/compton.conf
