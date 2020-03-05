@@ -2760,7 +2760,7 @@ menuitem radio {
  ***************/
 popover.background {
   padding: 2px;
-  background-color: #ffffff;
+  background-color: #fafafa;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
   .csd popover.background, popover.background {
     border: 1px solid #d1d1d1;
@@ -5333,6 +5333,14 @@ headerbar {
       margin: 0 4px;
       padding: 0; }
 
+/***************
+ * Popovers   *
+ ***************/
+popover.background {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); }
+  .csd popover.background, popover.background {
+    border-color: rgba(0, 0, 0, 0.1); }
+
 /**************
  * GtkInfoBar *
  **************/
@@ -5564,7 +5572,7 @@ decoration {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
     border-width: 0; }
   .csd.popup decoration {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0);
     border-width: 0; }
   tooltip.csd decoration {
     border: 0; }

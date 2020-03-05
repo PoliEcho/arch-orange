@@ -1,3 +1,6 @@
+$_menu_shadow: 0 1px 6px transparentize(black, if($variant == 'light', .85, .5));
+$_wm_border: if($variant=='light', transparentize(black, 0.9), transparentize($borders_color, 0.25));
+
 * {
   outline-style: solid;
   outline-offset: -4px;
@@ -137,6 +140,14 @@ headerbar {
   }
 }
 
+/***************
+ * Popovers   *
+ ***************/
+popover.background {
+  box-shadow: $_menu_shadow;
+  .csd &, & { border-color: if($variant=='light', transparentize(black, 0.9), transparentize($borders_color, 0.25)); }
+}
+
 /**************
  * GtkInfoBar *
  **************/
@@ -241,14 +252,12 @@ decoration {
   border-radius: $window_radius+$_border_width $window_radius+$_border_width $button_radius $button_radius;
   border: $_border_width solid $base_color;
 
-  $_wm_border: if($variant=='light', transparentize(black, 0.9), transparentize($borders_color, 0.25));
-
   box-shadow: 0 2px 8px 0 transparentize(black, 0.6),
               0 0 0 1px $_wm_border;
 
   &:backdrop {
     box-shadow: 0 2px 8px 0 transparent,
-                0 0 0 3px if($variant == 'light', transparentize(black, .85), transparentize(black, .75));
+                0 0 0 3px transparentize(black, if($variant == 'light', .85, .75));
   }
 
   .maximized &,
@@ -267,7 +276,7 @@ decoration {
   }
 
   .csd.popup & {
-    box-shadow: 0 1px 4px transparentize(black, 0.8),
+    box-shadow: $_menu_shadow,
                 0 0 0 1px transparentize($_wm_border, 0.1);
     border-width: 0;
   }

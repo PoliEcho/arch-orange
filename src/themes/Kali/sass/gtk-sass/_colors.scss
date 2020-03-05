@@ -19,8 +19,8 @@ $top_hilight: $borders_edge;
 $dark_fill: mix($borders_color, $bg_color, 35%);
 $headerbar_color: if($variant == 'light', lighten($bg_color, 5%), darken($bg_color, 3%));
 $menu_color: if($variant == 'light', $base_color, mix($borders_color, $bg_color, 15%));
-$popover_bg_color: $bg_color;
-$popover_hover_color: lighten($bg_color, 5%);
+$popover_bg_color: $menu_color;
+$popover_hover_color: lighten($menu_color, 5%);
 
 $scrollbar_bg_color: if($variant == 'light', mix($bg_color, $fg_color, 80%), mix($base_color, $bg_color, 50%));
 $scrollbar_slider_color: mix($fg_color, $bg_color, 60%);
