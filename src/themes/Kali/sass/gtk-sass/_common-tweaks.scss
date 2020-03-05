@@ -272,6 +272,8 @@ decoration {
     border-width: 0;
   }
 
+  tooltip.csd & { border: 0; }
+
   messagedialog.csd & {
     box-shadow: 0 1px 4px transparentize(black, 0.8),
                 0 0 0 1px transparentize($_wm_border, 0.1);
