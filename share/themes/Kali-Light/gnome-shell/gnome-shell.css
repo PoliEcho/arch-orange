@@ -1299,15 +1299,15 @@ StScrollBar {
   spacing: 30px; }
 
 .list-search-result-title {
-  color: #e2e2df;
+  color: #f2f2f2;
   spacing: 12px; }
 
 .list-search-result-description {
-  color: #a6a69b; }
+  color: #b3b3b3; }
 
 .list-search-provider-details {
   width: 150px;
-  color: #e2e2df;
+  color: #f2f2f2;
   margin-top: 0.24em; }
 
 .list-search-provider-content {
@@ -1318,7 +1318,7 @@ StScrollBar {
 
 /* DASHBOARD */
 #dash {
-  color: #eeeeec;
+  color: white;
   background-color: transparent;
   border: none;
   font-size: 9pt;
@@ -1391,7 +1391,7 @@ StScrollBar {
 .list-search-result:focus,
 .list-search-result:selected,
 .list-search-result:hover {
-  background-color: rgba(238, 238, 236, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 200ms; }
 
 .search-provider-icon:active, .search-provider-icon:checked,
@@ -1417,7 +1417,7 @@ StScrollBar {
 .grid-search-result:hover .overview-icon,
 .grid-search-result:focus .overview-icon,
 .grid-search-result:selected .overview-icon {
-  background-color: rgba(238, 238, 236, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 0ms;
   border-image: none;
   background-image: none; }
@@ -1451,7 +1451,7 @@ StScrollBar {
 .app-well-app.app-folder .overview-icon,
 .show-apps .overview-icon,
 .grid-search-result .overview-icon {
-  color: #eeeeec;
+  color: white;
   border-radius: 9px;
   padding: 6px;
   border: 1px solid transparent;
@@ -1525,14 +1525,14 @@ StScrollBar {
   padding: 0px 88px 10px 88px; }
 
 .workspace-thumbnails {
-  color: #eeeeec;
+  color: white;
   background-color: rgba(39, 42, 52, 0.9);
   border: none; }
 
 .search-statustext, .no-frequent-applications-label {
   font-size: 2em;
   font-weight: bold;
-  color: #eeeeec; }
+  color: white; }
 
 /* NOTIFICATIONS & MESSAGE TRAY */
 .url-highlighter {
@@ -1697,7 +1697,7 @@ StScrollBar {
   font-size: 16pt;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #eeeeec; }
+  color: white; }
   .keyboard-key:focus {
     color: #5c616c;
     text-shadow: 0 1px black;
@@ -1709,7 +1709,7 @@ StScrollBar {
     background-color: #363a48; }
   .keyboard-key:grayed {
     background-color: #272a34;
-    color: #eeeeec;
+    color: white;
     border-color: black; }
   .keyboard-key.default-key {
     border-color: rgba(255, 255, 255, 0.1);
@@ -1794,7 +1794,7 @@ StScrollBar {
 /* Auth Dialogs & Screen Shield */
 .user-icon {
   background-size: contain;
-  color: #eeeeec;
+  color: white;
   border-radius: 99px; }
   .user-icon:hover {
     color: white; }
@@ -1883,7 +1883,7 @@ StScrollBar {
   padding: 24px 0px; }
 
 .login-dialog-banner {
-  color: #d6d6d1; }
+  color: #e6e6e6; }
 
 .login-dialog-button-box {
   spacing: 5px; }
@@ -1902,12 +1902,12 @@ StScrollBar {
   padding-left: 2px; }
   .login-dialog-not-listed-button:focus .login-dialog-not-listed-label,
   .login-dialog-not-listed-button:hover .login-dialog-not-listed-label {
-    color: #eeeeec; }
+    color: white; }
 
 .login-dialog-not-listed-label {
   font-size: 90%;
   font-weight: bold;
-  color: #a6a69b;
+  color: #b3b3b3;
   padding-top: 1em; }
 
 .login-dialog-user-list-view {
@@ -1925,7 +1925,7 @@ StScrollBar {
 .login-dialog-user-list-item {
   border-radius: 5px;
   padding: 6px;
-  color: #a6a69b; }
+  color: #b3b3b3; }
   .login-dialog-user-list-item:ltr .user-widget {
     padding-right: 1em; }
   .login-dialog-user-list-item:rtl .user-widget {
@@ -1933,13 +1933,13 @@ StScrollBar {
   .login-dialog-user-list-item .login-dialog-timed-login-indicator {
     height: 2px;
     margin-top: 6px;
-    background-color: #eeeeec; }
+    background-color: white; }
   .login-dialog-user-list-item:focus .login-dialog-timed-login-indicator {
     background-color: #ffffff; }
 
 .login-dialog-username,
 .user-widget-label {
-  color: #eeeeec;
+  color: white;
   font-size: 120%;
   font-weight: bold;
   text-align: left;
@@ -1958,7 +1958,7 @@ StScrollBar {
   width: 23em; }
 
 .login-dialog-prompt-label {
-  color: #bebeb6;
+  color: #cccccc;
   font-size: 110%;
   padding-top: 1em; }
 
@@ -1966,11 +1966,11 @@ StScrollBar {
   icon-size: 1.25em; }
 
 .login-dialog-session-list-button {
-  color: #a6a69b; }
+  color: #b3b3b3; }
   .login-dialog-session-list-button:hover, .login-dialog-session-list-button:focus {
-    color: #eeeeec; }
+    color: white; }
   .login-dialog-session-list-button:active {
-    color: #747467; }
+    color: gray; }
 
 .screen-shield-arrows {
   padding-bottom: 3em; }
@@ -2011,7 +2011,7 @@ StScrollBar {
     padding: 12px 6px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(39, 42, 52, 0.5);
-    color: #eeeeec;
+    color: white;
     border-radius: 4px; }
   .screen-shield-notifications-container .notification {
     margin-right: 15px; }
