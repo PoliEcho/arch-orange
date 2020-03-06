@@ -186,8 +186,8 @@ infobar {
   &.warning,
   &.error {
 
-  border-style: none;
-  text-shadow: none;
+    border-style: none;
+    text-shadow: none;
 
     &:backdrop > revealer > box, & > revealer > box {
       label, & { color: $selected_fg_color; }
@@ -200,7 +200,7 @@ infobar {
     *:link { color: $link_color; }
   }
 
-  &.info {
+  &.info, &.info.action:hover {
     &:backdrop > revealer > box, & > revealer > box {
       background-color: $selected_bg_color;
     }
@@ -208,7 +208,7 @@ infobar {
     @include _infobar_button($selected_bg_color);
   }
 
-  &.question, &.warning {
+  &.question, &.warning, &.question.action:hover, &.warning.action:hover {
     &:backdrop > revealer > box, & > revealer > box {
       background-color: $warning_color;
     }
@@ -216,7 +216,7 @@ infobar {
     @include _infobar_button($warning_color);
   }
 
-  &.error {
+  &.error, &.error.action:hover {
     &:backdrop > revealer > box, & > revealer > box {
       background-color: $error_color;
 
