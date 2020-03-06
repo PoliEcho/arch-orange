@@ -32,6 +32,8 @@ button:checked, {
 switch {
   $_slider_border_color: darken($alt_borders_color, 3%);
 
+  box-shadow: inset 0 1px 2px -1px transparentize(black, if($variant=='light', .8, .4));
+
   slider {
       @include button(normal-alt, $edge: $shadow_color);
 
@@ -45,11 +47,19 @@ switch {
     border-color: $suggested_bg_color;
   }
 
-  &:checked slider {
-    border-color: if($variant=='light', $suggested_border_color, $_slider_border_color);
+  &:checked {
+    border-color: transparentize(black, .8);
+    border-right-width: 0; // Hack to prevent dirty right border-radius
+    margin-right: 1px; // Compensate missing right border
+    box-shadow: inset 0 1px 2px -1px transparentize(black, .4);
+    slider {
+      border-color: if($variant=='light', $suggested_border_color, $_slider_border_color);
+    }
   }
 
-  &:backdrop {
+  &:backdrop, &:disabled {
+    box-shadow: none;
+
     slider { border-color: $backdrop_borders_color; }
 
     &:checked slider {

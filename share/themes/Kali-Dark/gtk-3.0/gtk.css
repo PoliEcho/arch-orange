@@ -3333,24 +3333,6 @@ radio {
   menu menuitem check, menu menuitem
   radio {
     margin: 0; }
-    menu menuitem check, menu menuitem check:hover, menu menuitem check:disabled, menu menuitem check:checked, menu menuitem check:checked:hover, menu menuitem check:checked:disabled, menu menuitem check:indeterminate, menu menuitem check:indeterminate:hover, menu menuitem check:indeterminate:disabled, menu menuitem
-    radio, menu menuitem
-    radio:hover, menu menuitem
-    radio:disabled, menu menuitem
-    radio:checked, menu menuitem
-    radio:checked:hover, menu menuitem
-    radio:checked:disabled, menu menuitem
-    radio:indeterminate, menu menuitem
-    radio:indeterminate:hover, menu menuitem
-    radio:indeterminate:disabled {
-      min-height: 14px;
-      min-width: 14px;
-      background-image: none;
-      background-color: transparent;
-      box-shadow: none;
-      -gtk-icon-shadow: none;
-      color: inherit;
-      border-color: currentColor; }
 
 
 check {
@@ -5082,29 +5064,34 @@ switch:hover slider, scale slider:active {
 /**********
  * Switch *
  **********/
-switch slider {
-  color: #eeeeec;
-  outline-color: rgba(238, 238, 236, 0.3);
-  border-color: black;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
-  background-image: linear-gradient(to bottom, #1c1e25 20%, #16171d 90%);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.27);
-  border: 1px solid black;
-  border-radius: 50%;
-  transition-property: background, border, box-shadow; }
-
-switch:hover slider {
-  border-color: #2777ff; }
-
-switch:checked slider {
-  border-color: black; }
-
-switch:backdrop slider {
-  border-color: #111217; }
-
-switch:backdrop:checked slider {
-  border-color: #111217; }
+switch {
+  box-shadow: inset 0 1px 2px -1px rgba(0, 0, 0, 0.6); }
+  switch slider {
+    color: #eeeeec;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: black;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
+    background-image: linear-gradient(to bottom, #1c1e25 20%, #16171d 90%);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.27);
+    border: 1px solid black;
+    border-radius: 50%;
+    transition-property: background, border, box-shadow; }
+  switch:hover slider {
+    border-color: #2777ff; }
+  switch:checked {
+    border-color: rgba(0, 0, 0, 0.2);
+    border-right-width: 0;
+    margin-right: 1px;
+    box-shadow: inset 0 1px 2px -1px rgba(0, 0, 0, 0.6); }
+    switch:checked slider {
+      border-color: black; }
+  switch:backdrop, switch:disabled {
+    box-shadow: none; }
+    switch:backdrop slider, switch:disabled slider {
+      border-color: #111217; }
+    switch:backdrop:checked slider, switch:disabled:checked slider {
+      border-color: #111217; }
 
 /*************************
  * Check and Radio items *
