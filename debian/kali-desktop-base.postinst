@@ -30,19 +30,19 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
     # Desktop background alternatives
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-background \
-	desktop-background /usr/share/backgrounds/kali/kali-logo-16x9.png 200
+	desktop-background /usr/share/wallpapers/kaliLogo/contents/images/kali-logo-16x9.png 200
 
     # Set up an alternative for the XML version of the background
     # (for GNOME)
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-background.xml \
-	desktop-background.xml /usr/share/backgrounds/kali/kali-logo.xml 200
+	desktop-background.xml /usr/share/wallpapers/kaliLogo/gnome-background.xml 200
 
     # Set up an alternative for the XML version of the lock screen
     # (for GNOME)
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-lockscreen.xml \
-	desktop-lockscreen.xml /usr/share/backgrounds/kali/kali-light.xml 200
+	desktop-lockscreen.xml /usr/share/wallpapers/KaliLight/gnome-background.xml 200
 
     # Set up an alternative for the wallpaper for Plasma 5/KDE
     update-alternatives --install \
@@ -52,7 +52,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
     # Login theme
     # Highest priority for active theme
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
-	desktop-login-background /usr/share/backgrounds/kali/kali-light.svg 200
+	desktop-login-background /usr/share/wallpapers/KaliLight/contents/kali-light.svg 200
 
     # Set up an alternative for the GRUB background/colors config
     # Highest priority for active theme
