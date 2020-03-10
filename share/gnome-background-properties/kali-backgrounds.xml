@@ -17,49 +17,49 @@
   </wallpaper>
   <wallpaper>
     <name>Kali Rings</name>
-    <filename>/usr/share/wallpapers/KaliRings/contents/images/kali-rings.png</filename>
+    <filename>/usr/share/wallpapers/KaliRings/gnome-background.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
-    <name>Kali Black</name>
-    <filename>/usr/share/wallpapers/KaliDark/contents/images/kali-dark.png</filename>
+    <name>Kali Dark</name>
+    <filename>/usr/share/wallpapers/KaliDark/contents/images/kali-dark-16x9.png</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
     <name>Kali Blue Matrix</name>
-    <filename>/usr/share/wallpapers/KaliBlueMatrix/contents/images/kali-blue-matrix.png</filename>
+    <filename>/usr/share/wallpapers/KaliBlueMatrix/contents/images/kali-blue-matrix-16x9.png</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
     <name>Kali Grid</name>
-    <filename>/usr/share/wallpapers/KaliGrid/contents/images/kali-grid.png</filename>
+    <filename>/usr/share/wallpapers/KaliGrid/contents/images/kali-grid-16x9.png</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
     <name>Kali Small Logo</name>
-    <filename>/usr/share/wallpapers/KaliSmallLogo/contents/images/kali-small-logo.png</filename>
+    <filename>/usr/share/wallpapers/KaliSmallLogo/gnome-background.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
     <name>Kali Strips</name>
-    <filename>/usr/share/wallpapers/KaliStrips/contents/images/kali-strips.png</filename>
+    <filename>/usr/share/wallpapers/KaliStrips/gnome-background.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
   <wallpaper>
     <name>Kali KaliTrail</name>
-    <filename>/usr/share/wallpapers/KaliTrail/contents/images/kali-trail.png</filename>
+    <filename>/usr/share/wallpapers/KaliTrail/contents/images/kali-trail-16x9.png</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>

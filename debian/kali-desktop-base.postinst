@@ -30,13 +30,13 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
     # Desktop background alternatives
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-background \
-	desktop-background /usr/share/wallpapers/kaliLogo/contents/images/kali-logo-16x9.png 200
+	desktop-background /usr/share/wallpapers/KaliLogo/contents/images/kali-logo-16x9.png 200
 
     # Set up an alternative for the XML version of the background
     # (for GNOME)
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-background.xml \
-	desktop-background.xml /usr/share/wallpapers/kaliLogo/gnome-background.xml 200
+	desktop-background.xml /usr/share/wallpapers/KaliLogo/gnome-background.xml 200
 
     # Set up an alternative for the XML version of the lock screen
     # (for GNOME)
