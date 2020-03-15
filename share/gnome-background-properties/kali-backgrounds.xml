@@ -64,4 +64,11 @@
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
+    <wallpaper>
+    <name>Kali Mesh</name>
+    <filename>/usr/share/wallpapers/KaliMesh/contents/images/kali-mesh-16x9.png</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
 </wallpapers>
