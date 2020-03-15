@@ -1,3 +1,36 @@
+kali-themes (2020.2.1) kali-dev; urgency=medium
+
+  * KDE: Add color-scheme themes
+  * KDE: Add aurorae themes
+  * KDE: Add konsole color-schemes
+  * KDE: Add transparency to konsole theme
+  * KDE: Configure default theme settings
+  * KDE: Set workspaces number to 2
+  * KDE: Configure default terminal profiles
+  * GTK2: Configure themes for KDE
+  * KDE: change fixed font to Fira Code 9
+  * KDE: set default sddm theme
+  * Add missing files to divert
+  * GTK3: fix tooltip outline
+  * GTK3: update popover and menu background and shadows
+  * GTK3: lighten borders_color
+  * GTK3: change scrollbar colors
+  * GTK3: update upstream 3.24.14
+  * GTK3: add inset shadow to switches
+  * GTK3: recover menu volumized check and radio widgets
+  * GTK3: improve app notification design
+  * Set default qterminal window position
+  * Configure whiskermenu icon size
+  * Backgrounds: Add kali-trail background
+  * Backgrounds: Add kali-strips background
+  * Backgrounds: Reorder backgrounds
+  * Backgrounds: Improve kali-dark background
+  * Backgrounds: Fix kde background naming; Add background variants for different aspect ratios
+  * Backgrounds: Reconfigure main desktops default background
+  * Backgrounds: Add Kali-Mesh background
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Sun, 15 Mar 2020 14:00:08 +0100
+
 kali-themes (2020.2.0) kali-dev; urgency=medium
 
   * Fix network card app icon
