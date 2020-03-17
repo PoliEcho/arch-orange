@@ -1,5 +1,5 @@
 [General]
-Description=Kali
+Description=Kali Dark
 Blur=true
 Opacity=0.95
 
@@ -19,7 +19,7 @@ Color=255,255,255
 Color=31,34,41
 
 [Color0Intense]
-Color=140,66,171
+Color=25,131,136
 
 [Color1]
 Color=212,25,25
@@ -46,10 +46,10 @@ Color=54,123,240
 Color=39,127,255
 
 [Color5]
-Color=191,46,93
+Color=151,85,179
 
 [Color5Intense]
-Color=215,22,85
+Color=150,42,195
 
 [Color6]
 Color=73,174,230
