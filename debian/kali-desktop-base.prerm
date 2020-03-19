@@ -10,17 +10,17 @@ if [ "$1" = "remove" ]; then
     # Remove background alternatives for theme packages
     update-alternatives --remove \
 	desktop-background \
-	/usr/share/backgrounds/kali/kali-logo-16x9.png
+	/usr/share/wallpapers/KaliLogo/contents/images/kali-logo-16x9.png
 
     # Remove desktop-background.xml alternatives
     update-alternatives --remove \
 	desktop-background.xml \
-	/usr/share/backgrounds/kali/kali-logo.xml
+	/usr/share/wallpapers/KaliLogo/gnome-background.xml
 
     # Remove desktop-lockscreen.xml alternatives
     update-alternatives --remove \
 	desktop-lockscreen.xml \
-	/usr/share/backgrounds/kali/kali-light.xml
+	/usr/share/wallpapers/KaliLight/gnome-background.xml
 
     # Remove Plasma 5/KDE wallpaper alternatives
     update-alternatives --remove \
@@ -30,7 +30,7 @@ if [ "$1" = "remove" ]; then
     # Remove login theme alternatives
     update-alternatives --remove \
 	desktop-login-background \
-	/usr/share/backgrounds/kali/kali-light.svg
+	/usr/share/wallpapers/KaliLight/contents/kali-light.svg
 
     # Remove GRUB alternatives
     update-alternatives --remove \
