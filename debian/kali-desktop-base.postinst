@@ -154,27 +154,6 @@ EOF
 	update-alternatives --remove \
 	    desktop-grub \
 	    /usr/share/desktop-base/kali-theme/grub/grub-16x9.png
-
-    elif dpkg --compare-versions "$2" lt-nl "2020.2.1"; then
-        # Remove desktop background alternatives
-        update-alternatives --remove \
-            desktop-background \
-            /usr/share/backgrounds/kali/kali-logo-16x9.png
-
-        # Remove XML version of the background alternatives
-        update-alternatives --remove \
-            desktop-background.xml \
-            /usr/share/backgrounds/kali/kali-logo.xml
-
-        # Remove login background alternatives
-        update-alternatives --remove \
-            desktop-login-background \
-            /usr/share/backgrounds/kali/kali-light.svg
-
-        # Remove XML version of the login background alternatives
-        update-alternatives --remove \
-            desktop-lockscreen.xml \
-            /usr/share/backgrounds/kali/kali-light.xml
     fi
 fi
 
