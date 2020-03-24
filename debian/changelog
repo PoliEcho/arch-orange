@@ -33,6 +33,13 @@ kali-themes (2020.2.1) kali-dev; urgency=medium
 
   [ Raphaël Hertzog ]
   * Improvements to kali-desktop-base postinst
+  * Update Standards-Version
+  * Update lintian override for absolute symlinks in source package
+  * Move back all wallpapers into /usr/share/backgrounds/kali/
+  * Point default XFCE wallpaper to a new directory dedicated to 16x9
+    wallpapers. That way when the user wants to change the default wallpaper,
+    they only see a single file for each wallpaper instead of being
+    overwhelmed by the alternative ratio.
 
  -- Raphaël Hertzog <raphael@offensive-security.com>  Tue, 24 Mar 2020 11:28:17 +0100
 
