@@ -1,5 +1,6 @@
 kali-themes (2020.2.1) kali-dev; urgency=medium
 
+  [ Daniel Ruiz de Alegría ]
   * KDE: Add color-scheme themes
   * KDE: Add aurorae themes
   * KDE: Add konsole color-schemes
@@ -29,7 +30,10 @@ kali-themes (2020.2.1) kali-dev; urgency=medium
   * Backgrounds: Reconfigure main desktops default background
   * Backgrounds: Add Kali-Mesh background
 
- -- Daniel Ruiz de Alegría <daniel@drasite.com>  Sun, 15 Mar 2020 14:00:08 +0100
+  [ Raphaël Hertzog ]
+  * Improvements to kali-desktop-base postinst
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Tue, 24 Mar 2020 11:28:17 +0100
 
 kali-themes (2020.2.0) kali-dev; urgency=medium
 
