@@ -40,6 +40,8 @@ kali-themes (2020.2.1) kali-dev; urgency=medium
     wallpapers. That way when the user wants to change the default wallpaper,
     they only see a single file for each wallpaper instead of being
     overwhelmed by the alternative ratio.
+  * Move update-maintainer-scripts to bin/
+  * Automate the update of share/backgrounds/kali-16x9/
 
  -- Raphaël Hertzog <raphael@offensive-security.com>  Tue, 24 Mar 2020 11:28:17 +0100
 
