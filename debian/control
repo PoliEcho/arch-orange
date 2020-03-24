@@ -6,7 +6,7 @@ Uploaders: Daniel Ruiz de Alegría <daniel@drasite.com>, Raphaël Hertzog <rapha
 Build-Depends: debhelper-compat (= 12),
  librsvg2-bin,
  optipng,
-Standards-Version: 4.4.1
+Standards-Version: 4.5.0
 Vcs-Git: https://gitlab.com/kalilinux/packages/kali-themes.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 
