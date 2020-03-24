@@ -1,0 +1,29 @@
+#!/bin/sh
+
+SOURCE=$1
+KDE_WALLPAPER_NAME=$2
+
+SIZE_4x3="1024x768 1280x1024 1600x1200"
+SIZE_16x9="1280x720 1920x1080 2560x1440 3840x2160"
+SIZE_16x10="1280x800 1920x1200 1560x1600"
+
+SOURCE_DIR=share/backgrounds/kali
+TARGET_DIR=share/wallpapers/$KDE_WALLPAPER_NAME/contents/images
+
+mkdir -p $TARGET_DIR
+
+if [ -e $SOURCE_DIR/$SOURCE-4x3.png ]; then
+    for size in $SIZE_4x3; do
+	ln -vsrf $SOURCE_DIR/$SOURCE-4x3.png $TARGET_DIR/$size.png
+    done
+fi
+if [ -e $SOURCE_DIR/$SOURCE-16x9.png ]; then
+    for size in $SIZE_16x9; do
+	ln -vsrf $SOURCE_DIR/$SOURCE-16x9.png $TARGET_DIR/$size.png
+    done
+fi
+if [ -e $SOURCE_DIR/$SOURCE-16x10.png ]; then
+    for size in $SIZE_16x10; do
+	ln -vsrf $SOURCE_DIR/$SOURCE-16x10.png $TARGET_DIR/$size.png
+    done
+fi
