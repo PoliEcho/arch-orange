@@ -26,7 +26,8 @@ kali-themes (2020.2.1) kali-dev; urgency=medium
   * Backgrounds: Add kali-strips background
   * Backgrounds: Reorder backgrounds
   * Backgrounds: Improve kali-dark background
-  * Backgrounds: Fix kde background naming; Add background variants for different aspect ratios
+  * Backgrounds: Fix kde background naming; Add background variants for
+    different aspect ratios
   * Backgrounds: Reconfigure main desktops default background
   * Backgrounds: Add Kali-Mesh background
 
