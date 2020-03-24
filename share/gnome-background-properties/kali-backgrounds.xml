@@ -59,14 +59,14 @@
   </wallpaper>
   <wallpaper>
     <name>Kali Trail</name>
-    <filename>/usr/share/backgrounds/kali/kali-trail-16x9.png</filename>
+    <filename>/usr/share/backgrounds/kali/kali-trail.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
     <wallpaper>
     <name>Kali Mesh</name>
-    <filename>/usr/share/backgrounds/kali/kali-mesh-16x9.png</filename>
+    <filename>/usr/share/backgrounds/kali/kali-mesh.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
