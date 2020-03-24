@@ -1,6 +1,7 @@
 SUBDIRS=emblems kali-logos
 
 build:
+	bin/update-kali-16x9
 	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) build &&) true
 
 clean:
