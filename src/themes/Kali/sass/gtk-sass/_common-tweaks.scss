@@ -245,7 +245,7 @@ infobar {
 .app-notification.frame {
   padding: 5px 10px;
   margin: 20px;
-  border-radius: 5px;
+  border-radius: $button_radius;
   box-shadow: 0 2px 8px 0 transparentize(black, .6);
   background-image: none;
 

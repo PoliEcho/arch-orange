@@ -1,3 +1,4 @@
+$panel_bg : transparentize($bg_color, if($variant=='light', .1, .2));
 
 /* Nautilus */
 @import url('applications/nautilus/Adwaita.css');
@@ -8,9 +9,7 @@
 
 /* XFCE4 PANEL */
 .xfce4-panel {
-  &.background {
-    background: transparentize($bg_color, if($variant=='light', .1, .2));
-  }
+  &.background { background: $panel_bg; }
 
   button {
     border: 0;
@@ -53,5 +52,54 @@ wnck-pager {
   background-color: lighten($base_color, 10%);
   &:selected { background-color: darken($bg_color, 20%); }
   &:hover { background-color: darken($bg_color, 20%); }
+}
+
+/* LightDM */
+
+.lightdm-gtk-greeter {
+  #panel_window {
+    background: $panel_bg;
+    color: $fg_color;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+  }
+
+  #login_window {
+    border: 0;
+    background-color: $panel_bg;
+    border-radius: $button_radius;
+    box-shadow: inset 1px 1px transparentize(white, .95);
+
+    entry {
+      background: if($variant=='light', transparentize(black, .3), white);
+      border-color: transparent;
+      min-height: 32px;
+    }
+
+    #buttonbox_frame {
+      padding-top: 20px;
+      background: $panel_bg;
+      border-top: 1px solid transparentize(black, .9);
+      border-radius: 0 0 $button_radius $button_radius;
+      box-shadow: inset 0 -4px transparentize(black, .8);
+
+      button {
+        border: 0;
+        color: white;
+        text-shadow: none;
+      }
+
+      #cancel_button {
+        background: transparentize(black, if($variant=='light', .95, .5));
+        box-shadow: none;
+        color: $fg_color;
+      }
+
+      #login_button {
+        background: $selected_bg_color;
+        box-shadow: inset 0 -2px transparentize(black, 0.8);
+      }
+    }
+  }
 }
 
