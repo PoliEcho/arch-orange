@@ -1,0 +1,9 @@
+[kdeglobals][General]
+ColorScheme=KaliDark
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Kali-Dark
+
+[kdeglobals][Icons]
+Theme=Flat-Remix-Blue-Dark
