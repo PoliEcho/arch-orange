@@ -71,7 +71,7 @@ wnck-pager {
     box-shadow: inset 1px 1px transparentize(white, .95);
 
     entry {
-      background: if($variant=='light', transparentize(black, .3), white);
+      background: if($variant=='light', white, transparentize(black, .3));
       border-color: transparent;
       min-height: 32px;
     }

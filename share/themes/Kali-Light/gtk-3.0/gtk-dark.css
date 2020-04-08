@@ -5174,7 +5174,7 @@ wnck-pager {
   border-radius: 5px;
   box-shadow: inset 1px 1px rgba(255, 255, 255, 0.05); }
   .lightdm-gtk-greeter #login_window entry {
-    background: white;
+    background: rgba(0, 0, 0, 0.7);
     border-color: transparent;
     min-height: 32px; }
   .lightdm-gtk-greeter #login_window #buttonbox_frame {
