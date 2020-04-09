@@ -5172,23 +5172,24 @@ wnck-pager {
   border: 0;
   background-color: rgba(35, 37, 46, 0.8);
   border-radius: 5px;
-  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.05); }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.15); }
   .lightdm-gtk-greeter #login_window entry {
-    background: rgba(0, 0, 0, 0.7);
-    border-color: transparent;
-    min-height: 32px; }
+    background: rgba(35, 37, 46, 0.4);
+    border-color: rgba(35, 37, 46, 0.3);
+    min-height: 32px;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), 0 1px 2px rgba(0, 0, 0, 0.4); }
   .lightdm-gtk-greeter #login_window #buttonbox_frame {
     padding-top: 20px;
-    background: rgba(35, 37, 46, 0.8);
+    background: #23252e;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0 0 5px 5px;
-    box-shadow: inset 0 -4px rgba(0, 0, 0, 0.2); }
+    box-shadow: inset 0 -4px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.27); }
     .lightdm-gtk-greeter #login_window #buttonbox_frame button {
       border: 0;
       color: white;
       text-shadow: none; }
     .lightdm-gtk-greeter #login_window #buttonbox_frame #cancel_button {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.27);
       box-shadow: none;
       color: #eeeeec; }
     .lightdm-gtk-greeter #login_window #buttonbox_frame #login_button {
