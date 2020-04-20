@@ -1142,7 +1142,7 @@ button.circular {
   button.circular label {
     padding: 0; }
   
-  button.circular:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+  button.circular:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
     color: #5c616c;
     outline-color: rgba(92, 97, 108, 0.3);
     border-color: #d9d9d9;
@@ -1154,7 +1154,7 @@ button.circular {
     background-image: linear-gradient(to top, whitesmoke 2px, #ffffff), linear-gradient(to top, #c2c2c2 25%, #d9d9d9 50%);
     border-color: transparent; }
   
-  button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
+  button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
     color: #5c616c;
     outline-color: rgba(92, 97, 108, 0.3);
     border-color: #d9d9d9;
@@ -1432,196 +1432,188 @@ button:visited {
 /*****************
  * GtkSpinButton *
  *****************/
-spinbutton:not(.vertical) {
-  padding: 0; }
-  .osd spinbutton:not(.vertical) entry, spinbutton:not(.vertical) entry {
-    min-width: 28px;
-    margin: 0;
-    background: none;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none; }
-    spinbutton:not(.vertical) entry:backdrop:disabled {
-      background-color: transparent; }
-  spinbutton:not(.vertical) button {
-    min-height: 16px;
-    margin: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-    color: #6c707a;
-    background-image: none;
-    border-style: none none none solid;
-    border-color: rgba(217, 217, 217, 0.3);
-    border-radius: 0;
-    box-shadow: none; }
-    spinbutton:not(.vertical) button:dir(rtl) {
-      border-style: none solid none none; }
-    spinbutton:not(.vertical) button:hover {
-      color: #5c616c;
-      background-color: rgba(92, 97, 108, 0.05); }
-    spinbutton:not(.vertical) button:disabled {
-      color: rgba(174, 176, 182, 0.3);
-      background-color: transparent; }
-    spinbutton:not(.vertical) button:active {
-      background-color: rgba(0, 0, 0, 0.1);
-      box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
-    spinbutton:not(.vertical) button:backdrop {
-      color: #b5b7bd;
+spinbutton {
+  font-feature-settings: "tnum"; }
+  spinbutton:not(.vertical) {
+    padding: 0; }
+    .osd spinbutton:not(.vertical) entry, spinbutton:not(.vertical) entry {
+      min-width: 28px;
+      margin: 0;
+      background: none;
       background-color: transparent;
-      border-color: rgba(224, 224, 224, 0.3);
-      transition: 200ms ease-out; }
-    spinbutton:not(.vertical) button:backdrop:disabled {
-      color: rgba(217, 217, 217, 0.3);
+      border: none;
+      border-radius: 0;
+      box-shadow: none; }
+      spinbutton:not(.vertical) entry:backdrop:disabled {
+        background-color: transparent; }
+    spinbutton:not(.vertical) button {
+      min-height: 16px;
+      margin: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+      color: #6c707a;
+      background-image: none;
+      border-style: none none none solid;
+      border-color: rgba(217, 217, 217, 0.3);
+      border-radius: 0;
+      box-shadow: none; }
+      spinbutton:not(.vertical) button:dir(rtl) {
+        border-style: none solid none none; }
+      spinbutton:not(.vertical) button:hover {
+        color: #5c616c;
+        background-color: rgba(92, 97, 108, 0.05); }
+      spinbutton:not(.vertical) button:disabled {
+        color: rgba(174, 176, 182, 0.3);
+        background-color: transparent; }
+      spinbutton:not(.vertical) button:active {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
+      spinbutton:not(.vertical) button:backdrop {
+        color: #b5b7bd;
+        background-color: transparent;
+        border-color: rgba(224, 224, 224, 0.3);
+        transition: 200ms ease-out; }
+      spinbutton:not(.vertical) button:backdrop:disabled {
+        color: rgba(217, 217, 217, 0.3);
+        background-color: transparent;
+        background-image: none;
+        border-style: none none none solid; }
+        spinbutton:not(.vertical) button:backdrop:disabled:dir(rtl) {
+          border-style: none solid none none; }
+      spinbutton:not(.vertical) button:dir(ltr):last-child {
+        border-radius: 0 5px 5px 0; }
+      spinbutton:not(.vertical) button:dir(rtl):first-child {
+        border-radius: 5px 0 0 5px; }
+  .osd spinbutton:not(.vertical) button {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    color: white;
+    border-style: none none none solid;
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0;
+    box-shadow: none;
+    -gtk-icon-shadow: 0 1px black; }
+    .osd spinbutton:not(.vertical) button:dir(rtl) {
+      border-style: none solid none none; }
+    .osd spinbutton:not(.vertical) button:hover {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      border-style: none none none solid; }
-      spinbutton:not(.vertical) button:backdrop:disabled:dir(rtl) {
-        border-style: none solid none none; }
-    spinbutton:not(.vertical) button:dir(ltr):last-child {
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      color: white;
+      border-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(255, 255, 255, 0.1);
+      -gtk-icon-shadow: 0 1px black;
+      box-shadow: none; }
+    .osd spinbutton:not(.vertical) button:backdrop {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      color: white;
+      border-color: rgba(0, 0, 0, 0.5);
+      -gtk-icon-shadow: none;
+      box-shadow: none; }
+    .osd spinbutton:not(.vertical) button:disabled {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      color: #93959a;
+      border-color: rgba(0, 0, 0, 0.5);
+      -gtk-icon-shadow: none;
+      box-shadow: none; }
+    .osd spinbutton:not(.vertical) button:dir(ltr):last-child {
       border-radius: 0 5px 5px 0; }
-    spinbutton:not(.vertical) button:dir(rtl):first-child {
+    .osd spinbutton:not(.vertical) button:dir(rtl):first-child {
       border-radius: 5px 0 0 5px; }
-
-.osd spinbutton:not(.vertical) button {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  color: white;
-  border-style: none none none solid;
-  border-color: rgba(0, 0, 0, 0.7);
-  border-radius: 0;
-  box-shadow: none;
-  -gtk-icon-shadow: 0 1px black; }
-  .osd spinbutton:not(.vertical) button:dir(rtl) {
-    border-style: none solid none none; }
-  .osd spinbutton:not(.vertical) button:hover {
+  spinbutton.vertical:disabled {
+    color: #aeb0b6; }
+  spinbutton.vertical:backdrop:disabled {
+    color: #d9d9d9; }
+  spinbutton.vertical:drop(active) {
     border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    color: white;
-    border-color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.1);
-    -gtk-icon-shadow: 0 1px black;
     box-shadow: none; }
-  .osd spinbutton:not(.vertical) button:backdrop {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    color: white;
-    border-color: rgba(0, 0, 0, 0.5);
-    -gtk-icon-shadow: none;
-    box-shadow: none; }
-  .osd spinbutton:not(.vertical) button:disabled {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    color: #93959a;
-    border-color: rgba(0, 0, 0, 0.5);
-    -gtk-icon-shadow: none;
-    box-shadow: none; }
-  .osd spinbutton:not(.vertical) button:dir(ltr):last-child {
-    border-radius: 0 5px 5px 0; }
-  .osd spinbutton:not(.vertical) button:dir(rtl):first-child {
-    border-radius: 5px 0 0 5px; }
-
-spinbutton.vertical:disabled {
-  color: #aeb0b6; }
-
-spinbutton.vertical:backdrop:disabled {
-  color: #d9d9d9; }
-
-spinbutton.vertical:drop(active) {
-  border-color: transparent;
-  box-shadow: none; }
-
-spinbutton.vertical entry {
-  min-height: 32px;
-  min-width: 32px;
-  padding: 0;
-  border-radius: 0; }
-
-spinbutton.vertical button {
-  min-height: 32px;
-  min-width: 32px;
-  padding: 0; }
-
-spinbutton.vertical button.up {
-  border-radius: 5px 5px 0 0;
-  border-style: solid solid none solid; }
-
-spinbutton.vertical button.down {
-  border-radius: 0 0 5px 5px;
-  border-style: none solid solid solid; }
-
-.osd spinbutton.vertical button:first-child {
-  color: white;
-  border-color: black;
-  background-color: transparent;
-  background-image: image(#272a34);
-  background-clip: padding-box;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-  text-shadow: 0 1px black;
-  -gtk-icon-shadow: 0 1px black;
-  outline-color: rgba(255, 255, 255, 0.3); }
-  .osd spinbutton.vertical button:first-child:hover {
-    color: white;
-    border-color: black;
-    background-color: transparent;
-    background-image: image(#414657);
-    background-clip: padding-box;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-    text-shadow: 0 1px black;
-    -gtk-icon-shadow: 0 1px black;
-    outline-color: rgba(255, 255, 255, 0.3); }
-  .osd spinbutton.vertical button:first-child:active {
-    color: white;
-    border-color: black;
-    background-color: transparent;
-    background-image: image(black);
-    background-clip: padding-box;
-    box-shadow: none;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    outline-color: rgba(255, 255, 255, 0.3); }
-  .osd spinbutton.vertical button:first-child:disabled {
-    color: #93959a;
-    border-color: black;
-    background-color: transparent;
-    background-image: image(rgba(61, 63, 72, 0.5));
-    background-clip: padding-box;
-    box-shadow: none;
-    text-shadow: none;
-    -gtk-icon-shadow: none; }
-  .osd spinbutton.vertical button:first-child:backdrop {
+  spinbutton.vertical entry {
+    min-height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border-radius: 0; }
+  spinbutton.vertical button {
+    min-height: 32px;
+    min-width: 32px;
+    padding: 0; }
+  spinbutton.vertical button.up {
+    border-radius: 5px 5px 0 0;
+    border-style: solid solid none solid; }
+  spinbutton.vertical button.down {
+    border-radius: 0 0 5px 5px;
+    border-style: none solid solid solid; }
+  .osd spinbutton.vertical button:first-child {
     color: white;
     border-color: black;
     background-color: transparent;
     background-image: image(#272a34);
     background-clip: padding-box;
-    box-shadow: none;
-    text-shadow: none;
-    -gtk-icon-shadow: none; }
-
-treeview spinbutton:not(.vertical) {
-  min-height: 0;
-  border-style: none;
-  border-radius: 0; }
-  treeview spinbutton:not(.vertical) entry {
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px black;
+    -gtk-icon-shadow: 0 1px black;
+    outline-color: rgba(255, 255, 255, 0.3); }
+    .osd spinbutton.vertical button:first-child:hover {
+      color: white;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(#414657);
+      background-clip: padding-box;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+      text-shadow: 0 1px black;
+      -gtk-icon-shadow: 0 1px black;
+      outline-color: rgba(255, 255, 255, 0.3); }
+    .osd spinbutton.vertical button:first-child:active {
+      color: white;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(black);
+      background-clip: padding-box;
+      box-shadow: none;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      outline-color: rgba(255, 255, 255, 0.3); }
+    .osd spinbutton.vertical button:first-child:disabled {
+      color: #93959a;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(rgba(61, 63, 72, 0.5));
+      background-clip: padding-box;
+      box-shadow: none;
+      text-shadow: none;
+      -gtk-icon-shadow: none; }
+    .osd spinbutton.vertical button:first-child:backdrop {
+      color: white;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(#272a34);
+      background-clip: padding-box;
+      box-shadow: none;
+      text-shadow: none;
+      -gtk-icon-shadow: none; }
+  treeview spinbutton:not(.vertical) {
     min-height: 0;
-    padding: 1px 2px; }
+    border-style: none;
+    border-radius: 0; }
+    treeview spinbutton:not(.vertical) entry {
+      min-height: 0;
+      padding: 1px 2px; }
 
 /**************
  * ComboBoxes *
@@ -2705,7 +2697,7 @@ switch {
   /* only show i / o for the accessible theme */ }
   switch:checked {
     color: #ffffff;
-    border-color: #0051da;
+    border-color: #0047c0;
     background-color: #2777ff;
     text-shadow: 0 1px rgba(0, 81, 218, 0.5), 0 0 2px rgba(255, 255, 255, 0.6); }
   switch:disabled {
@@ -2721,7 +2713,7 @@ switch {
     transition: 200ms ease-out; }
     switch:backdrop:checked {
       color: #ffffff;
-      border-color: #2777ff;
+      border-color: #0047c0;
       background-color: #2777ff; }
     switch:backdrop:disabled {
       color: #d9d9d9;
@@ -2750,8 +2742,8 @@ switch {
     border-color: #c2c2c2;
     box-shadow: inset 0 1px white, 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
     background-image: linear-gradient(to bottom, white 10%, white 90%); }
-  switch:checked slider {
-    border: 1px solid #0051da; }
+  switch:checked > slider {
+    border: 1px solid #0047c0; }
   switch:disabled slider {
     color: #aeb0b6;
     border-color: #d9d9d9;
@@ -2767,8 +2759,8 @@ switch {
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
-  switch:backdrop:checked slider {
-    border-color: #2777ff; }
+  switch:backdrop:checked > slider {
+    border-color: #0047c0; }
   switch:backdrop:disabled slider {
     color: #d9d9d9;
     border-color: #e0e0e0;
@@ -2778,11 +2770,11 @@ switch {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
   row:selected switch {
     box-shadow: none;
-    border-color: #0051da; }
+    border-color: #0047c0; }
     row:selected switch:backdrop {
-      border-color: #0051da; }
-    row:selected switch slider:checked, row:selected switch slider {
-      border-color: #0051da; }
+      border-color: #0047c0; }
+    row:selected switch > slider:checked, row:selected switch > slider {
+      border-color: #0047c0; }
 
 /*************************
  * Check and Radio items *
@@ -2793,7 +2785,7 @@ switch {
   min-width: 32px;
   min-height: 32px;
   color: transparent;
-  background-color: rgba(39, 119, 255, 0.95);
+  background-color: #2777ff;
   border-radius: 5px;
   background-image: none;
   transition: 200ms;
@@ -2808,7 +2800,7 @@ switch {
   min-width: 32px;
   min-height: 32px;
   color: transparent;
-  background-color: rgba(39, 119, 255, 0.95);
+  background-color: #2777ff;
   border-radius: 5px;
   background-image: none;
   transition: 200ms;
@@ -2823,7 +2815,7 @@ switch {
   min-width: 32px;
   min-height: 32px;
   color: transparent;
-  background-color: rgba(39, 119, 255, 0.95);
+  background-color: #2777ff;
   border-radius: 5px;
   background-image: none;
   transition: 200ms;
@@ -2838,7 +2830,7 @@ switch {
   min-width: 32px;
   min-height: 32px;
   color: transparent;
-  background-color: rgba(147, 147, 147, 0.95);
+  background-color: #939393;
   border-radius: 5px;
   background-image: none;
   transition: 200ms;
@@ -2853,7 +2845,7 @@ switch {
   min-width: 32px;
   min-height: 32px;
   color: white;
-  background-color: rgba(39, 119, 255, 0.95);
+  background-color: #2777ff;
   border-radius: 5px;
   background-image: none;
   transition: 200ms;
@@ -2868,7 +2860,7 @@ switch {
   min-width: 32px;
   min-height: 32px;
   color: white;
-  background-color: rgba(39, 119, 255, 0.95);
+  background-color: #2777ff;
   border-radius: 5px;
   background-image: none;
   transition: 200ms;
@@ -2883,7 +2875,7 @@ switch {
   min-width: 32px;
   min-height: 32px;
   color: white;
-  background-color: rgba(39, 119, 255, 0.95);
+  background-color: #2777ff;
   border-radius: 5px;
   background-image: none;
   transition: 200ms;
@@ -2898,7 +2890,7 @@ switch {
   min-width: 32px;
   min-height: 32px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(147, 147, 147, 0.95);
+  background-color: #939393;
   border-radius: 5px;
   background-image: none;
   transition: 200ms;
@@ -3013,7 +3005,7 @@ radio {
   radio:backdrop {
     transition: 200ms ease-out; }
   row:selected check, row:selected radio {
-    border-color: #0051da; }
+    border-color: #0047c0; }
   .osd check, .osd radio {
     color: white;
     border-color: black;
@@ -3068,6 +3060,7 @@ radio {
       min-height: 14px;
       min-width: 14px;
       background-image: none;
+      background-color: transparent;
       box-shadow: none;
       -gtk-icon-shadow: none;
       color: inherit;
@@ -3303,7 +3296,8 @@ scale {
           background-color: #272a34; }
   scale marks,
   scale value {
-    color: alpha(currentColor,0.55); }
+    color: alpha(currentColor,0.55);
+    font-feature-settings: "tnum"; }
   scale.horizontal marks.top {
     margin-bottom: 6px;
     margin-top: -12px; }
@@ -3764,7 +3758,8 @@ scale {
  *****************/
 progressbar {
   font-size: smaller;
-  color: rgba(92, 97, 108, 0.4); }
+  color: rgba(92, 97, 108, 0.4);
+  font-feature-settings: "tnum"; }
   progressbar.horizontal trough,
   progressbar.horizontal progress {
     min-height: 2px; }
@@ -4568,6 +4563,9 @@ decoration {
     box-shadow: inset 0 0 0 3px white, inset 0 1px rgba(255, 255, 255, 0.8); }
     .solid-csd decoration:backdrop {
       box-shadow: inset 0 0 0 3px #ffffff, inset 0 1px rgba(255, 255, 255, 0.8); }
+  window.csd decoration {
+    background: black;
+    /* transparent makes gtk3 leak light on the corners #2537 */ }
 
 button.titlebutton {
   text-shadow: 0 1px rgba(255, 255, 255, 0.769231);
