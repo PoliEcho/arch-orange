@@ -5134,6 +5134,8 @@ decoration {
     border: 0; }
   messagedialog.csd decoration {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0); }
+  window.csd decoration {
+    background: white; }
 
 button.titlebutton:not(.appmenu) {
   margin: 0; }
