@@ -4871,7 +4871,7 @@ headerbar {
   headerbar.default-decoration {
     min-height: 0;
     padding: 3px;
-    border: 0; }
+    border-color: #0d0e11; }
     .titlebar.default-decoration:backdrop,
     headerbar.default-decoration:backdrop {
       background-color: #272a34; }

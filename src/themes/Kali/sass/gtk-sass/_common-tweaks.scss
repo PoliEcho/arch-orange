@@ -140,7 +140,7 @@ headerbar {
   &.default-decoration {
     min-height: 0;
     padding: 3px;
-    border: 0;
+    border-color: $borders_color;
 
     &:backdrop { background-color: $base_color; }
 
