@@ -89,6 +89,7 @@ ForegroundPositive=25,161,135
 ForegroundVisited=92,98,108
 
 [General]
+fixed=Fira Code,9,-1,5,50,0,0,0,0,0,Regular
 ColorScheme=KaliDark
 Name=Kali-Dark
 shadeSortColumn=true
