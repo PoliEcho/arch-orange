@@ -64,24 +64,21 @@
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
-    <wallpaper>
+  <wallpaper>
     <name>Kali Mesh</name>
     <filename>/usr/share/backgrounds/kali/kali-mesh.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
-    </wallpaper>
-    <wallpaper>
+  <wallpaper>
     <name>Kali Neon</name>
     <filename>/usr/share/backgrounds/kali/kali-neon.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
-  </wallpaper>
-    </wallpaper>
-    <wallpaper>
+  <wallpaper>
     <name>Kali Blur</name>
     <filename>/usr/share/backgrounds/kali/kali-blur.xml</filename>
     <options>zoom</options>
