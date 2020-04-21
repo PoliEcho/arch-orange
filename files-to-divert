@@ -6,6 +6,7 @@
 /etc/xdg/gtk-3.0/settings.ini
 /etc/xdg/kdeglobals
 /etc/xdg/konsolerc
+/etc/xdg/kscreenlockerrc
 /etc/xdg/kwinrc
 /etc/xdg/qt5ct/qt5ct.conf
 /etc/xdg/qterminal.org/qterminal.ini
@@ -19,4 +20,6 @@
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+/etc/xdg/Thunar/uca.xml
+/etc/xdg/Thunar/accels.scm
 /etc/xdg/yakuakerc
