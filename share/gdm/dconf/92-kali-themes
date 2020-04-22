@@ -5,4 +5,4 @@
 # Login manager options
 # =====================
 [org/gnome/login-screen]
-logo='/usr/share/images/kali-logos/logo-text-256.png'
+logo='/usr/share/images/kali-logos/logo-text-128.png'
