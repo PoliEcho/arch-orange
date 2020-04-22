@@ -31,6 +31,8 @@ kali-themes (2020.2.2) kali-dev; urgency=medium
   * Backgrounds: fix gnome-backgrounds.xml
   * GTK3: Fix checkbox icon color
   * Fix gdm kali logo too big
+  * Gnome-Shell: Remove dash border
+  * Force upgrade to gnome-shell 3.36 or kali-desktop-xfce 2020.2.18
 
  -- Daniel Ruiz de Alegría <daniel@drasite.com>  Wed, 22 Apr 2020 03:31:25 +0200
 
