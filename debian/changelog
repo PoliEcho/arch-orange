@@ -1,3 +1,39 @@
+kali-themes (2020.2.2) kali-dev; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Backgrounds: Add kali-neon background
+  * Replace lightdm-greeter user icon with kali emblem
+  * GTK3: Add ligthdm custom themes
+  * Backgrounds: Add Kali-Blur background
+  * Improve user icon for sddm
+  * KDE: Change screenlocker background
+  * KDE: Add look-and-feel themes
+  * GTK3: fix lightdm lightdm password entry background
+  * GTK3: add shadows to lightdm widgets
+  * QT: Add custom color-schemes for qt5ct
+  * Add file search option to thunar's menu
+  * Readjust whiskermenu height
+  * Add status notifier plugin to xfce4-panel
+  * Icons: Update Flat-Remix icon theme
+  * Gnome-Shell: clone upstream 3.36.1 theme code
+  * Gnome-Shell: move theme changes to _common-tweaks.scss
+  * Gnome-Shell: fix gnome 3.36 theme Fixes #60
+  * Gnome-Shell: increase switch contrast
+  * Gnome-Shell: remove unnecessary key icons
+  * Gnome-Shell: improve osd window text visibility
+  * GTK3: theme changes for gtk 3.24.17
+  * GTK3: kali theme tweaks for gtk 3.24.17
+  * Gnome-Shell: add missing pad-osd.css file from gnome-shell upstream
+  * Update files-to-divert
+  * KDE: Fix missing monospace font
+  * GTK3: Add separation border for non CSD headerbar
+  * Gnome-Shell: change window-clone-border color
+  * Backgrounds: fix gnome-backgrounds.xml
+  * GTK3: Fix checkbox icon color
+  * Fix gdm kali logo too big
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Wed, 22 Apr 2020 03:31:25 +0200
+
 kali-themes (2020.2.1) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
