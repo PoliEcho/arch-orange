@@ -7,3 +7,6 @@ theme=__aurorae__svg__Kali-Dark
 
 [kdeglobals][Icons]
 Theme=Flat-Remix-Blue-Dark
+
+[plasmarc][Theme]
+name=kali

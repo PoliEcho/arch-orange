@@ -13,6 +13,7 @@ FILES_TO_DIVERT="
 /etc/xdg/konsolerc
 /etc/xdg/kscreenlockerrc
 /etc/xdg/kwinrc
+/etc/xdg/plasmarc
 /etc/xdg/qt5ct/qt5ct.conf
 /etc/xdg/qterminal.org/qterminal.ini
 /etc/xdg/Trolltech.conf
