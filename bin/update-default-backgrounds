@@ -1,0 +1,19 @@
+#!/bin/sh
+
+DESTDIR=share/desktop-base/kali-theme/
+DESKTOP_BACKGROUND=$1
+LOGIN_BACKGROUND=$2
+
+# login/lockscreen
+ln -sfv /usr/share/backgrounds/kali/$LOGIN_BACKGROUND.xml ${DESTDIR}lockscreen/gnome-background.xml
+ln -sfv /usr/share/backgrounds/kali/$LOGIN_BACKGROUND-16x9.png ${DESTDIR}login/background
+ln -sfv /usr/share/backgrounds/kali/$LOGIN_BACKGROUND.svg ${DESTDIR}login/background.svg
+
+# desktop background
+kde_wallpaper=$(echo $DESKTOP_BACKGROUND | sed -E 's/(^|-)([a-z])/\U\2/g')
+ln -sfv /usr/share/backgrounds/kali/$DESKTOP_BACKGROUND.xml ${DESTDIR}wallpaper/gnome-background.xml
+ln -sfv /usr/share/wallpapers/$kde_wallpaper/contents ${DESTDIR}wallpaper/contents
+
+sed -i "s/defaultWallpaperTheme=.*/defaultWallpaperTheme=${kde_wallpaper}/" share/plasma/desktoptheme/kali/metadata.desktop
+sed -i "s/\/usr\/share\/backgrounds\/kali-16x9\/[^\"]*/\/usr\/share\/backgrounds\/kali-16x9\/$DESKTOP_BACKGROUND.png/" \
+    etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml

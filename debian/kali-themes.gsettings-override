@@ -24,11 +24,11 @@ monospace-font-name='Fira Code Medium 10'
 # kali-desktop-base is not required)
 [org.gnome.desktop.background]
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/kali/kali-logo.xml'
+picture-uri='file:///usr/share/desktop-base/kali-theme/wallpaper/gnome-background.xml'
 
 [org.gnome.desktop.screensaver]
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/kali/kali-light.xml'
+picture-uri='file:///usr/share/desktop-base/kali-theme/lockscreen/gnome-background.xml'
 
 [org.gnome.gedit.preferences.editor]
 scheme='Kali-Dark'

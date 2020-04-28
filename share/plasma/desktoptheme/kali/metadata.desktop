@@ -17,10 +17,10 @@ X-Plasma-API=5.0
 FallbackTheme=default
 
 [Wallpaper]
-defaultWallpaperTheme=DebianTheme
+defaultWallpaperTheme=KaliMesh
 defaultFileSuffix=.png
-defaultWidth=1920
-defaultHeight=1080
+defaultWidth=3840
+defaultHeight=2160
 
 [ContrastEffect]
 enabled=true
