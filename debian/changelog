@@ -8,7 +8,7 @@ kali-themes (2020.2.2) kali-dev; urgency=medium
   * Improve user icon for sddm
   * KDE: Change screenlocker background
   * KDE: Add look-and-feel themes
-  * GTK3: fix lightdm lightdm password entry background
+  * GTK3: fix lightdm password entry background
   * GTK3: add shadows to lightdm widgets
   * QT: Add custom color-schemes for qt5ct
   * Add file search option to thunar's menu
