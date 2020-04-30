@@ -68,6 +68,7 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/xfce4/whiskermenu/defaults.rc force
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml force
 	    install_config_file /etc/xdg/Thunar/uca.xml force
+	    install_config_file /etc/xdg/kscreenlockerrc force
 	fi
 	# Install remaining new files
 	install_all
