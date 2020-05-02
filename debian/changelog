@@ -1,3 +1,19 @@
+kali-themes (2020.2.3) kali-dev; urgency=medium
+
+  * Sync kali-menu icons
+  * Add plasma-shell themes
+  * Remove repeated word from changelog
+  * Remove lintian warning timestamped-gzip
+  * Fix broken KDE desktop with qt5ct Fixes #75
+  * Align lightdm entries Fixes #63
+  * Force upgrade the modified configuration files since kali 2020.1.2
+  * Backgrounds: Set new default backgrounds
+  * Fix kali-desktop-base install scripts
+  * Backgrounds: Remove kali 2019.4 backgrounds
+  * Force upgrade config files
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Sat, 02 May 2020 17:57:40 +0200
+
 kali-themes (2020.2.2) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
