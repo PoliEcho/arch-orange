@@ -2,6 +2,55 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper>
+    <name>Kali Logo</name>
+    <filename>/usr/share/backgrounds/kali/kali-logo.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Kali Light</name>
+    <filename>/usr/share/backgrounds/kali/kali-light.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Kali Rings</name>
+    <filename>/usr/share/backgrounds/kali/kali-rings.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Kali Dark</name>
+    <filename>/usr/share/backgrounds/kali/kali-dark-16x9.png</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Kali Blue Matrix</name>
+    <filename>/usr/share/backgrounds/kali/kali-blue-matrix-16x9.png</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Kali Grid</name>
+    <filename>/usr/share/backgrounds/kali/kali-grid-16x9.png</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Kali Small Logo</name>
+    <filename>/usr/share/backgrounds/kali/kali-small-logo.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
     <name>Kali Strips</name>
     <filename>/usr/share/backgrounds/kali/kali-strips.xml</filename>
     <options>zoom</options>
