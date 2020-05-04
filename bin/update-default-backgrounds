@@ -15,5 +15,5 @@ ln -sfv /usr/share/backgrounds/kali/$DESKTOP_BACKGROUND.xml ${DESTDIR}wallpaper/
 ln -sfv /usr/share/wallpapers/$kde_wallpaper/contents ${DESTDIR}wallpaper/contents
 
 sed -i "s/defaultWallpaperTheme=.*/defaultWallpaperTheme=${kde_wallpaper}/" share/plasma/desktoptheme/kali/metadata.desktop
-sed -i "s/\/usr\/share\/backgrounds\/kali-16x9\/[^\"]*/\/usr\/share\/backgrounds\/kali-16x9\/$DESKTOP_BACKGROUND.png/" \
+sed -i "s|/usr/share/backgrounds/kali-16x9/[^\"]*|/usr/share/backgrounds/kali-16x9/$DESKTOP_BACKGROUND.png|" \
     etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
