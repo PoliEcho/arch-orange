@@ -92,7 +92,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
         # before updating.
         sync
         # Report success whatever grub return status. This is needed at least
-        # in live systems fon installation to succeed (see #850601).
+        # in live systems for installation to succeed (see #850601).
         # Until we find a better solution like detecting we’re in a live image
         # and not calling update-grub at all.
         update-grub || echo "Updating grub failed, report success anyway!"
@@ -129,7 +129,7 @@ kali 3840x2160.svg
 EOF
 	# Remove gnome-background.xml alternatives
 	update-alternatives --remove \
-	    desktop-background \
+	    desktop-background.xml \
 	    /usr/share/desktop-base/kali-theme/wallpaper/gnome-background.xml
 
 	# Remove desktop-lockscreen.xml alternatives
