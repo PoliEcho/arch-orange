@@ -1,5 +1,6 @@
 kali-themes (2020.2.3) kali-dev; urgency=medium
 
+  [ Daniel Ruiz de Alegría ]
   * Sync kali-menu icons
   * Add plasma-shell themes
   * Remove repeated word from changelog
@@ -12,7 +13,11 @@ kali-themes (2020.2.3) kali-dev; urgency=medium
   * Backgrounds: Remove kali 2019.4 backgrounds
   * Force upgrade config files
 
- -- Daniel Ruiz de Alegría <daniel@drasite.com>  Sat, 02 May 2020 17:57:40 +0200
+  [ Raphaël Hertzog ]
+  * Use relative symlinks in /usr/share/desktop-base/kali-theme
+  * Use alternatives pointing to "kali-theme" and not "active-theme"
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Mon, 04 May 2020 17:36:11 +0200
 
 kali-themes (2020.2.2) kali-dev; urgency=medium
 
