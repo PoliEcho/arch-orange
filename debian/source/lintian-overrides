@@ -1,3 +1,0 @@
-# We have symlinks with absolute paths, yes, but we don't care
-source-contains-unsafe-symlink *
-absolute-symbolic-link-target-in-source *
