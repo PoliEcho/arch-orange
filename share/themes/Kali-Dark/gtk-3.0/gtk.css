@@ -369,7 +369,7 @@ entry progress {
 .linked:not(.vertical) > spinbutton:focus:not(.vertical) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:focus:not(.vertical) + button, .linked:not(.vertical) > spinbutton:focus:not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:focus:not(.vertical) + entry, .linked:not(.vertical) > entry:focus + button, .linked:not(.vertical) > entry:focus + combobox > box > button.combo, .linked:not(.vertical) > entry:focus + spinbutton:not(.vertical), .linked:not(.vertical) > entry:focus + entry {
   border-left-color: #00348d; }
 
-.linked:not(.vertical) > spinbutton:focus.error:not(.vertical) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:focus.error:not(.vertical) + button, .linked:not(.vertical) > spinbutton:focus.error:not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:focus.error:not(.vertical) + entry, .linked:not(.vertical) > entry:focus.error + button, .linked:not(.vertical) > entry:focus.error + combobox > box > button.combo, .linked:not(.vertical) > entry:focus.error + spinbutton:not(.vertical), .linked:not(.vertical) > entry:focus.error + entry {
+.linked:not(.vertical) > spinbutton.error:focus:not(.vertical) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton.error:focus:not(.vertical) + button, .linked:not(.vertical) > spinbutton.error:focus:not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton.error:focus:not(.vertical) + entry, .linked:not(.vertical) > entry.error:focus + button, .linked:not(.vertical) > entry.error:focus + combobox > box > button.combo, .linked:not(.vertical) > entry.error:focus + spinbutton:not(.vertical), .linked:not(.vertical) > entry.error:focus + entry {
   border-left-color: #200404; }
 
 .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + entry, .linked:not(.vertical) > entry:drop(active) + button, .linked:not(.vertical) > entry:drop(active) + combobox > box > button.combo, .linked:not(.vertical) > entry:drop(active) + spinbutton:not(.vertical), .linked:not(.vertical) > entry:drop(active) + entry {
@@ -388,9 +388,9 @@ entry progress {
 .linked.vertical > entry + entry:focus:not(:only-child) {
   border-top-color: #00348d; }
 
-.linked.vertical > spinbutton:not(.vertical) + spinbutton:focus.error:not(:only-child):not(.vertical),
-.linked.vertical > spinbutton:not(.vertical) + entry:focus.error:not(:only-child), .linked.vertical > entry + spinbutton:focus.error:not(:only-child):not(.vertical),
-.linked.vertical > entry + entry:focus.error:not(:only-child) {
+.linked.vertical > spinbutton:not(.vertical) + spinbutton.error:focus:not(:only-child):not(.vertical),
+.linked.vertical > spinbutton:not(.vertical) + entry.error:focus:not(:only-child), .linked.vertical > entry + spinbutton.error:focus:not(:only-child):not(.vertical),
+.linked.vertical > entry + entry.error:focus:not(:only-child) {
   border-top-color: #200404; }
 
 .linked.vertical > spinbutton:not(.vertical) + spinbutton:drop(active):not(:only-child):not(.vertical),
@@ -407,13 +407,13 @@ entry progress {
 .linked.vertical > entry:focus:not(:only-child) + combobox > box > button.combo {
   border-top-color: #00348d; }
 
-.linked.vertical > spinbutton:focus.error:not(:only-child):not(.vertical) + spinbutton:not(.vertical),
-.linked.vertical > spinbutton:focus.error:not(:only-child):not(.vertical) + entry,
-.linked.vertical > spinbutton:focus.error:not(:only-child):not(.vertical) + button,
-.linked.vertical > spinbutton:focus.error:not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical > entry:focus.error:not(:only-child) + spinbutton:not(.vertical),
-.linked.vertical > entry:focus.error:not(:only-child) + entry,
-.linked.vertical > entry:focus.error:not(:only-child) + button,
-.linked.vertical > entry:focus.error:not(:only-child) + combobox > box > button.combo {
+.linked.vertical > spinbutton.error:focus:not(:only-child):not(.vertical) + spinbutton:not(.vertical),
+.linked.vertical > spinbutton.error:focus:not(:only-child):not(.vertical) + entry,
+.linked.vertical > spinbutton.error:focus:not(:only-child):not(.vertical) + button,
+.linked.vertical > spinbutton.error:focus:not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical > entry.error:focus:not(:only-child) + spinbutton:not(.vertical),
+.linked.vertical > entry.error:focus:not(:only-child) + entry,
+.linked.vertical > entry.error:focus:not(:only-child) + button,
+.linked.vertical > entry.error:focus:not(:only-child) + combobox > box > button.combo {
   border-top-color: #200404; }
 
 .linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + spinbutton:not(.vertical),
@@ -528,7 +528,7 @@ button {
     -gtk-icon-shadow: none;
     transition-duration: 50ms; }
   notebook > header > tabs > arrow:backdrop,
-  button:backdrop.flat,
+  button.flat:backdrop,
   button:backdrop {
     color: #888a8d;
     border-color: #111217;
@@ -539,8 +539,8 @@ button {
     transition: 200ms ease-out;
     -gtk-icon-effect: none; }
     notebook > header > tabs > arrow:backdrop:active, notebook > header > tabs > arrow:backdrop:checked,
-    button:backdrop.flat:active,
-    button:backdrop.flat:checked,
+    button.flat:backdrop:active,
+    button.flat:backdrop:checked,
     button:backdrop:active,
     button:backdrop:checked {
       color: #888a8d;
@@ -548,7 +548,7 @@ button {
       background-image: image(#1a1d23);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
     notebook > header > tabs > arrow:backdrop:disabled,
-    button:backdrop.flat:disabled,
+    button.flat:backdrop:disabled,
     button:backdrop:disabled {
       color: #43495a;
       border-color: #111217;
@@ -557,8 +557,8 @@ button {
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
       notebook > header > tabs > arrow:backdrop:disabled:active, notebook > header > tabs > arrow:backdrop:disabled:checked,
-      button:backdrop.flat:disabled:active,
-      button:backdrop.flat:disabled:checked,
+      button.flat:backdrop:disabled:active,
+      button.flat:backdrop:disabled:checked,
       button:backdrop:disabled:active,
       button:backdrop:disabled:checked {
         color: #43495a;
@@ -1774,8 +1774,8 @@ headerbar {
         box-shadow: inset 0 1px rgba(255, 255, 255, 0);
         text-shadow: none;
         -gtk-icon-shadow: none; }
-      .selection-mode .titlebar:not(headerbar) button:backdrop, .selection-mode.titlebar:not(headerbar) button:backdrop, .selection-mode headerbar button:backdrop.flat, .selection-mode headerbar button:backdrop,
-      headerbar.selection-mode button:backdrop.flat,
+      .selection-mode .titlebar:not(headerbar) button:backdrop, .selection-mode.titlebar:not(headerbar) button:backdrop, .selection-mode headerbar button.flat:backdrop, .selection-mode headerbar button:backdrop,
+      headerbar.selection-mode button.flat:backdrop,
       headerbar.selection-mode button:backdrop {
         color: #d4e4ff;
         border-color: #005af3;
@@ -1785,9 +1785,9 @@ headerbar {
         box-shadow: inset 0 1px rgba(255, 255, 255, 0);
         -gtk-icon-effect: none;
         border-color: #00348d; }
-        .selection-mode .titlebar:not(headerbar) button:backdrop:active, .selection-mode .titlebar:not(headerbar) button:backdrop:checked, .selection-mode.titlebar:not(headerbar) button:backdrop:active, .selection-mode.titlebar:not(headerbar) button:backdrop:checked, .selection-mode headerbar button:backdrop.flat:active, .selection-mode headerbar button:backdrop.flat:checked, .selection-mode headerbar button:backdrop:active, .selection-mode headerbar button:backdrop:checked,
-        headerbar.selection-mode button:backdrop.flat:active,
-        headerbar.selection-mode button:backdrop.flat:checked,
+        .selection-mode .titlebar:not(headerbar) button:backdrop:active, .selection-mode .titlebar:not(headerbar) button:backdrop:checked, .selection-mode.titlebar:not(headerbar) button:backdrop:active, .selection-mode.titlebar:not(headerbar) button:backdrop:checked, .selection-mode headerbar button.flat:backdrop:active, .selection-mode headerbar button.flat:backdrop:checked, .selection-mode headerbar button:backdrop:active, .selection-mode headerbar button:backdrop:checked,
+        headerbar.selection-mode button.flat:backdrop:active,
+        headerbar.selection-mode button.flat:backdrop:checked,
         headerbar.selection-mode button:backdrop:active,
         headerbar.selection-mode button:backdrop:checked {
           color: #d2e0f7;
@@ -1795,8 +1795,8 @@ headerbar {
           background-image: image(#1e62d6);
           box-shadow: inset 0 1px rgba(255, 255, 255, 0);
           border-color: #00348d; }
-        .selection-mode .titlebar:not(headerbar) button:backdrop:disabled, .selection-mode.titlebar:not(headerbar) button:backdrop:disabled, .selection-mode headerbar button:backdrop.flat:disabled, .selection-mode headerbar button:backdrop:disabled,
-        headerbar.selection-mode button:backdrop.flat:disabled,
+        .selection-mode .titlebar:not(headerbar) button:backdrop:disabled, .selection-mode.titlebar:not(headerbar) button:backdrop:disabled, .selection-mode headerbar button.flat:backdrop:disabled, .selection-mode headerbar button:backdrop:disabled,
+        headerbar.selection-mode button.flat:backdrop:disabled,
         headerbar.selection-mode button:backdrop:disabled {
           color: #739fec;
           border-color: #005af3;
@@ -2067,9 +2067,9 @@ treeview.view {
     border-style: solid none;
     border-width: 1px;
     border-color: #00348d; }
-    treeview.view:drop(active).after {
+    treeview.view.after:drop(active) {
       border-top-style: none; }
-    treeview.view:drop(active).before {
+    treeview.view.before:drop(active) {
       border-bottom-style: none; }
   treeview.view.expander {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
@@ -2450,24 +2450,24 @@ notebook > header {
     border-color: transparent; }
     notebook > header tab:hover {
       color: #bbbcbd; }
-      notebook > header tab:hover.reorderable-page {
+      notebook > header tab.reorderable-page:hover {
         border-color: rgba(13, 14, 17, 0.3);
         background-color: rgba(35, 37, 46, 0.2); }
     notebook > header tab:backdrop {
       color: #5f6267; }
-      notebook > header tab:backdrop.reorderable-page {
+      notebook > header tab.reorderable-page:backdrop {
         border-color: transparent;
         background-color: transparent; }
     notebook > header tab:checked {
       color: #eeeeec; }
-      notebook > header tab:checked.reorderable-page {
+      notebook > header tab.reorderable-page:checked {
         border-color: rgba(13, 14, 17, 0.5);
         background-color: rgba(35, 37, 46, 0.5); }
-        notebook > header tab:checked.reorderable-page:hover {
+        notebook > header tab.reorderable-page:checked:hover {
           background-color: rgba(35, 37, 46, 0.7); }
     notebook > header tab:backdrop:checked {
       color: #888a8d; }
-      notebook > header tab:backdrop:checked.reorderable-page {
+      notebook > header tab.reorderable-page:backdrop:checked {
         border-color: #111217;
         background-color: #23252e; }
     notebook > header tab button.flat {
@@ -2588,16 +2588,16 @@ scrollbar {
       border-radius: 100%;
       border: 1px solid black;
       -gtk-icon-source: none; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
+    scrollbar.overlay-indicator.horizontal:not(.dragging):not(.hovering) slider {
       margin: 0 2px;
       min-width: 40px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal button {
+    scrollbar.overlay-indicator.horizontal:not(.dragging):not(.hovering) button {
       margin: 1px 2px;
       min-width: 5px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical slider {
+    scrollbar.overlay-indicator.vertical:not(.dragging):not(.hovering) slider {
       margin: 2px 0;
       min-height: 40px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical button {
+    scrollbar.overlay-indicator.vertical:not(.dragging):not(.hovering) button {
       margin: 2px 1px;
       min-height: 5px; }
   scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
@@ -3322,7 +3322,7 @@ scale {
     background-position: top;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
+  scale.horizontal.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-top: -11px; }
   scale.horizontal.marks-before:not(.marks-after) slider:hover {
@@ -3337,7 +3337,7 @@ scale {
     background-position: top;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
+  scale.horizontal.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-top: -11px; }
   scale.horizontal.marks-before:not(.marks-after) slider:active {
@@ -3352,7 +3352,7 @@ scale {
     background-position: top;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
+  scale.horizontal.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-top: -11px; }
   scale.horizontal.marks-before:not(.marks-after) slider:disabled {
@@ -3367,7 +3367,7 @@ scale {
     background-position: top;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
+  scale.horizontal.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-top: -11px; }
   scale.horizontal.marks-before:not(.marks-after) slider:backdrop {
@@ -3382,7 +3382,7 @@ scale {
     background-position: top;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
+  scale.horizontal.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-top: -11px; }
   scale.horizontal.marks-before:not(.marks-after) slider:backdrop:disabled {
@@ -3397,7 +3397,7 @@ scale {
     background-position: top;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
+  scale.horizontal.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-top: -11px; }
   scale.horizontal.marks-after:not(.marks-before) slider {
@@ -3412,7 +3412,7 @@ scale {
     background-position: bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
+  scale.horizontal.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-bottom: -11px; }
   scale.horizontal.marks-after:not(.marks-before) slider:hover {
@@ -3427,7 +3427,7 @@ scale {
     background-position: bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
+  scale.horizontal.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-bottom: -11px; }
   scale.horizontal.marks-after:not(.marks-before) slider:active {
@@ -3442,7 +3442,7 @@ scale {
     background-position: bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
+  scale.horizontal.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-bottom: -11px; }
   scale.horizontal.marks-after:not(.marks-before) slider:disabled {
@@ -3457,7 +3457,7 @@ scale {
     background-position: bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
+  scale.horizontal.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-bottom: -11px; }
   scale.horizontal.marks-after:not(.marks-before) slider:backdrop {
@@ -3472,7 +3472,7 @@ scale {
     background-position: bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
+  scale.horizontal.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-bottom: -11px; }
   scale.horizontal.marks-after:not(.marks-before) slider:backdrop:disabled {
@@ -3487,7 +3487,7 @@ scale {
     background-position: bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
+  scale.horizontal.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-bottom: -11px; }
   scale.vertical.marks-before:not(.marks-after) slider {
@@ -3502,7 +3502,7 @@ scale {
     background-position: left bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-before:not(.marks-after).fine-tune slider {
+  scale.vertical.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-left: -11px; }
   scale.vertical.marks-before:not(.marks-after) slider:hover {
@@ -3517,7 +3517,7 @@ scale {
     background-position: left bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-before:not(.marks-after).fine-tune slider {
+  scale.vertical.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-left: -11px; }
   scale.vertical.marks-before:not(.marks-after) slider:active {
@@ -3532,7 +3532,7 @@ scale {
     background-position: left bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-before:not(.marks-after).fine-tune slider {
+  scale.vertical.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-left: -11px; }
   scale.vertical.marks-before:not(.marks-after) slider:disabled {
@@ -3547,7 +3547,7 @@ scale {
     background-position: left bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-before:not(.marks-after).fine-tune slider {
+  scale.vertical.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-left: -11px; }
   scale.vertical.marks-before:not(.marks-after) slider:backdrop {
@@ -3562,7 +3562,7 @@ scale {
     background-position: left bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-before:not(.marks-after).fine-tune slider {
+  scale.vertical.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-left: -11px; }
   scale.vertical.marks-before:not(.marks-after) slider:backdrop:disabled {
@@ -3577,7 +3577,7 @@ scale {
     background-position: left bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-before:not(.marks-after).fine-tune slider {
+  scale.vertical.marks-before.fine-tune:not(.marks-after) slider {
     margin: -7px;
     margin-left: -11px; }
   scale.vertical.marks-after:not(.marks-before) slider {
@@ -3592,7 +3592,7 @@ scale {
     background-position: right bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-after:not(.marks-before).fine-tune slider {
+  scale.vertical.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-right: -11px; }
   scale.vertical.marks-after:not(.marks-before) slider:hover {
@@ -3607,7 +3607,7 @@ scale {
     background-position: right bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-after:not(.marks-before).fine-tune slider {
+  scale.vertical.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-right: -11px; }
   scale.vertical.marks-after:not(.marks-before) slider:active {
@@ -3622,7 +3622,7 @@ scale {
     background-position: right bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-after:not(.marks-before).fine-tune slider {
+  scale.vertical.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-right: -11px; }
   scale.vertical.marks-after:not(.marks-before) slider:disabled {
@@ -3637,7 +3637,7 @@ scale {
     background-position: right bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-after:not(.marks-before).fine-tune slider {
+  scale.vertical.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-right: -11px; }
   scale.vertical.marks-after:not(.marks-before) slider:backdrop {
@@ -3652,7 +3652,7 @@ scale {
     background-position: right bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-after:not(.marks-before).fine-tune slider {
+  scale.vertical.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-right: -11px; }
   scale.vertical.marks-after:not(.marks-before) slider:backdrop:disabled {
@@ -3667,7 +3667,7 @@ scale {
     background-position: right bottom;
     background-repeat: no-repeat;
     box-shadow: none; }
-  scale.vertical.marks-after:not(.marks-before).fine-tune slider {
+  scale.vertical.marks-after.fine-tune:not(.marks-before) slider {
     margin: -7px;
     margin-right: -11px; }
   scale.color {
@@ -3991,7 +3991,7 @@ row {
     background-color: transparent; }
   row.activatable:selected:active {
     box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
-  row.activatable:selected.has-open-popup, row.activatable:selected:hover {
+  row.activatable.has-open-popup:selected, row.activatable:selected:hover {
     background-color: #3b83fd; }
   row.activatable:selected:backdrop {
     background-color: #2777ff; }
@@ -4124,10 +4124,10 @@ filechooserbutton:drop(active) {
 .sidebar {
   border-style: none;
   background-color: #252831; }
-  stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(separator):dir(ltr), .sidebar:not(separator).left {
+  stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(separator):dir(ltr), .sidebar.left:not(separator) {
     border-right: 1px solid #0d0e11;
     border-left-style: none; }
-  stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(separator):dir(rtl), .sidebar:not(separator).right {
+  stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(separator):dir(rtl), .sidebar.right:not(separator) {
     border-left: 1px solid #0d0e11;
     border-right-style: none; }
   .sidebar:backdrop {
@@ -4426,10 +4426,10 @@ colorswatch.light {
 
 colorswatch:drop(active) {
   box-shadow: none; }
-  colorswatch:drop(active).light overlay {
+  colorswatch.light:drop(active) overlay {
     border-color: #0a814b;
     box-shadow: inset 0 0 0 2px #0d0e11, inset 0 0 0 1px #0a814b; }
-  colorswatch:drop(active).dark overlay {
+  colorswatch.dark:drop(active) overlay {
     border-color: #0a814b;
     box-shadow: inset 0 0 0 2px #0d0e11, inset 0 0 0 1px #0a814b; }
 
@@ -4521,6 +4521,8 @@ decoration {
     border-radius: 0; }
   .popup decoration {
     box-shadow: none; }
+  .csd decoration {
+    background-color: black; }
   .ssd decoration {
     box-shadow: 0 0 0 1px rgba(13, 14, 17, 0.9); }
   .csd.popup decoration {
@@ -4541,9 +4543,6 @@ decoration {
     box-shadow: inset 0 0 0 3px #1c1e25, inset 0 1px rgba(238, 238, 236, 0.07); }
     .solid-csd decoration:backdrop {
       box-shadow: inset 0 0 0 3px #23252e, inset 0 1px rgba(238, 238, 236, 0.07); }
-  window.csd decoration {
-    background: black;
-    /* transparent makes gtk3 leak light on the corners #2537 */ }
 
 button.titlebutton {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
