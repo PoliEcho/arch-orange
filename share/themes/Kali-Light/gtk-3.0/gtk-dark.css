@@ -5111,7 +5111,8 @@ decoration {
   tooltip.csd decoration {
     border: 0; }
   messagedialog.csd decoration {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(13, 14, 17, 0.65); }
+    border-width: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
   window.csd decoration {
     background: black; }
 
