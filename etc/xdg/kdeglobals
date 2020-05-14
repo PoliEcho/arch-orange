@@ -90,6 +90,7 @@ ForegroundVisited=92,98,108
 
 [General]
 fixed=Fira Code,9,-1,5,50,0,0,0,0,0,Regular
+BrowserApplication=firefox-esr.desktop
 ColorScheme=KaliDark
 Name=Kali-Dark
 shadeSortColumn=true
