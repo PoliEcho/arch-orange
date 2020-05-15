@@ -34,15 +34,7 @@ kickoff.writeConfig("global", "Alt+F1")
 var spacer1 = panel.addWidget("org.kde.plasma.panelspacer")
 spacer1.currentConfigGroup = ["Configuration", "General"]
 spacer1.writeConfig("expanding", false)
-spacer1.writeConfig("length", 6)
-
-//panel.addWidget("org.kde.plasma.showActivityManager")
-panel.addWidget("org.kde.plasma.pager")
-
-var spacer2 = panel.addWidget("org.kde.plasma.panelspacer")
-spacer2.currentConfigGroup = ["Configuration", "General"]
-spacer2.writeConfig("expanding", false)
-spacer2.writeConfig("length", 2)
+spacer1.writeConfig("length", 8)
 
 panel.addWidget("org.kde.plasma.showdesktop")
 
@@ -57,6 +49,14 @@ terminal.writeConfig("url", "file:///usr/share/applications/org.kde.konsole.desk
 var screenRecorder = panel.addWidget("org.kde.plasma.icon")
 screenRecorder.currentConfigGroup = ["Configuration"]
 screenRecorder.writeConfig("url", "file:///usr/share/applications/simplescreenrecorder.desktop")
+
+var spacer2 = panel.addWidget("org.kde.plasma.panelspacer")
+spacer2.currentConfigGroup = ["Configuration", "General"]
+spacer2.writeConfig("expanding", false)
+spacer2.writeConfig("length", 8)
+
+//panel.addWidget("org.kde.plasma.showActivityManager")
+panel.addWidget("org.kde.plasma.pager")
 
 panel.addWidget("org.kde.plasma.taskmanager")
 
