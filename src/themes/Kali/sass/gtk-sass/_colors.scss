@@ -1,10 +1,11 @@
 // When color definition differs for dark and light variant
 // it gets @if ed depending on $variant
 
+$_dark_base_color: #272a34;
 
-$base_color: if($variant == 'light', darken(#ffffff, 2%), #272a34);
+$base_color: if($variant == 'light', darken(#ffffff, 2%), $_dark_base_color);
 $text_color: if($variant == 'light', black, white);
-$bg_color: if($variant == 'light', #ffffff, darken(#272a34, 2%));
+$bg_color: if($variant == 'light', #ffffff, darken($_dark_base_color, 2%));
 $fg_color: if($variant == 'light', #5c616c, #eeeeec);
 
 $selected_fg_color: #ffffff;
@@ -34,7 +35,7 @@ $destructive_color: if($variant == 'light', #d41919, darken(#d41919, 10%));
 
 $osd_fg_color: white;
 $osd_text_color: white;
-$osd_bg_color: if($variant == 'light', #272a34, darken(#272a34, 10%));
+$osd_bg_color: $_dark_base_color;
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: black;

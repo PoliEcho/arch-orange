@@ -247,7 +247,8 @@ infobar {
   padding: 5px 10px;
   margin: 20px;
   border-radius: $button_radius;
-  box-shadow: 0 2px 8px 0 transparentize(black, .6);
+  border: 1px solid transparentize($_wm_border, 0.1);
+  box-shadow: $_menu_shadow;
   background-image: none;
 
   &:backdrop { box-shadow: none; }
