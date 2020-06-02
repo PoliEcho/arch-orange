@@ -259,6 +259,23 @@ infobar {
  ***********/
 messagedialog .titlebar:backdrop { background-image: none; }
 
+
+/***********
+ * Sidebar *
+ ***********/
+.sidebar {
+  background-color: $bg_color;
+}
+
+/****************
+ * File chooser *
+ ****************/
+placessidebar {
+  row {
+    min-height: 30px;
+  }
+}
+
 /**********************
  * Window Decorations *
  *********************/
