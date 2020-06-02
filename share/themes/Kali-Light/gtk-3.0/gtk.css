@@ -317,8 +317,8 @@ entry {
   spinbutton:drop(active):not(.vertical),
   entry:drop(active):focus,
   entry:drop(active) {
-    border-color: #0a814b;
-    box-shadow: inset 0 0 0 1px #0a814b; }
+    border-color: #19a187;
+    box-shadow: inset 0 0 0 1px #19a187; }
   .osd spinbutton:not(.vertical), .osd entry {
     color: white;
     border-color: black;
@@ -373,7 +373,7 @@ entry progress {
   border-left-color: #bf1717; }
 
 .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + entry, .linked:not(.vertical) > entry:drop(active) + button, .linked:not(.vertical) > entry:drop(active) + combobox > box > button.combo, .linked:not(.vertical) > entry:drop(active) + spinbutton:not(.vertical), .linked:not(.vertical) > entry:drop(active) + entry {
-  border-left-color: #0a814b; }
+  border-left-color: #19a187; }
 
 .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled), .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):not(.vertical), .linked.vertical > entry:not(:disabled) + entry:not(:disabled), .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical) {
   border-top-color: #f0f0f0; }
@@ -396,7 +396,7 @@ entry progress {
 .linked.vertical > spinbutton:not(.vertical) + spinbutton:drop(active):not(:only-child):not(.vertical),
 .linked.vertical > spinbutton:not(.vertical) + entry:drop(active):not(:only-child), .linked.vertical > entry + spinbutton:drop(active):not(:only-child):not(.vertical),
 .linked.vertical > entry + entry:drop(active):not(:only-child) {
-  border-top-color: #0a814b; }
+  border-top-color: #19a187; }
 
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + spinbutton:not(.vertical),
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + entry,
@@ -423,7 +423,7 @@ entry progress {
 .linked.vertical > entry:drop(active):not(:only-child) + entry,
 .linked.vertical > entry:drop(active):not(:only-child) + button,
 .linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-top-color: #0a814b; }
+  border-top-color: #19a187; }
 
 treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) {
   background-color: #fafafa;
@@ -609,9 +609,9 @@ button {
       padding-right: 8px; }
   combobox:drop(active) button.combo, notebook > header > tabs > arrow:drop(active),
   button:drop(active) {
-    color: #0a814b;
-    border-color: #0a814b;
-    box-shadow: inset 0 0 0 1px #0a814b; }
+    color: #19a187;
+    border-color: #19a187;
+    box-shadow: inset 0 0 0 1px #19a187; }
 
 row:selected button {
   border-color: #0051da; }
@@ -4223,16 +4223,16 @@ placessidebar row {
   placessidebar row.sidebar-placeholder-row {
     padding: 0 8px;
     min-height: 2px;
-    background-image: image(#0a814b);
+    background-image: image(#19a187);
     background-clip: content-box; }
   placessidebar row.sidebar-new-bookmark-row {
     color: #2777ff; }
   placessidebar row:drop(active):not(:disabled) {
-    color: #0a814b;
-    box-shadow: inset 0 1px #0a814b, inset 0 -1px #0a814b; }
+    color: #19a187;
+    box-shadow: inset 0 1px #19a187, inset 0 -1px #19a187; }
     placessidebar row:drop(active):not(:disabled):selected {
       color: #ffffff;
-      background-color: #0a814b; }
+      background-color: #19a187; }
 
 placesview .server-list-button > image {
   transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -4449,11 +4449,11 @@ colorswatch.light {
 colorswatch:drop(active) {
   box-shadow: none; }
   colorswatch.light:drop(active) overlay {
-    border-color: #0a814b;
-    box-shadow: inset 0 0 0 2px #076038, inset 0 0 0 1px #0a814b; }
+    border-color: #19a187;
+    box-shadow: inset 0 0 0 2px #14826d, inset 0 0 0 1px #19a187; }
   colorswatch.dark:drop(active) overlay {
-    border-color: #0a814b;
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 0 1px #0a814b; }
+    border-color: #19a187;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 0 1px #19a187; }
 
 colorswatch overlay {
   border: 1px solid rgba(0, 0, 0, 0.3); }
@@ -4701,9 +4701,9 @@ cursor-handle {
 
 :not(decoration):not(window):drop(active):focus,
 :not(decoration):not(window):drop(active) {
-  border-color: #0a814b;
-  box-shadow: inset 0 0 0 1px #0a814b;
-  caret-color: #0a814b; }
+  border-color: #19a187;
+  box-shadow: inset 0 0 0 1px #19a187;
+  caret-color: #19a187; }
 
 stackswitcher button.text-button {
   min-width: 100px; }
