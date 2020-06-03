@@ -4872,6 +4872,12 @@ headerbar {
     background-image: -gtk-scaled(url("assets/kali-headerbar-logo-dark.png"), url("assets/kali-headerbar-logo-dark@2.png"));
     background-repeat: no-repeat;
     background-position: left; }
+  .titlebar hdyviewswitcher > button box.narrow,
+  headerbar hdyviewswitcher > button box.narrow {
+    margin: -7px 0 -5px; }
+  .titlebar hdyviewswitcher > button box.wide,
+  headerbar hdyviewswitcher > button box.wide {
+    margin: -8px 0; }
   .titlebar.default-decoration,
   headerbar.default-decoration {
     min-height: 0;

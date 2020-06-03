@@ -138,6 +138,11 @@ headerbar {
     &:active, &:checked { @extend %button_active; }
   }
 
+  hdyviewswitcher > button box {
+    &.narrow { margin: -7px 0 -5px; }
+    &.wide { margin: -8px 0; }
+  }
+
   &.default-decoration {
     min-height: 0;
     padding: 3px;
