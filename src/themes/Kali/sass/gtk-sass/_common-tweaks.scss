@@ -159,6 +159,15 @@ headerbar {
   }
 }
 
+paned, hdyleaflet, headerbar.titlebar {
+  & headerbar:first-child {
+    border-color: transparent;
+    background: $base_color;
+
+    &:backdrop { background: $backdrop_base_color; }
+  }
+}
+
 /***************
  * Popovers   *
  ***************/

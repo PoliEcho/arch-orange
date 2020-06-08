@@ -4893,6 +4893,12 @@ headerbar {
       margin: 0 4px;
       padding: 0; }
 
+paned headerbar:first-child, hdyleaflet headerbar:first-child, headerbar.titlebar headerbar:first-child {
+  border-color: transparent;
+  background: #272a34; }
+  paned headerbar:first-child:backdrop, hdyleaflet headerbar:first-child:backdrop, headerbar.titlebar headerbar:first-child:backdrop {
+    background: #292c37; }
+
 /***************
  * Popovers   *
  ***************/
