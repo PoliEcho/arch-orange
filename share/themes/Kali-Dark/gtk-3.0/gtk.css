@@ -4793,6 +4793,10 @@ entry {
   box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.3);
   background-color: #1b1d24; }
 
+headerbar spinbutton:not(.vertical),
+headerbar entry {
+  background: #272a34; }
+
 /**********
  * Slider *
  **********/

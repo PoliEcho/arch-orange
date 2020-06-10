@@ -37,6 +37,11 @@ entry {
   }
 }
 
+headerbar %entry,
+headerbar entry {
+  background: $base_color;
+}
+
 /**********
  * Slider *
  **********/
