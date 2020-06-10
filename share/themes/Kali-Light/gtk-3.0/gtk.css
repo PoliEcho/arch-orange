@@ -4792,6 +4792,9 @@ popover.emoji-completion .emoji:hover {
   * button, * button:hover, * button:active, * button:checked, * button:focus {
     outline-color: alpha(currentColor,0.15); }
 
+/**********
+ * Button *
+ **********/
 .titlebar stackswitcher button:checked:checked,
 .titlebar button.toggle:active,
 .titlebar button.toggle:checked,
@@ -4804,6 +4807,16 @@ button:checked {
   background: #f2f2f2;
   box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.1); }
 
+/**********
+ * Entry *
+ **********/
+spinbutton:not(.vertical),
+entry {
+  box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.1); }
+
+/**********
+ * Slider *
+ **********/
 scale slider:active, switch:hover slider {
   background-image: image(white); }
 
