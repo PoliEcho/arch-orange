@@ -81,6 +81,17 @@ if [ "$1" = "configure" ]; then
     # Copy grub theme to /boot
     mkdir -p /boot/grub/themes/kali
     cp -r /usr/share/grub/themes/kali/* /boot/grub/themes/kali/
+    # Set grub theme background
+    # Use background with 16x9 aspect ratio for efi installations detected
+    # by the presence of grub-efi* packages (not the grub-efi*-bin which don’t
+    # necessary account for grub being the active bootloader).
+    if dpkg-query --list grub-efi* | grep -v "^... grub-efi[^[:space:]]*-bin" | grep -q "^[ih][HUFWti] " ; then
+        echo "grub-efi* packages found, using 16/9 as default grub background ratio"
+        ln -sf /boot/grub/themes/kali/grub-16x9.png /boot/grub/themes/kali/background.png
+    else
+        echo "No grub-efi* package found, using 4/3 as default grub background ratio"
+        ln -sf /boot/grub/themes/kali/grub-4x3.png /boot/grub/themes/kali/background.png
+    fi
     # Rebuild the grub configuration with our config changes
     if which update-grub >/dev/null; then
 	update-grub || true
