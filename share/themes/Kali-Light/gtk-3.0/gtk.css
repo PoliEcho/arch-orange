@@ -5253,6 +5253,23 @@ filechooser placessidebar.sidebar,
 .xfce4-panel.vertical button:not(#whiskermenu-button):checked, .xfce4-panel.vertical button:not(#whiskermenu-button):active {
   box-shadow: inset 4px 0 0 #2777ff; }
 
+/* Whisker menu */
+#whiskermenu-window entry {
+  border-radius: 100px;
+  border: 2px solid #2777ff;
+  box-shadow: none; }
+
+#whiskermenu-window .frame {
+  border: 0; }
+
+#whiskermenu-window scrolledwindow treeview {
+  padding: 0 5px;
+  background: #ffffff;
+  border-left: 1px solid #d9d9d9; }
+  #whiskermenu-window scrolledwindow treeview:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    color: inherit; }
+
 /* Gedit */
 /* XFCE4 panel action buttons */
 #XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {
