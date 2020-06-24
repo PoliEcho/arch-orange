@@ -81,6 +81,28 @@ filechooser,
   }
 }
 
+/* Whisker menu */
+#whiskermenu-window {
+  entry {
+    border-radius: 100px;
+    border: 2px solid $selected_bg_color;
+    box-shadow: none;
+  }
+
+  .frame { border: 0; }
+
+  scrolledwindow  treeview {
+    padding: 0 5px;
+    background: $bg_color;
+    border-left: 1px solid $borders_color;
+
+    &:hover {
+      background-color: transparentize($shadow_color, 0.03);
+      color: inherit;
+    }
+  }
+}
+
 /* Gedit */
 @import url('applications/gedit/Adwaita.css');
 
