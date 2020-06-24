@@ -99,7 +99,7 @@ filechooser,
     background: $bg_color;
     border-left: 1px solid $borders_color;
 
-    &:hover {
+    &:hover, &:active, &:selected {
       background-color: transparentize($shadow_color, 0.03);
       color: inherit;
     }
