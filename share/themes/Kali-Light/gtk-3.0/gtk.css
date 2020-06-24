@@ -5253,6 +5253,10 @@ filechooser placessidebar.sidebar,
 .xfce4-panel.vertical button:not(#whiskermenu-button):checked, .xfce4-panel.vertical button:not(#whiskermenu-button):active {
   box-shadow: inset 4px 0 0 #2777ff; }
 
+/* XFCE4 NOTIFICATIONS */
+#XfceNotifyWindow {
+  background-color: #272a34; }
+
 /* Whisker menu */
 #whiskermenu-window entry {
   border-radius: 100px;
