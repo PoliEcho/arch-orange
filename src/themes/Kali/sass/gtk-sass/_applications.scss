@@ -7,6 +7,8 @@ $panel_bg : transparentize($bg_color, if($variant=='light', .1, .2));
 @define-color disk_space_used #{"" +$selected_bg_color};
 @define-color disk_space_free white;
 
+
+$_glow_shadow: 0 1px 4px transparentize($selected_bg_color, .5);
 filechooser,
 .nautilus-window {
   placessidebar.sidebar {
@@ -28,7 +30,10 @@ filechooser,
         margin-left: 6px;
         margin-right: 6px;
         border-radius: $button_radius;
-        box-shadow: 0 2px 4px transparentize($selected_bg_color, .5);
+        box-shadow: $_glow_shadow;
+        transition: box-shadow $backdrop_transition;
+
+        &:backdrop { box-shadow: none; }
 
         &:dir(ltr) {
           background-image: linear-gradient(to right, darken($selected_bg_color, 10%) 35px, transparent 0);
@@ -46,6 +51,26 @@ filechooser,
       }
 
       .sidebar-icon { padding-right: 20px; }
+    }
+  }
+}
+
+.floating-bar {
+  background-color: $selected_bg_color;
+  border-color: $selected_borders_color;
+  margin: 10px;
+  box-shadow: $_glow_shadow;
+  transition: background-color $backdrop_transition;
+
+  &:backdrop {
+    box-shadow: none;
+    border-color: $borders_color;
+  }
+
+  &.bottom {
+    &.left, &.right{
+      border-radius: $button_radius;
+      border-style: solid;
     }
   }
 }

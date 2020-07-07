@@ -5193,7 +5193,11 @@ filechooser placessidebar.sidebar,
     margin-left: 6px;
     margin-right: 6px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(39, 119, 255, 0.5); }
+    box-shadow: 0 1px 4px rgba(39, 119, 255, 0.5);
+    transition: box-shadow 200ms ease-out; }
+    filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop,
+    .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop {
+      box-shadow: none; }
     filechooser placessidebar.sidebar row.sidebar-row:selected:dir(ltr),
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected:dir(ltr) {
       background-image: linear-gradient(to right, #005af3 35px, transparent 0); }
@@ -5211,6 +5215,19 @@ filechooser placessidebar.sidebar,
   filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
   .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
     padding-right: 20px; }
+
+.floating-bar {
+  background-color: #2777ff;
+  border-color: #00348d;
+  margin: 10px;
+  box-shadow: 0 1px 4px rgba(39, 119, 255, 0.5);
+  transition: background-color 200ms ease-out; }
+  .floating-bar:backdrop {
+    box-shadow: none;
+    border-color: #0d0e11; }
+  .floating-bar.bottom.left, .floating-bar.bottom.right {
+    border-radius: 5px;
+    border-style: solid; }
 
 /* XFCE4 PANEL */
 .xfce4-panel.background {
