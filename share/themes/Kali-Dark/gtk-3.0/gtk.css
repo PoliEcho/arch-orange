@@ -5191,12 +5191,14 @@ filechooser placessidebar.sidebar,
     padding-right: 20px; }
 
 .floating-bar {
+  color: #ffffff;
   background-color: #2777ff;
   border-color: #00348d;
   margin: 10px;
   box-shadow: 0 1px 4px rgba(39, 119, 255, 0.5);
   transition: background-color 200ms ease-out; }
   .floating-bar:backdrop {
+    color: inherit;
     box-shadow: none;
     border-color: #0d0e11; }
   .floating-bar.bottom.left, .floating-bar.bottom.right {
