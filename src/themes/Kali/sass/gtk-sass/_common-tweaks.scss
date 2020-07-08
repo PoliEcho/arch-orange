@@ -356,10 +356,6 @@ decoration {
     border-width: 0;
     box-shadow: 0 1px 4px transparentize(black, 0.8);
   }
-
-  window.csd & {
-   background: if($variant=='light', white, black);
-  }
 }
 
 // Window Close button

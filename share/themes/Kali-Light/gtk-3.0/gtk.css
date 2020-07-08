@@ -1123,10 +1123,6 @@ button.file separator {
 button.font > box > box > label {
   font-weight: bold; }
 
-.inline-toolbar button, .inline-toolbar button:backdrop {
-  border-radius: 2px;
-  border-width: 1px; }
-
 .primary-toolbar button {
   -gtk-icon-shadow: none; }
 
@@ -1243,55 +1239,51 @@ stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attenti
         background-image: image(#eaeaea);
         box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
 
-.linked > combobox > box > button.combo:dir(ltr), .linked > combobox > box > button.combo:dir(rtl), filechooser .path-bar.linked > button, .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry, .inline-toolbar button, .inline-toolbar button:backdrop, .linked > button, .linked > button:hover, .linked > button:active, .linked > button:checked, .linked > button:backdrop, toolbar.inline-toolbar toolbutton > button.flat,
-toolbar.inline-toolbar toolbutton:backdrop > button.flat {
-  border-radius: 0;
+.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry, .inline-toolbar button, .linked > button, toolbar.inline-toolbar toolbutton > button.flat {
   border-right-style: none;
+  border-radius: 0;
   -gtk-outline-radius: 0; }
 
-.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked > button:first-child, .linked > button:first-child:hover, .linked > button:first-child:active, .linked > button:first-child:checked, .linked > button:first-child:backdrop, toolbar.inline-toolbar toolbutton:first-child > button.flat {
+.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right-style: none;
-  -gtk-outline-bottom-left-radius: 5px;
   -gtk-outline-top-left-radius: 5px;
-  -gtk-outline-top-right-radius: 0;
-  -gtk-outline-bottom-right-radius: 0; }
+  -gtk-outline-bottom-left-radius: 5px; }
 
-.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked > button:last-child, .linked > button:last-child:hover, .linked > button:last-child:active, .linked > button:last-child:checked, .linked > button:last-child:backdrop, toolbar.inline-toolbar toolbutton:last-child > button.flat {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
+  border-right-style: solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-right-style: solid;
-  -gtk-outline-bottom-right-radius: 5px;
   -gtk-outline-top-right-radius: 5px;
-  -gtk-outline-bottom-left-radius: 0;
-  -gtk-outline-top-left-radius: 0; }
+  -gtk-outline-bottom-right-radius: 5px; }
 
-.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked > button:only-child, .linked > button:only-child:hover, .linked > button:only-child:active, .linked > button:only-child:checked, .linked > button:only-child:backdrop, toolbar.inline-toolbar toolbutton:only-child > button.flat {
-  border-radius: 5px;
+.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat {
   border-style: solid;
+  border-radius: 5px;
   -gtk-outline-radius: 5px; }
 
-.linked.vertical > combobox > box > button.combo, .linked.vertical > spinbutton:not(.vertical), .linked.vertical > entry, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked, .linked.vertical > button:backdrop {
+.linked.vertical > combobox > box > button.combo, .linked.vertical > spinbutton:not(.vertical), .linked.vertical > entry, .linked.vertical > button {
   border-style: solid solid none solid;
-  border-radius: 0; }
+  border-radius: 0;
+  -gtk-outline-radius: 0; }
 
-.linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child, .linked.vertical > button:first-child, .linked.vertical > button:first-child:hover, .linked.vertical > button:first-child:active, .linked.vertical > button:first-child:checked, .linked.vertical > button:first-child:backdrop {
+.linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child, .linked.vertical > button:first-child {
   border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  border-top-right-radius: 5px;
+  -gtk-outline-top-left-radius: 5px;
+  -gtk-outline-top-right-radius: 5px; }
 
-.linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical), .linked.vertical > entry:last-child, .linked.vertical > button:last-child, .linked.vertical > button:last-child:hover, .linked.vertical > button:last-child:active, .linked.vertical > button:last-child:checked, .linked.vertical > button:last-child:backdrop {
+.linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical), .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
+  border-bottom-style: solid;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-style: solid; }
+  -gtk-outline-bottom-left-radius: 5px;
+  -gtk-outline-bottom-right-radius: 5px; }
 
-.linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child, .linked.vertical > button:only-child, .linked.vertical > button:only-child:hover, .linked.vertical > button:only-child:active, .linked.vertical > button:only-child:checked, .linked.vertical > button:only-child:backdrop {
+.linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child, .linked.vertical > button:only-child {
+  border-style: solid;
   border-radius: 5px;
-  border-style: solid; }
+  -gtk-outline-radius: 5px; }
 
 .scale-popup button:backdrop:hover, .scale-popup button:backdrop:disabled, .scale-popup button:backdrop, .scale-popup button:hover, calendar.button, button:link:hover, button:link:active, button:link:checked,
 button:visited:hover,
@@ -2372,41 +2364,41 @@ notebook > header {
     notebook > header.top > tabs {
       margin-bottom: -2px; }
       notebook > header.top > tabs > tab:hover {
-        box-shadow: inset 0 -3px #d9d9d9; }
+        box-shadow: inset 0 -4px #d9d9d9; }
       notebook > header.top > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.top > tabs > tab:checked {
-        box-shadow: inset 0 -3px #2777ff; }
+        box-shadow: inset 0 -4px #2777ff; }
   notebook > header.bottom {
     border-top-style: solid; }
     notebook > header.bottom > tabs {
       margin-top: -2px; }
       notebook > header.bottom > tabs > tab:hover {
-        box-shadow: inset 0 3px #d9d9d9; }
+        box-shadow: inset 0 4px #d9d9d9; }
       notebook > header.bottom > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.bottom > tabs > tab:checked {
-        box-shadow: inset 0 3px #2777ff; }
+        box-shadow: inset 0 4px #2777ff; }
   notebook > header.left {
     border-right-style: solid; }
     notebook > header.left > tabs {
       margin-right: -2px; }
       notebook > header.left > tabs > tab:hover {
-        box-shadow: inset -3px 0 #d9d9d9; }
+        box-shadow: inset -4px 0 #d9d9d9; }
       notebook > header.left > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.left > tabs > tab:checked {
-        box-shadow: inset -3px 0 #2777ff; }
+        box-shadow: inset -4px 0 #2777ff; }
   notebook > header.right {
     border-left-style: solid; }
     notebook > header.right > tabs {
       margin-left: -2px; }
       notebook > header.right > tabs > tab:hover {
-        box-shadow: inset 3px 0 #d9d9d9; }
+        box-shadow: inset 4px 0 #d9d9d9; }
       notebook > header.right > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.right > tabs > tab:checked {
-        box-shadow: inset 3px 0 #2777ff; }
+        box-shadow: inset 4px 0 #2777ff; }
   notebook > header.top > tabs > arrow {
     border-top-style: none; }
   notebook > header.bottom > tabs > arrow {
@@ -2455,12 +2447,13 @@ notebook > header {
     min-width: 30px;
     padding: 3px 12px;
     outline-offset: -5px;
-    color: #aeb0b6;
-    font-weight: bold;
+    color: #5c616c;
+    font-weight: normal;
     border-width: 1px;
     border-color: transparent; }
     notebook > header tab:hover {
-      color: #858991; }
+      color: #5c616c;
+      background-color: whitesmoke; }
       notebook > header tab.reorderable-page:hover {
         border-color: rgba(217, 217, 217, 0.3);
         background-color: rgba(255, 255, 255, 0.2); }
@@ -2780,7 +2773,7 @@ switch {
  * Check and Radio items *
  *************************/
 .view.content-view.check:not(list), iconview.content-view.check:not(list),
-.content-view .tile check:not(list) {
+.content-view:not(list) check {
   margin: 4px;
   min-width: 32px;
   min-height: 32px;
@@ -2795,7 +2788,7 @@ switch {
   -gtk-icon-shadow: none; }
 
 .view.content-view.check:hover:not(list), iconview.content-view.check:hover:not(list),
-.content-view .tile check:hover:not(list) {
+.content-view:not(list) check:hover {
   margin: 4px;
   min-width: 32px;
   min-height: 32px;
@@ -2810,7 +2803,7 @@ switch {
   -gtk-icon-shadow: none; }
 
 .view.content-view.check:active:not(list), iconview.content-view.check:active:not(list),
-.content-view .tile check:active:not(list) {
+.content-view:not(list) check:active {
   margin: 4px;
   min-width: 32px;
   min-height: 32px;
@@ -2825,7 +2818,7 @@ switch {
   -gtk-icon-shadow: none; }
 
 .view.content-view.check:backdrop:not(list), iconview.content-view.check:backdrop:not(list),
-.content-view .tile check:backdrop:not(list) {
+.content-view:not(list) check:backdrop {
   margin: 4px;
   min-width: 32px;
   min-height: 32px;
@@ -2840,7 +2833,7 @@ switch {
   -gtk-icon-shadow: none; }
 
 .view.content-view.check:checked:not(list), iconview.content-view.check:checked:not(list),
-.content-view .tile check:checked:not(list) {
+.content-view:not(list) check:checked {
   margin: 4px;
   min-width: 32px;
   min-height: 32px;
@@ -2855,7 +2848,7 @@ switch {
   -gtk-icon-shadow: none; }
 
 .view.content-view.check:checked:hover:not(list), iconview.content-view.check:checked:hover:not(list),
-.content-view .tile check:checked:hover:not(list) {
+.content-view:not(list) check:checked:hover {
   margin: 4px;
   min-width: 32px;
   min-height: 32px;
@@ -2870,7 +2863,7 @@ switch {
   -gtk-icon-shadow: none; }
 
 .view.content-view.check:checked:active:not(list), iconview.content-view.check:checked:active:not(list),
-.content-view .tile check:checked:active:not(list) {
+.content-view:not(list) check:checked:active {
   margin: 4px;
   min-width: 32px;
   min-height: 32px;
@@ -2885,7 +2878,7 @@ switch {
   -gtk-icon-shadow: none; }
 
 .view.content-view.check:backdrop:checked:not(list), iconview.content-view.check:backdrop:checked:not(list),
-.content-view .tile check:backdrop:checked:not(list) {
+.content-view:not(list) check:backdrop:checked {
   margin: 4px;
   min-width: 32px;
   min-height: 32px;
@@ -4101,31 +4094,16 @@ messagedialog.csd.background {
 
 messagedialog.csd .dialog-action-area button {
   padding: 10px 14px;
-  border-radius: 0;
-  border-left-style: solid;
   border-right-style: none;
-  border-bottom-style: none; }
-  messagedialog.csd .dialog-action-area button:first-child:not(:only-child) {
+  border-bottom-style: none;
+  border-radius: 0;
+  -gtk-outline-radius: 0; }
+  messagedialog.csd .dialog-action-area button:first-child {
     border-left-style: none;
     border-bottom-left-radius: 7px;
-    -gtk-outline-bottom-left-radius: 7px;
-    -gtk-outline-top-left-radius: 0px;
-    -gtk-outline-top-right-radius: 0px;
-    -gtk-outline-bottom-right-radius: 0px; }
-  messagedialog.csd .dialog-action-area button:last-child:not(:only-child) {
+    -gtk-outline-bottom-left-radius: 7px; }
+  messagedialog.csd .dialog-action-area button:last-child {
     border-bottom-right-radius: 7px;
-    -gtk-outline-bottom-right-radius: 7px;
-    -gtk-outline-top-right-radius: 0px;
-    -gtk-outline-bottom-left-radius: 0px;
-    -gtk-outline-top-left-radius: 0px; }
-  messagedialog.csd .dialog-action-area button:only-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    -gtk-outline-top-right-radius: 0px;
-    -gtk-outline-top-left-radius: 0px;
-    -gtk-outline-bottom-left-radius: 7px;
     -gtk-outline-bottom-right-radius: 7px; }
 
 filechooser .dialog-action-box {
@@ -4543,8 +4521,6 @@ decoration {
     border-radius: 0; }
   .popup decoration {
     box-shadow: none; }
-  .csd decoration {
-    background-color: black; }
   .ssd decoration {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23); }
   .csd.popup decoration {
@@ -5182,8 +5158,6 @@ decoration {
   messagedialog.csd decoration {
     border-width: 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
-  window.csd decoration {
-    background: white; }
 
 button.titlebutton:not(.appmenu) {
   margin: 0; }
