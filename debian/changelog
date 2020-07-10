@@ -1,3 +1,43 @@
+kali-themes (2020.3.0) kali-dev; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Update symbolic icons
+  * Icons: recover previous ac-adapter-symbolic icon
+  * Icons: Update Flat-Remix icon theme
+  * GTK3: pull upstream theme changes for 3.24.20
+  * GTK3: Remove outline border from message dialog
+  * Icons: Add gnome on-screen keyboard key icons
+  * Gnome-Shell: pull upstream theme changes for 3.36.2
+  * Set firefox as default browser for KDE
+  * Add favorite apps to KDE panel
+  * KDE: Move panel workspace-switcher after favorite apps
+  * KDE: Increase size of menu icon
+  * KDE: improve aurorae theme with blur window effect
+  * GTK3: Improve OSD visibility
+  * GTK3: Lighten OSD background color
+  * GTK3: Custom placessidebar for Nautilus
+  * GTK3: change drop_target_color
+  * GTK3: reduce headerbar height for apps using hdyviewswitcher
+  * GTK3: remove background from left nested headerbar
+  * Improve gtk's source color-schemes
+  * GTK3: improve entry visibility
+  * GTK3: change headerbar's entry background
+  * Use same background for grub theme and desktop-base grub image
+  * GTK3: Theme whiskermenu
+  * GTK3: Regenerate css files
+  * GTK3: Darken Xfce-notification background color
+  * GTK3: fix whishkermenu not showing selected row
+  * Copy gnome-system-monitor color-tweaks from kali-defaults
+  * GTK3: Improve nautilus floating-bar design
+  * Gnome-Shell: Upload for gnome-shell 3.36.4
+  * GTK: Upload for gtk 3.24.21
+  * GTK3: Fix floating-bar transparent text for light theme
+
+  [ DяA ]
+  * Icons: 102 new app icons
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Fri, 10 Jul 2020 12:38:44 +0200
+
 kali-themes (2020.2.3) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
