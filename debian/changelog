@@ -1,3 +1,10 @@
+kali-themes (2020.3.2) kali-dev; urgency=medium
+
+  * Remove /boot/grub/themes/kali/background.png symlink first before trying
+    to copy over it...
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Mon, 20 Jul 2020 18:31:03 +0200
+
 kali-themes (2020.3.1) kali-dev; urgency=medium
 
   * Don't try to copy or create symlinks in /boot
