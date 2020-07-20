@@ -80,6 +80,8 @@ if [ "$1" = "configure" ]; then
     ln -sf /root/.face /root/.face.icon
     # Copy grub theme to /boot
     mkdir -p /boot/grub/themes/kali
+    # Remove old symlink created by postinst in 2020.3.0
+    rm -f /boot/grub/themes/kali/background.png
     cp -r /usr/share/grub/themes/kali/* /boot/grub/themes/kali/
     # Set grub theme background
     # Use background with 16x9 aspect ratio for efi installations detected
