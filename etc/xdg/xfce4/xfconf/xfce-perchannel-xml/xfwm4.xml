@@ -9,5 +9,6 @@
     <property name="workspace_count" type="int" value="2"/>
     <property name="cycle_workspaces" type="bool" value="false"/>
     <property name="scroll_workspaces" type="bool" value="false"/>
+    <property name="wrap_windows" type="bool" value="false"/>
   </property>
 </channel>
