@@ -1,4 +1,4 @@
-kali-themes (2020.3.3) kali-dev; urgency=medium
+kali-themes (2020.4.0) kali-dev; urgency=medium
 
   * Set default window-size for qterminal
   * Prevent workspace change when dragging windows on Xfce
