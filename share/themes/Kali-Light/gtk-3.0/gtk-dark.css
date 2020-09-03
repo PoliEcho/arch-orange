@@ -4818,6 +4818,16 @@ radio, menu menuitem radio, menu menuitem:hover radio {
   background-image: linear-gradient(to bottom, #1e2128 20%, #1a1c23 90%);
   border-color: black;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27); }
+  check:disabled, check:disabled:checked, check:disabled:indeterminate, check:disabled:backdrop, check:disabled:backdrop:checked, check:disabled:backdrop:indeterminate, menu menuitem check:disabled, menu menuitem check:disabled:checked, menu menuitem check:disabled:indeterminate, menu menuitem check:disabled:backdrop, menu menuitem check:disabled:backdrop:checked, menu menuitem check:disabled:backdrop:indeterminate, menu menuitem:hover check:disabled, menu menuitem:hover check:disabled:checked, menu menuitem:hover check:disabled:indeterminate, menu menuitem:hover check:disabled:backdrop, menu menuitem:hover check:disabled:backdrop:checked, menu menuitem:hover check:disabled:backdrop:indeterminate,
+  radio:disabled,
+  radio:disabled:checked,
+  radio:disabled:indeterminate,
+  radio:disabled:backdrop,
+  radio:disabled:backdrop:checked,
+  radio:disabled:backdrop:indeterminate, menu menuitem radio:disabled, menu menuitem radio:disabled:checked, menu menuitem radio:disabled:indeterminate, menu menuitem radio:disabled:backdrop, menu menuitem radio:disabled:backdrop:checked, menu menuitem radio:disabled:backdrop:indeterminate, menu menuitem:hover radio:disabled, menu menuitem:hover radio:disabled:checked, menu menuitem:hover radio:disabled:indeterminate, menu menuitem:hover radio:disabled:backdrop, menu menuitem:hover radio:disabled:backdrop:checked, menu menuitem:hover radio:disabled:backdrop:indeterminate {
+    border-color: #0d0e11;
+    background-image: image(#23252e);
+    color: #eeeeec; }
 
 check:checked, check:indeterminate, menu menuitem check:checked, menu menuitem check:indeterminate,
 radio:checked,
@@ -4834,14 +4844,6 @@ radio:indeterminate, menu menuitem radio:checked, menu menuitem radio:indetermin
   radio:checked:backdrop,
   radio:indeterminate:backdrop, menu menuitem radio:checked:backdrop, menu menuitem radio:indeterminate:backdrop {
     background-image: image(#2777ff); }
-
-check:checked:disabled, check:indeterminate:disabled, menu menuitem check:checked:disabled, menu menuitem check:indeterminate:disabled,
-radio:checked:disabled,
-radio:indeterminate:disabled, menu menuitem radio:checked:disabled, menu menuitem radio:indeterminate:disabled, check:disabled, check:disabled:backdrop,
-radio:disabled,
-radio:disabled:backdrop {
-  border-color: #0d0e11;
-  background-image: image(#23252e); }
 
 /************
  * GtkScale *

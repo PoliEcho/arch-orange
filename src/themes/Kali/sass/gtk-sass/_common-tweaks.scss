@@ -100,9 +100,17 @@ radio {
   $_shadow: 0 1px 2px transparentize($shadow_color, 0.03);
 
   &, menu menuitem &, menu menuitem:hover & {
-      background-image: linear-gradient(to bottom, $_c 20%, darken($_c, 2%) 90%);
-      border-color: $alt_borders_color;
-      box-shadow: $_shadow;
+    background-image: linear-gradient(to bottom, $_c 20%, darken($_c, 2%) 90%);
+    border-color: $alt_borders_color;
+    box-shadow: $_shadow;
+
+    &:disabled, &:disabled:backdrop {
+      &, &:checked, &:indeterminate {
+        border-color: $borders_color;
+        background-image: image($bg_color);
+        color: $fg_color;
+      }
+    }
   }
 
   &, menu menuitem & {
@@ -114,15 +122,6 @@ radio {
 
       &:active { box-shadow: none; }
       &:backdrop { background-image: image($checkradio_bg_color); }
-      &:disabled { @extend %check_radio_disabled; }
-    }
-  }
-
-  @at-root %check_radio_disabled,
-  &:disabled {
-    &, &:backdrop {
-      border-color: $borders_color;
-      background-image: image($bg_color);
     }
   }
 }
