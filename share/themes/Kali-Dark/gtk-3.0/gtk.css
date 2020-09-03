@@ -191,8 +191,7 @@ spinner {
  **********************/
 .large-title {
   font-weight: 300;
-  font-size: 24pt;
-  letter-spacing: 0.2rem; }
+  font-size: 24pt; }
 
 .title-1 {
   font-weight: 800;
@@ -5375,4 +5374,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_a shade(#23252e, 0.85);
 @define-color wm_button_active_color_b shade(#23252e, 0.89);
 @define-color wm_button_active_color_c shade(#23252e, 0.9);
+/* content view background such as thumbnails view in Photos or Boxes */
 @define-color content_view_bg #272a34;
+/* Very contrasty background for text views (@theme_text_color foreground) */
+@define-color text_view_bg #1a1c23;
