@@ -1,3 +1,13 @@
+kali-themes (2020.4.1) kali-dev; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * GTK3: Update 3.24.22
+  * Gnome-Shell: Update 3.36.5
+  * GTK3: Fix disabled check and radio widgets are not visible using the light theme
+  * Force update for modified files inside /etc/xdg
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Fri, 04 Sep 2020 15:37:58 +0200
+
 kali-themes (2020.4.0) kali-dev; urgency=medium
 
   * Set default window-size for qterminal
