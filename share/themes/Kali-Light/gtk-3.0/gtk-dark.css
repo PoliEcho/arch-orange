@@ -487,7 +487,7 @@ button {
   background-image: linear-gradient(to top, #20232b 2px, #23252e);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27); }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   button.titlebutton, button.sidebar-button, notebook > header > tabs > arrow, notebook > header > tabs > arrow.flat,
   button.flat {
     border-color: transparent;
@@ -512,7 +512,7 @@ button {
     border-bottom-color: black;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #20232b, #252831 1px);
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:active, notebook > header > tabs > arrow:checked,
@@ -797,7 +797,7 @@ button.suggested-action {
   background-image: linear-gradient(to top, #2274ff 2px, #2777ff);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.538824);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.538824);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.27); }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   
   button.suggested-action.flat {
     border-color: transparent;
@@ -815,7 +815,7 @@ button.suggested-action {
     border-bottom-color: #0047c0;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #2274ff, #2c7aff 1px); }
   
   button.suggested-action:active,
@@ -947,7 +947,7 @@ button.destructive-action {
   background-image: linear-gradient(to top, #a21313 2px, #a61414);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.708235);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.708235);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27); }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(121, 14, 14, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   
   button.destructive-action.flat {
     border-color: transparent;
@@ -965,7 +965,7 @@ button.destructive-action {
     border-bottom-color: #4b0909;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.660235);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.660235);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(121, 14, 14, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #a21313, #ab1414 1px); }
   
   button.destructive-action:active,
@@ -1142,7 +1142,7 @@ button.circular {
     background-image: linear-gradient(to top, #20232b 2px, #23252e);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #20232b 2px, #23252e), linear-gradient(to top, black 25%, #0d0e11 50%);
     border-color: transparent; }
   
@@ -1153,7 +1153,7 @@ button.circular {
     border-bottom-color: black;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #20232b, #252831 1px);
     background-image: linear-gradient(to top, #20232b, #252831 1px), linear-gradient(to top, black 25%, #0d0e11 50%);
     border-color: transparent; }
@@ -1180,7 +1180,7 @@ stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attenti
   background-image: linear-gradient(to top, #20232b 2px, #23252e);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27); }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   .inline-toolbar toolbutton > button:hover {
     color: #eeeeec;
     outline-color: rgba(238, 238, 236, 0.3);
@@ -1188,7 +1188,7 @@ stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attenti
     border-bottom-color: black;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #20232b, #252831 1px); }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: #eeeeec;
@@ -1331,7 +1331,7 @@ list row button.image-button:not(.flat) {
     border-bottom-color: black;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #20232b, #252831 1px); }
   list row button.image-button:not(.flat):active, list row button.image-button:not(.flat):checked {
     color: #eeeeec;
@@ -1734,7 +1734,7 @@ headerbar {
       background-image: linear-gradient(to top, #2274ff 2px, #2777ff);
       text-shadow: 0 -1px rgba(0, 0, 0, 0.538824);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.538824);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.27); }
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
       .selection-mode button.titlebutton, .selection-mode .titlebar:not(headerbar) button.flat, .selection-mode.titlebar:not(headerbar) button.flat, .selection-mode headerbar button.flat,
       headerbar.selection-mode button.flat {
         border-color: transparent;
@@ -1751,7 +1751,7 @@ headerbar {
         border-bottom-color: #0047c0;
         text-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
         -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.27);
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
         background-image: linear-gradient(to top, #2274ff, #2c7aff 1px); }
       .selection-mode .titlebar:not(headerbar) button:active, .selection-mode .titlebar:not(headerbar) button:checked, .selection-mode.titlebar:not(headerbar) button:active, .selection-mode.titlebar:not(headerbar) button:checked, .selection-mode headerbar button:active, .selection-mode headerbar button:checked, .selection-mode headerbar button.toggle:checked, .selection-mode headerbar button.toggle:active,
       headerbar.selection-mode button:active,
@@ -1838,7 +1838,7 @@ headerbar {
         background-image: linear-gradient(to top, #20232b 2px, #23252e);
         text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
         -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
         border-color: #00348d; }
         .selection-mode .titlebar:not(headerbar) button.suggested-action:hover, .selection-mode.titlebar:not(headerbar) button.suggested-action:hover, .selection-mode headerbar button.suggested-action:hover,
         headerbar.selection-mode button.suggested-action:hover {
@@ -1848,7 +1848,7 @@ headerbar {
           border-bottom-color: black;
           text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
           -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-          box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+          box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
           background-image: linear-gradient(to top, #20232b, #252831 1px);
           border-color: #00348d; }
         .selection-mode .titlebar:not(headerbar) button.suggested-action:active, .selection-mode.titlebar:not(headerbar) button.suggested-action:active, .selection-mode headerbar button.suggested-action:active,
@@ -2713,14 +2713,14 @@ switch {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     background-image: linear-gradient(to bottom, #292c37 20%, #23252e 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.27); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(26, 28, 35, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   switch image {
     color: transparent; }
   switch:hover slider {
     color: #eeeeec;
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: #040405;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(26, 28, 35, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to bottom, #303340 20%, #272a34 90%); }
   switch:checked > slider {
     border: 1px solid #00215a; }
@@ -3171,7 +3171,7 @@ scale {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
     background-image: linear-gradient(to bottom, #1c1e25 20%, #16171d 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     border: 1px solid black;
     border-radius: 100%;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -3180,7 +3180,7 @@ scale {
       color: #eeeeec;
       outline-color: rgba(238, 238, 236, 0.3);
       border-color: black;
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.27);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
       background-image: linear-gradient(to bottom, #23252e 20%, #1a1c23 90%); }
     scale slider:active {
       border-color: #00348d; }
@@ -4281,7 +4281,7 @@ infobar {
       background-image: linear-gradient(to top, #20232b 2px, #23252e);
       text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27); }
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
       infobar.info button:hover, infobar.question button:hover, infobar.warning button:hover, infobar.error button:hover {
         color: #eeeeec;
         outline-color: rgba(238, 238, 236, 0.3);
@@ -4289,7 +4289,7 @@ infobar {
         border-bottom-color: black;
         text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
         -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
         background-image: linear-gradient(to top, #20232b, #252831 1px); }
       infobar.info button:active, infobar.info button:checked, infobar.question button:active, infobar.question button:checked, infobar.warning button:active, infobar.warning button:checked, infobar.error button:active, infobar.error button:checked {
         color: #eeeeec;
@@ -4430,7 +4430,7 @@ colorswatch#add-color-button {
     background-image: linear-gradient(to top, #20232b 2px, #23252e);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
     colorswatch#add-color-button overlay:hover {
       color: #eeeeec;
       outline-color: rgba(238, 238, 236, 0.3);
@@ -4438,7 +4438,7 @@ colorswatch#add-color-button {
       border-bottom-color: black;
       text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
       background-image: linear-gradient(to top, #20232b, #252831 1px); }
     colorswatch#add-color-button overlay:backdrop {
       color: #888a8d;
@@ -4790,7 +4790,7 @@ switch {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
     background-image: linear-gradient(to bottom, #1c1e25 20%, #16171d 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     border: 1px solid black;
     border-radius: 50%;
     transition-property: background, border, box-shadow; }
@@ -4928,7 +4928,7 @@ infobar.info button, infobar.info.action:hover button {
   background-image: linear-gradient(to top, #2274ff 2px, #2777ff);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.538824);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.538824);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.27); }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   infobar.info button:hover, infobar.info.action:hover button:hover {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -4936,7 +4936,7 @@ infobar.info button, infobar.info.action:hover button {
     border-bottom-color: #0047c0;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #2274ff, #2c7aff 1px); }
   infobar.info button:active, infobar.info button:checked, infobar.info.action:hover button:active, infobar.info.action:hover button:checked {
     color: #ffffff;
@@ -4983,7 +4983,7 @@ infobar.question button, infobar.warning button, infobar.question.action:hover b
   background-image: linear-gradient(to top, #f87a00 2px, #fd7d00);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.603137);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.603137);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.27); }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(202, 100, 0, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   infobar.question button:hover, infobar.warning button:hover, infobar.question.action:hover button:hover, infobar.warning.action:hover button:hover {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -4991,7 +4991,7 @@ infobar.question button, infobar.warning button, infobar.question.action:hover b
     border-bottom-color: #974b00;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.555137);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.555137);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(202, 100, 0, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
     background-image: linear-gradient(to top, #f87a00, #ff8003 1px); }
   infobar.question button:active, infobar.question button:checked, infobar.warning button:active, infobar.warning button:checked, infobar.question.action:hover button:active, infobar.question.action:hover button:checked, infobar.warning.action:hover button:active, infobar.warning.action:hover button:checked {
     color: #ffffff;
@@ -5037,7 +5037,7 @@ infobar.error:backdrop > revealer > box, infobar.error > revealer > box, infobar
     background-image: linear-gradient(to top, #ba1616 2px, #bf1717);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.664314);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.664314);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.27); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(145, 18, 18, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
     infobar.error:backdrop > revealer > box button:hover, infobar.error > revealer > box button:hover, infobar.error.action:hover:backdrop > revealer > box button:hover, infobar.error.action:hover > revealer > box button:hover {
       color: #ffffff;
       outline-color: rgba(255, 255, 255, 0.3);
@@ -5045,7 +5045,7 @@ infobar.error:backdrop > revealer > box, infobar.error > revealer > box, infobar
       border-bottom-color: #640c0c;
       text-shadow: 0 -1px rgba(0, 0, 0, 0.616314);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.616314);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.27);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), inset 0 -1px 0 rgba(145, 18, 18, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
       background-image: linear-gradient(to top, #ba1616, #c41818 1px); }
     infobar.error:backdrop > revealer > box button:active, infobar.error:backdrop > revealer > box button:checked, infobar.error > revealer > box button:active, infobar.error > revealer > box button:checked, infobar.error.action:hover:backdrop > revealer > box button:active, infobar.error.action:hover:backdrop > revealer > box button:checked, infobar.error.action:hover > revealer > box button:active, infobar.error.action:hover > revealer > box button:checked {
       color: #ffffff;
