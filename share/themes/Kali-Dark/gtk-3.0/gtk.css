@@ -131,6 +131,12 @@ label {
       color: #43495a; }
       button label:disabled:backdrop {
         color: inherit; }
+  label.error {
+    color: #bf1717; }
+    label.error:disabled {
+      color: rgba(191, 23, 23, 0.5); }
+    label.error:disabled:backdrop {
+      color: rgba(191, 23, 23, 0.4); }
 
 .dim-label, .titlebar:not(headerbar) .subtitle,
 headerbar .subtitle, label.separator {
@@ -423,6 +429,10 @@ entry progress {
 .linked.vertical > entry:drop(active):not(:only-child) + button,
 .linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
   border-top-color: #19a187; }
+
+spinbutton.error:not(.vertical),
+entry.error {
+  color: #bf1717; }
 
 treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) {
   background-color: #272a34;
