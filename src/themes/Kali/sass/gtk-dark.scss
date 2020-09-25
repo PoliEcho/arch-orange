@@ -5,10 +5,12 @@
 // - if you need to inverse a color function use the @if directive to match for dark $variant
 
 $variant: 'dark';
+$high-contrast:'false';
 
 @import 'gtk-sass/_colors';
 @import 'gtk-sass/upstream/_drawing';
 @import 'gtk-sass/upstream/_common';
+@import 'gtk-sass/libhandy/Adwaita-base';
 @import 'gtk-sass/_common-tweaks';
 @import 'gtk-sass/_applications';
 @import 'gtk-sass/upstream/_colors-public';
