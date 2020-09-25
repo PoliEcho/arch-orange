@@ -203,3 +203,10 @@ wnck-pager {
   }
 }
 
+/* Thunar */
+// Hide root user warning
+.thunar .warning {
+  opacity: 0;
+  font-size: 0;
+  margin: -10px 0;
+}
