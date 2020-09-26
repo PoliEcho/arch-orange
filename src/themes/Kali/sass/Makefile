@@ -1,7 +1,7 @@
 SCSS=sassc
 THEMES_DIR=../../../../share/themes/
 
-.PHONY: install clean
+.PHONY: build clean
 
 build:
 	for scss in *.scss ; \
