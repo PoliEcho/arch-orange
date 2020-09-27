@@ -5549,18 +5549,18 @@ filechooser placessidebar.sidebar,
   .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
     padding-right: 20px; }
 
-.floating-bar {
+.nautilus-window .floating-bar {
   color: #ffffff;
   background-color: #2777ff;
   border-color: #0051da;
   margin: 10px;
   box-shadow: 0 1px 4px rgba(39, 119, 255, 0.5);
   transition: background-color 200ms ease-out; }
-  .floating-bar:backdrop {
+  .nautilus-window .floating-bar:backdrop {
     color: inherit;
     box-shadow: none;
     border-color: #d9d9d9; }
-  .floating-bar.bottom.left, .floating-bar.bottom.right {
+  .nautilus-window .floating-bar.bottom.left, .nautilus-window .floating-bar.bottom.right {
     border-radius: 5px;
     border-style: solid; }
 
