@@ -5225,10 +5225,14 @@ headerbar {
     background-image: -gtk-scaled(url("assets/kali-headerbar-logo.png"), url("assets/kali-headerbar-logo@2.png"));
     background-repeat: no-repeat;
     background-position: left; }
+  .titlebar viewswitcher button > stack > box.narrow,
   .titlebar hdyviewswitcher > button box.narrow,
+  headerbar viewswitcher button > stack > box.narrow,
   headerbar hdyviewswitcher > button box.narrow {
     margin: -7px 0 -5px; }
+  .titlebar viewswitcher button > stack > box.wide,
   .titlebar hdyviewswitcher > button box.wide,
+  headerbar viewswitcher button > stack > box.wide,
   headerbar hdyviewswitcher > button box.wide {
     margin: -8px 0; }
   .titlebar.default-decoration,
