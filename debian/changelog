@@ -1,3 +1,22 @@
+kali-themes (2020.4.2) kali-dev; urgency=medium
+
+  * GTK3: Add inner shadow to button-like widgets to add some volume
+  * Icons: Fix Flat-Remix with QT HiDPI settings breaks qterminal (Fixes #57)
+  * Icons: fix relative symlinks
+  * Set Flat-Remix as default icon theme for qt apps
+  * GTK3: Update 3.24.23
+  * Revert "Recover thunar root user warning"
+  * Add libhandy sources for GTK3 themes
+  * GTK3: Fix border-color for the slider of the switch when it's disabled
+  * GTK3: Use custom floating-bar styles only for nautilus
+  * GTK3: reduce headerbar's kali logo
+  * Make mousepad use the system's font
+  * GTK3: update theme tweaks for the new libhandy viewswitcher
+  * GTK3: Replaced hardcoded white color for selected items with
+    $selected_fg_color
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Mon, 28 Sep 2020 15:55:21 +0200
+
 kali-themes (2020.4.1) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
