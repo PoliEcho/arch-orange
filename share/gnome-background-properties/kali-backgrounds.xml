@@ -85,4 +85,11 @@
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
+  <wallpaper>
+    <name>Kali Geometric</name>
+    <filename>/usr/share/backgrounds/kali/kali-geometric.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
 </wallpapers>
