@@ -1,5 +1,4 @@
-INKSCAPE=/usr/bin/inkscape
-OPTIPNG=/usr/bin/optipng
+include ../../../Makefile.inc
 
 SRC_FILE=assets.svg
 ASSETS_DIR=assets
@@ -19,19 +18,19 @@ build: $(SRC_FILE)
 		$(INKSCAPE) --export-id=$$i \
 		            --export-id-only \
 		            --export-png=$(ASSETS_DIR)/$$i.png $(SRC_FILE) > /dev/null 2>&1 \
-		&& $(OPTIPNG) -o7 --quiet $(ASSETS_DIR)/$$i.png ; \
+		&& $(OPTIPNG) $(ASSETS_DIR)/$$i.png ; \
 		echo ; \
 		echo Rendering $(ASSETS_DIR)/$$i@2.png ; \
 		$(INKSCAPE) --export-id=$$i \
 		            --export-dpi=180 \
 		            --export-id-only \
 		            --export-png=$(ASSETS_DIR)/$$i@2.png $(SRC_FILE) > /dev/null 2>&1 \
-		&& $(OPTIPNG) -o7 --quiet $(ASSETS_DIR)/$$i@2.png ; \
+		&& $(OPTIPNG) $(ASSETS_DIR)/$$i@2.png ; \
 	done
-	mkdir -p $(THEMES_DIR)/Kali-Light/gtk-3.0/assets/
-	cp assets/* $(THEMES_DIR)/Kali-Light/gtk-3.0/assets/
-	mkdir -p $(THEMES_DIR)/Kali-Dark/gtk-3.0/assets/
-	cp assets/* $(THEMES_DIR)/Kali-Dark/gtk-3.0/assets/
+	mkdir -p $(THEMES_DIR)Kali-Light/gtk-3.0/assets/
+	cp assets/* $(THEMES_DIR)Kali-Light/gtk-3.0/assets/
+	mkdir -p $(THEMES_DIR)Kali-Dark/gtk-3.0/assets/
+	cp assets/* $(THEMES_DIR)Kali-Dark/gtk-3.0/assets/
 
 clean:
 	-rm -r $(ASSETS_DIR)
