@@ -1,8 +1,6 @@
 $panel_bg : transparentize($bg_color, if($variant=='light', .1, .2));
 
 /* Nautilus */
-@import url('applications/nautilus/Adwaita.css');
-
 @define-color disk_space_unknown #383c4a;
 @define-color disk_space_used #{"" +$selected_bg_color};
 @define-color disk_space_free white;
@@ -132,9 +130,6 @@ filechooser,
     }
   }
 }
-
-/* Gedit */
-@import url('applications/gedit/Adwaita.css');
 
 /* XFCE4 panel action buttons */
 #XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {

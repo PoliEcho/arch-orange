@@ -1,8 +1,6 @@
 /***************************
  * Check and Radio buttons *
  ***************************/
-@import url("applications/nautilus/Adwaita.css");
-@import url("applications/gedit/Adwaita.css");
 * {
   padding: 0;
   -GtkToolButton-icon-spacing: 4;
@@ -5609,7 +5607,6 @@ filechooser placessidebar.sidebar,
     background-color: rgba(0, 0, 0, 0.07);
     color: inherit; }
 
-/* Gedit */
 /* XFCE4 panel action buttons */
 #XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {
   -gtk-icon-style: symbolic;
