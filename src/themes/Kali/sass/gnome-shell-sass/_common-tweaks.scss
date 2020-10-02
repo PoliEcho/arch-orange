@@ -88,10 +88,7 @@ $_osd_color: if($variant=='light', black, white);
 /* Window Picker */
 
 // Borders on window thumbnails
-.window-clone-border {
-  border: 6px solid transparentize(white, .75);
-  border-radius: 6px;
-}
+.window-clone-border { border-color: transparentize(white, .75); }
 
 // Window titles
 .window-caption {
@@ -112,7 +109,6 @@ $_osd_color: if($variant=='light', black, white);
   color: transparent;
   height: 32px;
   width: 32px;
-  -shell-close-overlap: 16px;
 
   &:hover {
     background-image: url("assets/close-window-hover.svg");
@@ -203,6 +199,9 @@ $_osd_color: if($variant=='light', black, white);
   width: 31.5em;
   background: transparentize($bg_color, .3);
 }
+
+/* Events */
+.events-button { @include notification_bubble($flat: true); }
 
 /* World clocks */
 
@@ -315,31 +314,25 @@ $_osd_color: if($variant=='light', black, white);
 }
 
 /* App Folders */
-.app-well-app.app-folder { background-color: $overview_transparent_bg; }
+.app-well-app.app-folder {
+    background-color: $overview_transparent_bg;
+    box-shadow: 0 2px 5px black;
 
-/* Frequent | All toggle */
+    &:checked { background: black; }
+}
 
-// buttons
-.app-view-control {
-   margin: 0;
-   &, &:hover, &:checked {
-     color: white;
-     background-color: $overview_transparent_bg;
-     font-weight: bold;
-     border: 0;
-     box-shadow: none;
-     text-shadow: none;
-   }
+.app-folder-dialog {
+    background: black;
+    box-shadow: 0 0 20px black;
+    border: none;
 
-  &:hover { background: transparentize(white, .6); }
-
-  &:active, &:checked {
-    background: white;
-    color: black;
-  }
-
-  &:first-child { border-radius: $base_border_radius 0 0 $base_border_radius; }
- 
-  &:last-child { border-radius: 0 $base_border_radius $base_border_radius 0; }
+    & .folder-name-container {
+        & .edit-folder-button {
+            &, &:hover, &:active {
+                background: white;
+                color: black;
+            }
+        }
+    }
 }
 
