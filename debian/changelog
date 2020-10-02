@@ -1,3 +1,19 @@
+kali-themes (2020.4.3) kali-dev; urgency=medium
+
+  * Backgrounds: Add new kali-geometric wallpaper
+  * Backgrounds: Add kali-geometric to gnome backgrounds
+  * Improve build scripts
+  * GTK3: Move application specific css inside gtk.css and gtk-dark.css
+  * Remove unneeded index.theme files for XFWM4 themes
+  * Update gitignore
+  * GTK3: Remove application imports
+  * GTK2: Fix the font color for selected menubar-item on dark theme
+  * Gnome-Shell: Theme update for 3.38
+  * KDE: revert menu icon to the default logo and remove the custom panel layout
+    as it is not working
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Fri, 02 Oct 2020 16:22:39 +0200
+
 kali-themes (2020.4.2) kali-dev; urgency=medium
 
   * GTK3: Add inner shadow to button-like widgets to add some volume

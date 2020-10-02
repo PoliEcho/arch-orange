@@ -48,7 +48,7 @@ Depends: kali-themes-common (= ${source:Version}),
  ${misc:Depends}
 Breaks: kali-defaults (<< 2019.4.0),
  kali-desktop-xfce (<< 2020.2.18),
- gnome-shell (<< 3.36.0),
+ gnome-shell (<< 3.38.0),
  kali-menu (<< 2019.4.4)
 Replaces: kali-defaults (<< 2019.4.0)
 Description: Configure all desktops to use the Kali theme
