@@ -1,5 +1,6 @@
 item-icon-size=2
 category-icon-size=1
+hover-switch-category=true
 launcher-show-description=false
 button-icon=kali-panel-menu
 position-search-alternate=true
