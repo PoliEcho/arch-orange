@@ -13,7 +13,7 @@
       <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
-      <property name="Print" type="string" value="xfce4-screenshooter"/>
+      <property name="Print" type="string" value="sh -c &apos;paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga; FILE=&quot;Screenshot_$(date +%F_%H_%M_%S).png&quot;; xfce4-screenshooter -fs &quot;$(xdg-user-dir PICTURES)/$FILE&quot; &amp;&amp; notify-send -u normal &quot;$FILE&quot; -i &quot;$(xdg-user-dir PICTURES)/$FILE&quot;&apos;"/>
       <property name="&lt;Super&gt;Print" type="string" value="kazam"/>
       <property name="Print" type="string" value="xfce4-screenshooter"/>
       <property name="&lt;Primary&gt;Print" type="string" value="xfce4-screenshooter --fullscreen --clipboard"/>
