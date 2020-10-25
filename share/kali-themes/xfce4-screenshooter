@@ -1,0 +1,12 @@
+#!/bin/sh
+
+paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga
+
+if [ $# -eq 0 ]
+then
+	FILE="Screenshot_$(date +%F_%H_%M_%S).png"
+	xfce4-screenshooter -fs "$(xdg-user-dir PICTURES)/$FILE"
+	notify-send -u normal "$FILE" -i "$(xdg-user-dir PICTURES)/$FILE"
+else
+	xfce4-screenshooter $@
+fi

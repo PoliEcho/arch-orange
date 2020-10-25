@@ -13,17 +13,16 @@
       <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
-      <property name="Print" type="string" value="sh -c &apos;paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga; FILE=&quot;Screenshot_$(date +%F_%H_%M_%S).png&quot;; xfce4-screenshooter -fs &quot;$(xdg-user-dir PICTURES)/$FILE&quot; &amp;&amp; notify-send -u normal &quot;$FILE&quot; -i &quot;$(xdg-user-dir PICTURES)/$FILE&quot;&apos;"/>
-      <property name="&lt;Super&gt;Print" type="string" value="kazam"/>
-      <property name="Print" type="string" value="xfce4-screenshooter"/>
-      <property name="&lt;Primary&gt;Print" type="string" value="xfce4-screenshooter --fullscreen --clipboard"/>
-      <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter --region"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter --region --clipboard"/>
-      <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter --window"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter --window --clipboard"/>
+      <property name="Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter"/>
+      <property name="&lt;Primary&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --fullscreen --clipboard"/>
+      <property name="&lt;Shift&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --region"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --region --clipboard"/>
+      <property name="&lt;Alt&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --window"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Print" type="string" value="/usr/share/kali-themes/xfce4-screenshooter --window --clipboard"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
+      <property name="&lt;Super&gt;Print" type="string" value="kazam"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
