@@ -6,8 +6,7 @@ LOGIN_BACKGROUND=$2
 
 # xfce background
 if [ -e share/backgrounds/kali-16x9/$DESKTOP_BACKGROUND.png ]; then
-    rm -f share/backgrounds/kali-16x9/default
-    mv share/backgrounds/kali-16x9/$DESKTOP_BACKGROUND.png \
+    mv -v share/backgrounds/kali-16x9/$DESKTOP_BACKGROUND.png \
 	share/backgrounds/kali-16x9/default
 fi
 
