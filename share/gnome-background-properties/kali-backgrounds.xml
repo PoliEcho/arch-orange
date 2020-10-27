@@ -92,4 +92,18 @@
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
   </wallpaper>
+  <wallpaper>
+    <name>00 Kali Light Strips</name>
+    <filename>/usr/share/backgrounds/kali/kali-light-strips.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>00 Kali Legacy</name>
+    <filename>/usr/share/backgrounds/kali/kali-legacy.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
 </wallpapers>
