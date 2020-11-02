@@ -11,8 +11,26 @@ kali-themes (2020.4.3) kali-dev; urgency=medium
   * Gnome-Shell: Theme update for 3.38
   * KDE: revert menu icon to the default logo and remove the custom panel layout
     as it is not working
+  * Icons: Update Flat-Remix theme
+  * Backgrounds: Ensure Kali wallpapers are listed first on gnome
+  * Configure whiskermenu to switch categories on hover
+  * Automatically save screenshot on Xfce
+  * Add sound to xfce4-screenshooter
+  * Force xfce4-keyboard-shortcuts.xml update
+  * Fix SASS upstream sync scripts
+  * Backgrounds: Add kali-legacy and kali-light-strips
+  * Backgrounds: configure the new images for 2020.4
+  * Backgrounds: Automate the configuration of the default backgrounds
+  * Backgrounds: Fix images with banding
+  * Gnome-Shell: update gnome 3.38.1
+  * GTK3: new theme for whiskermenu
+  * Make whiskermenu wider
+  * Only show setting button in whiskermenu
+  * Backgrounds: move old backgrounds to kali-legacy-wallpapers
+  * Icons: Update Flat-Remix icon theme
+  * Icons use symbolic icon for edit-find action icon
 
- -- Daniel Ruiz de Alegría <daniel@drasite.com>  Fri, 02 Oct 2020 16:22:39 +0200
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Mon, 02 Nov 2020 12:04:54 +0100
 
 kali-themes (2020.4.2) kali-dev; urgency=medium
 
