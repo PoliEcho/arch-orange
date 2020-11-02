@@ -63,7 +63,7 @@ Description: Configure all desktops to use the Kali theme
 Package: kali-wallpapers
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: kali-themes (<< 2020.4.3)
+Breaks: kali-themes-common (<< 2020.4.3)
 Description: Default wallpapers for kali
  This package contains multiple wallpapers for Kali.
 
