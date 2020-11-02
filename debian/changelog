@@ -29,6 +29,7 @@ kali-themes (2020.4.3) kali-dev; urgency=medium
   * Backgrounds: move old backgrounds to kali-legacy-wallpapers
   * Icons: Update Flat-Remix icon theme
   * Icons use symbolic icon for edit-find action icon
+  * Move all backgrounds to kali-wallpapers package
 
  -- Daniel Ruiz de Alegría <daniel@drasite.com>  Mon, 02 Nov 2020 12:04:54 +0100
 

@@ -36,6 +36,7 @@ Description: Kali version of Debian's desktop-base package
 Package: kali-themes
 Architecture: all
 Depends: kali-themes-common (= ${source:Version}),
+ kali-wallpapers (= ${source:Version}),
 # gsettings and other config files reference those fonts
  fonts-cantarell,
  fonts-firacode,
@@ -58,6 +59,13 @@ Description: Configure all desktops to use the Kali theme
  The actual artwork files are provided by kali-themes-common but this package
  provides configuration files and other settings for each desktop so that
  they use the Kali theme by default.
+
+Package: kali-wallpapers
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: kali-themes (<< 2020.4.3)
+Description: Kali Themes (data files)
+ This package contains multiple wallpapers for Kali.
 
 Package: gnome-theme-kali
 Architecture: all
