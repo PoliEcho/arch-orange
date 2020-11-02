@@ -1,5 +1,6 @@
 kali-themes (2020.4.3) kali-dev; urgency=medium
 
+  [ Daniel Ruiz de Alegría ]
   * Backgrounds: Add new kali-geometric wallpaper
   * Backgrounds: Add kali-geometric to gnome backgrounds
   * Improve build scripts
@@ -31,7 +32,10 @@ kali-themes (2020.4.3) kali-dev; urgency=medium
   * Icons use symbolic icon for edit-find action icon
   * Move all backgrounds to kali-wallpapers package
 
- -- Daniel Ruiz de Alegría <daniel@drasite.com>  Mon, 02 Nov 2020 12:04:54 +0100
+  [ Raphaël Hertzog ]
+  * Use kali-wallpapers-2020.4 to store the new wallpapers
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Mon, 02 Nov 2020 21:48:20 +0100
 
 kali-themes (2020.4.2) kali-dev; urgency=medium
 
