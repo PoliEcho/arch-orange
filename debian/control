@@ -12,7 +12,8 @@ Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 
 Package: kali-themes-common
 Architecture: all
-Depends: ${misc:Depends}
+Depends:  kali-wallpapers (= ${source:Version}),
+ ${misc:Depends}
 Suggests: gtk2-engines-murrine
 Breaks: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
 Replaces: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
@@ -36,7 +37,6 @@ Description: Kali version of Debian's desktop-base package
 Package: kali-themes
 Architecture: all
 Depends: kali-themes-common (= ${source:Version}),
- kali-wallpapers (= ${source:Version}),
 # gsettings and other config files reference those fonts
  fonts-cantarell,
  fonts-firacode,
