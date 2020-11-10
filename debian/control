@@ -12,7 +12,7 @@ Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 
 Package: kali-themes-common
 Architecture: all
-Depends:  kali-wallpapers-2020.4 (= ${source:Version}),
+Depends:  kali-wallpapers-current,
  ${misc:Depends}
 Suggests: gtk2-engines-murrine
 Breaks: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
