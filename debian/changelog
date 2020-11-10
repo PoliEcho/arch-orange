@@ -1,3 +1,11 @@
+kali-themes (2020.4.4) kali-dev; urgency=medium
+
+ * Improve notification after screenshot in Xfce
+ * Move all wallpapers to a kali-wallpapers
+ * Replace kali-wallpapers-2020.4 dependency with kali-wallpapers-current
+
+ Daniel Ruiz de Alegría <daniel@drasite.com>  Tue, 10 Nov 2020 20:14:35 +0100
+
 kali-themes (2020.4.3) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
