@@ -60,24 +60,6 @@ Description: Configure all desktops to use the Kali theme
  provides configuration files and other settings for each desktop so that
  they use the Kali theme by default.
 
-# The package is versioned so that it stays around on end-user systems whenever
-# we introduce a new set of wallpapers, thus not breaking the user's background
-# if he selected a non-default wallpaper. The binary package can possibly be
-# moved to kali-legacy-wallpapers.
-#
-# Note: On next version bump, we can get rid of the breaks/replaces.
-Package: kali-wallpapers-2020.4
-Architecture: all
-Depends: ${misc:Depends}
-Breaks: kali-themes-common (<< 2020.4.3)
-Replaces: kali-themes-common (<< 2020.4.3)
-Description: Default wallpapers for Kali Linux
- This package contains multiple wallpapers for Kali Linux.
- .
- If you have multiple kali-wallpapers-YYYY.X packages on your system, you can
- remove them all except the latest which is a dependency of kali-themes-common
- and is thus required.
-
 Package: gnome-theme-kali
 Architecture: all
 Depends: kali-themes,
