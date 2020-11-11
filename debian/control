@@ -16,7 +16,11 @@ Depends:
 # Dependency on the package providing the current default background
  kali-wallpapers-2020.4,
  ${misc:Depends}
-Suggests: gtk2-engines-murrine
+Recommends: kali-wallpapers-2019.4
+Suggests:
+ gtk2-engines-murrine,
+# List old wallpapers so that they are not auto-removed on upgrade
+ kali-wallpapers-legacy
 Breaks: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
 Replaces: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
 Provides: gnome-theme-kali
