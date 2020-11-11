@@ -15,3 +15,7 @@ ln -sfv ../../../backgrounds/kali/$DESKTOP_BACKGROUND.xml ${DESTDIR}wallpaper/gn
 ln -nsfv ../../../wallpapers/$kde_wallpaper/contents ${DESTDIR}wallpaper/contents
 
 sed -i "s/defaultWallpaperTheme=.*/defaultWallpaperTheme=${kde_wallpaper}/" share/plasma/desktoptheme/kali/metadata.desktop
+
+# default background symlink for XFCE
+mkdir -p share/backgrounds/kali-16x9
+ln -sf $DESKTOP_BACKGROUND.png share/backgrounds/kali-16x9/default

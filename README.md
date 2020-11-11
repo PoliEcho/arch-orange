@@ -35,3 +35,14 @@ target location by the postinst script (see debian/kali-themes.postinst).
 When you add a new file that needs to be diverted, you can update
 the list in "files-to-divert" and run "debian/update-maintainer-scripts"
 to update the list of files in the 3 maintainer scripts.
+
+## wallpapers
+
+The wallpapers are provided by the kali-wallpapers-VERSION binary package
+which is built by the kali-wallpapers source package. We have the Makefile
+which generates some symlinks pointing to the kali-wallpapers-VERSION that
+we depend upon.
+
+Care must be taken to ensure that we depend on the right package so that
+the symlinks are working. So update debian/control and Makefile at the
+same time.
