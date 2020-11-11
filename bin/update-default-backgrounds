@@ -4,6 +4,9 @@ DESTDIR=share/desktop-base/kali-theme/
 DESKTOP_BACKGROUND=$1
 LOGIN_BACKGROUND=$2
 
+# xfce background
+ln -rsfv share/backgrounds/kali-16x9/$DESKTOP_BACKGROUND.png share/backgrounds/kali-16x9/default
+
 # login/lockscreen
 ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND.xml ${DESTDIR}lockscreen/gnome-background.xml
 ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND-16x9.png ${DESTDIR}login/background
