@@ -64,6 +64,7 @@
     </property>
     <property name="plugin-12" type="string" value="tasklist">
       <property name="show-handle" type="bool" value="false"/>
+      <property name="middle-click" type="uint" value="1"/>
     </property>
     <property name="plugin-13" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
