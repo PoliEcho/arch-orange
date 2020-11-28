@@ -5566,6 +5566,9 @@ filechooser placessidebar.sidebar,
     border-radius: 5px;
     border-style: solid; }
 
+.path-bar-box:backdrop {
+  border-color: #e0e0e0; }
+
 /* XFCE4 PANEL */
 .xfce4-panel.background {
   background: rgba(255, 255, 255, 0.9); }
