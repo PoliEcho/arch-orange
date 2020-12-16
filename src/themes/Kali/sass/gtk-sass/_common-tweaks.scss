@@ -31,7 +31,7 @@ button {
     border-color: transparent;
     transition: $button_transition;
 
-    &:hover {
+    &:hover:not(:backdrop) {
       @extend %button_active;
       transition: none;
     }
@@ -235,7 +235,7 @@ notebook {
           border: 1px solid transparent;
           margin: 3px;
 
-          &:hover { @include button(hover); }
+          &:hover:not(:backdrop) { @include button(hover); }
 
           &:checked {
             @include button(normal);
