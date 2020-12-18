@@ -518,10 +518,10 @@ button {
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: #0d0e11;
     border-bottom-color: black;
+    background-image: linear-gradient(to top, #20232b, #252831 1px);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #20232b, #252831 1px);
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:active, notebook > header > tabs > arrow:checked,
   button:active,
@@ -821,10 +821,10 @@ button.suggested-action {
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #005af3;
     border-bottom-color: #0047c0;
+    background-image: linear-gradient(to top, #2274ff, #2c7aff 1px);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #2274ff, #2c7aff 1px); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   
   button.suggested-action:active,
   button.suggested-action:checked {
@@ -971,10 +971,10 @@ button.destructive-action {
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #790e0e;
     border-bottom-color: #4b0909;
+    background-image: linear-gradient(to top, #a21313, #ab1414 1px);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.660235);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.660235);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(121, 14, 14, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #a21313, #ab1414 1px); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(121, 14, 14, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   
   button.destructive-action:active,
   button.destructive-action:checked {
@@ -1147,11 +1147,10 @@ button.circular {
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: #0d0e11;
     border-bottom-color: black;
-    background-image: linear-gradient(to top, #292c37 2px, #2e313d);
+    background-image: linear-gradient(to top, #292c37 2px, #2e313d), linear-gradient(to top, black 25%, #0d0e11 50%);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.873255);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #292c37 2px, #2e313d), linear-gradient(to top, black 25%, #0d0e11 50%);
     border-color: transparent; }
   
   button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
@@ -1159,11 +1158,10 @@ button.circular {
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: #0d0e11;
     border-bottom-color: black;
+    background-image: linear-gradient(to top, #20232b, #252831 1px), linear-gradient(to top, black 25%, #0d0e11 50%);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #20232b, #252831 1px);
-    background-image: linear-gradient(to top, #20232b, #252831 1px), linear-gradient(to top, black 25%, #0d0e11 50%);
     border-color: transparent; }
 
 stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attention > label,
@@ -1194,10 +1192,10 @@ stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attenti
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: #0d0e11;
     border-bottom-color: black;
+    background-image: linear-gradient(to top, #20232b, #252831 1px);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #20232b, #252831 1px); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: #eeeeec;
     outline-color: rgba(238, 238, 236, 0.3);
@@ -1337,10 +1335,10 @@ list row button.image-button:not(.flat) {
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: #0d0e11;
     border-bottom-color: black;
+    background-image: linear-gradient(to top, #20232b, #252831 1px);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #20232b, #252831 1px); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   list row button.image-button:not(.flat):active, list row button.image-button:not(.flat):checked {
     color: #eeeeec;
     outline-color: rgba(238, 238, 236, 0.3);
@@ -1757,10 +1755,10 @@ headerbar {
         outline-color: rgba(255, 255, 255, 0.3);
         border-color: #005af3;
         border-bottom-color: #0047c0;
+        background-image: linear-gradient(to top, #2274ff, #2c7aff 1px);
         text-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
         -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-        background-image: linear-gradient(to top, #2274ff, #2c7aff 1px); }
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
       .selection-mode .titlebar:not(headerbar) button:active, .selection-mode .titlebar:not(headerbar) button:checked, .selection-mode.titlebar:not(headerbar) button:active, .selection-mode.titlebar:not(headerbar) button:checked, .selection-mode headerbar button:active, .selection-mode headerbar button:checked, .selection-mode headerbar button.toggle:checked, .selection-mode headerbar button.toggle:active,
       headerbar.selection-mode button:active,
       headerbar.selection-mode button:checked,
@@ -1854,10 +1852,10 @@ headerbar {
           outline-color: rgba(238, 238, 236, 0.3);
           border-color: #0d0e11;
           border-bottom-color: black;
+          background-image: linear-gradient(to top, #20232b, #252831 1px);
           text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
           -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
           box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-          background-image: linear-gradient(to top, #20232b, #252831 1px);
           border-color: #00348d; }
         .selection-mode .titlebar:not(headerbar) button.suggested-action:active, .selection-mode.titlebar:not(headerbar) button.suggested-action:active, .selection-mode headerbar button.suggested-action:active,
         headerbar.selection-mode button.suggested-action:active {
@@ -2138,7 +2136,7 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
   padding: 0 6px;
   background-image: none;
   border-style: none solid solid none;
-  border-color: #23252e;
+  border-color: #4f5159;
   border-radius: 0;
   text-shadow: none; }
   treeview.view header button:disabled {
@@ -2728,8 +2726,8 @@ switch {
     color: #eeeeec;
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: #040405;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(26, 28, 35, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to bottom, #303340 20%, #272a34 90%); }
+    background-image: linear-gradient(to bottom, #303340 20%, #272a34 90%);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(26, 28, 35, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   switch:checked > slider {
     border: 1px solid #00215a; }
   switch:disabled slider {
@@ -3188,8 +3186,8 @@ scale {
       color: #eeeeec;
       outline-color: rgba(238, 238, 236, 0.3);
       border-color: black;
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-      background-image: linear-gradient(to bottom, #23252e 20%, #1a1c23 90%); }
+      background-image: linear-gradient(to bottom, #23252e 20%, #1a1c23 90%);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), 0 1px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
     scale slider:active {
       border-color: #00348d; }
     scale slider:disabled {
@@ -4295,10 +4293,10 @@ infobar {
         outline-color: rgba(238, 238, 236, 0.3);
         border-color: #0d0e11;
         border-bottom-color: black;
+        background-image: linear-gradient(to top, #20232b, #252831 1px);
         text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
         -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-        background-image: linear-gradient(to top, #20232b, #252831 1px); }
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
       infobar.info button:active, infobar.info button:checked, infobar.question button:active, infobar.question button:checked, infobar.warning button:active, infobar.warning button:checked, infobar.error button:active, infobar.error button:checked {
         color: #eeeeec;
         outline-color: rgba(238, 238, 236, 0.3);
@@ -4444,10 +4442,10 @@ colorswatch#add-color-button {
       outline-color: rgba(238, 238, 236, 0.3);
       border-color: #0d0e11;
       border-bottom-color: black;
+      background-image: linear-gradient(to top, #20232b, #252831 1px);
       text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-      background-image: linear-gradient(to top, #20232b, #252831 1px); }
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
     colorswatch#add-color-button overlay:backdrop {
       color: #888a8d;
       border-color: #16171d;
@@ -4783,33 +4781,41 @@ row.expander {
   row.expander image.expander-row-arrow:disabled {
     color: #888a8d; }
 
+flap > dimming,
 deck > dimming,
 leaflet > dimming {
   background: rgba(0, 0, 0, 0.24); }
 
+flap > border,
 deck > border,
 leaflet > border {
   min-width: 1px;
   min-height: 1px;
   background: #0d0e11; }
 
+flap > shadow,
 deck > shadow,
 leaflet > shadow {
   min-width: 56px;
   min-height: 56px; }
+  flap > shadow.left,
   deck > shadow.left,
   leaflet > shadow.left {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02) 40px, rgba(0, 0, 0, 0) 56px), linear-gradient(to right, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.02) 7px, rgba(0, 0, 0, 0) 24px); }
+  flap > shadow.right,
   deck > shadow.right,
   leaflet > shadow.right {
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02) 40px, rgba(0, 0, 0, 0) 56px), linear-gradient(to left, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.02) 7px, rgba(0, 0, 0, 0) 24px); }
+  flap > shadow.up,
   deck > shadow.up,
   leaflet > shadow.up {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02) 40px, rgba(0, 0, 0, 0) 56px), linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.02) 7px, rgba(0, 0, 0, 0) 24px); }
+  flap > shadow.down,
   deck > shadow.down,
   leaflet > shadow.down {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02) 40px, rgba(0, 0, 0, 0) 56px), linear-gradient(to top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.02) 7px, rgba(0, 0, 0, 0) 24px); }
 
+flap > outline,
 deck > outline,
 leaflet > outline {
   min-width: 1px;
@@ -4864,10 +4870,22 @@ avatar {
     color: #d8d7d3; }
   avatar.contrasted {
     color: #fff; }
+  avatar.image {
+    background: none; }
 
 viewswitchertitle viewswitcher {
   margin-left: 12px;
   margin-right: 12px; }
+
+statuspage > scrolledwindow > viewport > box {
+  margin: 36px 12px; }
+  statuspage > scrolledwindow > viewport > box > clamp > box > .icon {
+    margin-bottom: 36px;
+    opacity: 0.5; }
+  statuspage > scrolledwindow > viewport > box > clamp > box > .title {
+    margin-bottom: 12px; }
+  statuspage > scrolledwindow > viewport > box > clamp > box > .description {
+    margin-bottom: 36px; }
 
 /***************************
  * Check and Radio buttons *
@@ -5270,10 +5288,10 @@ notebook > header {
         outline-color: rgba(238, 238, 236, 0.3);
         border-color: #0d0e11;
         border-bottom-color: black;
+        background-image: linear-gradient(to top, #20232b, #252831 1px);
         text-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
         -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.825255);
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-        background-image: linear-gradient(to top, #20232b, #252831 1px); }
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(13, 14, 17, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
       notebook > header.top > tabs > tab:checked,
       notebook > header.top > tabs > tab.reorderable-page:checked, notebook > header.bottom > tabs > tab:checked,
       notebook > header.bottom > tabs > tab.reorderable-page:checked, notebook > header.left > tabs > tab:checked,
@@ -5347,10 +5365,10 @@ infobar.info button, infobar.info.action:hover button {
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #005af3;
     border-bottom-color: #0047c0;
+    background-image: linear-gradient(to top, #2274ff, #2c7aff 1px);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.490824);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #2274ff, #2c7aff 1px); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 90, 243, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   infobar.info button:active, infobar.info button:checked, infobar.info.action:hover button:active, infobar.info.action:hover button:checked {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -5402,10 +5420,10 @@ infobar.question button, infobar.warning button, infobar.question.action:hover b
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #ca6400;
     border-bottom-color: #974b00;
+    background-image: linear-gradient(to top, #f87a00, #ff8003 1px);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.555137);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.555137);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(202, 100, 0, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-    background-image: linear-gradient(to top, #f87a00, #ff8003 1px); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(202, 100, 0, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
   infobar.question button:active, infobar.question button:checked, infobar.warning button:active, infobar.warning button:checked, infobar.question.action:hover button:active, infobar.question.action:hover button:checked, infobar.warning.action:hover button:active, infobar.warning.action:hover button:checked {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -5456,10 +5474,10 @@ infobar.error:backdrop > revealer > box, infobar.error > revealer > box, infobar
       outline-color: rgba(255, 255, 255, 0.3);
       border-color: #911212;
       border-bottom-color: #640c0c;
+      background-image: linear-gradient(to top, #ba1616, #c41818 1px);
       text-shadow: 0 -1px rgba(0, 0, 0, 0.616314);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.616314);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(145, 18, 18, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27);
-      background-image: linear-gradient(to top, #ba1616, #c41818 1px); }
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(145, 18, 18, 0.75), 0 1px 2px rgba(0, 0, 0, 0.27); }
     infobar.error:backdrop > revealer > box button:active, infobar.error:backdrop > revealer > box button:checked, infobar.error > revealer > box button:active, infobar.error > revealer > box button:checked, infobar.error.action:hover:backdrop > revealer > box button:active, infobar.error.action:hover:backdrop > revealer > box button:checked, infobar.error.action:hover > revealer > box button:active, infobar.error.action:hover > revealer > box button:checked {
       color: #ffffff;
       outline-color: rgba(255, 255, 255, 0.3);
