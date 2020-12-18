@@ -5112,7 +5112,7 @@ headerbar stackswitcher button:checked:checked,
 headerbar button.toggle:active,
 headerbar button.toggle:checked, button.flat:hover:not(:backdrop):not(:link):not(:visited), button:active, button:checked {
   background: #f2f2f2;
-  box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.05); }
 
 button.flat {
   border-color: transparent;
@@ -5125,7 +5125,7 @@ button.flat {
  **********/
 spinbutton:not(.vertical),
 entry {
-  box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.05); }
 
 headerbar spinbutton:not(.vertical),
 headerbar entry {
