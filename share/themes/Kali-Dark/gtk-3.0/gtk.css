@@ -5577,6 +5577,16 @@ infobar.error:backdrop > revealer > box, infobar.error > revealer > box, infobar
   .app-notification.frame:backdrop {
     box-shadow: none; }
 
+/************
+ * Calendar *
+ ***********/
+calendar {
+  border-radius: 6px;
+  border: 0;
+  padding: 1px; }
+  calendar:selected {
+    border-radius: 999px; }
+
 /***********
  * Dialogs *
  ***********/
