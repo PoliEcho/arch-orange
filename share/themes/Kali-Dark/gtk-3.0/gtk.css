@@ -5204,6 +5204,9 @@ headerbar {
       min-width: 20px;
       margin: 0 4px;
       padding: 0; }
+  dialog .titlebar, dialog .titlebar:backdrop, dialog headerbar, dialog headerbar:backdrop {
+    background: #23252e;
+    border: 0; }
 
 paned headerbar:first-child, hdyleaflet headerbar:first-child, headerbar.titlebar headerbar:first-child {
   border-color: transparent;
