@@ -155,7 +155,7 @@ scale slider:active {
  ***************/
 .titlebar,
 headerbar {
-  border-color: $selected_bg_color;
+  border-color: $borders_color;
 
   $_scale_asset: 'assets/kali-headerbar-logo#{$asset_suffix}';
   @include headerbar_fill(darken($bg_color, if($variant == 'light', 2%, 10%)),
