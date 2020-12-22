@@ -153,6 +153,7 @@ scale slider:active {
 /***************
  * Header bars *
  ***************/
+
 .titlebar,
 headerbar {
   border-color: $borders_color;
@@ -162,7 +163,6 @@ headerbar {
                           $ov: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png')));
   background-repeat: no-repeat;
   background-position: left;
-  background-size: auto 150%;
 
   &:backdrop {
     background-image: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png'));
