@@ -220,7 +220,12 @@ treeview.view {
 
   &:backdrop { border-top-color: $backdrop_borders_color; }
 
-  header button { @include button(normal); }
+  header button {
+    @include button(normal);
+
+    &:hover,
+    &:active { border-color: $borders_color; }
+  }
 }
 
 /***************
