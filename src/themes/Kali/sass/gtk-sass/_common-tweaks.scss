@@ -212,6 +212,17 @@ paned, hdyleaflet, headerbar.titlebar {
   }
 }
 
+/**************
+ * Tree Views *
+ **************/
+treeview.view {
+  border-top-color: $borders-color;
+
+  &:backdrop { border-top-color: $backdrop_borders_color; }
+
+  header button { @include button(normal); }
+}
+
 /***************
  * Popovers   *
  ***************/
