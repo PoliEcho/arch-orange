@@ -5210,17 +5210,12 @@ headerbar {
   .titlebar.default-decoration,
   headerbar.default-decoration {
     min-height: 0;
-    padding: 3px;
-    border-color: #d9d9d9; }
-    .titlebar.default-decoration:backdrop,
-    headerbar.default-decoration:backdrop {
-      background-color: #fafafa; }
+    padding: 6px; }
     .titlebar.default-decoration button.titlebutton,
     headerbar.default-decoration button.titlebutton {
-      min-height: 20px;
-      min-width: 20px;
-      margin: 0 4px;
-      padding: 0; }
+      min-height: 0;
+      min-width: 0;
+      margin: 0; }
   dialog .titlebar, dialog .titlebar:backdrop, dialog headerbar, dialog headerbar:backdrop {
     background: #ffffff;
     border: 0; }
@@ -5668,12 +5663,29 @@ decoration {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
 
 button.titlebutton:not(.appmenu) {
-  margin: 0; }
-
-button.titlebutton:backdrop {
-  background: transparent; }
-  button.titlebutton:backdrop:not(:hover) {
-    border-color: transparent; }
+  margin: 0;
+  margin-left: 6px;
+  padding: 0;
+  min-width: 0;
+  min-height: 0;
+  border: 0;
+  -gtk-icon-shadow: none; }
+  button.titlebutton:not(.appmenu) + button.titlebutton:not(.appmenu) {
+    margin-left: 0; }
+  button.titlebutton:not(.appmenu):last-child {
+    margin-right: 6px; }
+  button.titlebutton:not(.appmenu):hover {
+    transition: 0;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px #d9d9d9; }
+  .maximized button.titlebutton:not(.appmenu):last-child, .fullscreen button.titlebutton:not(.appmenu):last-child, .tiled button.titlebutton:not(.appmenu):last-child, .tiled-top button.titlebutton:not(.appmenu):last-child, .tiled-right button.titlebutton:not(.appmenu):last-child, .tiled-bottom button.titlebutton:not(.appmenu):last-child, .tiled-left button.titlebutton:not(.appmenu):last-child {
+    margin-right: 0; }
+  .maximized button.titlebutton:not(.appmenu):first-child, .fullscreen button.titlebutton:not(.appmenu):first-child, .tiled button.titlebutton:not(.appmenu):first-child, .tiled-top button.titlebutton:not(.appmenu):first-child, .tiled-right button.titlebutton:not(.appmenu):first-child, .tiled-bottom button.titlebutton:not(.appmenu):first-child, .tiled-left button.titlebutton:not(.appmenu):first-child {
+    margin-left: 0; }
+  button.titlebutton:not(.appmenu):backdrop {
+    background: transparent; }
+    button.titlebutton:not(.appmenu):backdrop:not(:hover) {
+      border-color: transparent; }
 
 /* Nautilus */
 @define-color disk_space_unknown #383c4a;
