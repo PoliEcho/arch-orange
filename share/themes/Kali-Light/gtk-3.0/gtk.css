@@ -5111,12 +5111,6 @@ headerbar entry {
   background: #fafafa; }
 
 /**********
- * Slider *
- **********/
-scale slider:active, switch:hover slider {
-  background-image: image(white); }
-
-/**********
  * Switch *
  **********/
 switch {
@@ -5129,23 +5123,12 @@ switch {
   switch:backdrop, switch:disabled {
     box-shadow: none;
     border-color: #e0e0e0; }
-  switch slider {
-    color: #5c616c;
-    outline-color: rgba(92, 97, 108, 0.3);
-    border-color: #c2c2c2;
-    background-image: linear-gradient(to bottom, white 20%, #ffffff 90%);
-    box-shadow: inset 0 1px white, 0 1px rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(217, 217, 217, 0.75), 0 1px 2px rgba(0, 0, 0, 0.07);
-    border: 1px solid #bababa;
-    border-radius: 50%;
-    transition-property: background, border, box-shadow; }
-    switch slider:checked {
-      border-color: #0051da; }
-      switch slider:checked:backdrop:not(:disabled) {
-        border-color: #2777ff; }
-    switch slider:disabled {
-      border-color: #e0e0e0; }
-  switch:hover slider {
-    border-color: #2777ff; }
+  switch slider:checked {
+    border-color: #0051da; }
+    switch slider:checked:backdrop:not(:disabled) {
+      border-color: #2777ff; }
+  switch slider:disabled {
+    border-color: #e0e0e0; }
 
 /*************************
  * Check and Radio items *
@@ -5182,11 +5165,22 @@ radio:indeterminate, menu menuitem radio:checked, menu menuitem radio:indetermin
   radio:indeterminate:backdrop, menu menuitem radio:checked:backdrop, menu menuitem radio:indeterminate:backdrop {
     background-image: image(#2777ff); }
 
-/************
- * GtkScale *
- ************/
-scale slider:active {
-  border-color: #2777ff; }
+switch slider,
+scale slider {
+  color: #5c616c;
+  outline-color: rgba(92, 97, 108, 0.3);
+  border-color: #d9d9d9;
+  border-bottom-color: #c2c2c2;
+  background-image: linear-gradient(to top, white 2px, white);
+  box-shadow: inset 0 1px white, 0 1px rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(217, 217, 217, 0.75), 0 1px 2px rgba(0, 0, 0, 0.07);
+  border-color: #bababa; }
+  switch:hover slider, switch slider:active,
+  scale slider:active {
+    background-image: image(white);
+    border-color: #2777ff; }
+  switch slider:disabled,
+  scale slider:disabled {
+    border-color: #e0e0e0; }
 
 /***************
  * Header bars *
