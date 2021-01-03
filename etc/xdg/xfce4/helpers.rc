@@ -2,4 +2,4 @@
 WebBrowser=debian-sensible-browser
 MailReader=thunderbird
 TerminalEmulator=qterminal
-FileManager=Thunar
+FileManager=thunar
