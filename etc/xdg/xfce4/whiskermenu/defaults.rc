@@ -19,6 +19,6 @@ show-command-restart=false
 show-command-shutdown=false
 show-command-suspend=false
 show-command-hibernate=false
-show-command-logout=false
+show-command-logout=true
 show-command-menueditor=false
 show-command-profile=false
