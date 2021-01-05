@@ -1,3 +1,36 @@
+kali-themes (2021.1.0) kali-dev; urgency=medium
+
+  * KDE: increase fixed font size
+  * Xfce: configure tasklist to close window on middle-click
+  * Xfce: configure xfwm4 default workspace names to only show the number
+  * GTK3: lighten backdrop_borders_color
+  * GTK3: Make nautilus path-bar-box border lighter in backdrop mode
+  * Xfce: configure thunar pathbar
+  * Add kali color-scheme for terminator #96
+  * Add kali color-scheme for mate-terminal #96
+  * gsettings-override fix mate-terminal path
+  * Add Kali color-scheme for tilix terminal
+  * Add kali color-scheme for tilix #96
+  * Fix sass build Makefile
+  * Gnome-Shell: update gnome 3.38.2
+  * Icons: Update Flat-Remix icon theme
+  * Add alt+num shortcuts for qterminal (fixes #108)
+  * Remove qterminal's FixedTabWidth and reduce TerminalMargin
+  * Add shortcuts for qterminal terminal splitting
+  * Rename Thunar with thunar as Xfce FileManager
+  * Xfce: revert whiskermenu logout button removal
+  * Icons: Update Flat-Remix icon theme with new Xfce 4.16 icons
+  * Icons: Fix shadows for mimetype icons and 2 new app icons
+  * GTK3: Updated theme
+  * Icons: Add missing app icon xfsm-lock
+  * Icons: add symbolic icons for xfsm-*
+  * Xfce: update panel settings for xfce 4.16
+  * Xfce: remove xcape and use super key to show the menu
+  * Xfce: xfwm4 show titlebar app icon
+  * Force update setting files
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Tue, 05 Jan 2021 14:41:37 +0100
+
 kali-themes (2020.4.4) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
