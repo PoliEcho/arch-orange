@@ -5,3 +5,5 @@ desktop-command-not-in-package usr/share/applications/xfce-text-editor.desktop m
 # Xfce favorite section under a generic name that we control ("Text
 # Editor" instead of "Mousepad")
 desktop-entry-lacks-keywords-entry usr/share/applications/xfce-text-editor.desktop
+# This is not documentation
+package-contains-documentation-outside-usr-share-doc usr/share/grub/themes/kali/theme.txt
