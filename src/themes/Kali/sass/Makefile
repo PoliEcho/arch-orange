@@ -7,8 +7,8 @@ THEMES_DIR=../../../../share/themes/
 build: $(patsubst %.scss, %.css, $(wildcard *.scss))
 	mkdir -p $(THEMES_DIR)Kali-Light/gtk-3.0/
 	mkdir -p $(THEMES_DIR)Kali-Dark/gtk-3.0/
-	mkdir -p $(THEMES_DIR)Kali-Light/gnome-shell
-	mkdir -p $(THEMES_DIR)Kali-Dark/gnome-shell
+	mkdir -p $(THEMES_DIR)Kali-Light/gnome-shell/
+	mkdir -p $(THEMES_DIR)Kali-Dark/gnome-shell/
 	
 	cp gtk.css $(THEMES_DIR)Kali-Light/gtk-3.0/gtk.css
 	cp gtk-dark.css $(THEMES_DIR)Kali-Light/gtk-3.0/gtk-dark.css
