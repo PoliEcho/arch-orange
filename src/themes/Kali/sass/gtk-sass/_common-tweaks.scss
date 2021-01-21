@@ -148,11 +148,13 @@ scale slider {
 
 .titlebar,
 headerbar {
-  border-color: $borders_color;
+  $_border_color: darken($bg_color, 20%);
+  border-color: $_border_color;
 
   $_scale_asset: 'assets/kali-headerbar-logo#{$asset_suffix}';
   @include headerbar_fill(darken($bg_color, if($variant == 'light', 2%, 10%)),
                           $ov: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png')));
+  box-shadow: 0 1px 4px transparentize($_border_color, .25);
   background-repeat: no-repeat;
   background-position: left;
 
@@ -160,6 +162,7 @@ headerbar {
     background-image: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png'));
     background-repeat: no-repeat;
     background-position: left;
+    box-shadow: none;
   }
 
   stackswitcher button:checked,
@@ -188,13 +191,15 @@ headerbar {
   dialog &:backdrop {
     background: $bg_color;
     border: 0;
+    box-shadow: none;
   }
 }
 
 paned, hdyleaflet, headerbar.titlebar {
   & headerbar:first-child {
-    border-color: transparent;
+    border-color: $backdrop_borders_color;
     background: $base_color;
+    box-shadow: none;
 
     &:backdrop { background: $backdrop_base_color; }
   }
