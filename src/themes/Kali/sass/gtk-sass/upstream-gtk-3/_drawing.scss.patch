@@ -10,7 +10,7 @@
 <     background-image: if($variant == 'light', linear-gradient(to top, darken($c, 4%) 2px, $c),
 <                                               linear-gradient(to top, darken($c,1%) 2px, $c)),
 ---
->     background-image: linear-gradient(to top, if($c != $bg_color, $c, lighten($c, 3%)) 2px, lighten($c, 5%)),
+>     background-image: image(lighten($c, 5%)),
 202c201
 <     @include _button_text_shadow($tc, $c);
 ---
