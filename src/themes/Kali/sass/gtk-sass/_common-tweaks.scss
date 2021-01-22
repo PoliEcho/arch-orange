@@ -152,7 +152,7 @@ headerbar {
   border-color: $_border_color;
 
   $_scale_asset: 'assets/kali-headerbar-logo#{$asset_suffix}';
-  @include headerbar_fill(darken($bg_color, if($variant == 'light', 2%, 10%)),
+  @include headerbar_fill(darken($bg_color, if($variant == 'light', 5%, 10%)),
                           $ov: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png')));
   box-shadow: 0 1px 4px transparentize($_border_color, .25);
   background-repeat: no-repeat;
