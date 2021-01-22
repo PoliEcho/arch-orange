@@ -220,6 +220,8 @@ treeview.view {
 
     &:hover,
     &:active { border-color: $borders_color; }
+
+    &:backdrop { box-shadow: none; }
   }
 }
 
