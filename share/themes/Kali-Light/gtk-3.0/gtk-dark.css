@@ -5152,16 +5152,18 @@ scale slider {
  ***************/
 .titlebar,
 headerbar {
-  border-color: #0d0e11;
+  border-color: black;
   background: #0d0e11 -gtk-scaled(url("assets/kali-headerbar-logo-dark.png"), url("assets/kali-headerbar-logo-dark@2.png")), linear-gradient(to top, #16171d, #1a1c23);
   box-shadow: inset 0 1px rgba(238, 238, 236, 0.07);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
   background-repeat: no-repeat;
   background-position: left; }
   .titlebar:backdrop,
   headerbar:backdrop {
     background-image: -gtk-scaled(url("assets/kali-headerbar-logo-dark.png"), url("assets/kali-headerbar-logo-dark@2.png"));
     background-repeat: no-repeat;
-    background-position: left; }
+    background-position: left;
+    box-shadow: none; }
   .titlebar viewswitcher button > stack > box.narrow,
   .titlebar hdyviewswitcher > button box.narrow,
   headerbar viewswitcher button > stack > box.narrow,
@@ -5183,11 +5185,13 @@ headerbar {
       margin: 0; }
   dialog .titlebar, dialog .titlebar:backdrop, dialog headerbar, dialog headerbar:backdrop {
     background: #23252e;
-    border: 0; }
+    border: 0;
+    box-shadow: none; }
 
 paned headerbar:first-child, hdyleaflet headerbar:first-child, headerbar.titlebar headerbar:first-child {
-  border-color: transparent;
-  background: #272a34; }
+  border-color: #16171d;
+  background: #272a34;
+  box-shadow: none; }
   paned headerbar:first-child:backdrop, hdyleaflet headerbar:first-child:backdrop, headerbar.titlebar headerbar:first-child:backdrop {
     background: #292c37; }
 

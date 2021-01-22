@@ -5173,16 +5173,18 @@ scale slider {
  ***************/
 .titlebar,
 headerbar {
-  border-color: #d9d9d9;
-  background: #fafafa -gtk-scaled(url("assets/kali-headerbar-logo.png"), url("assets/kali-headerbar-logo@2.png")), linear-gradient(to top, whitesmoke, #fcfcfc);
+  border-color: #cccccc;
+  background: #f2f2f2 -gtk-scaled(url("assets/kali-headerbar-logo.png"), url("assets/kali-headerbar-logo@2.png")), linear-gradient(to top, #ededed, whitesmoke);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 4px rgba(204, 204, 204, 0.75);
   background-repeat: no-repeat;
   background-position: left; }
   .titlebar:backdrop,
   headerbar:backdrop {
     background-image: -gtk-scaled(url("assets/kali-headerbar-logo.png"), url("assets/kali-headerbar-logo@2.png"));
     background-repeat: no-repeat;
-    background-position: left; }
+    background-position: left;
+    box-shadow: none; }
   .titlebar viewswitcher button > stack > box.narrow,
   .titlebar hdyviewswitcher > button box.narrow,
   headerbar viewswitcher button > stack > box.narrow,
@@ -5204,11 +5206,13 @@ headerbar {
       margin: 0; }
   dialog .titlebar, dialog .titlebar:backdrop, dialog headerbar, dialog headerbar:backdrop {
     background: #ffffff;
-    border: 0; }
+    border: 0;
+    box-shadow: none; }
 
 paned headerbar:first-child, hdyleaflet headerbar:first-child, headerbar.titlebar headerbar:first-child {
-  border-color: transparent;
-  background: #fafafa; }
+  border-color: #e0e0e0;
+  background: #fafafa;
+  box-shadow: none; }
   paned headerbar:first-child:backdrop, hdyleaflet headerbar:first-child:backdrop, headerbar.titlebar headerbar:first-child:backdrop {
     background: #f7f7f7; }
 
