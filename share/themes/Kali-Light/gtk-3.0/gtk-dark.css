@@ -5049,6 +5049,14 @@ headerbar button.toggle:active,
 headerbar button.toggle:checked, button.flat:hover, button:active, button:checked {
   background: #1b1d24;
   box-shadow: inset 0 3px 5px -4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.05); }
+  .titlebar stackswitcher button:backdrop:checked,
+  .titlebar button.toggle:backdrop:active,
+  .titlebar button.toggle:backdrop:checked,
+  headerbar stackswitcher button:backdrop:checked:active,
+  headerbar stackswitcher button:backdrop:checked,
+  headerbar button.toggle:backdrop:active,
+  headerbar button.toggle:backdrop:checked, button.flat:backdrop:hover, button:active:backdrop, button:checked:backdrop {
+    box-shadow: none; }
 
 button.flat {
   border-color: transparent;
