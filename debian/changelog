@@ -1,3 +1,25 @@
+kali-themes (2021.1.1) kali-dev; urgency=medium
+
+  * Remove qt4 settings
+  * Remove qt5-gtk2-platformtheme dependency and configure fusion theme
+  * Xfce: improve mimetype settings (fixes #97)
+  * Fix qt5ct settings
+  * Remove TODO
+  * GTK3: Update gtk->3.24.24 libhandy->1.0.3 & prepare for gtk4
+  * GTK3: make buttons flat for dark theme
+  * GTK3: use the same color for tabs as for buttons
+  * GTK3: remove shadow from nautilus sidebar
+  * GTK3: add shadow to headerbars
+  * GTK3: darken headerbar for light theme
+  * GTK3: regenerate css files
+  * GTK3: Remove shadow from stackswitcher buttons on backdrop mode
+  * GTK3: Remove shadow from treeview's headerbar on backdrop mode
+  * Remove Trolltech.conf from maintainer scripts
+  * Icons: Update Flat-Remix theme
+  * Fix dpkg-divert, remove old configuration file Trolltech.conf
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Wed, 27 Jan 2021 10:56:22 +0100
+
 kali-themes (2021.1.0) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
