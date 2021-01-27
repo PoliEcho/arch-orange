@@ -49,6 +49,13 @@ install_config_file() {
     fi
 }
 
+remove_config_file() {
+    rm -f $1
+    dpkg-divert --rename --package kali-themes \
+        --divert "$1.original" \
+        --remove "$1"
+}
+
 if [ "$1" = "configure" ]; then
     if [ -z "$2" ]; then
 	# Initial install
@@ -69,7 +76,7 @@ if [ "$1" = "configure" ]; then
 	if dpkg --compare-versions "$2" lt "2020.4.3"; then
 	    install_config_file /etc/xdg/qt5ct/qt5ct.conf force
 	fi
-	if dpkg --compare-versions "$2" lt "2021.0.1"; then
+	if dpkg --compare-versions "$2" lt "2021.1.0"; then
 	    install_config_file /etc/xdg/kdeglobals force
 	    install_config_file /etc/xdg/qterminal.org/qterminal.ini force
 	    install_config_file /etc/xdg/xfce4/helpers.rc force
@@ -77,6 +84,9 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/xfce4/whiskermenu/defaults.rc force
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml force
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml force
+	fi
+	if dpkg --compare-versions "$2" lt "2021.1.1"; then
+	    remove_config_file /etc/xdg/Trolltech.conf
 	fi
 	# Install remaining new files
 	install_all
