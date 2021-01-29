@@ -1,3 +1,9 @@
+kali-themes (2021.1.2) kali-dev; urgency=medium
+
+  * Force update qt5ct.conf
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Fri, 29 Jan 2021 13:09:13 +0100
+
 kali-themes (2021.1.1) kali-dev; urgency=medium
 
   * Remove qt4 settings
