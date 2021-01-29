@@ -73,9 +73,6 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/Thunar/uca.xml force
 	    install_config_file /etc/xdg/kscreenlockerrc force
 	fi
-	if dpkg --compare-versions "$2" lt "2020.4.3"; then
-	    install_config_file /etc/xdg/qt5ct/qt5ct.conf force
-	fi
 	if dpkg --compare-versions "$2" lt "2021.1.0"; then
 	    install_config_file /etc/xdg/kdeglobals force
 	    install_config_file /etc/xdg/qterminal.org/qterminal.ini force
@@ -87,6 +84,9 @@ if [ "$1" = "configure" ]; then
 	fi
 	if dpkg --compare-versions "$2" lt "2021.1.1"; then
 	    remove_config_file /etc/xdg/Trolltech.conf
+	fi
+	if dpkg --compare-versions "$2" lt "2021.1.2"; then
+	    install_config_file /etc/xdg/qt5ct/qt5ct.conf force
 	fi
 	# Install remaining new files
 	install_all
