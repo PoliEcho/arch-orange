@@ -2,7 +2,8 @@ kali-themes (2021.1.2) kali-dev; urgency=medium
 
   * Force update qt5ct.conf
   * Gnome-Shell: Update for gnome 3.38.3
-  * Icons: Fix image-vnd.adobe.photoshop mimetype icon and remove emotes broken symlink
+  * Icons: Fix image-vnd.adobe.photoshop mimetype icon and remove emotes
+    broken symlink
 
  -- Daniel Ruiz de Alegría <daniel@drasite.com>  Thu, 04 Feb 2021 12:05:39 +0100
 
