@@ -6,7 +6,7 @@
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-whiskermenu --pointer"/>
       <property name="&lt;Alt&gt;F2" type="string" value="xfce4-appfinder --collapsed"/>
       <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder"/>
-      <property name="Super_L" type="string" value="xfce4-popup-whiskermenu"/>
+      <property name="&lt;Primary&gt;Escape" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
