@@ -1,3 +1,11 @@
+kali-themes (2021.1.3) kali-dev; urgency=medium
+
+  * Revert: "Xfce: remove xcape and use super key to show the menu"
+  * Force install xfce4-keyboard-shortcuts.xml
+  * Set min height and width for qt-fusion custom scrollbars
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Fri, 12 Feb 2021 12:50:22 +0100
+
 kali-themes (2021.1.2) kali-dev; urgency=medium
 
   * Force update qt5ct.conf
