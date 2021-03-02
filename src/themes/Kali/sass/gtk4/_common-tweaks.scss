@@ -1,1 +1,25 @@
+$_widget_inset_shadow: inset 0 3px 5px -4px $shadow_color, 0 1px rgba(255, 255, 255, .05);
+
+/**********
+ * Button *
+ **********/
+button {
+  @at-root %button_active,
+  &:active,
+  &:checked {
+    background: $dark_fill;
+    box-shadow: $_widget_inset_shadow;
+
+    &:backdrop { box-shadow: none; }
+  }
+
+  &.flat:not(.link) {
+    &:hover {
+      @extend %button_active;
+      transition: none;
+    }
+
+    &:backdrop { @include button(undecorated); }
+  }
+}
 
