@@ -7,9 +7,9 @@
 $variant: 'dark';
 $high-contrast:'false';
 
-@import 'gtk-sass/_colors';
-@import 'gtk-sass/upstream-gtk-4/_drawing';
-@import 'gtk-sass/upstream-gtk-4/_common';
-//@import 'gtk-sass/_common-tweaks';
-@import 'gtk-sass/_applications';
-@import 'gtk-sass/upstream-gtk-4/_colors-public';
+@import 'common/_colors';
+@import 'gtk4/upstream/_drawing';
+@import 'gtk4/upstream/_common';
+//@import 'gtk4/_common-tweaks';
+//@import 'gtk4/_applications';
+@import 'gtk4/upstream/_colors-public';
