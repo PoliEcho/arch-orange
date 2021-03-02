@@ -23,6 +23,25 @@ button {
   }
 }
 
+/**********
+ * Entry  *
+ **********/
+%entry,
+entry {
+  box-shadow: $_widget_inset_shadow;
+  background: if($variant=='dark', $dark_fill, $base_color);
+
+  &:backdrop {
+    box-shadow: none;
+    border-color: $backdrop_borders_color;
+  }
+}
+
+headerbar %entry,
+headerbar entry {
+  background: $base_color;
+}
+
 /***************
  * Header bars *
  ***************/
