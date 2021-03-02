@@ -44,4 +44,9 @@ headerbar {
     background-position: left;
     box-shadow: none;
   }
+
+  stackswitcher button:checked,
+  button.toggle {
+    &:active, &:checked { @extend %button_active; }
+  }
 }
