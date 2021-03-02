@@ -23,3 +23,25 @@ button {
   }
 }
 
+/***************
+ * Header bars *
+ ***************/
+.titlebar,
+headerbar {
+  $_border_color: darken($bg_color, 20%);
+  border-color: $_border_color;
+
+  $_scale_asset: 'assets/kali-headerbar-logo#{$asset_suffix}';
+  @include headerbar_fill(darken($bg_color, if($variant == 'light', 5%, 10%)),
+                          $ov: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png')));
+  box-shadow: 0 1px 4px transparentize($_border_color, .25);
+  background-repeat: no-repeat;
+  background-position: left;
+
+  &:backdrop {
+    background-image: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png'));
+    background-repeat: no-repeat;
+    background-position: left;
+    box-shadow: none;
+  }
+}
