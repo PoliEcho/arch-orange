@@ -69,3 +69,83 @@ headerbar {
     &:active, &:checked { @extend %button_active; }
   }
 }
+
+/*************
+ * Notebooks *
+ *************/
+notebook {
+  > header {
+    border: 0;
+    padding: 0;
+    background-color: $dark_fill;
+
+    &.top,
+    &.bottom,
+    &.left,
+    &.right {
+      > tabs {
+        margin: 0;
+
+        > tab,
+        > tab.reorderable-page {
+          border: 1px solid transparent;
+          margin: 3px;
+          transition: $button_transition;
+
+          &:hover {
+            @include button(hover);
+            transition-duration: 50ms;
+
+            &:backdrop {
+              @include button(undecorated);
+            }
+          }
+
+          &:checked {
+            @include button(normal);
+
+            &:backdrop {
+              @include button(backdrop);
+              transition: $backdrop_transition;
+            }
+          }
+
+          &:backdrop { color: $backdrop_fg_color; }
+        }
+      }
+    }
+
+    $gradient:
+      rgba(black, 0),
+      rgba(black, 0) calc(100% - 2px),
+      rgba(black, 0.05) calc(100% - 1px),
+      rgba(black, 0.15);
+
+    &.top {
+      background-image: linear-gradient(to bottom, $gradient);
+    }
+
+    &.bottom {
+      background-image: linear-gradient(to top, $gradient);
+    }
+
+    &.right {
+      background-image: linear-gradient(to left, $gradient);
+    }
+
+    &.left {
+      background-image: linear-gradient(to right, $gradient);
+    }
+
+    tab {
+      border-radius: $button_radius;
+      transition: $button_transition;
+      min-height: 28px;
+
+      button.flat {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+}
