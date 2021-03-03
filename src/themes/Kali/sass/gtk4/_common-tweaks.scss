@@ -13,6 +13,8 @@ button {
     &:backdrop { box-shadow: none; }
   }
 
+  &:disabled { box-shadow: none; }
+
   &.flat:not(.link) {
     &:hover {
       @extend %button_active;
