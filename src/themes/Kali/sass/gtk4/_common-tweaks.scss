@@ -68,6 +68,13 @@ headerbar {
   button.toggle {
     &:active, &:checked { @extend %button_active; }
   }
+
+  .dialog &,
+  .dialog &:backdrop {
+    background: $bg_color;
+    border: 0;
+    box-shadow: none;
+  }
 }
 
 /*************
