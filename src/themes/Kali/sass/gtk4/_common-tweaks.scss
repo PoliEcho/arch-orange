@@ -87,13 +87,18 @@ scale slider {
   @include button(normal);
 
   border-color: darken($alt_borders_color, 3%);
+
   @at-root %slider_active,
   &:active {
     background-image: if($variant == 'light', image(lighten($bg_color, 14%)), image(darken($bg_color, 9%)));
     border-color: $suggested_bg_color;
   }
 
-  &:disabled { border-color: $backdrop_borders_color; }
+  &:backdrop, &:disabled {
+    border-color: $borders_color;
+    background-image: image($bg_color);
+    box-shadow: none;
+  }
 }
 
 /***************
