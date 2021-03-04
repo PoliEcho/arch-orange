@@ -1,3 +1,4 @@
+$_menu_shadow: 0 1px 6px transparentize(black, if($variant == 'light', .85, .5));
 $_widget_inset_shadow: inset 0 3px 10px -4px $shadow_color, 0 1px rgba(255, 255, 255, .05);
 
 // Optional compact sizes for buttons, headerbar and headerbar widgets
@@ -328,6 +329,50 @@ notebook {
     }
   }
 }
+
+/**********************
+ * Window Decorations *
+ *********************/
+window {
+  &.csd {
+    $_border_width: 1px;
+    border-radius: $window_radius+$_border_width $window_radius+$_border_width $button_radius+$_border_width $button_radius+$_border_width;
+    border: $_border_width solid $base_color;
+
+    box-shadow: 0 2px 8px 0 transparentize(black, 0.6),
+                0 0 0 1px $_wm_border;
+
+    &:backdrop {
+      box-shadow: 0 2px 8px 0 transparent,
+                  0 0 0 1px transparent,
+                  0 0 0 3px transparentize(black, if($variant == 'light', .85, .75));
+    }
+
+    &.dialog.message,
+    &.popup {
+      box-shadow: $_menu_shadow,
+                  0 0 0 1px transparentize($_wm_border, 0.1);
+      border-width: 0;
+    }
+  }
+
+  &.maximized,
+  &.fullscreen,
+  &.tiled,
+  &.tiled-top,
+  &.tiled-left,
+  &.tiled-right,
+  &.tiled-bottom { border-width: 0; }
+
+  &.popup { border-width: 0; }
+
+  &.ssd {
+    box-shadow: 0 0 0 1px $_wm_border;
+    border-width: 0;
+  }
+}
+
+tooltip.csd { border: 0; }
 
 windowcontrols button { padding: $_hb_btn_pad; }
 
