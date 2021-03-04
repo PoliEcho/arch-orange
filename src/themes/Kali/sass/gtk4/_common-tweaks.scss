@@ -228,6 +228,26 @@ headerbar {
   }
 }
 
+/**************
+ * Tree Views *
+ **************/
+treeview.view {
+  border-top-color: $borders-color;
+
+  &:backdrop { border-top-color: $backdrop_borders_color; }
+
+  header button {
+    @include button(normal);
+
+    margin-left: -1px; // fix double border
+
+    &:hover,
+    &:active { border-color: $borders_color; }
+
+    &:backdrop { box-shadow: none; }
+  }
+}
+
 /*************
  * Notebooks *
  *************/
