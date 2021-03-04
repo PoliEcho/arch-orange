@@ -6,6 +6,7 @@ $_headerbar_height: if($_sizevariant=='default', 46px, 40px);
 $_entry_height: if($_sizevariant=='default', 32px, 28px);
 $_btn_pad: if($_sizevariant=='default', 4px 9px, 2px 6px);
 $_hb_btn_pad: if($_sizevariant=='default', 6px, 5px);
+$_tab_btn_pad: if($_sizevariant=='default', 5px 16px, 3px 12px);
 $_img_btn_pad: if($_sizevariant=='default', 5px, 2px);
 $_circ_btn_pad: if($_sizevariant=='default', 4px, 2px);
 $_switch_margin: if($_sizevariant=='default', 10px, 7px);
@@ -245,6 +246,7 @@ notebook {
 
         > tab,
         > tab.reorderable-page {
+          padding: $_tab_btn_pad;
           border: 1px solid transparent;
           margin: 3px;
           transition: $button_transition;
@@ -294,10 +296,10 @@ notebook {
       background-image: linear-gradient(to right, $gradient);
     }
 
-    tab {
+    > tabs > tab {
       border-radius: $button_radius;
       transition: $button_transition;
-      min-height: 28px;
+      min-height: 24px;
 
       button.flat {
         margin-top: 1px;
