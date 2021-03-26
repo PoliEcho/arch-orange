@@ -45,13 +45,15 @@
     </property>
     <property name="plugin-6" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="xfce4-terminal-emulator.desktop"/>
+        <value type="string" value="kazam.desktop"/>
       </property>
     </property>
     <property name="plugin-7" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="kazam.desktop"/>
+        <value type="string" value="xfce4-terminal-emulator.desktop"/>
+        <value type="string" value="root-terminal.desktop"/>
       </property>
+      <property name="move-first" type="bool" value="true"/>
     </property>
     <property name="plugin-8" type="string" value="separator"/>
     <property name="plugin-9" type="string" value="separator">
