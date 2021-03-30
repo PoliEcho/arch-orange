@@ -20,7 +20,7 @@ Recommends: kali-wallpapers-2021.4
 Suggests:
  gtk2-engines-murrine,
 # List old wallpapers so that they are not auto-removed on upgrade
- kali-wallpapers-2019.4
+ kali-wallpapers-2019.4,
  kali-wallpapers-legacy
 Breaks: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
 Replaces: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
