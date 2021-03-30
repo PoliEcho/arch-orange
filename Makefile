@@ -1,6 +1,6 @@
 SUBDIRS=emblems kali-logos
-DESKTOP_BACKGROUND=kali-geometric
-LOGIN_BACKGROUND=kali-light-strips
+DESKTOP_BACKGROUND=kali-nova
+LOGIN_BACKGROUND=kali-contours
 
 build:
 	bin/update-default-backgrounds $(DESKTOP_BACKGROUND) $(LOGIN_BACKGROUND)
