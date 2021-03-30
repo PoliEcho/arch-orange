@@ -14,7 +14,7 @@ Package: kali-themes-common
 Architecture: all
 Depends:
 # Dependency on the package providing the current default background
- kali-wallpapers-2020.4,
+ kali-wallpapers-2020.4 (>= 2021.2.0),
  ${misc:Depends}
 Recommends: kali-wallpapers-2021.4
 Suggests:
