@@ -12,8 +12,9 @@ kali-themes (2021.2.0) kali-dev; urgency=medium
   * Set the new default wallpapers
   * Add missing comma for debian/control
   * Set kali-wallpapers-2020.4 dependency >= 2021.2.0
+  * Set lightdm theme to light
 
- -- Daniel Ruiz de Alegría <daniel@drasite.com>  Tue, 30 Mar 2021 16:39:28 +0000
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Tue, 30 Mar 2021 16:39:28 +0000
 
 kali-themes (2021.1.3) kali-dev; urgency=medium
 
