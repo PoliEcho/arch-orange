@@ -1,3 +1,20 @@
+kali-themes (2021.2.0) kali-dev; urgency=medium
+
+  * Add subterminal colapse shortcut for qterminal
+  * GTK3: Update 3.24.26
+  * GTK3: Make scrollbar slider smaller
+  * GTK3: Regenerate css
+  * Xfce & GTK3: Fix battery icon size in xfce4-panel
+  * GTK3: Update 3.24.27
+  * Icons: Add airgeddon & fix ac-adapter-symbolic
+  * GTK3: Make backdrop border color more visible
+  * Xfce: Add root terminal to panel
+  * Set the new default wallpapers
+  * Add missing comma for debian/control
+  * Set kali-wallpapers-2020.4 dependency >= 2021.2.0
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Tue, 30 Mar 2021 16:39:28 +0000
+
 kali-themes (2021.1.3) kali-dev; urgency=medium
 
   * Revert: "Xfce: remove xcape and use super key to show the menu"
