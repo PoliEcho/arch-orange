@@ -36,7 +36,14 @@ background-pattern = 'grid'
 
 # Change mousepad editor settings
 [org.xfce.mousepad.preferences.view]
-color-scheme='Kali-Dark'
+color-scheme = 'Kali-Dark'
+show-line-numbers = true
+word-wrap = true
+auto-indent = true
+highlight-current-line = true
+match-braces = true
+[org.xfce.mousepad.preferences.window]
+toolbar-visible = true
 
 [org.gnome.gnome-system-monitor]
 cpu-stacked-area-chart = true
