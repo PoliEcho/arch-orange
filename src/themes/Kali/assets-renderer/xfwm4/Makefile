@@ -35,6 +35,12 @@ build: $(ASSETS)
 			&& $(OPTIPNG) $$variant@2/$$i.png ; \
 		done ; \
 	done
+	mkdir -p $(THEMES_DIR)Kali-Light/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali-Dark/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali-Light-HiDPI/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali-Dark-HiDPI/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali-Light-xHiDPI/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali-Dark-xHiDPI/xfwm4/
 	cp assets/* $(THEMES_DIR)Kali-Light/xfwm4/
 	cp assets-dark/* $(THEMES_DIR)Kali-Dark/xfwm4/
 	cp assets@1.5/* $(THEMES_DIR)Kali-Light-HiDPI/xfwm4/
