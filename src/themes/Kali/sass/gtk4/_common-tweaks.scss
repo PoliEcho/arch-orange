@@ -1,5 +1,6 @@
 $_menu_shadow: 0 1px 6px transparentize(black, if($variant == 'light', .85, .5));
 $_widget_inset_shadow: inset 0 3px 10px -4px $shadow_color, 0 1px rgba(255, 255, 255, .05);
+$_wm_border: if($variant=='light', transparentize(black, 0.9), transparentize($borders_color, 0.25));
 
 // Optional compact sizes for buttons, headerbar and headerbar widgets
 $_sizevariant: 'compact'; //compact otherwise
