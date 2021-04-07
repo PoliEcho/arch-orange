@@ -31,7 +31,8 @@ picture-options='zoom'
 picture-uri='file:///usr/share/desktop-base/kali-theme/lockscreen/gnome-background.xml'
 
 [org.gnome.gedit.preferences.editor]
-scheme='Kali-Dark'
+scheme = 'Kali-Dark'
+background-pattern = 'grid'
 
 # Change mousepad editor settings
 [org.xfce.mousepad.preferences.view]
