@@ -1,3 +1,57 @@
+kali-themes (2021.2.1) kali-dev; urgency=medium
+
+  * Update xfce panel favorites
+  * Xfce: Add root terminal to menu favorites
+  * Add grid background to gedit
+  * Configure mousepad text-editor
+  * Add panel favorites for KDE (fixes #123)
+  * Remove qterminal history limit
+  * GTK3: make dark buttons lighter
+  * GTK3: fix dark button hover animation
+  * GTK3: update _drawing.scss.patch with new changes
+  * GTK3: Update 3.24.28
+  * GTK3: change tabs background color
+  * GTK3: increase app notification border-radius
+  * GTK3: make backdrop border-color more visible
+  * GTK4: Add gtk4 theme with custom kali colors
+  * GTK3: Match gtk4 widget sizes
+  * GTK4: Add assets
+  * GTK4: Add missing assets
+  * GTK4: Update 4.1.0
+  * GTK3: Renamve gtk 3 css files
+  * Reorganize scss source files
+  * GTK4: Add _common-tweaks and _applications scss
+  * GTK4: Customize button widgets
+  * GTK4: Customize headerbar
+  * GTK4: Customize stackswitcher
+  * GTK4: Customize entries
+  * GTK4: Add volume to button widgets
+  * GTK4: Customize tabs
+  * GTK4: Customize headerbar inside dialog window
+  * GTK4: Fix inset shadow of entry widgets
+  * GTK4: Remove shadows to disabled buttons
+  * GTK4: Customize switches
+  * GTK4: Tweak switch slider on backdrop state
+  * GTK4: Customize check and radio widgets
+  * GTK4: Add setting for compact widgets
+  * Revert "GTK3: Match gtk4 widget sizes"
+  * GTK4: Reduce button border-radius
+  * GTK4: Fix tab paddings
+  * GTK4: Customize tree views
+  * GTK4: Customize window decoration
+  * Update symbolic assets for GTK4
+  * GTK4: add missing $_wm_border variable
+  * GTK themes' makefile, ensure all directories are created
+  * sass make build, run clean first
+  * GTK3 & GTK4: regenerate css files
+  * Fix ln inside gtk3's makefile
+  * GTK4: match gtk3, make dark buttons lighter
+  * GTK4: match gtk3 tabs background
+  * GTK4: regenerate css
+  * Force install updates inside etc files
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 19 Apr 2021 12:20:27 +0200
+
 kali-themes (2021.2.0) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
