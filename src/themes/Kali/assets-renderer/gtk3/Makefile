@@ -27,10 +27,14 @@ build: $(SRC_FILE)
 		            --export-png=$(ASSETS_DIR)/$$i@2.png $(SRC_FILE) > /dev/null 2>&1 \
 		&& $(OPTIPNG) $(ASSETS_DIR)/$$i@2.png ; \
 	done
-	mkdir -p $(THEMES_DIR)Kali-Light/gtk-3.0/assets/
-	cp assets/* $(THEMES_DIR)Kali-Light/gtk-3.0/assets/
 	mkdir -p $(THEMES_DIR)Kali-Dark/gtk-3.0/assets/
+	mkdir -p $(THEMES_DIR)Kali-Dark/gtk-4.0/
+	mkdir -p $(THEMES_DIR)Kali-Light/gtk-3.0/
+	mkdir -p $(THEMES_DIR)Kali-Light/gtk-4.0/
 	cp assets/* $(THEMES_DIR)Kali-Dark/gtk-3.0/assets/
+	ln -rsvf $(THEMES_DIR)Kali-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali-Light/gtk-3.0/assets
+	ln -rsvf $(THEMES_DIR)Kali-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali-Dark/gtk-4.0/assets
+	ln -rsvf $(THEMES_DIR)Kali-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali-Light/gtk-4.0/assets
 
 clean:
 	-rm -r $(ASSETS_DIR)

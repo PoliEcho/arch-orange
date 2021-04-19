@@ -4,15 +4,20 @@ THEMES_DIR=../../../../share/themes/
 
 .PHONY: build clean
 
-build: $(patsubst %.scss, %.css, $(wildcard *.scss))
+build: clean $(patsubst %.scss, %.css, $(wildcard *.scss))
 	mkdir -p $(THEMES_DIR)Kali-Light/gtk-3.0/
 	mkdir -p $(THEMES_DIR)Kali-Dark/gtk-3.0/
+	mkdir -p $(THEMES_DIR)Kali-Light/gtk-4.0/
+	mkdir -p $(THEMES_DIR)Kali-Dark/gtk-4.0/
 	mkdir -p $(THEMES_DIR)Kali-Light/gnome-shell/
 	mkdir -p $(THEMES_DIR)Kali-Dark/gnome-shell/
 	
-	cp gtk.css $(THEMES_DIR)Kali-Light/gtk-3.0/gtk.css
-	cp gtk-dark.css $(THEMES_DIR)Kali-Light/gtk-3.0/gtk-dark.css
-	cp gtk-dark.css $(THEMES_DIR)Kali-Dark/gtk-3.0/gtk.css
+	cp gtk3.css $(THEMES_DIR)Kali-Light/gtk-3.0/gtk.css
+	cp gtk3-dark.css $(THEMES_DIR)Kali-Light/gtk-3.0/gtk-dark.css
+	cp gtk3-dark.css $(THEMES_DIR)Kali-Dark/gtk-3.0/gtk.css
+	cp gtk4.css $(THEMES_DIR)Kali-Light/gtk-4.0/gtk.css
+	cp gtk4-dark.css $(THEMES_DIR)Kali-Light/gtk-4.0/gtk-dark.css
+	cp gtk4-dark.css $(THEMES_DIR)Kali-Dark/gtk-4.0/gtk.css
 	cp gnome-shell.css $(THEMES_DIR)Kali-Light/gnome-shell/gnome-shell.css
 	cp gnome-shell-dark.css $(THEMES_DIR)Kali-Dark/gnome-shell/gnome-shell.css
 
