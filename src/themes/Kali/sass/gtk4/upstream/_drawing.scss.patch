@@ -8,4 +8,4 @@
 <     background-image: if($variant == 'light', linear-gradient(to top, darken($c, 2%) 2px, $c),
 <                                               linear-gradient(to top, darken($c,1%) 2px, $c));
 ---
->     background-image: image(lighten($c, 5%));
+>     background-image: image(lighten($c, 7%));
