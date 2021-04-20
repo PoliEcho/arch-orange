@@ -49,8 +49,9 @@ kali-themes (2021.2.1) kali-dev; urgency=medium
   * GTK4: match gtk3 tabs background
   * GTK4: regenerate css
   * Force install updates inside etc files
+  * Xfce: add keyboard shortcut for root-terminal
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 19 Apr 2021 12:20:27 +0200
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Tue, 20 Apr 2021 12:34:47 +0200
 
 kali-themes (2021.2.0) kali-dev; urgency=medium
 
