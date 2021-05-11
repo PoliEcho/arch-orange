@@ -1,0 +1,1 @@
+dir_to_symlink /usr/share/themes/Kali-Light/gtk-3.0/assets ../../Kali-Dark/gtk-3.0/assets 2021.2.2~
