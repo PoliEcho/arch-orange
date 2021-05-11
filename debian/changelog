@@ -1,3 +1,14 @@
+kali-themes (2021.2.2) kali-dev; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Run screenshot sound in the background
+  * Tweaks qterminal settings
+
+  [ Arnaud Rebillout ]
+  * Fix Kali-Light/gtk-3.0/assets dir to symlink
+
+ -- Arnaud Rebillout <arnaudr@kali.org>  Tue, 11 May 2021 21:34:43 +0700
+
 kali-themes (2021.2.1) kali-dev; urgency=medium
 
   * Update xfce panel favorites
