@@ -94,6 +94,10 @@ if [ "$1" = "configure" ]; then
 	if dpkg --compare-versions "$2" lt "2021.2.2"; then
 	    install_config_file /etc/xdg/qterminal.org/qterminal.ini force
 	fi
+	if dpkg --compare-versions "$2" lt "2021.2.3"; then
+	    install_config_file /etc/xdg/Thunar/uca.xml force
+	    install_config_file /etc/xdg/Thunar/accels.scm force
+	fi
 	# Install remaining new files
 	install_all
     fi
