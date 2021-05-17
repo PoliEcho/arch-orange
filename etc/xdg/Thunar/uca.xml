@@ -28,7 +28,7 @@
 <actions>
 
   <action>
-    <icon>Terminal</icon>
+    <icon>utilities-terminal-symbolic</icon>
     <patterns>*</patterns>
     <name>Open Terminal Here</name>
     <name xml:lang="ar">فتح الطرفيّة هنا</name>
@@ -126,7 +126,7 @@
   </action>
 
   <action>
-    <icon>Terminal</icon>
+    <icon>utilities-terminal-symbolic</icon>
     <patterns>*</patterns>
     <name>Open Terminal Here</name>
     <name xml:lang="ar">فتح الطرفيّة هنا</name>
@@ -219,7 +219,7 @@
   </action>
 
   <action>
-    <icon>folder-open</icon>
+    <icon>folder-open-symbolic</icon>
     <name>Open as Root</name>
     <name xml:lang="ar">فتح كجذر</name>
     <name xml:lang="ast">Abrir como root</name>
@@ -313,7 +313,7 @@
   </action>
 
   <action>
-    <icon>filefind</icon>
+    <icon>search-symbolic</icon>
     <name>Find in this folder</name>
     <name xml:lang="ar">البحث في هذا المجلد</name>
     <name xml:lang="ast">Guetar nesta carpeta</name>
@@ -409,7 +409,7 @@
   </action>
 
   <action>
-    <icon>document-print</icon>
+    <icon>document-print-symbolic</icon>
     <name>Print file(s)</name>
     <name xml:lang="ar">طباعة ملف (ملفات)</name>
     <name xml:lang="bg">Печат на файлове</name>
