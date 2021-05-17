@@ -1,3 +1,12 @@
+kali-themes (2021.2.3) kali-dev; urgency=medium
+
+  * Add 'open as root' action for thunar
+  * install_config_files: thunar accels.scm and uca.xml
+  * Improve icons for thunar actions
+  * GTK3 & GTK4 tweaks
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 17 May 2021 17:34:17 +0200
+
 kali-themes (2021.2.2) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
