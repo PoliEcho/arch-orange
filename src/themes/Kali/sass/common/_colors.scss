@@ -46,6 +46,9 @@ $osd_outer_borders_color: transparentize(white, 0.9);
 $sidebar_bg_color: mix($bg_color, $base_color, 50%);
 $base_hover_color: transparentize($fg_color, 0.95);
 
+$panel_bg : transparentize($bg_color, if($variant=='light', 0.1, 0.2));
+$panel_fg: if($variant=='light', darken($fg_color, 10%), $fg_color);
+
 $tooltip_borders_color: $osd_outer_borders_color;
 $shadow_color: transparentize(black, if($variant == 'light', 0.9, 0.7));
 
