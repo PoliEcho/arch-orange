@@ -1,10 +1,11 @@
 kali-themes (2021.2.4) kali-dev; urgency=medium
 
+  [ Daniel Ruiz de Alegría ]
   * Icons: Update flat-remix icon theme
   * Xfce: change firefox link with default-browser
   * install_config_files: xfce4-panel settings
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 19 May 2021 17:19:50 +0200
+ -- Arnaud Rebillout <arnaudr@kali.org>  Thu, 20 May 2021 09:51:05 +0700
 
 kali-themes (2021.2.3) kali-dev; urgency=medium
 
