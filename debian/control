@@ -54,7 +54,7 @@ Depends:
 # exo-utils configuration reference sensible-browser
  sensible-utils,
 # The GTK theme uses this engine
- gtk2-engines-murrine,
+ gtk2-engines-pixbuf,
 # For boot-time splash screen
  plymouth-label,
  ${misc:Depends}
