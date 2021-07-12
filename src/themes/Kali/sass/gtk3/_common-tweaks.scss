@@ -167,7 +167,7 @@ headerbar {
     box-shadow: none;
   }
 
-  stackswitcher button:checked,
+  stackswitcher button,
   button.toggle {
     &:active, &:checked { @extend %button_active; }
   }
