@@ -1,12 +1,12 @@
 [Desktop Entry]
 Version=1.0
-Type=Application
-Exec=/usr/share/kali-themes/default-browser
+Type=X-XFCE-Helper
 Icon=webbrowser
-StartupNotify=true
-Terminal=false
-Categories=Network;
-OnlyShowIn=KDE;
+StartupNotify=false
+X-XFCE-Binaries=/usr/share/kali-themes/default-browser
+X-XFCE-Category=WebBrowser
+X-XFCE-Commands=%B;
+X-XFCE-CommandsWithParameter=%B "%s";
 Name=Web Browser
 Name[ar]=متصفّح وِب
 Name[be]=Вэб-браўзер
