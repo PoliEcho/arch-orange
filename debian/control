@@ -51,8 +51,6 @@ Depends:
 # gsettings and other config files reference those fonts
  fonts-cantarell,
  fonts-firacode,
-# exo-utils configuration reference sensible-browser
- sensible-utils,
 # The GTK theme uses this engine
  gtk2-engines-pixbuf,
 # For boot-time splash screen

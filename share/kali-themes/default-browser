@@ -2,7 +2,7 @@
 
 if [ $(id -u) -eq 0 ]; then
   USER=$(find $XAUTHORITY -printf '%u')
-  exec runuser -u $USER -- sensible-browser "$@"
+  exec runuser -u $USER -- x-www-browser "$@"
 else
-  exec sensible-browser "$@"
+  exec x-www-browser "$@"
 fi
