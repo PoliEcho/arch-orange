@@ -16,19 +16,16 @@ filechooser,
       background-image: linear-gradient(to left, darken($bg_color, 4%) 41px, $bg_color 0);
     }
 
-    &:backdrop { box-shadow: none; }
+    &:backdrop { background-image: none; }
 
     row.sidebar-row {
       &:selected {
-        @extend %selected_items;
-
         margin-left: 6px;
         margin-right: 6px;
         border-radius: $button_radius;
         box-shadow: $_glow_shadow;
         transition: box-shadow $backdrop_transition;
-
-        &:backdrop { box-shadow: none; }
+        background-color: $selected_bg_color;
 
         &:dir(ltr) {
           background-image: linear-gradient(to right, darken($selected_bg_color, 10%) 35px, transparent 0);
@@ -42,6 +39,16 @@ filechooser,
           padding-right: 8px;
 
           .sidebar-icon, .sidebar-label { color: $selected_fg_color; }
+        }
+
+        &:backdrop {
+          @extend %selected_items_backdrop;
+          box-shadow: none;
+          background-image: none;
+
+          &,
+          & .sidebar-icon,
+          & .sidebar-label { color: mix($backdrop_selected_fg_color, $selected_bg_color, 30%); }
         }
       }
 
@@ -73,6 +80,11 @@ filechooser,
 }
 
 .path-bar-box:backdrop { border-color: $backdrop_borders_color}
+
+/* GNOME TWEAKS */
+list.tweak-categories separator {
+  background: transparent;
+}
 
 /* XFCE4 PANEL */
 .xfce4-panel {
