@@ -32,8 +32,10 @@ kali-themes (2021.3.0) kali-dev; urgency=medium
   * Fix background of checked stackswitcher button
   * Fix background color of hovered popover elements
   * GTK3: regenerate CSS theme files
+  * Icons: fix Flat-Remix-Blue-Light/actions/symbolic/ symlink to
+    Flat-Remix-Blue-Dark theme
 
- -- Daniel Ruiz de Alegría <daniel@drasite.com>  Thu, 12 Aug 2021 21:47:19 +0200
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Thu, 12 Aug 2021 23:18:39 +0200
 
 kali-themes (2021.2.4) kali-dev; urgency=medium
 
