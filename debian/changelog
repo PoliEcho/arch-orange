@@ -1,3 +1,40 @@
+kali-themes (2021.3.0) kali-dev; urgency=medium
+
+  * Improve gtk-sourceview's colorschemes
+  * Remove qterminal setting MotionAfterPaste
+  * GTK2: Create new dark theme based on adwaita
+  * GTK2: Create new light theme based on adwaita
+  * Use the correct engine for gtk2 themes
+  * Revert "Use the correct engine for gtk2 themes"
+  * Use the correct engine for gtk2 themes
+  * GTK2: Add volume to tabs
+  * GTK2: Render assets
+  * GTK3: update libhandy to 1.2.3
+  * GTK3: fix stackswitcher-button checked background
+  * GTK3: update sync script for 3.24.30
+  * GTK3: generate CSS
+  * Xfce: add keyboard shortcut for xfce4-taskmanager
+  * Xfce: remove shortcut for kazam
+  * Force update of qterminal settings
+  * Add helper-script for the default browser to fix isues with firefox and
+    root user
+  * Force update of kdeglobals and xfce4/helpers.rc
+  * Remove sensible-utils
+  * Fix default browser in KDE and XFCE
+  * Remove executable permissions to gtkrc theme files
+  * Icons: Update from upstream 20210620
+  * GTK3: improve visibility and theme of xfce's notifications and logout
+    dialog
+  * GTK3: improve button's background and shadows
+  * GTK3: improve design of sidebar row
+  * GTK3: fix border-color for colored buttons
+  * GTK3: Join sidebars with left headerbars
+  * Fix background of checked stackswitcher button
+  * Fix background color of hovered popover elements
+  * GTK3: regenerate CSS theme files
+
+ -- Daniel Ruiz de Alegría <daniel@drasite.com>  Thu, 12 Aug 2021 21:47:19 +0200
+
 kali-themes (2021.2.4) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
