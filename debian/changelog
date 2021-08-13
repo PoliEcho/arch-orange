@@ -1,5 +1,6 @@
 kali-themes (2021.3.0) kali-dev; urgency=medium
 
+  [ Daniel Ruiz de Alegría ]
   * Improve gtk-sourceview's colorschemes
   * Remove qterminal setting MotionAfterPaste
   * GTK2: Create new dark theme based on adwaita
@@ -35,7 +36,10 @@ kali-themes (2021.3.0) kali-dev; urgency=medium
   * Icons: fix Flat-Remix-Blue-Light/actions/symbolic/ symlink to
     Flat-Remix-Blue-Dark theme
 
- -- Daniel Ruiz de Alegría <daniel@drasite.com>  Thu, 12 Aug 2021 23:18:39 +0200
+  [ Arnaud Rebillout ]
+  * Order mimeapps.list alphabetically
+
+ -- Arnaud Rebillout <arnaudr@kali.org>  Fri, 13 Aug 2021 22:40:00 +0700
 
 kali-themes (2021.2.4) kali-dev; urgency=medium
 
