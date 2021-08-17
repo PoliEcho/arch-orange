@@ -1,11 +1,11 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=/usr/share/kali-themes/default-browser
+Exec=/usr/share/kali-themes/default-browser %u
 Icon=webbrowser
 StartupNotify=true
 Terminal=false
-Categories=Network;
+Categories=Network;WebBrowser;
 OnlyShowIn=KDE;
 Name=Web Browser
 Name[ar]=متصفّح وِب
