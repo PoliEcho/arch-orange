@@ -21,7 +21,7 @@ Recommends:
 # package to Depends, and move kali-wallpapers-2020.4 to Suggests.
  kali-wallpapers-2021.4,
 Suggests:
- gtk2-engines-murrine,
+ gtk2-engines-pixbuf,
 # List old wallpapers so that they are not auto-removed on upgrade
  kali-wallpapers-2019.4,
  kali-wallpapers-legacy
