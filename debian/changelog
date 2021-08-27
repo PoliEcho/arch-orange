@@ -2,6 +2,7 @@ kali-themes (2021.3.2) kali-dev; urgency=medium
 
   * Move kali-panel-menu.svg icon from kali-menu
   * KDE: fix panel launchers
+  * Add Breaks and Replaces kali-menu (<< 2021.3.2)
 
  -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 27 Aug 2021 13:48:30 +0200
 

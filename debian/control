@@ -25,8 +25,12 @@ Suggests:
 # List old wallpapers so that they are not auto-removed on upgrade
  kali-wallpapers-2019.4,
  kali-wallpapers-legacy
-Breaks: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
-Replaces: gnome-theme-kali (<< 2019.4), desktop-base (<< 10.0.3+kali2)
+Breaks: gnome-theme-kali (<< 2019.4),
+        desktop-base (<< 10.0.3+kali2),
+	kali-menu (<< 2021.3.2)
+Replaces: gnome-theme-kali (<< 2019.4),
+          desktop-base (<< 10.0.3+kali2),
+	  kali-menu (<< 2021.3.2)
 Provides: gnome-theme-kali
 Description: Kali Themes (data files)
  This package contains multiple themes for kali. It includes graphical toolkit
