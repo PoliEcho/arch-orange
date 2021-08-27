@@ -4,7 +4,7 @@ panelIds.forEach(panelId => {
         const widget = panel.widgetById(widgetId);
         if (widget.type === 'org.kde.plasma.icontasks') {
             widget.currentConfigGroup = ["General"];
-            widget.writeConfig('launchers', 'applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.kwrite.desktop,applications:firefox-esr.desktop');
+            widget.writeConfig('launchers', ['applications:org.kde.konsole.desktop', 'applications:org.kde.dolphin.desktop', 'applications:org.kde.kwrite.desktop', 'applications:firefox-esr.desktop']);
         }
-    })
-})
+    });
+});
