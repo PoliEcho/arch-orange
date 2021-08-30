@@ -1,18 +1,18 @@
-$overview_transparent_bg: transparentize(white, .8);
+$overview_transparent_bg: transparentize(white, .9);
 $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 
-
 /* OSD */
-$_osd_color: if($variant=='light', black, white);
+$_osd_color: if($variant=='light', black, $fg_color);
 %osd_panel {
   font-weight: bold;
   background-color: $bg_color;
   color: $fg_color;
   border: 1px solid if($variant=='light', transparentize(black, 0.85), $borders_color);
+  box-shadow: 0 4px 10px transparentize(black, .8);
 
   StIcon {
     color: $_osd_color;
-    icon-shadow: transparentize(black, .3) 0 1px 6px;
+    icon-shadow: 0 0 6px transparentize(black, .6);
   }
 }
 
@@ -26,24 +26,24 @@ $_osd_color: if($variant=='light', black, white);
 /* Slider */
 
 .slider {
-    height: 1.1em;
-    -barlevel-height: .35em;
-    -barlevel-background-color: $borders_color;
-    -barlevel-border-color: $selected_bg_color;
-    -barlevel-active-background-color: $selected_bg_color;
-    -barlevel-overdrive-color: $destructive_color;
-    -barlevel-overdrive-separator-width: 0.1em;
-    -barlevel-border-width: 0;
+  height: 1.1em;
+  -barlevel-height: .35em;
+  -barlevel-background-color: $borders_color;
+  -barlevel-border-color: $selected_bg_color;
+  -barlevel-active-background-color: $selected_bg_color;
+  -barlevel-overdrive-color: $destructive_color;
+  -barlevel-overdrive-separator-width: 0.1em;
+  -barlevel-border-width: 0;
 
-    -slider-handle-radius: 0;
+  -slider-handle-radius: 0;
 }
 
 /* Check Boxes */
 
 .check-box {
   StBin {
-     background-image: if($variant == 'light', url("assets/checkbox-off.svg"), 
-                                               url("assets/checkbox-off-dark.svg"));
+    background-image: if($variant == 'light', url("assets/checkbox-off.svg"), 
+                                              url("assets/checkbox-off-dark.svg"));
   }
 
   &:focus StBin { background-image: if($variant == 'light', url("assets/checkbox-off-focused.svg"),
@@ -54,6 +54,16 @@ $_osd_color: if($variant=='light', black, white);
                                                                     url("assets/checkbox-focused-dark.svg")); }
 }
 
+/* Switches */
+.toggle-switch {
+  background-image: if($variant == 'light', url("assets/toggle-off.svg"), 
+                                            url("assets/toggle-off-dark.svg"));
+  &:checked {
+    background-image: if($variant == 'light', url("assets/toggle-on.svg"), 
+                                              url("assets/toggle-on-dark.svg"));
+  }
+}
+
 /* App Switcher */
 // switcher onscreen panel
 .switcher-list {
@@ -61,13 +71,12 @@ $_osd_color: if($variant=='light', black, white);
     &:outlined {
       padding: 6px;
       border: 3px solid $selected_bg_color;
-      border-radius: 8px;
     }
 
     &:selected {
       background-color: $selected_bg_color;
       color: $selected_fg_color;
-      text-shadow: transparentize(black, 0.1) 0 1px 2px;
+      text-shadow: 0 1px 4px transparentize(black, 0.6);
     }
   }
 }
@@ -82,20 +91,15 @@ $_osd_color: if($variant=='light', black, white);
 .ws-switcher-active-down,
 .ws-switcher-active-left,
 .ws-switcher-active-right {
-  box-shadow: 0 0px 6px transparentize(black, .5);
+  //box-shadow: 0 0px 6px transparentize(black, .5);
 }
 
 /* Window Picker */
 
-// Borders on window thumbnails
-.window-clone-border { border-color: transparentize(white, .75); }
-
 // Window titles
 .window-caption {
-  font-size: .9em;
   color: black;
   background-color: white;
-  border: none;
   box-shadow: $dialog_box_shadow;
 }
 
@@ -104,11 +108,11 @@ $_osd_color: if($variant=='light', black, white);
   background-image: url("assets/close-window.svg");
   background-size: 32px;
   background-color: transparent;
-  border: 0;
   box-shadow: none;
   color: transparent;
   height: 32px;
   width: 32px;
+  transition-duration: .2s;
 
   &:hover {
     background-image: url("assets/close-window-hover.svg");
@@ -118,6 +122,8 @@ $_osd_color: if($variant=='light', black, white);
   &:active {
     background-image: url("assets/close-window-active.svg");
     background-color: transparent;
+    color: transparent;
+    transition-duration: 0s;
   }
 }
 
@@ -131,7 +137,7 @@ $_osd_color: if($variant=='light', black, white);
 #panel {
   $_panel_bg: transparentize($bg_color, .2);
   $_panel_fg: if($variant=='light', black, white);
-  $_panel_text_shadow: transparentize(black, .5) 0 1px 2px;
+  $_panel_text_shadow: 0 1px 2px transparentize(black, 0.5);
   background: $_panel_bg;
   text-shadow: $_panel_text_shadow;
 
@@ -152,8 +158,21 @@ $_osd_color: if($variant=='light', black, white);
   .panel-corner { -panel-corner-radius: 0; }
 
   .panel-button {
-    &, &:hover, &:active, &:focus, &:overview, &:checked {
+    color: $_panel_fg;
+    &:active, &:focus, &:overview, &:checked {
       color: $_panel_fg;
+      box-shadow: inset 0 0 0 100px rgba(255, 255, 255, if($variant == 'light', 1, .2));
+    }
+  }
+
+  .panel-button.clock-display {
+    // Move highlight from .panel-button to .clock
+    &:active, &:overview, &:focus, &:checked {
+      box-shadow: none;
+
+      .clock {
+        box-shadow: inset 0 0 0 100px rgba(255, 255, 255, if($variant == 'light', 1, .2));
+      }
     }
   }
 
@@ -161,7 +180,7 @@ $_osd_color: if($variant=='light', black, white);
     margin-left: .4em;
     StLabel {
       background-image: if($variant == 'light', url("assets/view-grid-symbolic.svg"),
-                                                url("assets/view-grid-symbolic-dark.svg"));
+                                          url("assets/view-grid-symbolic-dark.svg"));
       background-size: contain;
       width: 1.5em;
       height: 1.5em;
@@ -169,13 +188,12 @@ $_osd_color: if($variant=='light', black, white);
     }
 
     &:overview StLabel {
-      background-image: url("assets/view-grid-symbolic-checked.svg");
+      background-image: url("assets/view-grid-symbolic-dark.svg");
     }
   }
 }
 
 /* Date/Time Menu */
-
 // overall menu
 #calendarArea {
   background-image: if($variant == 'light', url("assets/kali-dragon.svg"),
@@ -192,12 +210,22 @@ $_osd_color: if($variant=='light', black, white);
   }
 }
 
-.calendar { @include notification_bubble($flat: true); }
+.calendar {
+  @include notification_bubble($flat: true);
 
-/* Message list */
-.message-list {
-  width: 31.5em;
-  background: transparentize($bg_color, .3);
+  .calendar-day-base {
+    &:active, &:selected {
+      color: $fg_color;
+      background-color: if($variant=='light', darken($bg_color, 10%), lighten($bg_color, 10%));
+    }
+  }
+
+  .calendar-today {
+    &:active, &:selected {
+      background: $selected_bg_color;
+      color: $selected_fg_color;
+    }
+  }
 }
 
 /* Events */
@@ -219,10 +247,11 @@ $_osd_color: if($variant=='light', black, white);
 // search entry
 .search-entry {
   color: black;
+  text-shadow: 0px 1px 2px rgba(black, 0.9);
   font-weight: bold;
   background-color: $overview_transparent_bg;
-  text-shadow: 0px 1px 2px rgba(black, 0.9);
-  border-radius: 100px;
+  border-radius: 999px;
+  font-size: 1.1em;
   transition-duration: 200ms;
 
   StLabel.hint-text { color: $osd_fg_color; }
@@ -237,8 +266,8 @@ $_osd_color: if($variant=='light', black, white);
     background-color: white;
     color: black;
     font-weight: normal;
-    text-shadow: none;
     box-shadow: none;
+    text-shadow: none;
 
     StLabel.hint-text { color: black; }
 
@@ -255,22 +284,10 @@ $_osd_color: if($variant=='light', black, white);
 }
 
 // search results
-.search-section {
-  // separator
-  .search-section-separator {
-    height: 1px;
-    background-color: $osd_outer_borders_color;
-  }
-
-  &:last-child .search-section-separator { background-color: transparent; }
-}
-
-// content
 .search-section-content {
-  background-color: transparent;
-  border-radius: 0;
-  border: 0;
-  box-shadow: 0;
+  background-color: $overview_transparent_bg;
+  box-shadow: none;
+  border: none;
 }
 
 // search result provider
@@ -290,9 +307,16 @@ $_osd_color: if($variant=='light', black, white);
 
   .overview-icon StIcon {
     color: white;
-    icon-shadow: transparentize(black, .3) 0 2px 6px;
+    icon-shadow: 0 2px 6px transparentize(black, .6);
   }
 }
+
+.dash-background {
+  background: $overview_transparent_bg;
+  //box-shadow: 0 2px 8px 0 transparentize(black, .2);
+}
+
+.dash-separator { background: $overview_transparent_bg; }
 
 .show-apps {
   &:focus,
@@ -304,35 +328,28 @@ $_osd_color: if($variant=='light', black, white);
   }
 }
 
-/* Workspace pager */
-// thumbnails in overview
-.workspace-thumbnails {
-  background-color: transparentize(black, .8);
-  border: none;
-
-  .placeholder { background-image: none; }
-}
-
 /* App Folders */
 .app-well-app.app-folder {
-    background-color: $overview_transparent_bg;
-    box-shadow: 0 2px 5px black;
+  &, & .overview-icon.overview-icon-with-label {
+      background-color: $overview_transparent_bg
+  }
+  //box-shadow: 0 2px 5px black;
 
-    &:checked { background: black; }
+  &:checked { background: black; }
 }
 
 .app-folder-dialog {
-    background: black;
-    box-shadow: 0 0 20px black;
-    border: none;
+  background: black;
+  box-shadow: 0 0 20px black;
 
-    & .folder-name-container {
-        & .edit-folder-button {
-            &, &:hover, &:active {
-                background: white;
-                color: black;
-            }
-        }
-    }
+  & .folder-name-container {
+      & .edit-folder-button {
+          &, &:hover, &:active {
+              background: white;
+              color: black;
+          }
+      }
+  }
 }
 
+.app-folder-dialog-container { width: 720px; }
