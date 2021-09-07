@@ -4545,7 +4545,7 @@ textview text:selected:focus,
 .view text:selected,
 textview text:selected, .view text selection:focus, .view text selection,
 textview text selection:focus,
-textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected,
+textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
   background-color: #2777ff; }
@@ -4555,7 +4555,7 @@ entry selection, modelbutton.flat:selected,
   .view text:selected,
   textview text:selected, .view text selection:focus, .view text selection,
   textview text selection:focus,
-  textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected,
+  textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
   entry selection, modelbutton.flat:selected,
   .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
     color: #ffffff; }
@@ -6052,7 +6052,7 @@ filechooser placessidebar.sidebar row.sidebar-row:selected,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-label {
-      color: #669efd; }
+      color: #cedef9; }
 
 filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon {
@@ -6136,8 +6136,7 @@ list.tweak-categories separator {
       color: inherit; }
 
 /* XFCE4 panel action & battery buttons */
-#XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image,
-#xfce4-power-manager-plugin > box > image {
+#XfcePanelWindowWrapper > widget > box > #xfce-panel-button > image {
   -gtk-icon-style: symbolic;
   -gtk-icon-transform: scale(0.7); }
 
