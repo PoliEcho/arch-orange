@@ -22,6 +22,7 @@ Recommends:
  kali-wallpapers-2021.4,
 Suggests:
  gtk2-engines-pixbuf,
+ librsvg2-common,
 # List old wallpapers so that they are not auto-removed on upgrade
  kali-wallpapers-2019.4,
  kali-wallpapers-legacy
@@ -55,8 +56,9 @@ Depends:
 # gsettings and other config files reference those fonts
  fonts-cantarell,
  fonts-firacode,
-# The GTK theme uses this engine
+# Engines for GTK and icon themes
  gtk2-engines-pixbuf,
+ librsvg2-common,
 # For boot-time splash screen
  plymouth-label,
  ${misc:Depends}
