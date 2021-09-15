@@ -1,3 +1,14 @@
+kali-themes (2021.4.0) kali-dev; urgency=medium
+
+  * Add symlinks for kali-tools
+  * GTK3: Remove icon scale to xfce power widget
+  * GTK3: Improve legibility of nautilus sidebar on backdrop
+  * GTK3: Update theme css
+  * GTK2: Fix missing hacks and apps rc files
+  * Add librsvg2-common dependency
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 15 Sep 2021 09:43:38 +0200
+
 kali-themes (2021.3.2) kali-dev; urgency=medium
 
   * Move kali-panel-menu.svg icon from kali-menu
