@@ -7,7 +7,6 @@ LOGIN_BACKGROUND=$2
 # login/lockscreen
 ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND.xml ${DESTDIR}lockscreen/gnome-background.xml
 ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND-16x9.png ${DESTDIR}login/background
-ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND.svg ${DESTDIR}login/background.svg
 
 # desktop background
 kde_wallpaper=$(echo $DESKTOP_BACKGROUND | sed -E 's/(^|-)([a-z])/\U\2/g')

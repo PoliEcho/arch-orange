@@ -15,15 +15,11 @@ Package: kali-themes-common
 Architecture: all
 Depends: ${misc:Depends},
 # Dependency on the package providing the current default background
- kali-wallpapers-2020.4 (>= 2021.2.0),
-Recommends:
-# Temporary dependency. When Kali's default wallpaper is updated to
-# be a wallpaper from this package, please move it to Depends, and
-# move kali-wallpapers-2020.4 to Suggests.
- kali-wallpapers-2021.4,
+         kali-wallpapers-2022,
 Suggests: gtk2-engines-pixbuf,
           librsvg2-common,
 # List old wallpapers so that they are not auto-removed on upgrade
+          kali-wallpapers-2020.4,
           kali-wallpapers-2019.4,
           kali-wallpapers-legacy
 Breaks: gnome-theme-kali (<< 2019.4),
