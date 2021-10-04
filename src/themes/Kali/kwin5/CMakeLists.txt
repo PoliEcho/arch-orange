@@ -11,4 +11,3 @@ include(KDECMakeSettings)
 find_package(KDecoration2 REQUIRED)
 
 add_subdirectory(kdecoration)
-add_subdirectory(libbreezecommon)

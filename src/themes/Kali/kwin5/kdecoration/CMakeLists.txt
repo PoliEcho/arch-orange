@@ -36,6 +36,7 @@ include_directories(${CMAKE_BINARY_DIR}/libbreezecommon)
 ### plugin classes
 set(breezedecoration_SRCS
     breezebutton.cpp
+    ../libbreezecommon/breezeboxshadowrenderer.cpp
     breezedecoration.cpp
     breezeexceptionlist.cpp
     breezesettingsprovider.cpp
@@ -64,18 +65,17 @@ set(breezedecoration_config_PART_FORMS
 ki18n_wrap_ui(breezedecoration_config_PART_FORMS_HEADERS ${breezedecoration_config_PART_FORMS})
 
 ### build library
-add_library(breezedecoration MODULE
+add_library(kali-breezedecoration MODULE
     ${breezedecoration_SRCS}
     ${breezedecoration_config_SRCS}
     ${breezedecoration_config_PART_FORMS_HEADERS})
 
-target_link_libraries(breezedecoration
+target_link_libraries(kali-breezedecoration
     PUBLIC
         Qt5::Core
         Qt5::Gui
         Qt5::DBus
     PRIVATE
-        breezecommon5
         KDecoration2::KDecoration
         KF5::ConfigCore
         KF5::CoreAddons
@@ -86,12 +86,11 @@ target_link_libraries(breezedecoration
         KF5::WindowSystem)
 
 if(BREEZE_HAVE_X11)
-  target_link_libraries(breezedecoration
+  target_link_libraries(kali-breezedecoration
     PUBLIC
       Qt5::X11Extras
       XCB::XCB)
 endif()
 
 
-install(TARGETS breezedecoration DESTINATION ${PLUGIN_INSTALL_DIR}/org.kde.kdecoration2)
-install(FILES config/breezedecorationconfig.desktop DESTINATION  ${SERVICES_INSTALL_DIR})
+install(TARGETS kali-breezedecoration DESTINATION ${PLUGIN_INSTALL_DIR}/org.kde.kdecoration2)
