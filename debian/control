@@ -3,7 +3,17 @@ Section: misc
 Priority: optional
 Maintainer: Kali Developers <devel@kali.org>
 Uploaders: Daniel Ruiz de Alegría <daniel@drasite.com>, Raphaël Hertzog <raphael@offensive-security.com>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: cmake,
+ debhelper-compat (= 12),
+ extra-cmake-modules,
+ libkdecorations2-dev,
+ libkf5configwidgets-dev,
+ libkf5coreaddons-dev,
+ libkf5guiaddons-dev,
+ libkf5i18n-dev,
+ libkf5iconthemes-dev,
+ libkf5windowsystem-dev,
+ libqt5x11extras5-dev,
  librsvg2-bin,
  optipng,
 Standards-Version: 4.5.1
