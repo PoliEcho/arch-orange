@@ -21,12 +21,11 @@ Vcs-Git: https://gitlab.com/kalilinux/packages/kali-themes.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 
 Package: kali-themes-common
-Architecture: any
+Architecture: all
 Depends:
 # Dependency on the package providing the current default background
  kali-wallpapers-2020.4 (>= 2021.2.0),
- ${misc:Depends},
- ${shlibs:Depends}
+ ${misc:Depends}
 Recommends:
 # Temporary dependency. When version 2021.4.0 is released, move this
 # package to Depends, and move kali-wallpapers-2020.4 to Suggests.
@@ -85,6 +84,14 @@ Description: Configure all desktops to use the Kali theme
  The actual artwork files are provided by kali-themes-common but this package
  provides configuration files and other settings for each desktop so that
  they use the Kali theme by default.
+
+Package: kwin-style-kali
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Kali theme for KWin
+ Kali's window manager theme for KDE Plasma 5 desktop
 
 Package: gnome-theme-kali
 Architecture: all
