@@ -41,12 +41,12 @@ build: $(ASSETS)
 	mkdir -p $(THEMES_DIR)Kali-Dark-HiDPI/xfwm4/
 	mkdir -p $(THEMES_DIR)Kali-Light-xHiDPI/xfwm4/
 	mkdir -p $(THEMES_DIR)Kali-Dark-xHiDPI/xfwm4/
-	cp assets/* $(THEMES_DIR)Kali-Light/xfwm4/
+	cp assets-light/* $(THEMES_DIR)Kali-Light/xfwm4/
 	cp assets-dark/* $(THEMES_DIR)Kali-Dark/xfwm4/
-	cp assets@1.5/* $(THEMES_DIR)Kali-Light-HiDPI/xfwm4/
+	cp assets-light@1.5/* $(THEMES_DIR)Kali-Light-HiDPI/xfwm4/
 	cp assets-dark@1.5/* $(THEMES_DIR)Kali-Dark-HiDPI/xfwm4/
-	cp assets@2/* $(THEMES_DIR)Kali-Light-xHiDPI/xfwm4/
+	cp assets-light@2/* $(THEMES_DIR)Kali-Light-xHiDPI/xfwm4/
 	cp assets-dark@2/* $(THEMES_DIR)Kali-Dark-xHiDPI/xfwm4/
 
 clean:
-	-rm -r assets assets@1.5 assets@2 assets-dark assets-dark@1.5 assets-dark@2
+	-rm -r assets-light assets-light@1.5 assets-light@2 assets-dark assets-dark@1.5 assets-dark@2
