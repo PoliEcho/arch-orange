@@ -13,4 +13,4 @@ clean:
 
 install:
 	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) install &&) true
-	cmake --install kwin-build
+	cmake --install kwin-theme-build
