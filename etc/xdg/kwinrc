@@ -1,6 +1,6 @@
 [org.kde.kdecoration2]
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Kali-Dark
+library=org.kali.kali
+theme=Kali
 
 [Desktops]
 Number=2

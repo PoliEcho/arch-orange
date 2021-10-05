@@ -2,8 +2,8 @@
 ColorScheme=KaliLight
 
 [kwinrc][org.kde.kdecoration2]
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Kali-Light
+library=org.kali.kali
+theme=Kali
 
 [kdeglobals][Icons]
 Theme=Flat-Remix-Blue-Light
