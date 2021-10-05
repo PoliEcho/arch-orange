@@ -1,11 +1,9 @@
-SUBDIRS=emblems kali-logos
+SUBDIRS=emblems kali-logos KDE-themes
 DESKTOP_BACKGROUND=kali-nova
 LOGIN_BACKGROUND=kali-contours
 
 build:
 	bin/update-default-backgrounds $(DESKTOP_BACKGROUND) $(LOGIN_BACKGROUND)
-	cmake -B kwin-theme-build -S KDE-themes/kwin5
-	cmake --build kwin-theme-build
 	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) build &&) true
 
 clean:
@@ -13,4 +11,3 @@ clean:
 
 install:
 	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(SUBDIR) install &&) true
-	cmake --install kwin-theme-build

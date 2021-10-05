@@ -2,3 +2,4 @@ share/* usr/share/
 # Those are created by "make install"
 usr/share/icons/
 usr/share/images/
+usr/lib/
