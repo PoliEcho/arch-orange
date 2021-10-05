@@ -179,6 +179,63 @@ scale slider {
   }
 }
 
+/*****************
+ * Title buttons *
+ *****************/
+windowcontrols {
+  margin: 0 5px;
+
+  &.end { margin-left: 11px; }
+  &.right { margin-right: 11px; }
+
+  button {
+    $_titlebutton_bg: lighten($bg_color, 10%);
+    color: transparent;
+    background: $_titlebutton_bg;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
+    border: 1px solid $alt_borders_color;
+    box-shadow: $_widget_inset_shadow;
+    -gtk-icon-shadow: none;
+    transition: all .2s;
+
+    @at-root %titlebutton_hover,
+    &:hover {
+      color: $fg_color;
+      background: $_titlebutton_bg;
+      border-color: transparent;
+      box-shadow: 0 0 0 1px $shadow_color;
+    }
+
+    &.close {
+      color: if($variant=='light', white, black);
+      background: $selected_bg_color;
+      border-color: transparent;
+
+      &:hover {
+        color: if($variant=='light', black, white);
+        background: mix(white, $selected_bg_color, 10%);
+      }
+
+      @if lightness($selected_bg_color) > 60%
+       or lightness($selected_bg_color) < 20% {
+        &, &:hover { color: $selected_fg_color; }
+      }
+    }
+
+    &:backdrop,
+    &:backdrop:hover {
+      color: transparent;
+      background: transparent;
+      box-shadow: none;
+      border-color: $backdrop_borders_color;
+      background: $shadow_color;
+    }
+  }
+}
+
 /***************
  * Header bars *
  ***************/
@@ -374,6 +431,4 @@ window {
 }
 
 tooltip.csd { border: 0; }
-
-windowcontrols button { padding: $_hb_btn_pad; }
 
