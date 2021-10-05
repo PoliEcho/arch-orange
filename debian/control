@@ -21,11 +21,12 @@ Vcs-Git: https://gitlab.com/kalilinux/packages/kali-themes.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 
 Package: kali-themes-common
-Architecture: all
+Architecture: any
 Depends:
 # Dependency on the package providing the current default background
  kali-wallpapers-2020.4 (>= 2021.2.0),
- ${misc:Depends}
+ ${misc:Depends},
+ ${shlibs:Depends}
 Recommends:
 # Temporary dependency. When version 2021.4.0 is released, move this
 # package to Depends, and move kali-wallpapers-2020.4 to Suggests.
