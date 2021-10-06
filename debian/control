@@ -39,6 +39,7 @@ Suggests:
 Breaks: gnome-theme-kali (<< 2019.4),
         desktop-base (<< 10.0.3+kali2),
         kali-menu (<< 2021.3.2),
+        kali-desktop-kde (<< 2021.4.1),
 Replaces: gnome-theme-kali (<< 2019.4),
           desktop-base (<< 10.0.3+kali2),
           kali-menu (<< 2021.3.2),
