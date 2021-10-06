@@ -64,7 +64,7 @@ Package: kali-themes
 Architecture: all
 Depends:
  kali-themes-common (= ${source:Version}),
- kwin-style-kali (= ${source:Version}),
+ kwin-style-kali,
 # gsettings and other config files reference those fonts
  fonts-cantarell,
  fonts-firacode,
