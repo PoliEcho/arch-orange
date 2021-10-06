@@ -99,6 +99,9 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/kdeglobals force
 	    install_config_file /etc/xdg/xfce4/helpers.rc force
 	fi
+	if dpkg --compare-versions "$2" lt "2021.4.1"; then
+	    install_config_file /etc/xdg/kwinrc
+	fi
 	# Install remaining new files
 	install_all
     fi
