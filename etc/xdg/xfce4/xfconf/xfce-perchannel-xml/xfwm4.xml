@@ -10,6 +10,7 @@
     <property name="cycle_workspaces" type="bool" value="false"/>
     <property name="scroll_workspaces" type="bool" value="false"/>
     <property name="wrap_windows" type="bool" value="false"/>
+    <property name="box_resize" type="bool" value="true"/>
     <property name="workspace_names" type="array">
       <value type="string" value="   1   "/>
       <value type="string" value="   2   "/>
