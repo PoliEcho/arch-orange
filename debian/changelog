@@ -1,3 +1,48 @@
+kali-themes (2021.4.1) kali-dev; urgency=medium
+
+  * Gnome-Shell: Update for GNOME 40
+  * Gnome-Shell: Update for GNOME 41
+  * Update breaks gnome-shell to (<< 40.2)'
+  * Fix indentation in control file
+  * GTK3: theme titlebuttons only inside headerbars
+  * Revert "GTK3: theme titlebuttons only inside headerbars"
+  * KDE: Add new kwin theme based on breeze
+  * Move kwin5 theme inside src folder
+  * KDE: change kwin library name to kali-breeze
+  * KDE: fix kwin theme cmake build script
+  * KDE: configure packaging of kwin theme
+  * Fix Makefile install for kwin theme
+  * KDE: Add kwin theme lib to kali-themes-common package
+  * KDE: remove aurorae themes
+  * KDE: recover aurorae themes to prevent ugly fallback kwin theme
+  * KDE: configure titlebuttons
+  * Fix lintian errors
+  * Move kwin5 to a separate package
+  * Add missing '.install' text in debian/kwin5-style-kali file
+  * Xfce: new titlebuttons for xfwm4
+  * GTK3: new titlebuttons design
+  * GTK4: new titlebuttons design
+  * GTK3: add styles for budgie desktop
+  * Regenerate css files
+  * Xfce: update themerc files
+  * Xfce: improve xfwm4 themes with rounded corners
+  * Xfce: fix xfwm4 bottom-right assets
+  * Xfce: regenerate xfwm4 assets
+  * KDE: replace kwrite with kate
+  * Fix kwin theme package name
+  * Force install for /etc/xdg/kwinrc
+  * Avoid theme update for older kali-desktop-kde installations
+  * Add kwin-style-kali to kali-themes
+  * Fix force install /etc/xdg/kwinrc
+  * Remove strict version dependency of kwin-style-kali
+  * Move GNOME 40 themes to separate branch for release
+  * Xfce: hide content of windows when resizing
+  * Xfce: configure cycle_raise and borderless_maximize in xfwm
+  * Force install xfwm4.xml
+  * KDE: update previews of look-and-feel themes
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 07 Oct 2021 13:44:33 +0200
+
 kali-themes (2021.4.0) kali-dev; urgency=medium
 
   * Add symlinks for kali-tools
