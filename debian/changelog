@@ -40,8 +40,10 @@ kali-themes (2021.4.1) kali-dev; urgency=medium
   * Xfce: configure cycle_raise and borderless_maximize in xfwm
   * Force install xfwm4.xml
   * KDE: update previews of look-and-feel themes
+  * Update changelog for 2021.4.1
+  * Set Breaks gnome-shell back to 3.38 as themes for gnome 40 have been reverted
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 07 Oct 2021 13:44:33 +0200
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 07 Oct 2021 13:56:50 +0200
 
 kali-themes (2021.4.0) kali-dev; urgency=medium
 
