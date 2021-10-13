@@ -1,4 +1,4 @@
-SUBDIRS=emblems kali-logos KDE-themes
+SUBDIRS=emblems kali-logos
 DESKTOP_BACKGROUND=kali-nova
 LOGIN_BACKGROUND=kali-contours
 

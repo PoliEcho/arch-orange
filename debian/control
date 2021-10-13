@@ -3,17 +3,8 @@ Section: misc
 Priority: optional
 Maintainer: Kali Developers <devel@kali.org>
 Uploaders: Daniel Ruiz de Alegría <daniel@drasite.com>, Raphaël Hertzog <raphael@offensive-security.com>
-Build-Depends: cmake,
+Build-Depends:
  debhelper-compat (= 12),
- extra-cmake-modules,
- libkdecorations2-dev,
- libkf5configwidgets-dev,
- libkf5coreaddons-dev,
- libkf5guiaddons-dev,
- libkf5i18n-dev,
- libkf5iconthemes-dev,
- libkf5windowsystem-dev,
- libqt5x11extras5-dev,
  librsvg2-bin,
  optipng,
 Standards-Version: 4.5.1
@@ -86,14 +77,6 @@ Description: Configure all desktops to use the Kali theme
  The actual artwork files are provided by kali-themes-common but this package
  provides configuration files and other settings for each desktop so that
  they use the Kali theme by default.
-
-Package: kwin-style-kali
-Architecture: any
-Depends:
- ${misc:Depends},
- ${shlibs:Depends}
-Description: Kali theme for KWin
- Kali's window manager theme for KDE Plasma 5 desktop
 
 Package: gnome-theme-kali
 Architecture: all
