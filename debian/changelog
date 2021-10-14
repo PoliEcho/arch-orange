@@ -41,11 +41,13 @@ kali-themes (2021.4.1) kali-dev; urgency=medium
   * Force install xfwm4.xml
   * KDE: update previews of look-and-feel themes
   * Update changelog for 2021.4.1
-  * Set Breaks gnome-shell back to 3.38 as themes for gnome 40 have been reverted
+  * Set Breaks gnome-shell back to 3.38 as themes for gnome 40 have been
+    reverted
   * Update changelog
   * Move kwin themes to a separate package
   * Revert "Move GNOME 40 themes to separate branch for release"
-  * Revert "Set Breaks gnome-shell back to 3.38 as themes for gnome 40 have been reverted"
+  * Revert "Set Breaks gnome-shell back to 3.38 as themes for gnome 40 have
+    been reverted"
 
  -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 13 Oct 2021 10:33:55 +0200
 
