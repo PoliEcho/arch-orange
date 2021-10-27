@@ -84,9 +84,6 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/Thunar/uca.xml force
 	    install_config_file /etc/xdg/Thunar/accels.scm force
 	fi
-	if dpkg --compare-versions "$2" lt "2021.2.4"; then
-	    install_config_file /etc/xdg/xfce4/panel/default.xml force
-	fi
 	if dpkg --compare-versions "$2" lt "2021.3.0"; then
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml force
 	    install_config_file /etc/xdg/qterminal.org/qterminal.ini force
@@ -95,10 +92,11 @@ if [ "$1" = "configure" ]; then
 	fi
 	if dpkg --compare-versions "$2" lt "2021.4.1"; then
 	    install_config_file /etc/xdg/kwinrc force
-	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml force
 	fi
 	if dpkg --compare-versions "$2" lt "2021.4.2"; then
 	    install_config_file /etc/xdg/qt5ct/qt5ct.conf force
+	    install_config_file /etc/xdg/xfce4/panel/default.xml force
+	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml force
 	fi
 	# Install remaining new files
 	install_all
