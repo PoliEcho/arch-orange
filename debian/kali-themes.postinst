@@ -103,9 +103,9 @@ if [ "$1" = "configure" ]; then
 	# Install remaining new files
 	install_all
     fi
-    # Disable some backgrounds in gnome desktop
-    mkdir -p /usr/share/gnome-background-properties/disabled/
+    # Disable some backgrounds in Gnome and KDE
     while read file; do
+        mkdir -p "$(dirname $file)/disabled"
         dpkg-divert --rename --package kali-themes \
                              --divert "$(dirname $file)/disabled/$(basename $file)" \
                              --add "$file"
@@ -119,6 +119,20 @@ if [ "$1" = "configure" ]; then
 /usr/share/gnome-background-properties/debian-softwaves.xml
 /usr/share/gnome-background-properties/debian-spacefun.xml
 /usr/share/gnome-background-properties/gnome-backgrounds.xml
+/usr/share/wallpapers/FuturePrototype
+/usr/share/wallpapers/FuturePrototypeWithLogo
+/usr/share/wallpapers/homeworld
+/usr/share/wallpapers/homeworld_wallpaper
+/usr/share/wallpapers/Joy
+/usr/share/wallpapers/JoyInksplat
+/usr/share/wallpapers/JoyLockScreen
+/usr/share/wallpapers/Lines
+/usr/share/wallpapers/LinesLockScreen
+/usr/share/wallpapers/moonlight
+/usr/share/wallpapers/MoonlightLockScreen
+/usr/share/wallpapers/SoftWaves
+/usr/share/wallpapers/SoftWavesLockScreen
+/usr/share/wallpapers/SpaceFun
 EOF
     # Configure /root/.face to have a red-background avatar
     if [ ! -e /root/.face ]; then
