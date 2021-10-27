@@ -41,11 +41,14 @@ case "$1" in
     # Recover disabled backgrounds
     for dir in /usr/share/gnome-background-properties \
                /usr/share/wallpapers; do
-        for file in "$dir"/disabled/*; do
-            dpkg-divert --rename --package kali-themes \
-                        --divert "$file" \
-                        --remove "$dir/$(basename $file)"
-        done
+        dpkg-divert --list "$dir/disabled/*" \
+            | grep 'kali-themes$' \
+            | cut -d ' ' -f 3,5 \
+            | while read file diverted_file; do
+                dpkg-divert --rename --package kali-themes \
+                            --divert "$diverted_file" \
+                            --remove "$file"
+            done
         rmdir "$dir/disabled"
     done
     ;;
