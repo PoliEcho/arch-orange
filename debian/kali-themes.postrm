@@ -38,6 +38,13 @@ case "$1" in
 	            --divert "$file.original" \
 		    --remove "$file"
 	done
+	# Recover disabled gnome backgrounds
+	for file in /usr/share/gnome-background-properties/disabled/*; do
+	    dpkg-divert --rename --package kali-themes \
+	                --divert "$file" \
+	                --remove "$(echo $file | sed 's|/disabled||')"
+	done
+	rmdir /usr/share/gnome-background-properties/disabled/
     ;;
 esac
 
