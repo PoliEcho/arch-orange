@@ -5558,8 +5558,11 @@ headerbar.default-decoration {
   .default-decoration.titlebar:not(headerbar) button.titlebutton,
   headerbar.default-decoration button.titlebutton {
     min-height: 0;
-    min-width: 0;
-    margin: 0; }
+    min-width: 0; }
+    .default-decoration.titlebar:not(headerbar) button.titlebutton,
+    headerbar.default-decoration button.titlebutton,
+    headerbar.default-decoration button.titlebutton:last-child {
+      margin: 0; }
 
 paned headerbar:first-child,
 hdyleaflet headerbar:first-child,
@@ -6138,6 +6141,9 @@ list.tweak-categories separator {
   margin: 8px; }
 
 /* Whisker menu */
+#whiskermenu-button image {
+  -gtk-icon-shadow: 0 0 3px #2777ff, 0 0 3px #2777ff; }
+
 #whiskermenu-window entry {
   border-radius: 100px;
   border: 2px solid #2777ff;
