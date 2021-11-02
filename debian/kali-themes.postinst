@@ -137,6 +137,11 @@ EOF
         cp /usr/share/kali-themes/.face-root.svg /root/.face
     fi
     ln -sf /root/.face /root/.face.icon
+    # If installed, replace default-browser with firefox in xfce4-panel
+    if dpkg-query --list firefox-esr | grep -q "^[ih][HUFWti] " ; then
+        echo "firefox-esr package found, replacing default-browser in xfce4-panel"
+        sed -i 's/xfce4-web-browser/firefox-esr/' /etc/xdg/xfce4/panel/default.xml
+    fi
     # Copy grub theme to /boot
     mkdir -p /boot/grub/themes/kali
     # Remove old symlink created by postinst in 2020.3.0
