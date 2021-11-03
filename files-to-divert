@@ -8,6 +8,7 @@
 /etc/xdg/konsolerc
 /etc/xdg/kscreenlockerrc
 /etc/xdg/kwinrc
+/etc/xdg/menus/xfce-settings-manager.menu
 /etc/xdg/plasmarc
 /etc/xdg/qt5ct/qt5ct.conf
 /etc/xdg/qterminal.org/qterminal.ini
