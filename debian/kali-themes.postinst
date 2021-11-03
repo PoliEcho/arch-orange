@@ -170,21 +170,4 @@ EOF
     fi
 fi
 
-case "$1" in configure|triggered)
-    while read file; do
-        desktop_file=/usr/share/applications/"$file"
-        if [ -e "$desktop_file" ]; then
-            echo "Add $file to xfce settings dialog"
-            grep -q X-XFCE-SettingsDialog $desktop_file \
-              || sed -i '/Categories=/ s/$/;X-XFCE-SettingsDialog/' "$desktop_file"
-            grep -q X-XFCE-HardwareSettings $desktop_file \
-              || sed -i '/Categories=/ s/$/;X-XFCE-HardwareSettings/' "$desktop_file"
-        fi
-    done << EOF
-nm-connection-editor.desktop
-blueman-manager.desktop
-blueman-adapters.desktop
-EOF
-esac
-
 #DEBHELPER#
