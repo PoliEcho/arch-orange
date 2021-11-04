@@ -10,6 +10,7 @@ FILES_TO_DIVERT="
 /etc/xdg/compton.conf
 /etc/xdg/gtk-3.0/settings.ini
 /etc/xdg/kdeglobals
+/etc/xdg/kickoffrc
 /etc/xdg/konsolerc
 /etc/xdg/kscreenlockerrc
 /etc/xdg/kwinrc
@@ -101,6 +102,7 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml force
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml force
 	    install_config_file /etc/xdg/menus/xfce-settings-manager.menu force
+	    install_config_file /etc/xdg/kickoffrc force
 	fi
 	# Install remaining new files
 	install_all
