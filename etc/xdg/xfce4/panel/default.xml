@@ -56,6 +56,7 @@
       <property name="items" type="array">
         <value type="string" value="xfce4-terminal-emulator.desktop"/>
         <value type="string" value="root-terminal.desktop"/>
+        <value type="string" value="kali-pwsh.desktop"/>
       </property>
       <property name="move-first" type="bool" value="true"/>
     </property>
