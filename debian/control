@@ -56,7 +56,6 @@ Architecture: all
 Depends:
  kali-themes-common (= ${source:Version}),
  kde-style-breeze,
- kwin-style-kali,
 # gsettings and other config files reference those fonts
  fonts-cantarell,
  fonts-firacode,
