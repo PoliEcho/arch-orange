@@ -18,8 +18,9 @@ Depends:
  kali-wallpapers-2020.4 (>= 2021.2.0),
  ${misc:Depends}
 Recommends:
-# Temporary dependency. When version 2021.4.0 is released, move this
-# package to Depends, and move kali-wallpapers-2020.4 to Suggests.
+# Temporary dependency. When Kali's default wallpaper is updated to
+# be a wallpaper from this package, please move it to Depends, and
+# move kali-wallpapers-2020.4 to Suggests.
  kali-wallpapers-2021.4,
 Suggests:
  gtk2-engines-pixbuf,
