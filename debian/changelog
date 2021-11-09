@@ -1,12 +1,14 @@
 kali-themes (2021.4.2) kali-dev; urgency=medium
 
   * GTK3: Improve decoration round corners
-  * GTK3: remove side marging of titlebuttons inside default-decoration headerbar
+  * GTK3: remove side marging of titlebuttons inside default-decoration
+    headerbar
   * GTK3: give volume to check and radio widgets
   * GTK3: Update css files
   * Xfce: add custom VPN IP plugin to the panel
   * Qt: set breeze as the default theme
-  * Revert "GTK3: remove side marging of titlebuttons inside default-decoration headerbar"
+  * Revert "GTK3: remove side marging of titlebuttons inside
+    default-decoration headerbar"
   * Add xfce4-panel-genmon-vpnip.sh script for xfce panel
   * Xfce: add cpugraph plugin to the panel
   * Xfce: set number of workspaces to 4
@@ -16,7 +18,8 @@ kali-themes (2021.4.2) kali-dev; urgency=medium
   * Update css files
   * Xfce: only show icons in panel tasklist
   * Fix lintian error package-contains-file-in-etc-skel
-  * Move lintian overrides for package-contains-file-in-etc-skel to the correct package
+  * Move lintian overrides for package-contains-file-in-etc-skel to the
+    correct package
   * Xfce: remove separator after whiskermenu panel widget
   * Xfce: add shadow to whiskermenu button
   * Disable unwanted backgrounds in gnome-background-properties
@@ -25,7 +28,8 @@ kali-themes (2021.4.2) kali-dev; urgency=medium
   * Force install updated config files
   * Properly remove diverted wallpapers after package remove
   * Gnome-Shell: Make folder shadow a bit lighter to improve contrast
-  * GTK3: remove side marging of titlebuttons inside default-decoration headerbar
+  * GTK3: remove side marging of titlebuttons inside default-decoration
+    headerbar
   * Update css files
   * Xfce: fix panel widget IDs
   * Copy gsettings from kali-defaults and reorganize them
