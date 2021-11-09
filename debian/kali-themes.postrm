@@ -41,18 +41,15 @@ case "$1" in
 	            --divert "$file.original" \
 		    --remove "$file"
 	done
-    # Recover disabled backgrounds
-    for dir in /usr/share/gnome-background-properties; do
-        dpkg-divert --list "$dir/disabled/*" \
-            | grep 'kali-themes$' \
-            | cut -d ' ' -f 3,5 \
-            | while read file diverted_file; do
-                dpkg-divert --rename --package kali-themes \
-                            --divert "$diverted_file" \
-                            --remove "$file"
-            done
-        rmdir "$dir/disabled"
-    done
+	# Recover GNOME backgrounds
+	file=/usr/share/gnome-background-properties/gnome-backgrounds.xml
+	diverted_file=$(dirname $file)/disabled/$(basename $file)
+	if [ -e "$diverted_file" ]; then
+	    dpkg-divert --rename --package kali-themes \
+			--divert "$diverted_file" \
+			--remove "$file"
+	    rmdir "$(dirname $diverted_file)" || :
+	fi
     ;;
 esac
 
