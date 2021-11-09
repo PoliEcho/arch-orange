@@ -1,4 +1,4 @@
-kali-themes (2021.4.2) UNRELEASED; urgency=medium
+kali-themes (2021.4.2) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
   * GTK3: Improve decoration round corners
@@ -59,8 +59,10 @@ kali-themes (2021.4.2) UNRELEASED; urgency=medium
   * Add lightdm-gtk-greeter.conf to files to update (postinst)
   * Sort list of files to update (postinst)
   * Revert "Qt: set breeze as the default theme"
+  * Drop diversion of Debian wallpapers
+  * Simplify backgrounds diversion, now that there's only one file
 
- -- Arnaud Rebillout <arnaudr@kali.org>  Tue, 09 Nov 2021 11:29:03 +0700
+ -- Arnaud Rebillout <arnaudr@kali.org>  Tue, 09 Nov 2021 18:55:18 +0700
 
 kali-themes (2021.4.1) kali-dev; urgency=medium
 
