@@ -42,8 +42,7 @@ case "$1" in
 		    --remove "$file"
 	done
     # Recover disabled backgrounds
-    for dir in /usr/share/gnome-background-properties \
-               /usr/share/wallpapers; do
+    for dir in /usr/share/gnome-background-properties; do
         dpkg-divert --list "$dir/disabled/*" \
             | grep 'kali-themes$' \
             | cut -d ' ' -f 3,5 \

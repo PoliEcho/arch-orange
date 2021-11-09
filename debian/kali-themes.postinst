@@ -114,29 +114,7 @@ if [ "$1" = "configure" ]; then
                              --divert "$(dirname $file)/disabled/$(basename $file)" \
                              --add "$file"
     done << EOF
-/usr/share/gnome-background-properties/debian-futureprototype.xml
-/usr/share/gnome-background-properties/debian-homeworld.xml
-/usr/share/gnome-background-properties/debian-joy-inksplat.xml
-/usr/share/gnome-background-properties/debian-joy.xml
-/usr/share/gnome-background-properties/debian-lines.xml
-/usr/share/gnome-background-properties/debian-moonlight.xml
-/usr/share/gnome-background-properties/debian-softwaves.xml
-/usr/share/gnome-background-properties/debian-spacefun.xml
 /usr/share/gnome-background-properties/gnome-backgrounds.xml
-/usr/share/wallpapers/FuturePrototype
-/usr/share/wallpapers/FuturePrototypeWithLogo
-/usr/share/wallpapers/homeworld
-/usr/share/wallpapers/homeworld_wallpaper
-/usr/share/wallpapers/Joy
-/usr/share/wallpapers/JoyInksplat
-/usr/share/wallpapers/JoyLockScreen
-/usr/share/wallpapers/Lines
-/usr/share/wallpapers/LinesLockScreen
-/usr/share/wallpapers/moonlight
-/usr/share/wallpapers/MoonlightLockScreen
-/usr/share/wallpapers/SoftWaves
-/usr/share/wallpapers/SoftWavesLockScreen
-/usr/share/wallpapers/SpaceFun
 EOF
     # Configure /root/.face to have a red-background avatar
     if [ ! -e /root/.face ]; then
