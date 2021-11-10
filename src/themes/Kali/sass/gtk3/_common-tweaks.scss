@@ -176,11 +176,11 @@ scale slider {
 /***************
  * Header bars *
  ***************/
+$_scale_asset: 'assets/kali-headerbar-logo#{$asset_suffix}';
 headerbar {
   $_border_color: darken($bg_color, 20%);
   border-color: $_border_color;
 
-  $_scale_asset: 'assets/kali-headerbar-logo#{$asset_suffix}';
   @include headerbar_fill(darken($bg_color, if($variant == 'light', 5%, 10%)),
                           $ov: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png')));
   box-shadow: 0 1px 4px transparentize($_border_color, .25);
@@ -282,6 +282,11 @@ headerbar {
     min-height: 0;
     padding: 6px;
     box-shadow: none;
+    @include headerbar_fill(transparent,
+                            $ov: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png')));
+    background-color: darken($bg_color, if($variant == 'light', 7%, 5%));
+    background-position: -75px;
+    background-repeat: no-repeat;
 
     button.titlebutton {
       min-height: 0;
