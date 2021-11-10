@@ -288,6 +288,10 @@ headerbar {
     background-position: -35px;
     background-repeat: no-repeat;
 
+    &:backdrop {
+      background-color: $bg_color;
+    }
+
     button.titlebutton {
       min-height: 0;
       min-width: 0;
