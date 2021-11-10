@@ -285,7 +285,7 @@ headerbar {
     @include headerbar_fill(transparent,
                             $ov: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png')));
     background-color: darken($bg_color, if($variant == 'light', 7%, 5%));
-    background-position: -75px;
+    background-position: -35px;
     background-repeat: no-repeat;
 
     button.titlebutton {

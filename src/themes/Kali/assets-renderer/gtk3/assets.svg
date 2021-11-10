@@ -15,7 +15,7 @@
 		<linearGradient id="l" x1="95.213" x2="95.213" y1="162.09" y2="188.92" gradientTransform="matrix(3.0318 0 0 1.0053 -102.66 -.82153)" gradientUnits="userSpaceOnUse" xlink:href="#dark-normal"/>
 		<linearGradient id="k" x1="98.388" x2="98.388" y1="17.217" y2="-11.671" gradientTransform="matrix(3.0318 0 0 1.0053 -102.66 -.82153)" gradientUnits="userSpaceOnUse" xlink:href="#dark-normal"/>
 		<clipPath id="b">
-			<rect transform="scale(-1,1)" x="-416" y="169.5" width="240" height="61"/>
+			<rect transform="scale(-1,1)" x="-416" y="169.5" width="200" height="61"/>
 		</clipPath>
 	</defs>
 	<g transform="translate(0 -142.36)">
