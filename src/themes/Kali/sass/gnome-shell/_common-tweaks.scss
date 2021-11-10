@@ -194,6 +194,33 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* Date/Time Menu */
+// notification styling
+@mixin notification_bubble($flat: false) {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: $base_border_radius + 2px;
+  margin: $base_margin;
+
+  @if $flat {
+    @include button(undecorated);
+  } @else {
+    @include button(normal);
+  }
+
+  &:focus {
+    @include button(focus);
+  }
+
+  &:hover {
+    @include button(hover);
+    box-shadow: none;
+  }
+
+  &:active {
+    @include button(active);
+  }
+}
+
 // overall menu
 #calendarArea {
   background-image: if($variant == 'light', url("assets/kali-dragon.svg"),
@@ -204,6 +231,8 @@ $_osd_color: if($variant=='light', black, $fg_color);
 .events-section-title { padding: 1em; }
 
 .datemenu-today-button {
+  @include notification_bubble($flat: true);
+
   .date-label {
     font-size: 1.5em;
     font-weight: 300;
