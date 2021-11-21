@@ -2,32 +2,30 @@ Source: kali-themes
 Section: misc
 Priority: optional
 Maintainer: Kali Developers <devel@kali.org>
-Uploaders: Daniel Ruiz de Alegría <daniel@drasite.com>, Raphaël Hertzog <raphael@offensive-security.com>
-Build-Depends:
- debhelper-compat (= 12),
- librsvg2-bin,
- optipng,
+Uploaders: Daniel Ruiz de Alegría <daniruiz@kali.org>,
+           Raphaël Hertzog <raphael@offensive-security.com>,
+Build-Depends: debhelper-compat (= 12),
+               librsvg2-bin,
+               optipng,
 Standards-Version: 4.6.0
 Vcs-Git: https://gitlab.com/kalilinux/packages/kali-themes.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 
 Package: kali-themes-common
 Architecture: all
-Depends:
+Depends: ${misc:Depends},
 # Dependency on the package providing the current default background
  kali-wallpapers-2020.4 (>= 2021.2.0),
- ${misc:Depends}
 Recommends:
 # Temporary dependency. When Kali's default wallpaper is updated to
 # be a wallpaper from this package, please move it to Depends, and
 # move kali-wallpapers-2020.4 to Suggests.
  kali-wallpapers-2021.4,
-Suggests:
- gtk2-engines-pixbuf,
- librsvg2-common,
+Suggests: gtk2-engines-pixbuf,
+          librsvg2-common,
 # List old wallpapers so that they are not auto-removed on upgrade
- kali-wallpapers-2019.4,
- kali-wallpapers-legacy
+          kali-wallpapers-2019.4,
+          kali-wallpapers-legacy
 Breaks: gnome-theme-kali (<< 2019.4),
         desktop-base (<< 10.0.3+kali2),
         kali-menu (<< 2021.3.2),
@@ -45,8 +43,8 @@ Description: Kali Themes (data files)
 
 Package: kali-desktop-base
 Architecture: all
-Depends: kali-themes-common (= ${source:Version}),
- ${misc:Depends}
+Depends: ${misc:Depends},
+         kali-themes-common (= ${source:Version}),
 Description: Kali version of Debian's desktop-base package
  This empty package provides hooks into the various alternatives defined by
  Debian's desktop-base to provide consistent Kali branding through the whole
@@ -66,9 +64,9 @@ Depends:
  plymouth-label,
  ${misc:Depends}
 Breaks: kali-defaults (<< 2019.4.0),
- kali-desktop-xfce (<< 2020.2.18),
- gnome-shell (<< 40.2),
- kali-menu (<< 2019.4.4),
+        kali-desktop-xfce (<< 2020.2.18),
+        gnome-shell (<< 40.2),
+        kali-menu (<< 2019.4.4),
 Replaces: kali-defaults (<< 2019.4.0)
 Description: Configure all desktops to use the Kali theme
  Installing this package should configure most desktops to use the Kali theme
@@ -80,8 +78,8 @@ Description: Configure all desktops to use the Kali theme
 
 Package: gnome-theme-kali
 Architecture: all
-Depends: kali-themes,
- ${misc:Depends}
+Depends: ${misc:Depends},
+         kali-themes,
 Description: Transitional package to install kali-themes
  All the theme related files have been moved to kali-themes.
  .
