@@ -20,13 +20,6 @@ build: $(ASSETS)
 			            --export-png=$$variant/$$i.png $$src_file > /dev/null 2>&1 \
 			&& $(OPTIPNG) $$variant/$$i.png ; \
 			echo ; \
-			echo Rendering $$variant@1.5/$$i.png ; \
-			$(INKSCAPE) --export-id=$$i \
-			            --export-dpi=138 \
-			            --export-id-only \
-			            --export-png=$$variant@1.5/$$i.png $$src_file > /dev/null 2>&1  \
-			&& $(OPTIPNG) $$variant@1.5/$$i.png ; \
-			echo ; \
 			echo Rendering $$variant@2/$$i.png ; \
 			$(INKSCAPE) --export-id=$$i \
 			            --export-dpi=192 \
