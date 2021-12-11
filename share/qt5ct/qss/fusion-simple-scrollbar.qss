@@ -6,7 +6,7 @@ QScrollBar:horizontal { max-height: 8px; }
 QScrollBar::handle {
   padding: 0;
   margin: 2px;
-  border-radius: 2px;
+  border-radius: 99px;
   border: 0;
   background: rgba(127, 127, 127, .5);
   min-height: 10px;
