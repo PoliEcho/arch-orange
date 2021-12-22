@@ -1,3 +1,10 @@
+minimize
+minimize-dark
+maximize
+maximize-dark
+close-white
+close-black
+titlebutton
 kali-headerbar-logo
 kali-headerbar-logo-dark
 text-select-end
