@@ -1,5 +1,5 @@
 SUBDIRS=emblems kali-logos
-DESKTOP_BACKGROUND=kali-nova
+DESKTOP_BACKGROUND=kali-layers
 LOGIN_BACKGROUND=kali-actiniaria
 
 build:
