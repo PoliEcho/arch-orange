@@ -1,3 +1,35 @@
+kali-themes (2022.1.0) kali-dev; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Gnome-Shell: Make some widgets in the calendar popup more flat
+  * GTK3: improve default-decoration background
+  * GTK3: reduce Kali logo size in headerbar
+  * GTK3: change background of default-headerbar on backdrop
+  * GTK3: fix lightdm button color
+  * QT: configure standard dialogs to gtk3
+  * Add keyboard layout menu to lightdm
+  * XFWM4: remove 1.5x scale HiDPI themes
+  * GTK3: Improve scrollbar visibility
+  * Update theme css
+  * Gnome-Shell: improve background for hovered items in calendar popover
+  * KDE: remove old aurorae themes
+  * Configure cherrytree color-schemes and theme
+  * Qt: match scrollbar size with gtk3 themes
+  * Qt: increase scrollbar border-radius
+  * Xfce: hide battery percentage
+  * Icons: Update flat-remix icon theme
+  * GTK3: fix hovered titlebuttons in firefox
+  * Update configuration for kali-wallpapers 2022
+  * Configure new login background
+  * Configure new desktop background
+  * Qt: Fix qt scrollbar
+
+  [ Ben Wilson ]
+  * Update email address
+  * Update control
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 10 Jan 2022 14:13:47 +0100
+
 kali-themes (2021.4.2) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
