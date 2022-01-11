@@ -23,12 +23,15 @@ kali-themes (2022.1.0) kali-dev; urgency=medium
   * Configure new login background
   * Configure new desktop background
   * Qt: Fix qt scrollbar
+  * Nitpick in xfce4-panel-genmon-vpnip.sh
+  * New grub backgrounds
+  * Remove duplicated grub background file
 
   [ Ben Wilson ]
   * Update email address
   * Update control
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 10 Jan 2022 14:13:47 +0100
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Tue, 11 Jan 2022 12:48:17 +0100
 
 kali-themes (2021.4.2) kali-dev; urgency=medium
 
