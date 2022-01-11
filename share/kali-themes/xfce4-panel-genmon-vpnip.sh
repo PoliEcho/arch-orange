@@ -7,5 +7,5 @@ if [ "$ip" != "" ]; then
   printf "<txt>${ip}</txt>"
   printf "<tool>VPN IP</tool>"
 else
-  printf "\0x0"
+  printf "<txt></txt>"
 fi
