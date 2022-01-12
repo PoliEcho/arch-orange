@@ -31,7 +31,11 @@ kali-themes (2022.1.0) kali-dev; urgency=medium
   * Update email address
   * Update control
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Tue, 11 Jan 2022 12:48:17 +0100
+  [ Arnaud Rebillout ]
+  * Add Rules-Requires-Root
+  * Set Section to oldlibs for transitional packages
+
+ -- Arnaud Rebillout <arnaudr@kali.org>  Wed, 12 Jan 2022 10:51:12 +0700
 
 kali-themes (2021.4.2) kali-dev; urgency=medium
 
