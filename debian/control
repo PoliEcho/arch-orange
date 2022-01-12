@@ -74,6 +74,7 @@ Description: Configure all desktops to use the Kali theme
  they use the Kali theme by default.
 
 Package: gnome-theme-kali
+Section: oldlibs
 Architecture: all
 Depends: ${misc:Depends},
          kali-themes,
