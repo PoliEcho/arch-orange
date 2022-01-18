@@ -98,3 +98,4 @@ word-wrap = true
 
 [org.xfce.mousepad.preferences.window]
 toolbar-visible = true
+client-side-decorations = false
