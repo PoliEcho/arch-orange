@@ -1,3 +1,10 @@
+kali-themes (2022.1.1) kali-dev; urgency=medium
+
+  * Resize live image grub background
+  * Xfce: fix mousepad headerbar
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Tue, 18 Jan 2022 12:33:34 +0100
+
 kali-themes (2022.1.0) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
