@@ -99,3 +99,6 @@ word-wrap = true
 [org.xfce.mousepad.preferences.window]
 toolbar-visible = true
 client-side-decorations = false
+
+[org.xfce.mousepad.preferences.file]
+add-last-end-of-line = true
