@@ -173,7 +173,7 @@ list.tweak-categories separator {
     padding: 7px 10px;
     margin: 0 5px;
 
-    &, iconview {
+    &, iconview:not(:hover):not(:focus) {
       background: $_dark_bg;
     }
 
