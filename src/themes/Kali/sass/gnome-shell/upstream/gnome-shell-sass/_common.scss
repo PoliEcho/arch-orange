@@ -48,7 +48,7 @@ $checked_bg_color: if($variant=='light', darken($bg_color, 7%), lighten($bg_colo
 $checked_fg_color: if($variant=='light', darken($fg_color, 7%), lighten($fg_color, 9%));
 
 // fonts
-$base_font_size: 11;
+$base_font_size: 10;
 $text_shadow_color: if($variant == 'light', rgba(255,255,255,0.3), rgba(0,0,0,0.2));
 
 // icons

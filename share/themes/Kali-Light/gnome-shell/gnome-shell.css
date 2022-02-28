@@ -19,7 +19,7 @@
  */
 /* Global Values */
 stage {
-  font-size: 11pt;
+  font-size: 10pt;
   color: #5c616c; }
 
 /* Common Stylings */
@@ -599,7 +599,7 @@ StScrollBar {
     background-image: url("assets/calendar-today-light.svg");
     background-size: contain; }
   .calendar .calendar-week-number {
-    font-size: 7pt;
+    font-size: 6pt;
     font-weight: bold;
     font-feature-settings: "tnum";
     margin: 6px;
@@ -814,7 +814,7 @@ StScrollBar {
     padding: 0 8px; }
     .message .message-secondary-bin > .event-time {
       color: rgba(92, 97, 108, 0.5);
-      font-size: 9pt;
+      font-size: 8pt;
       /* HACK: the label should be baseline-aligned with a 1em label, fake this with some bottom padding */
       padding-bottom: 0.13em; }
       .message .message-secondary-bin > .event-time:ltr {
@@ -919,7 +919,7 @@ StScrollBar {
     spacing: 0; }
 
 .summary-source-counter {
-  font-size: 10pt;
+  font-size: 9pt;
   font-weight: bold;
   height: 1.6em;
   width: 1.6em;
@@ -958,7 +958,7 @@ StScrollBar {
 
 .chat-meta-message {
   padding-left: 4px;
-  font-size: 9pt;
+  font-size: 8pt;
   font-weight: bold;
   color: #898f9b; }
   .chat-meta-message:rtl {
@@ -1997,7 +1997,7 @@ StScrollBar {
   spacing: 4px; }
 
 .keyboard-key {
-  font-size: 16pt;
+  font-size: 15pt;
   font-weight: bold;
   min-height: 1.2em;
   min-width: 1.2em;
@@ -2109,7 +2109,7 @@ StScrollBar {
   background-color: #2777ff; }
 
 .word-suggestions {
-  font-size: 14pt;
+  font-size: 13pt;
   spacing: 12px;
   min-height: 20pt;
   padding: 12px;
@@ -2404,7 +2404,7 @@ StScrollBar {
     color: #ffffff; }
 
 .login-dialog-auth-list-label {
-  font-size: 13pt;
+  font-size: 12pt;
   font-weight: bold;
   padding-left: 15px; }
   .login-dialog-auth-list-label:ltr {
@@ -2445,7 +2445,7 @@ StScrollBar {
   color: white; }
 
 .user-widget.horizontal .user-widget-label {
-  font-size: 13pt;
+  font-size: 12pt;
   font-weight: bold;
   padding-left: 15px; }
   .user-widget.horizontal .user-widget-label:ltr {
@@ -2456,7 +2456,7 @@ StScrollBar {
     text-align: right; }
 
 .user-widget.vertical .user-widget-label {
-  font-size: 16pt;
+  font-size: 15pt;
   text-align: center;
   font-weight: normal;
   padding-top: 16px; }
@@ -2476,7 +2476,7 @@ StScrollBar {
 
 .login-dialog-prompt-label {
   color: #cccccc;
-  font-size: 12pt;
+  font-size: 11pt;
   padding-top: 1em; }
 
 .unlock-dialog StEntry {
