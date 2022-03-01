@@ -2637,20 +2637,6 @@ $_osd_color: if($variant=='light', black, $fg_color);
   }
 }
 
-/* Workspace Switcher */
-/*
-.ws-switcher-box { border: none }
-
-.workspace-switcher-container { padding: 7px; }
-
-// active workspace in the switcher
-.ws-switcher-active-up,
-.ws-switcher-active-down,
-.ws-switcher-active-left,
-.ws-switcher-active-right {
-  //box-shadow: 0 0px 6px transparentize(black, .5);
-}
-
 /* Window Picker */
 .window-caption {
   color: black;
