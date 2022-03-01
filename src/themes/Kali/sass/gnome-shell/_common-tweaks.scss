@@ -2,6 +2,7 @@ $overview_transparent_bg: transparentize(white, .9);
 $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 
 /* OSD */
+/*
 $_osd_color: if($variant=='light', black, $fg_color);
 %osd_panel {
   font-weight: bold;
@@ -24,7 +25,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* Slider */
-
+/*
 .slider {
   height: 1.1em;
   -barlevel-height: .35em;
@@ -39,7 +40,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* Check Boxes */
-
+/*
 .check-box {
   StBin {
     background-image: if($variant == 'light', url("assets/checkbox-off.svg"), 
@@ -55,6 +56,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* Switches */
+/*
 .toggle-switch {
   background-image: if($variant == 'light', url("assets/toggle-off.svg"), 
                                             url("assets/toggle-off-dark.svg"));
@@ -73,6 +75,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* App Switcher */
+/*
 // switcher onscreen panel
 .switcher-list {
   .item-box {
@@ -90,6 +93,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* Workspace Switcher */
+/*
 .ws-switcher-box { border: none }
 
 .workspace-switcher-container { padding: 7px; }
@@ -135,13 +139,8 @@ $_osd_color: if($variant=='light', black, $fg_color);
   }
 }
 
-/* Tiled window previews */
-
-.tile-preview-left.on-primary,
-.tile-preview-right.on-primary,
-.tile-preview-left.tile-preview-right.on-primary{ border-radius: 0; }
-
 /* TOP BAR */
+/*
 #panel {
   $_panel_bg: transparentize($bg_color, .2);
   $_panel_fg: if($variant=='light', black, white);
@@ -203,6 +202,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 
 /* Date/Time Menu */
 // notification styling
+/*
 @mixin notification_bubble($flat: false) {
   border-width: 1px;
   border-style: solid;
@@ -279,10 +279,11 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* Events */
+/*
 .events-button { @include notification_bubble($flat: true); }
 
 /* World clocks */
-
+/*
 .world-clocks-button {
   @include notification_bubble($flat: true);
 }
@@ -300,7 +301,6 @@ $_osd_color: if($variant=='light', black, $fg_color);
   text-shadow: 0px 1px 2px rgba(black, 0.9);
   font-weight: bold;
   background-color: $overview_transparent_bg;
-  border-radius: 999px;
   font-size: 1.1em;
   transition-duration: 200ms;
 
@@ -334,11 +334,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 // search results
-.search-section-content {
-  background-color: $overview_transparent_bg;
-  box-shadow: none;
-  border: none;
-}
+.search-section-content { background-color: $overview_transparent_bg; }
 
 // search result provider
 .search-provider-icon {
@@ -348,7 +344,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* DASHBOARD */
-
+/*
 #dash {
   color: $osd_fg_color;
   background-color: transparent;
@@ -379,6 +375,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* App Folders */
+/*
 .app-well-app.app-folder {
   &, & .overview-icon.overview-icon-with-label {
       background-color: $overview_transparent_bg
@@ -403,3 +400,4 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 .app-folder-dialog-container { width: 720px; }
+*/
