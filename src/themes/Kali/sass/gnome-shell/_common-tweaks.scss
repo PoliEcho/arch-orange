@@ -334,7 +334,10 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 // search results
-.search-section-content { background-color: $overview_transparent_bg; }
+.search-section-content {
+  background-color: $overview_transparent_bg;
+  border: none;
+}
 
 // search result provider
 .search-provider-icon {
