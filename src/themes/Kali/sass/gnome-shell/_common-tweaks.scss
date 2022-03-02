@@ -142,6 +142,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
       color: $_panel_fg;
       box-shadow: inset 0 0 0 100px rgba(255, 255, 255, if($variant == 'light', 1, .2));
     }
+    &.screen-recording-indicator { color: white; }
   }
 
   .panel-button.clock-display {
