@@ -2820,35 +2820,12 @@ $_osd_color: if($variant=='light', black, $fg_color);
   font-weight: bold; }
 
 /* DASHBOARD */
-/*
 #dash {
-  color: $osd_fg_color;
-  background-color: transparent;
-  border: none;
-  border-color: transparent;
+  color: white;
+  icon-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
 
-  .overview-icon StIcon {
-    color: white;
-    icon-shadow: 0 2px 6px transparentize(black, .6);
-  }
-}
-
-.dash-background {
-  background: $overview_transparent_bg;
-  //box-shadow: 0 2px 8px 0 transparentize(black, .2);
-}
-
-.dash-separator { background: $overview_transparent_bg; }
-
-.show-apps {
-  &:focus,
-  &:checked {
-    .overview-icon {
-      background-color: $overview_transparent_bg;
-      color: black;
-    }
-  }
-}
+.dash-background, .dash-separator {
+  background: rgba(255, 255, 255, 0.1); }
 
 /* App Grid */
 .app-well-app, .grid-search-result {
