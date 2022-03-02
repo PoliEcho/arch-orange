@@ -2850,30 +2850,10 @@ $_osd_color: if($variant=='light', black, $fg_color);
   }
 }
 
-/* App Folders */
-/*
-.app-well-app.app-folder {
-  &, & .overview-icon.overview-icon-with-label {
-      background-color: $overview_transparent_bg
-  }
-  //box-shadow: 0 2px 5px black;
-
-  &:checked { background: black; }
-}
+/* App Grid */
+.app-well-app, .grid-search-result {
+  color: white; }
 
 .app-folder-dialog {
   background: black;
-  box-shadow: 0 0 20px lighten(black, 1%);
-
-  & .folder-name-container {
-      & .edit-folder-button {
-          &, &:hover, &:active {
-              background: white;
-              color: black;
-          }
-      }
-  }
-}
-
-.app-folder-dialog-container { width: 720px; }
-*/
+  box-shadow: 0 0 20px #030303; }
