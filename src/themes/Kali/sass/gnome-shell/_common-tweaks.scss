@@ -66,26 +66,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
     }
 }
 
-/* App Switcher */
-/*
-// switcher onscreen panel
-.switcher-list {
-  .item-box {
-    &:outlined {
-      padding: 6px;
-      border: 3px solid $selected_bg_color;
-    }
-
-    &:selected {
-      background-color: $selected_bg_color;
-      color: $selected_fg_color;
-      text-shadow: 0 1px 4px transparentize(black, 0.6);
-    }
-  }
-}
-
 /* Window Picker */
-
 // Window titles
 .window-caption {
   color: black;
@@ -117,7 +98,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
   }
 }
 
-/* TOP BAR */
+/* Top Bar */
 #panel {
   $_panel_bg: transparentize($bg_color, .2);
   $_panel_fg: if($variant=='light', black, white);
@@ -186,7 +167,6 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* Search */
-
 // search entry
 .search-entry {
   color: black;
@@ -232,13 +212,9 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 // search result provider
-.search-provider-icon {
-  .list-search-provider-content {
-    .list-search-provider-details { font-weight: bold; }
-  }
-}
+.search-provider-icon .list-search-provider-details { font-weight: bold; }
 
-/* DASHBOARD */
+/* Dash */
 #dash {
   color: $osd_fg_color;
   icon-shadow: 0 2px 6px transparentize(black, .6);
