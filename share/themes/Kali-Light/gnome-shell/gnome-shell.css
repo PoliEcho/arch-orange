@@ -2580,22 +2580,6 @@ $_osd_color: if($variant=='light', black, $fg_color);
   -barlevel-border-width: 0;
   -slider-handle-radius: 0; }
 
-/* Check Boxes */
-/*
-.check-box {
-  StBin {
-    background-image: if($variant == 'light', url("assets/checkbox-off.svg"), 
-                                              url("assets/checkbox-off-dark.svg"));
-  }
-
-  &:focus StBin { background-image: if($variant == 'light', url("assets/checkbox-off-focused.svg"),
-                                                            url("assets/checkbox-off-focused-dark.svg")); }
-  &:checked StBin { background-image: if($variant == 'light', url("assets/checkbox.svg"),
-                                                              url("assets/checkbox-dark.svg")); }
-  &:focus:checked StBin { background-image: if($variant == 'light', url("assets/checkbox-focused.svg"),
-                                                                    url("assets/checkbox-focused-dark.svg")); }
-}
-
 /* Switches */
 /*
 .toggle-switch {
