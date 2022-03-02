@@ -27,6 +27,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 /* Slider */
 .slider {
   -barlevel-background-color: $borders_color;
+  -barlevel-border-width: 0;
   -slider-handle-radius: 0;
 }
 

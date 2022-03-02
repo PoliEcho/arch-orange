@@ -2582,6 +2582,7 @@ $_osd_color: if($variant=='light', black, $fg_color);
 /* Slider */
 .slider {
   -barlevel-background-color: #d9d9d9;
+  -barlevel-border-width: 0;
   -slider-handle-radius: 0; }
 
 /* Check Boxes */
