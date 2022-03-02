@@ -2662,65 +2662,34 @@ $_osd_color: if($variant=='light', black, $fg_color);
     transition-duration: 0s; }
 
 /* TOP BAR */
-/*
 #panel {
-  $_panel_bg: transparentize($bg_color, .2);
-  $_panel_fg: if($variant=='light', black, white);
-  $_panel_text_shadow: 0 1px 2px transparentize(black, 0.5);
-  background: $_panel_bg;
-  text-shadow: $_panel_text_shadow;
-
-  .popup-menu-arrow { width: 0; }
-
-  StIcon { icon-shadow: $_panel_text_shadow; }
-
-  &.unlock-screen,
-  &.login-screen,
-  &.lock-screen,
-  &:overview {
-    background-color: transparent;
-    .panel-button {
-      &, &:hover, &:active, &:focus, &:overview, &:checked { color: white; }
-    }
-  }
-
-  .panel-corner { -panel-corner-radius: 0; }
-
-  .panel-button {
-    color: $_panel_fg;
-    &:active, &:focus, &:overview, &:checked {
-      color: $_panel_fg;
-      box-shadow: inset 0 0 0 100px rgba(255, 255, 255, if($variant == 'light', 1, .2));
-    }
-  }
-
-  .panel-button.clock-display {
-    // Move highlight from .panel-button to .clock
-    &:active, &:overview, &:focus, &:checked {
-      box-shadow: none;
-
-      .clock {
-        box-shadow: inset 0 0 0 100px rgba(255, 255, 255, if($variant == 'light', 1, .2));
-      }
-    }
-  }
-
-  #panelActivities.panel-button {
-    margin-left: .4em;
-    StLabel {
-      background-image: if($variant == 'light', url("assets/view-grid-symbolic.svg"),
-                                          url("assets/view-grid-symbolic-dark.svg"));
+  background: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+  #panel StIcon {
+    icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+  #panel.unlock-screen, #panel.login-screen, #panel.lock-screen, #panel:overview {
+    background-color: transparent; }
+    #panel.unlock-screen .panel-button, #panel.unlock-screen .panel-button:hover, #panel.unlock-screen .panel-button:active, #panel.unlock-screen .panel-button:focus, #panel.unlock-screen .panel-button:overview, #panel.unlock-screen .panel-button:checked, #panel.login-screen .panel-button, #panel.login-screen .panel-button:hover, #panel.login-screen .panel-button:active, #panel.login-screen .panel-button:focus, #panel.login-screen .panel-button:overview, #panel.login-screen .panel-button:checked, #panel.lock-screen .panel-button, #panel.lock-screen .panel-button:hover, #panel.lock-screen .panel-button:active, #panel.lock-screen .panel-button:focus, #panel.lock-screen .panel-button:overview, #panel.lock-screen .panel-button:checked, #panel:overview .panel-button, #panel:overview .panel-button:hover, #panel:overview .panel-button:active, #panel:overview .panel-button:focus, #panel:overview .panel-button:overview, #panel:overview .panel-button:checked {
+      color: white; }
+  #panel .panel-button {
+    color: black; }
+    #panel .panel-button:hover, #panel .panel-button:active, #panel .panel-button:focus, #panel .panel-button:overview, #panel .panel-button:checked {
+      color: black;
+      box-shadow: inset 0 0 0 100px white; }
+  #panel .panel-button.clock-display:hover, #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
+    box-shadow: none; }
+    #panel .panel-button.clock-display:hover .clock, #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
+      box-shadow: inset 0 0 0 100px white; }
+  #panel #panelActivities.panel-button {
+    margin-left: .4em; }
+    #panel #panelActivities.panel-button StLabel {
+      background-image: url("assets/view-grid-symbolic.svg");
       background-size: contain;
       width: 1.5em;
       height: 1.5em;
-      color: transparent;
-    }
-
-    &:overview StLabel {
-      background-image: url("assets/view-grid-symbolic-dark.svg");
-    }
-  }
-}
+      color: transparent; }
+    #panel #panelActivities.panel-button:overview StLabel {
+      background-image: url("assets/view-grid-symbolic-dark.svg"); }
 
 /* Date/Time Menu */
 /*
