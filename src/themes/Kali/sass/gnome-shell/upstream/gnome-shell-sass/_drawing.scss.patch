@@ -1,0 +1,4 @@
+228c228
+<       color: transparentize($selected_fg_color, .5);
+---
+>       //color: transparentize($selected_fg_color, .5);

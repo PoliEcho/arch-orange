@@ -175,97 +175,15 @@ $_osd_color: if($variant=='light', black, $fg_color);
 }
 
 /* Date/Time Menu */
-// notification styling
-/*
-@mixin notification_bubble($flat: false) {
-  border-width: 1px;
-  border-style: solid;
-  border-radius: $base_border_radius + 2px;
-  margin: $base_margin;
-
-  @if $flat {
-    @include button(undecorated);
-  } @else {
-    @include button(normal);
-  }
-
-  &:focus {
-    @include button(focus);
-  }
-
-  &:hover {
-    @include button(hover);
-    box-shadow: none;
-  }
-
-  &:active {
-    @include button(active);
-  }
-}
-
-// overall menu
-#calendarArea {
-  background-image: if($variant == 'light', url("assets/kali-dragon.svg"),
-                                            url("assets/kali-dragon-dark.svg"));
-  background-size: contain;
-}
-
-.events-section-title { padding: 1em; }
-
 .datemenu-today-button {
-  @include notification_bubble($flat: true);
+  @include card($flat: false);
 
-  .date-label {
-    font-size: 1.5em;
-    font-weight: 300;
-  }
+  &:insensitive { color: inherit; }
+
+  .day-label { font-weight: normal; }
+
+  .date-label { font-weight: lighter; }
 }
-
-.calendar {
-  @include notification_bubble($flat: true);
-
-  .pager-button {
-    &:hover, &:focus { background-color: $popover_hover_color }
-  }
-
-  .calendar-day-base {
-    &:hover, &:focus,
-    &:active,&:selected {
-      color: $fg_color;
-      background-color: $popover_hover_color;
-    }
-  }
-
-  .calendar-today {
-    &:hover,&:focus {
-      background-color: $popover_hover_color;
-      color: $fg_color;
-    }
-    &:active,&:selected {
-      background: $selected_bg_color;
-      color: $selected_fg_color;
-      &:hover,&:focus {
-        background-color: $popover_hover_color;
-        color: $fg_color;
-      }
-    }
-  }
-}
-
-/* Events */
-/*
-.events-button { @include notification_bubble($flat: true); }
-
-/* World clocks */
-/*
-.world-clocks-button {
-  @include notification_bubble($flat: true);
-}
-
-.weather-button {
-  @include notification_bubble($flat: true);
-}
-
 
 /* Search */
 
