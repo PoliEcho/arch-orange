@@ -31,17 +31,8 @@ $_osd_color: if($variant=='light', black, $fg_color);
   -slider-handle-radius: 0;
 }
 
-/* Switches */
+/* Popovers/Menus */
 /*
-.toggle-switch {
-  background-image: if($variant == 'light', url("assets/toggle-off.svg"), 
-                                            url("assets/toggle-off-dark.svg"));
-  &:checked {
-    background-image: if($variant == 'light', url("assets/toggle-on.svg"), 
-                                              url("assets/toggle-on-dark.svg"));
-  }
-}
-
 // menu items
 .popup-menu-item {
     &.selected, &:active {
