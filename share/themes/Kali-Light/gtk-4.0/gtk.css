@@ -4362,6 +4362,31 @@ read if you used those and something break with a version upgrade you're on your
 @define-color content_view_bg #fafafa;
 /* Very contrasty background for text views (@theme_text_color foreground) */
 @define-color text_view_bg #fafafa;
+.open-document-selector-treeview:hover {
+    background-color: alpha(@theme_fg_color, 0.05);
+}
+
+.open-document-selector-treeview:selected:hover {
+    background-color: @theme_selected_bg_color;
+}
+
+/* Only normal state is handle */
+.open-document-selector-name-label {
+    color: @theme_fg_color;
+}
+
+/* Only normal state is handle */
+.open-document-selector-path-label {
+    color: @theme_unfocused_fg_color;
+    font-size: smaller;
+}
+
+/* Only normal state is handle */
+.open-document-selector-match {
+    color: shade (@theme_fg_color, 0.6);
+    background-color: alpha(@warning_color, 0.4);
+}
+
 .gedit-document-panel {
     background-color: @sidebar_bg;
 }
@@ -4423,24 +4448,8 @@ statusbar {
     margin: 2px;
     padding: 2px;
 }
-.nautilus-window,
-.nautilus-window notebook,
-.nautilus-window notebook > stack {
-    background: @theme_base_color;
-}
-
-.nautilus-canvas-item {
-    border-radius: 5px;
-}
-
-.nautilus-canvas-item.dim-label,
-.nautilus-list-dim-label {
-    color: mix (@theme_fg_color, @theme_bg_color, 0.50);
-}
-
-.nautilus-canvas-item.dim-label:selected,
-.nautilus-list-dim-label:selected {
-    color: mix (@theme_selected_fg_color, @theme_selected_bg_color, 0.20);
+.nautilus-empty-state-icon {
+    opacity: 0.50;
 }
 
 /* Toolbar */
@@ -4450,8 +4459,8 @@ statusbar {
 @keyframes needs_attention_keyframes {
     0% {background-image: linear-gradient(to bottom, #fafafa, #ededed 40%,  #e0e0e0); border-color: @borders; }
     /* can't do animation-direction, so holding the color on two keyframes */
-    30% {background-image: linear-gradient(to bottom, @theme_base_color, @theme_base_color, @theme_base_color); border-color: @theme_fg_color; }
-    90% {background-image: linear-gradient(to bottom, @theme_base_color, @theme_base_color, @theme_base_color); border-color: @theme_fg_color; }
+    30% {background-image: linear-gradient(to bottom, @view_bg_color, @view_bg_color, @view_bg_color); border-color: @window_fg_color; }
+    90% {background-image: linear-gradient(to bottom, @view_bg_color, @view_bg_color, @view_bg_color); border-color: @window_fg_color; }
     100% {background-image: linear-gradient(to bottom, #fafafa, #ededed 40%,  #e0e0e0); border-color: @borders; }
 }
 
@@ -4463,70 +4472,60 @@ statusbar {
   animation-iteration-count: 3;
 }
 
-.disclosure-button {
-  padding-left: 4px;
-  padding-right: 4px;
+/* Remove white background and highlight on hover which GTK adds by default
+ * to GtkListBox. TODO: Switch to GtkListView and drop this CSS hack. */
+.operations-list,
+.operations-list > :hover {
+  background: none;
 }
 
 /* Path bar */
 
-.path-bar-box {
-  border-radius: 5px;
-  border: 1px @borders solid;
-  background-color: @theme_bg_color;
-  padding-right: 6px;
+.nautilus-path-bar > scrolledwindow {
+  margin: 6px 0px 6px 0px;
+  border-radius: 6px 0px 0px 6px;
+  border-right-width: 0px;
+  background-color: alpha(currentColor, 0.1);
+}
+.nautilus-path-bar > scrolledwindow undershoot.left {
+  border-radius: 6px 0px 0px 6px;
+  background: linear-gradient(to right, @headerbar_shade_color 6px, alpha(@headerbar_shade_color, 0) 24px);
+}
+.nautilus-path-bar > scrolledwindow undershoot.right {
+  background: linear-gradient(to left, @headerbar_shade_color 6px, alpha(@headerbar_shade_color, 0) 24px);
 }
 
-.nautilus-path-bar button {
+.nautilus-path-bar > button,
+.path-buttons-box button {
   margin: 0px;
 }
 
-.nautilus-path-bar button:first-child {
-  border-width: 0px 1px 0px 0px;
-  border-radius: 3.5px 0px 0px 3.5px;
+.path-buttons-box button {
+  margin: 0px;
+  box-shadow: none;
+  border-radius: 7px;
+  border-width: 0px;
+  -gtk-icon-shadow: none;
 }
 
-.nautilus-path-bar button:not(:first-child) {
-  border-width: 0px 1px 0px 1px;
-  border-radius: 0px 0px 0px 0px;
+.path-buttons-box button:not(:hover),
+.path-buttons-box button.current-dir
+{
+  background: none;
 }
 
-.nautilus-path-bar button:not(:checked) image { opacity: 0.8; } /* dim the icon when not checked */
-
-/* Make the tags fit into the box */
-entry.search > * {
-  margin: 5px;
-}
-
-/* Sidebar */
-
-.nautilus-window .sidebar-row:selected {
-    background: mix(@theme_bg_color, @theme_fg_color, 0.07);
-}
-
-.nautilus-window .sidebar-row:selected,
-.nautilus-window .sidebar-row:selected image,
-.nautilus-window .sidebar-row:selected label {
-    color: mix(@theme_fg_color, @theme_text_color, 0.5);
-}
-
-.nautilus-window .sidebar-row:selected:backdrop {
-    background: mix(@theme_unfocused_bg_color, @theme_unfocused_fg_color, 0.07);
-}
-
-.nautilus-window .sidebar-row:selected:backdrop,
-.nautilus-window .sidebar-row:selected:backdrop label {
-    color: mix(@theme_unfocused_fg_color, @theme_unfocused_text_color, 0.15);
+.path-buttons-box button:not(.current-dir):not(:backdrop):hover label {
+  opacity: 1;
 }
 
 /* Floating status bar */
 .floating-bar {
-  padding: 1px;
-  background-color: @theme_base_color;
+  padding: 3px;
+  background-color: @view_bg_color;
   border-width: 1px;
   border-style: solid solid none;
   border-color: @borders;
-  border-radius: 3px 3px 0 0;
+  border-radius: 8px 0 0 0;
 }
 
 .floating-bar.bottom.left { /* axes left border and border radius */
@@ -4539,7 +4538,7 @@ entry.search > * {
 }
 
 .floating-bar:backdrop {
-  background-color: @theme_unfocused_base_color;
+  background-color: @view_bg_color;
   border-color: @unfocused_borders;
 }
 
@@ -4583,58 +4582,37 @@ entry.search > * {
     color: shade(@disk_space_free, 0.7);
 }
 
-/* View */
-.nautilus-list-view .view {
-    border-bottom: 1px solid @theme_bg_color;
+/* As a workaround for GtkTreeView showing thick border above first row when
+ * horizontal grid lines are enabled, we add them using CSS instead. Exclude the
+ * drop targets to let through the default feedback style. */
+.nautilus-list-view .view:not(:drop(active)) {
+    border-bottom: 1px solid @window_bg_color;
 }
 
 .search-information {
-  background-color: @theme_selected_bg_color;
+  background-color: @accent_bg_color;
   color:white;
   padding:2px;
 }
 
-/* Hide superfluous treeview drop target indication */
-.nautilus-list-view .view.dnd {
-    border-style: none;
-}
-
-@define-color conflict_bg #fef6b6;
-
 .conflict-row {
-    background: @conflict_bg;
-    color: black;
+    background: @warning_bg_color;
+    color: @warning_fg_color;
 }
 
-.conflict-row:hover {
-    background-color: shade(@conflict_bg, 0.9);
+/* Grid view */
+.nautilus-grid-view gridview {
+  padding: 15px;
 }
 
-.conflict-row:selected {
-  background: @theme_selected_bg_color;
-  color: @theme_selected_fg_color;
+.nautilus-grid-view gridview > child {
+  padding: 6px;
 }
 
-/* Icon view */
-flowboxchild:selected {
-  background-color:transparent;
-}
-
-.icon-background {
-  background-color:black;
-  border-color:#4a90d9;
-  border-style:solid;
-  border-width:0px;
-}
-
-flowboxchild > .icon-item-background {
-  padding:4px;
-}
-flowboxchild:selected > .icon-item-background {
-  padding:4px;
-  background-color:#4a90d9;
-  border-color:#4a90d9;
-  border-style:solid;
-  border-width:0px;
-  border-radius:4px 4px 4px 4px;
+.nautilus-grid-view .thumbnail {
+  background-color: @shade_color;
+  box-shadow: 0px 1px 2px 0px @shade_color,
+              0px 0px 0px 1px @shade_color,
+              0px 2px 0px 0px @shade_color;
+  border-radius: 2px;
 }
