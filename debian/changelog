@@ -1,3 +1,18 @@
+kali-themes (2022.2.0) kali-dev; urgency=medium
+
+  * Xfce: configure mousepad add-last-end-of-line
+  * Xfce: configure mouse size to fix auto-scaling
+  * GTK3: fix theme for whiskermenu in icons mode
+  * GTK3: don't remove hovered background in whiskermenu iconview
+  * Icons: fix symlink for symbolic action icons
+  * Xfce: disable logout beep sound
+  * Xfce: add more monitors with the default wallpaper
+  * GTK3: update theme for gedit and nautilus
+  * GTK3: use nautilus style for version 42.beta
+  * Force install xfce4-desktop.xml
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 04 Mar 2022 17:38:08 +0100
+
 kali-themes (2022.1.1) kali-dev; urgency=medium
 
   * Resize live image grub background
