@@ -4,7 +4,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 RESET='\033[0m'
 
-VERSION=6b60a189fded722ae37a7d3e94d51a509a7d2df1
+VERSION=42.rc
 
 echo
 printf " $YELLOW[ i ]$RESET Upstream version $VERSION\n"
