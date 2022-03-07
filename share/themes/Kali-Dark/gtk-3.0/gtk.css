@@ -6102,6 +6102,12 @@ filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon,
 .path-bar-box:backdrop {
   border-color: #0d0e11; }
 
+box.nautilus-path-bar > scrolledwindow {
+  background-color: #272a34; }
+
+box.nautilus-path-bar > button {
+  box-shadow: none; }
+
 /* GNOME TERMINAL */
 terminal-window notebook scrollbar,
 .mate-terminal notebook scrollbar {
