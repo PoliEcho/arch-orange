@@ -41,6 +41,14 @@ $_osd_color: if($variant=='light', black, $fg_color);
     }
 }
 
+/* Message List */
+.message-list .message-list-placeholder,
+.message-list-controls {
+  font-weight: normal;
+}
+
+.message-list-controls { spacing: $base_padding * 2; }
+
 /* Window Picker */
 // Window titles
 .window-caption {

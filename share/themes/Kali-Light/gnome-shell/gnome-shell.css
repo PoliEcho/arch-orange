@@ -2596,6 +2596,14 @@ $_osd_color: if($variant=='light', black, $fg_color);
     }
 }
 
+/* Message List */
+.message-list .message-list-placeholder,
+.message-list-controls {
+  font-weight: normal; }
+
+.message-list-controls {
+  spacing: 12px; }
+
 /* Window Picker */
 .window-caption {
   color: black;
