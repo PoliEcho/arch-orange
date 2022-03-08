@@ -2580,6 +2580,11 @@ $_osd_color: if($variant=='light', black, $fg_color);
   }
 }
 
+/* Switches */
+.toggle-switch {
+  height: 22px;
+  width: 44px; }
+
 /* Slider */
 .slider {
   -barlevel-background-color: #d9d9d9;
@@ -2602,7 +2607,8 @@ $_osd_color: if($variant=='light', black, $fg_color);
   font-weight: normal; }
 
 .message-list-controls {
-  spacing: 12px; }
+  spacing: 12px;
+  font-size: 10pt; }
 
 /* Window Picker */
 .window-caption {
