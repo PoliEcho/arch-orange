@@ -182,8 +182,6 @@ $_osd_color: if($variant=='light', black, $fg_color);
 
 /* Date/Time Menu */
 .datemenu-today-button {
-  @include card($flat: false);
-
   &:insensitive { color: inherit; }
 
   .day-label { font-weight: normal; }
