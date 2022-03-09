@@ -86,6 +86,11 @@ $_osd_color: if($variant=='light', black, $fg_color);
   @include fontsize(10);
 }
 
+/* Notifications & Message Tray */
+.notification-banner {
+  box-shadow: 0 2px 4px transparentize(black, .8);
+}
+
 /* Window Picker */
 // Window titles
 .window-caption {
