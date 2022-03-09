@@ -86,6 +86,15 @@ $_osd_color: if($variant=='light', black, $fg_color);
   @include fontsize(10);
 }
 
+.message {
+  .message-content {
+    padding: $base_padding;
+    spacing: 0;
+  }
+  .message-title { padding-top: .5em; }
+  .message-secondary-bin > .event-time { padding-bottom: .5em; }
+}
+
 /* Notifications & Message Tray */
 .notification-banner {
   box-shadow: 0 2px 4px transparentize(black, .8);

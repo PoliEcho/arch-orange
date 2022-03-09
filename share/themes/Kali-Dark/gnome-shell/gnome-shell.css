@@ -2734,6 +2734,16 @@ $_osd_color: if($variant=='light', black, $fg_color);
   spacing: 12px;
   font-size: 10pt; }
 
+.message .message-content {
+  padding: 6px;
+  spacing: 0; }
+
+.message .message-title {
+  padding-top: .5em; }
+
+.message .message-secondary-bin > .event-time {
+  padding-bottom: .5em; }
+
 /* Notifications & Message Tray */
 .notification-banner {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
