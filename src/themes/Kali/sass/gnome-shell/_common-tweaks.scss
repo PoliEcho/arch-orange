@@ -7,26 +7,9 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 }
 
 /* OSD */
-/*
-$_osd_color: if($variant=='light', black, $fg_color);
 %osd_panel {
-  font-weight: bold;
-  background-color: $bg_color;
-  color: $fg_color;
-  border: 1px solid if($variant=='light', transparentize(black, 0.85), $borders_color);
+  background-color: transparentize($osd_bg_color, 0.04);
   box-shadow: 0 4px 10px transparentize(black, .8);
-
-  StIcon {
-    color: $_osd_color;
-    icon-shadow: 0 0 6px transparentize(black, .6);
-  }
-}
-
-.osd-window {
-  .level {
-    -barlevel-background-color: transparentize($_osd_color, if($variant=='light', 0.7, 0.9));
-    -barlevel-active-background-color: $_osd_color;
-  }
 }
 
 /* Switches */
