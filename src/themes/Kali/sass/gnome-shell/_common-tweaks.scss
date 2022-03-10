@@ -1,6 +1,11 @@
 $overview_transparent_bg: transparentize(white, .9);
 $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 
+// Dropshadow for large icons
+.icon-dropshadow {
+  icon-shadow: 0 1px 5px $shadow_color;
+}
+
 /* OSD */
 /*
 $_osd_color: if($variant=='light', black, $fg_color);
