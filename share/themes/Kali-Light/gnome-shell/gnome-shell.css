@@ -2806,6 +2806,14 @@ StScrollBar {
     color: transparent;
     transition-duration: 0s; }
 
+/* Workspace Switcher */
+.ws-switcher-indicator {
+  padding: 2px;
+  margin: 10px; }
+  .ws-switcher-indicator:active {
+    padding: 4px;
+    margin: 8px; }
+
 /* Screenshot UI */
 .screenshot-ui-shot-cast-container {
   background-color: #383d4b; }

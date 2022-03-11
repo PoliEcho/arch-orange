@@ -132,6 +132,17 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
   }
 }
 
+/* Workspace Switcher */
+.ws-switcher-indicator {
+  padding: 2px;
+  margin: 10px;
+
+  &:active {
+    padding: 4px;
+    margin: 8px;
+  }
+}
+
 /* Screenshot UI */
 .screenshot-ui-shot-cast-container {
   background-color: lighten($osd_bg_color, 4%);
