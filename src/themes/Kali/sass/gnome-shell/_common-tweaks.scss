@@ -12,6 +12,18 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
   box-shadow: 0 4px 10px transparentize(black, .8);
 }
 
+// buttons on OSD elements
+// that are undecorated by default and use OSD colors
+%osd_button {
+  @include button(undecorated);
+  border: 0!important;
+  &:insensitive { @include button(undecorated, $tc:$osd_fg_color, $c:$osd_bg_color); }
+  &:focus { @include button(focus, $tc:$osd_fg_color, $c:$osd_bg_color); }
+  &:hover { @include button(hover, $tc:$osd_fg_color, $c:$osd_bg_color); }
+  &:active { @include button(active, $tc:$osd_fg_color, $c:$osd_bg_color); }
+  &:outlined, &:checked { @include button(checked, $tc:$osd_fg_color, $c:$osd_bg_color); }
+}
+
 /* Switches */
 .toggle-switch {
   height: 22px;
@@ -118,6 +130,18 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
     color: transparent;
     transition-duration: 0s;
   }
+}
+
+/* Screenshot UI */
+.screenshot-ui-shot-cast-container {
+  background-color: lighten($osd_bg_color, 4%);
+}
+
+.screenshot-ui-shot-cast-button {
+  background-color: transparent;
+  &:hover, &:focus { background-color: lighten($osd_bg_color, 10%); }
+  &:active { background-color: lighten($osd_bg_color, 15%); }
+  &:checked { background-color: white; color: black; }
 }
 
 /* Top Bar */
