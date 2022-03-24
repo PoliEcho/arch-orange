@@ -130,6 +130,10 @@ if [ "$1" = "configure" ]; then
         echo "firefox-esr package found, replacing default-browser in xfce4-panel"
         sed -i 's/xfce4-web-browser/firefox-esr/' /etc/xdg/xfce4/panel/default.xml
     fi
+    # Use lighter configuration for xfce4-panel in arm devices
+    if dpkg --print-architecture | grep -q arm; then
+        sed -i '/<!--/d' /etc/xdg/xfce4/panel/default.xml
+    fi
     # Copy grub theme to /boot
     mkdir -p /boot/grub/themes/kali
     cp -r /usr/share/grub/themes/kali/* /boot/grub/themes/kali/
