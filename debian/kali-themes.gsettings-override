@@ -7,6 +7,7 @@ picture-options = 'zoom'
 picture-uri = 'file:///usr/share/desktop-base/kali-theme/wallpaper/gnome-background.xml'
 
 [org.gnome.desktop.interface]
+color-scheme = 'prefer-dark'
 gtk-theme = 'Kali-Dark'
 icon-theme = 'Flat-Remix-Blue-Dark'
 monospace-font-name = 'Fira Code Medium 10'
