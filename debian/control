@@ -6,7 +6,7 @@ Uploaders:
  Daniel Ruiz de Alegría <daniruiz@kali.org>,
  Raphaël Hertzog <raphael@offensive-security.com>,
 Build-Depends:
- debhelper-compat (= 12),
+ debhelper-compat (= 13),
  librsvg2-bin,
  optipng,
 Standards-Version: 4.6.0
