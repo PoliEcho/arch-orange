@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Copy missing config files
-Exec=/bin/sh -c "cp -rnT /etc/skel ~"
-Terminal=false
