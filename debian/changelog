@@ -1,3 +1,17 @@
+kali-themes (2022.2.1) kali-dev; urgency=medium
+
+  * GTK3: fix missing dark theme in Kali-Dark
+  * GTK3: tweak nautilus 42 theme
+  * Add autostart script to copy missing config files from /etc/skel
+  * Xfce: add alternative light panel configs
+  * Xfce: use alternative panel for arm devices
+  * GTK: configure prefer-dark color-scheme
+  * Revert "Add autostart script to copy missing config files from /etc/skel"
+  * wrap-and-sort -ast
+  * Update packaging
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 01 Apr 2022 13:07:05 +0200
+
 kali-themes (2022.2.0) kali-dev; urgency=medium
 
   * Xfce: configure mousepad add-last-end-of-line
