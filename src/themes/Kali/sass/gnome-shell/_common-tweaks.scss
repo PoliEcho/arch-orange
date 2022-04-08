@@ -1,5 +1,5 @@
 $overview_transparent_bg: transparentize(white, .9);
-$dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
+$dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
 
 // Dropshadow for large icons
 .icon-dropshadow {
@@ -9,7 +9,7 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 /* OSD */
 %osd_panel {
   background-color: transparentize($osd_bg_color, 0.04);
-  box-shadow: 0 4px 10px transparentize(black, .8);
+  box-shadow: $dialog_box_shadow;
 }
 
 // buttons on OSD elements
@@ -38,9 +38,13 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 }
 
 /* Popovers/Menus */
+.popup-menu-boxpointer {
+  -arrow-rise: 6px;
+}
+
 .popup-menu-content {
   padding: 4px;
-  box-shadow: 0 2px 4px transparentize(black, .8);
+  box-shadow: $dialog_box_shadow;
   background-color: $base_color;
 }
 
@@ -96,9 +100,7 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 }
 
 /* Notifications & Message Tray */
-.notification-banner {
-  box-shadow: 0 2px 4px transparentize(black, .8);
-}
+.notification-banner { box-shadow: $dialog_box_shadow; }
 
 /* Window Picker */
 // Window titles
@@ -159,7 +161,7 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 #panel {
   $_panel_bg: transparentize($bg_color, .2);
   $_panel_fg: if($variant=='light', black, white);
-  $_panel_text_shadow: 0 1px 2px transparentize(black, 0.5);
+  $_panel_text_shadow: 0 1px 2px transparentize(black, 0.7);
   background: $_panel_bg;
   text-shadow: $_panel_text_shadow;
 
@@ -224,8 +226,9 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 /* Search */
 // search entry
 .search-entry {
+  $_text-shadow: 0px 1px 2px transparentize(black, 0.5);
   color: black;
-  text-shadow: 0px 1px 2px rgba(black, 0.9);
+  text-shadow: $_text-shadow;
   font-weight: bold;
   background-color: $overview_transparent_bg;
   font-size: 1.1em;
@@ -256,7 +259,7 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 
   .search-entry-icon {
     color: white;
-    icon-shadow: 0px 1px 2px rgba(black, 0.9);
+    icon-shadow: $_text-shadow;
   }
 }
 
@@ -268,6 +271,10 @@ $dialog_box_shadow: 0 2px 8px 0 transparentize(black, .6);
 
 // search result provider
 .search-provider-icon .list-search-provider-details { font-weight: bold; }
+
+.list-search-result .list-search-result-description {
+  color: transparentize($osd_fg_color, .2);
+}
 
 /* Dash */
 #dash {

@@ -2659,7 +2659,7 @@ StScrollBar {
 /* OSD */
 .osd-window, .resize-popup, .switcher-list, .workspace-switcher, .screenshot-ui-panel {
   background-color: rgba(48, 51, 64, 0.96);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.2); }
 
 .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   border: 1px solid transparent;
@@ -2726,9 +2726,12 @@ StScrollBar {
   -slider-handle-radius: 0; }
 
 /* Popovers/Menus */
+.popup-menu-boxpointer, .candidate-popup-boxpointer {
+  -arrow-rise: 6px; }
+
 .popup-menu-content, .candidate-popup-content {
   padding: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.2);
   background-color: #fafafa; }
 
 .popup-menu-item {
@@ -2780,13 +2783,13 @@ StScrollBar {
 
 /* Notifications & Message Tray */
 .notification-banner {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.2); }
 
 /* Window Picker */
 .window-caption {
   color: black;
   background-color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.2); }
 
 .window-close, .screenshot-ui-close-button {
   background-image: url("assets/close-window.svg");
@@ -2873,7 +2876,7 @@ StScrollBar {
 /* Search */
 .search-entry {
   color: black;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 1.1em;
@@ -2897,7 +2900,7 @@ StScrollBar {
       icon-shadow: none; }
   .search-entry .search-entry-icon {
     color: white;
-    icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9); }
+    icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5); }
 
 .search-section-content {
   background-color: rgba(255, 255, 255, 0.1);
@@ -2905,6 +2908,9 @@ StScrollBar {
 
 .search-provider-icon .list-search-provider-details {
   font-weight: bold; }
+
+.list-search-result .list-search-result-description {
+  color: rgba(255, 255, 255, 0.8); }
 
 /* Dash */
 #dash {
