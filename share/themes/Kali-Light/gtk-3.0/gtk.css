@@ -6132,7 +6132,7 @@ box.nautilus-path-bar > button {
 /* GNOME TERMINAL */
 terminal-window notebook scrollbar,
 .mate-terminal notebook scrollbar {
-  background: none; }
+  background: #fafafa; }
 
 /* GNOME TWEAKS */
 list.tweak-categories separator {
