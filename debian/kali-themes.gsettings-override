@@ -52,6 +52,10 @@ favorite-apps = ['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'ge
 [org.gnome.shell.extensions.dash-to-dock]
 custom-theme-shrink=true
 show-trash = false
+# TODO: remove
+# Fixes issue with external drives crashing the shell
+# https://github.com/micheleg/dash-to-dock/issues/1701
+show-mounts = false
 
 # Configure desktop icons in gnome-shell
 [org.gnome.shell.extensions.ding]
