@@ -1,3 +1,16 @@
+kali-themes (2022.2.2) kali-dev; urgency=medium
+
+  * GTK3: fix gnome-terminal transparent scrollbar
+  * GTK4: style app-notifications and scrollbars
+  * GTK: Update gtk themes
+  * GTK4: add libhandy styles
+  * Force install panel/default.xml config file
+  * Xfce: reduce size of panel for light variant
+  * Xfce: reduce size of panel for light variant
+  * Gnome-Shell: fix dashtodock bug with external drives
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 15 Apr 2022 18:19:49 +0200
+
 kali-themes (2022.2.1) kali-dev; urgency=medium
 
   * GTK3: fix missing dark theme in Kali-Dark
