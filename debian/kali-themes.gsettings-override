@@ -46,7 +46,7 @@ swap-color = '#19a187'
 
 [org.gnome.shell]
 disable-extension-version-validation = true
-enabled-extensions = ['apps-menu@gnome-shell-extensions.gcampax.github.com','places-menu@gnome-shell-extensions.gcampax.github.com','dash-to-dock@micxgx.gmail.com','ProxySwitcher@flannaghan.com','ubuntu-appindicators@ubuntu.com','user-theme@gnome-shell-extensions.gcampax.github.com','ding@rastersoft.com']
+enabled-extensions = ['apps-menu@gnome-shell-extensions.gcampax.github.com','places-menu@gnome-shell-extensions.gcampax.github.com','ubuntu-dock@ubuntu.com','ProxySwitcher@flannaghan.com','ubuntu-appindicators@ubuntu.com','user-theme@gnome-shell-extensions.gcampax.github.com','ding@rastersoft.com']
 favorite-apps = ['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'gedit.desktop', 'firefox-esr.desktop', 'kali-msfconsole.desktop', 'wireshark.desktop', 'kali-burpsuite.desktop', 'cherrytree.desktop']
 
 [org.gnome.shell.extensions.dash-to-dock]
