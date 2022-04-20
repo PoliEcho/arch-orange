@@ -2914,8 +2914,9 @@ StScrollBar {
 
 /* Dash */
 #dash {
-  color: white;
-  icon-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
+  color: white; }
+  #dash StIcon {
+    icon-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
 
 .dash-background, .dash-separator {
   background: rgba(255, 255, 255, 0.1); }
