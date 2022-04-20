@@ -1,3 +1,49 @@
+kali-themes (2022.2.3) kali-dev; urgency=medium
+
+  * Gnome-Shell: update upstream code to gnome 42
+  * Gnome-Shell: generate new gnome themes
+  * Gnome-Shell: reduce font size
+  * Gnome-Shell: update theme tweaks for search-entry, search-results, and 
+    window-picker
+  * Gnome-Shell: remove border to search results
+  * Gnome-Shell: update slider theme tweaks
+  * Gnome-Shell: remove workspaces-switcher theme tweaks
+  * Gnome-Shell: update panel theme tweaks
+  * Gnome-Shell: update app-grid theme tweaks
+  * Gnome-Shell: update dash theme tweaks
+  * Gnome-Shell: set recording indicator text color to white
+  * Gnome-Shell: update keyboard theme tweaks
+  * Gnome-Shell: remove slider barlevel border
+  * Gnome-Shell: update calendar theme tweaks
+  * Gnome-Shell: code cleanup
+  * Gnome-Shell: update checkbox theme tweaks
+  * Gnome-Shell: update switches theme tweaks
+  * Gnome-Shell: reduce height of switch assets
+  * Gnome-Shell: update upstream to 42.rc
+  * Gnome-Shell: remove old assets
+  * Gnome-Shell: update message list theme tweaks
+  * Gnome-Shell: tweak switches
+  * Gnome-Shell: update popover theme tweaks
+  * Gnome-Shell: change shadow to notification-banner
+  * Gnome-Shell: change bg colors of buttons and cards
+  * Gnome-Shell: tweak notifications in calendar panel
+  * Gnome-Shell: lighten icon shadow
+  * Gnome-Shell: update osd theme tweaks
+  * Gnome-Shell: theme screenshot dialog
+  * Gnome-Shell: theme workspace switcher
+  * Update 'breaks' version for gnome-shell
+  * Gnome-Shell: tweak theme shadows
+  * Gnome-Shell: reduce opacity of panel shadow
+  * Remove gnome-backgrounds.xml diversion for GNOME 42
+  * Gnome-Shell: update settings for dash-to-dock extensions
+  * Gnome-Shell: replace dash-to-dock extension with ubuntu-dock
+  * Gnome-Shell: add settings for picture-uri-dark
+  * Gnome-Shell: fix icon-shadow in dash
+  * Update changelog for 2022.2.3
+  * Make lintian happy
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 20 Apr 2022 21:03:20 +0200
+
 kali-themes (2022.2.2) kali-dev; urgency=medium
 
   * GTK3: fix gnome-terminal transparent scrollbar
