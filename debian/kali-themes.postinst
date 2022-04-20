@@ -113,15 +113,6 @@ if [ "$1" = "configure" ]; then
 	# Install remaining new files
 	install_all
     fi
-    # Disable GNOME backgrounds
-    file=/usr/share/gnome-background-properties/gnome-backgrounds.xml
-    if [ -e $file ]; then
-	diverted_file=$(dirname $file)/disabled/$(basename $file)
-	mkdir -p "$(dirname $diverted_file)"
-	dpkg-divert --rename --package kali-themes \
-		    --divert "$diverted_file" \
-		    --add "$file"
-    fi
     # Configure /root/.face to have a red-background avatar
     if [ ! -e /root/.face ]; then
         cp /usr/share/kali-themes/.face-root.svg /root/.face
