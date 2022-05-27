@@ -54,6 +54,7 @@ favorite-apps = ['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'ge
 custom-theme-shrink=true
 show-trash = false
 running-indicator-style='DOTS'
+disable-overview-on-startup = true
 
 # Configure desktop icons in gnome-shell
 [org.gnome.shell.extensions.ding]
