@@ -1,3 +1,13 @@
+kali-themes (2022.3.0) kali-dev; urgency=medium
+
+  * Icons: update Flat-Remix icon theme
+  * Fix symlink for symbolic 'actions' icons
+  * Icons: remove window symbolic icons from elementary
+  * Change dash-to-dock version
+  * Configure dash-to-dock to disable overview on startup
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 27 May 2022 11:51:36 +0200
+
 kali-themes (2022.2.4) kali-dev; urgency=medium
 
   * Update sync upstream version for gnome-shell 42.0
