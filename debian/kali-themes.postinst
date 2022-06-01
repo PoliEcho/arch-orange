@@ -35,8 +35,8 @@ FILES_TO_DIVERT="
 
 install_all() {
     local opt=$1
-    for file in $FILES_TO_DIVERT
-    do
+    local file=
+    for file in $FILES_TO_DIVERT; do
        install_config_file "$file" "$opt"
     done
 }
@@ -45,18 +45,19 @@ install_config_file() {
     local file=$1
     local opt=$2
     local orig_file="/usr/share/kali-themes$file"
-    if [ "$opt" = "force" ] || ([ ! -e $file ] && [ -e $orig_file ]); then
+    if [ "$opt" = "force" ] || ([ ! -e "$file" ] && [ -e "$orig_file" ]); then
 	echo "Installing $orig_file as $file"
-	mkdir -p $(dirname $file)
-	cp $orig_file $file
+	mkdir -p "$(dirname "$file")"
+	cp "$orig_file" "$file"
     fi
 }
 
 remove_config_file() {
-    rm -f $1
+    local file=$1
+    rm -f "$file"
     dpkg-divert --rename --package kali-themes \
-        --divert "$1.original" \
-        --remove "$1"
+        --divert "$file.original" \
+        --remove "$file"
 }
 
 if [ "$1" = "configure" ]; then

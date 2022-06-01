@@ -34,8 +34,8 @@ FILES_TO_DIVERT="
 " # END FILES_TO_DIVERT
 
 setup_diversion() {
-    local file="$1"
-    divert_opts="--rename"
+    local file=$1
+    local divert_opts="--rename"
     if [ -e "$file" ]; then
 	if dpkg --search "$file" >/dev/null 2>&1; then
 	    # Keep original file to avoid spurious dpkg prompt

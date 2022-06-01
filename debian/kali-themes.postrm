@@ -34,7 +34,7 @@ FILES_TO_DIVERT="
 " # END FILES_TO_DIVERT
 
 drop_diversion() {
-    local file="$1"
+    local file=$1
     dpkg-divert --rename --package kali-themes \
 		--divert "$file.original" \
 		--remove "$file"
