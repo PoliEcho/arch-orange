@@ -8,4 +8,4 @@ sed -i -zE 's|(\s+<value[^\n]+)\1|<value type="string" value="xfce4-terminal-emu
   ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 
 # Remove autorun file after first run
-rm -f ~/.config/autostart/fix-duplicated-xfce-panel-launcher.desktop
+echo "Hidden=true" >> ~/.config/autostart/fix-duplicated-xfce-panel-launcher.desktop
