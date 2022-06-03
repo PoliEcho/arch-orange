@@ -1,3 +1,15 @@
+kali-themes (2022.3.1) kali-dev; urgency=medium
+
+  [ Arnaud Rebillout ]
+  * Define a drop_diversion function in the postrm script
+  * Nitpicks in maintainer scripts
+
+  [ Daniel Ruiz de Alegría ]
+  * Xfce: fix duplicated launcher in xfce4-panel (fixes #139)
+  * Xfce: add hidden value to autostart file instead of removing it
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 03 Jun 2022 09:43:28 +0200
+
 kali-themes (2022.3.0) kali-dev; urgency=medium
 
   * Icons: update Flat-Remix icon theme
