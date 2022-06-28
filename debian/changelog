@@ -1,3 +1,12 @@
+kali-themes (2022.3.2) kali-dev; urgency=medium
+
+  * Add icon for peass
+  * Remove unused grub font
+  * Grub: use default font
+  * Icons: fix size of ac-adapter icon in xfce-panel
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Tue, 28 Jun 2022 21:51:29 +0200
+
 kali-themes (2022.3.1) kali-dev; urgency=medium
 
   [ Arnaud Rebillout ]
