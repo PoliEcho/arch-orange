@@ -9,7 +9,7 @@ picture-uri-dark = 'file:///usr/share/desktop-base/kali-theme/wallpaper/gnome-ba
 
 [org.gnome.desktop.interface]
 color-scheme = 'prefer-dark'
-gtk-theme = 'Kali-Dark'
+gtk-theme = 'adw-gtk3-dark'
 icon-theme = 'Flat-Remix-Blue-Dark'
 monospace-font-name = 'Fira Code Medium 10'
 
@@ -26,7 +26,7 @@ switch-windows-backward = ['<Shift><Alt>Tab']
 
 [org.gnome.desktop.wm.preferences]
 button-layout = 'appmenu:minimize,maximize,close'
-theme = 'Kali-Dark'
+theme = 'adw-gtk3-dark'
 
 # Configuration for gnome's image-viewer
 [org.gnome.eog.ui]
