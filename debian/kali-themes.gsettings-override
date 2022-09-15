@@ -37,6 +37,10 @@ sidebar = false
 background-pattern = 'grid'
 scheme = 'Kali-Dark'
 
+[org.gnome.TextEditor]
+show-grid = true
+scheme = 'Kali-Dark'
+
 [org.gnome.gnome-system-monitor]
 cpu-colors = [(0, '#fd3535'), (1, '#fd7d00'), (2, '#ffc730'), (3, '#0ca15e'), (4, '#14816c'), (5, '#4aaee6'), (6, '#367bf0'), (7, '#265ab1'), (8, '#153873'), (9, '#8c42ab'), (10, '#b8174c'), (11, '#d41919')]
 cpu-stacked-area-chart = true

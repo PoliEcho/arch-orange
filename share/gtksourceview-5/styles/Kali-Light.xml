@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<style-scheme id="kali-light" _name="Kali Light" version="1.0">
+<style-scheme id="Kali-Light" _name="Kali Light" version="1.0">
 	<author>Daniel Ruiz de Alegría</author>
 	<_description>Kali Light colorscheme</_description>
 
 	<metadata>
 		<property name="variant">light</property>
-		<property name="dark-variant">kali-dark</property>
+		<property name="dark-variant">Kali-Dark</property>
 		<property name="accent_bg_color">#2777ff</property>
 	</metadata>
 
