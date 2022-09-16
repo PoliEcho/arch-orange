@@ -39,7 +39,7 @@ scheme = 'Kali-Dark'
 
 [org.gnome.TextEditor]
 show-grid = true
-scheme = 'Kali-Dark'
+style-scheme: 'Kali-Dark'
 
 [org.gnome.gnome-system-monitor]
 cpu-colors = [(0, '#fd3535'), (1, '#fd7d00'), (2, '#ffc730'), (3, '#0ca15e'), (4, '#14816c'), (5, '#4aaee6'), (6, '#367bf0'), (7, '#265ab1'), (8, '#153873'), (9, '#8c42ab'), (10, '#b8174c'), (11, '#d41919')]
@@ -75,12 +75,12 @@ background-transparency-percent = 5
 bold-is-bright = true
 palette = ['#1F2229', '#D41919', '#5EBDAB', '#FEA44C', '#367bf0', '#9755b3', '#49AEE6', '#E6E6E6', '#198388', '#EC0101', '#47D4B9', '#FF8A18', '#277FFF', '#962ac3', '#05A1F7', '#FFFFFF']
 scrollback-unlimited = true
-theme-variant = 'dark'
 use-theme-colors = true
 use-transparent-background = true
 
 [org.gnome.Terminal.Legacy.Settings]
 confirm-close = false
+theme-variant = 'dark'
 
 [org.gtk.Settings.FileChooser]
 sort-directories-first = true
