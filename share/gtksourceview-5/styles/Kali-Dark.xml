@@ -12,7 +12,7 @@
 	</metadata>
 
 	<!-- Kali-Dark colors -->
-	<color name="background" value="#16171d"/>
+	<color name="background" value="#1a1c23"/>
 	<color name="current-line" value="#333"/>
 	<color name="selection" value="#111"/>
 	<color name="foreground" value="#ffffff"/>
@@ -32,7 +32,7 @@
 	<color name="gray" value="#cccccc"/>
 
 	<style name="text" foreground="bone-white" background="background"/>
-	<style name="selection" foreground="blue" background="selection"/>
+	<style name="selection" foreground="selection" background="blue"/>
 	<style name="cursor" foreground="white" background="white"/>
 	<style name="current-line" foreground="current-line" background="current-line"/>
 	<style name="line-numbers" foreground="bone-white" background="background"/>
