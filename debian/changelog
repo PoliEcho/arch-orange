@@ -1,3 +1,19 @@
+kali-themes (2022.4.0) kali-dev; urgency=medium
+
+  * Icons: add symlink for peass-ng
+  * Icons: Update faraday icon
+  * Add rizin app icon and update cutter
+  * Set new theme for gnome
+  * GTK4: add color-schemes for text editor
+  * Settings for new gnome-text-editor
+  * Gnome-Shell: replace gedit with gnome-text-editor in dash favorites
+  * Set dark mode for gnome-terminal
+  * Fix gsettings
+  * Icons: add missing icon for gnome-text-editor
+  * Change background and selection color for kali-dark theme for gtksourceview-5
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 19 Sep 2022 19:53:28 +0200
+
 kali-themes (2022.3.2) kali-dev; urgency=medium
 
   * Add icon for peass
