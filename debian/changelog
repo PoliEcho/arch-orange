@@ -1,3 +1,9 @@
+kali-themes (2022.4.1) kali-dev; urgency=medium
+
+  * Fix gsettings
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 21 Sep 2022 12:43:29 +0200
+
 kali-themes (2022.4.0) kali-dev; urgency=medium
 
   * Icons: add symlink for peass-ng
