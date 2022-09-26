@@ -1,3 +1,11 @@
+kali-themes (2022.4.2) kali-dev; urgency=medium
+
+  * Gnome-Shell: Update theme for gnome 43
+  * Set darker background-pattern for gtksourceview-5
+  * Bump gnome-shell version
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 26 Sep 2022 11:21:42 +0200
+
 kali-themes (2022.4.1) kali-dev; urgency=medium
 
   * Fix gsettings
