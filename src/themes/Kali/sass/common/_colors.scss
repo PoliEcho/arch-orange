@@ -3,6 +3,8 @@
 
 $_dark_base_color: #272a34;
 
+$is_highcontrast: "false";
+
 $base_color: if($variant == 'light', darken(#ffffff, 2%), $_dark_base_color);
 $text_color: if($variant == 'light', black, white);
 $bg_color: if($variant == 'light', #ffffff, darken($_dark_base_color, 2%));
@@ -53,6 +55,15 @@ $tooltip_borders_color: $osd_outer_borders_color;
 $shadow_color: transparentize(black, if($variant == 'light', 0.9, 0.7));
 $system_bg_color: $_dark_base_color;
 
+// button
+$button_mix_factor: 5%;
+
+// cards
+$card_bg_color: if($variant == 'light', darken($bg_color, 5%), lighten($bg_color, 2%));
+
+// notifications
+$bubble_buttons_color: if($variant == 'light', darken($bg_color, 12%), lighten($bg_color, 10%));
+
 $drop_target_color: #19a187;
 
 //insensitive state derived colors
@@ -75,6 +86,18 @@ $backdrop_scrollbar_bg_color: darken($backdrop_bg_color, 3%);
 $backdrop_scrollbar_slider_color: mix($backdrop_fg_color, $backdrop_bg_color, 40%);
 
 $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdrop_bg_color, $backdrop_base_color, 20%));
+
+// derived checked colors
+$checked_bg_color: if($variant=='light', darken($base_color, 7%), lighten($base_color, 9%));
+$checked_fg_color: if($variant=='light', darken($fg_color, 7%), lighten($fg_color, 7%));
+
+// derived hover colors
+$hover_bg_color: if($variant=='light', darken($base_color, 3%), lighten($base_color, 4%));
+$hover_fg_color: if($variant=='light', darken($fg_color, 5%), lighten($fg_color, 10%));
+
+// derived active colors
+$active_bg_color: if($variant=='light', darken($base_color, 5%), lighten($base_color, 6%));
+$active_fg_color: if($variant=='light', darken($fg_color, 5%), lighten($fg_color, 12%));
 
 //special cased widget colors
 $suggested_bg_color: $selected_bg_color;
