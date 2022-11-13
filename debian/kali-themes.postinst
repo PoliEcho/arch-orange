@@ -15,21 +15,26 @@ FILES_TO_DIVERT="
 /etc/xdg/kscreenlockerrc
 /etc/xdg/kwinrc
 /etc/xdg/menus/xfce-settings-manager.menu
+/etc/xdg/mimeapps.list
+/etc/xdg/picom.conf
 /etc/xdg/plasmarc
 /etc/xdg/qt5ct/qt5ct.conf
 /etc/xdg/qterminal.org/qterminal.ini
+/etc/xdg/terminator/config
+/etc/xdg/Thunar/accels.scm
+/etc/xdg/Thunar/uca.xml
 /etc/xdg/xfce4/helpers.rc
 /etc/xdg/xfce4/panel/default.xml
 /etc/xdg/xfce4/terminal/terminalrc
 /etc/xdg/xfce4/whiskermenu/defaults.rc
+/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
-/etc/xdg/Thunar/uca.xml
-/etc/xdg/Thunar/accels.scm
+/etc/xdg/xfce-mimeapps.list
 /etc/xdg/yakuakerc
 " # END FILES_TO_DIVERT
 
@@ -110,6 +115,13 @@ if [ "$1" = "configure" ]; then
 	fi
 	if dpkg --compare-versions "$2" lt "2022.2.2"; then
 	    install_config_file /etc/xdg/xfce4/panel/default.xml force
+	fi
+	if dpkg --compare-versions "$2" lt "2022.4.3"; then
+	    install_config_file /etc/xdg/mimeapps.list force
+	    install_config_file /etc/xdg/picom.conf force
+	    install_config_file /etc/xdg/terminator/config force
+	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/thunar.xml force
+	    install_config_file /etc/xdg/xfce-mimeapps.list force
 	fi
 	# Install remaining new files
 	install_all
