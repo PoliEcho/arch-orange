@@ -1,2 +1,5 @@
 [org.gnome.desktop.interface]
 icon-theme = 'Adwaita+Flat-Remix-Blue'
+
+[sm.puri.phoc]
+scale-to-fit = true
