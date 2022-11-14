@@ -89,3 +89,12 @@ Description: Transitional package to install kali-themes
  .
  This dummy package can be safely removed once kali-themes is installed on the
  system.
+
+Package: kali-themes-phosh
+Architecture: all
+Depends:
+ kali-themes,
+ adw-gtk3-kali,
+Description: Configure Phosh desktop to use the Kali theme
+ Installing this package should configure Phosh desktop to use the Kali theme
+ by default.
