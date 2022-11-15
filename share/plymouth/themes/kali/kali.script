@@ -18,6 +18,14 @@ outline.image = Image("outline.png");
 fade.image = Image("kali-logo-fade.png");
 passwordDot.image = Image("password-dot.png");
 
+if (Window.GetHeight() < 800) {
+  container.image = Image("kali-logo-container_small.png");
+  logo.image = Image("kali-logo_small.png");
+  outline.image = Image("outline_small.png");
+  fade.image = Image("kali-logo-fade_small.png");
+  passwordDot.image = Image("password-dot_small.png");
+}
+
 // Kali logo can't be aligned by its natural center but by the circle center
 // formed inside its body curve. This can be easily calculated by the offset
 // ratio defined before.
