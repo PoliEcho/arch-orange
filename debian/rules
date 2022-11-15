@@ -15,3 +15,5 @@ override_dh_install:
 override_dh_installgsettings:
 	# With priority 21 settings overrides kali-defaults (20) and desktop-base (10)
 	dh_installgsettings --priority 21
+	cd debian/kali-themes-phosh/usr/share/glib-2.0/schemas/ && \
+	  mv 21_kali-themes-phosh.gschema.override 22_kali-themes-phosh.gschema.override

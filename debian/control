@@ -95,6 +95,7 @@ Architecture: all
 Depends:
  kali-themes,
  adw-gtk3-kali,
+ ${misc:Depends},
 Description: Configure Phosh desktop to use the Kali theme
  Installing this package should configure Phosh desktop to use the Kali theme
  by default.
