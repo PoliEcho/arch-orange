@@ -121,6 +121,8 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/picom.conf force
 	    install_config_file /etc/xdg/terminator/config force
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/thunar.xml force
+	fi
+	if dpkg --compare-versions "$2" lt "2022.4.4"; then
 	    install_config_file /etc/xdg/xfce-mimeapps.list force
 	fi
 	# Install remaining new files
