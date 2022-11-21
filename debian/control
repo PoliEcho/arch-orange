@@ -94,7 +94,7 @@ Package: kali-themes-mobile
 Architecture: all
 Depends:
  kali-themes,
- kali-wallpapers-mobile-2022,
+ kali-wallpapers-mobile-2023,
  adw-gtk3-kali,
  ${misc:Depends},
 Description: Configure Phosh desktop to use the Kali theme

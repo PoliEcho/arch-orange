@@ -2,7 +2,7 @@
 
 comment="Wallpaper for mobile theme"
 
-if grep -q "${comment}" /usr/share/plasma/desktoptheme/kali/metadata.desktop; then
+if ! grep -q "${comment}" /usr/share/plasma/desktoptheme/kali/metadata.desktop; then
 	cat >> /usr/share/plasma/desktoptheme/kali/metadata.desktop <<- EOF
 	# $comment
 	[Wallpaper]
