@@ -1,0 +1,16 @@
+#!/bin/sh
+
+comment="Wallpaper for mobile theme"
+
+if grep -q "${comment}" /usr/share/plasma/desktoptheme/kali/metadata.desktop; then
+	cat >> /usr/share/plasma/desktoptheme/kali/metadata.desktop <<- EOF
+	# $comment
+	[Wallpaper]
+	defaultWallpaperTheme=NethunterProRedBlue
+	defaultFileSuffix=.png
+	defaultWidth=3800
+	defaultHeight=3800
+	EOF
+fi
+
+#DEBHELPER#

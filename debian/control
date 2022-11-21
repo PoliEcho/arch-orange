@@ -90,10 +90,11 @@ Description: Transitional package to install kali-themes
  This dummy package can be safely removed once kali-themes is installed on the
  system.
 
-Package: kali-themes-phosh
+Package: kali-themes-mobile
 Architecture: all
 Depends:
  kali-themes,
+ kali-wallpapers-mobile-2022,
  adw-gtk3-kali,
  ${misc:Depends},
 Description: Configure Phosh desktop to use the Kali theme
