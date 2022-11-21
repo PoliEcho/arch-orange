@@ -1,3 +1,21 @@
+kali-themes (2022.4.4) kali-dev; urgency=medium
+
+  [ Daniel Ruiz de Alegría ]
+  * Add settings for Phosh shell
+  * Phosh enable scale-to-fit
+  * Update plymouth theme to support smaller displays
+  * Fixes to kali-themes-phosh package
+  * Xfce: fix images are opened with firefox instead of ristretto
+  * KDE: fix default folders in home dir don't get created
+  * Configure package for mobile theme
+  * Rename phosh with mobile
+  * Fixes for kali-themes-mobile
+
+  [ Steev Klimaszewski ]
+  * Add d/watch
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 21 Nov 2022 16:11:04 +0100
+
 kali-themes (2022.4.3) kali-dev; urgency=medium
 
   * Make lintian happy
