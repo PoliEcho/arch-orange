@@ -1,3 +1,8 @@
+[org.gnome.desktop.background]
+picture-options = 'zoom'
+picture-uri = 'file:///usr/share/backgrounds/kali/nethunter-pro-red-blue-1x1.png'
+picture-uri-dark = 'file:///usr/share/backgrounds/kali/nethunter-pro-red-blue-1x1.png'
+
 [org.gnome.desktop.interface]
 icon-theme = 'Adwaita+Flat-Remix-Blue'
 
