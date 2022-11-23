@@ -1,3 +1,9 @@
+kali-themes (2022.4.5) kali-dev; urgency=medium
+
+  * Set nethunter wallpaper for phosh background
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 23 Nov 2022 11:00:05 +0100
+
 kali-themes (2022.4.4) kali-dev; urgency=medium
 
   [ Daniel Ruiz de Alegría ]
