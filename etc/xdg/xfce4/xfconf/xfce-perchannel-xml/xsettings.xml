@@ -19,4 +19,7 @@
     <property name="ButtonImages" type="bool" value="true"/>
     <property name="MenuImages" type="bool" value="true"/>
   </property>
+  <property name="Xfce" type="empty">
+    <property name="SyncThemes" type="bool" value="true"/>
+  </property>
 </channel>
