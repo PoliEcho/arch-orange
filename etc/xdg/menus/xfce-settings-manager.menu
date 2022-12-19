@@ -121,6 +121,9 @@
       </And>
       <Filename>xfce4-settings-editor.desktop</Filename>
     </Include>
+    <Exclude>
+      <Filename>texdoctk.desktop</Filename>
+    </Exclude>
   </Menu>
 
 </Menu>
