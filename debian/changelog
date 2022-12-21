@@ -7,8 +7,9 @@ kali-themes (2023.1.0) kali-dev; urgency=medium
   * Xfce: readjust height of whiskermenu
   * Revert "Xfce: fix duplicated launcher in xfce4-panel (fixes #139)"
   * Force installation of config files
+  * Xfce: Remove catfish shortcuts in thunar
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 21 Dec 2022 10:25:06 +0100
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 21 Dec 2022 10:36:17 +0100
 
 kali-themes (2022.4.5) kali-dev; urgency=medium
 
