@@ -1,3 +1,15 @@
+kali-themes (2023.1.0) kali-dev; urgency=medium
+
+  * Xfce: panel vpn script show also ip for tap interfaces
+  * Xfce: enable theme sync for gtk and xfwm themes
+  * Xfce: exclude texdoctk in settings panel
+  * Xfce: update panel clock settings for 4.18
+  * Xfce: readjust height of whiskermenu
+  * Revert "Xfce: fix duplicated launcher in xfce4-panel (fixes #139)"
+  * Force installation of config files
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 21 Dec 2022 10:25:06 +0100
+
 kali-themes (2022.4.5) kali-dev; urgency=medium
 
   * Set nethunter wallpaper for phosh background
