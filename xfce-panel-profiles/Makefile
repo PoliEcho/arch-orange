@@ -14,4 +14,6 @@ clean:
 
 install:
 	install -d $(DESTDIR)/$(dir)
-	$(INSTALL_DATA) $(wildcard *.tar.bz2) $(DESTDIR)/$(dir)
+	$(INSTALL_DATA) *.tar.bz2 $(DESTDIR)/$(dir)
+
+include ../Makefile.inc
