@@ -1,0 +1,53 @@
+/configver 2
+/panels [<1>]
+/panels/panel-1/icon-size uint32 22
+/panels/panel-1/length uint32 100
+/panels/panel-1/plugin-ids [<1>, <2>, <3>, <4>, <5>, <6>, <7>, <8>, <900>, <10>, <11>, <12>, <14>, <15>, <16>, <17>, <18>, <19>, <20>, <21>, <2200>]
+/panels/panel-1/position 'p=6;x=0;y=0'
+/panels/panel-1/position-locked true
+/panels/panel-1/size uint32 28
+/plugins/plugin-1 'whiskermenu'
+/plugins/plugin-10 'separator'
+/plugins/plugin-11 'tasklist'
+/plugins/plugin-11/grouping uint32 1
+/plugins/plugin-11/middle-click uint32 1
+/plugins/plugin-11/show-handle false
+/plugins/plugin-11/show-labels false
+/plugins/plugin-12 'separator'
+/plugins/plugin-12/expand true
+/plugins/plugin-12/style uint32 0
+/plugins/plugin-14 'systray'
+/plugins/plugin-14/size-max uint32 22
+/plugins/plugin-14/square-icons true
+/plugins/plugin-14/symbolic-icons true
+/plugins/plugin-15 'genmon'
+/plugins/plugin-16 'pulseaudio'
+/plugins/plugin-16/enable-keyboard-shortcuts true
+/plugins/plugin-17 'notification-plugin'
+/plugins/plugin-18 'power-manager-plugin'
+/plugins/plugin-19 'clock'
+/plugins/plugin-19/digital-layout uint32 3
+/plugins/plugin-19/digital-time-font 'Cantarell 11'
+/plugins/plugin-19/digital-time-format '%_H:%M'
+/plugins/plugin-2 'separator'
+/plugins/plugin-20 'separator'
+/plugins/plugin-20/style uint32 0
+/plugins/plugin-21 'separator'
+/plugins/plugin-2200 'actions'
+/plugins/plugin-2200/appearance uint32 0
+/plugins/plugin-2200/items [<'-lock-screen'>, <'-switch-user'>, <'-separator'>, <'-suspend'>, <'-hibernate'>, <'-hybrid-sleep'>, <'-separator'>, <'-shutdown'>, <'-restart'>, <'-separator'>, <'+logout'>, <'-logout-dialog'>]
+/plugins/plugin-3 'showdesktop'
+/plugins/plugin-4 'directorymenu'
+/plugins/plugin-4/base-directory '/home/kali'
+/plugins/plugin-4/icon-name 'system-file-manager'
+/plugins/plugin-5 'launcher'
+/plugins/plugin-5/items [<'16732569921.desktop'>]
+/plugins/plugin-6 'launcher'
+/plugins/plugin-6/items [<'16732569922.desktop'>]
+/plugins/plugin-7 'launcher'
+/plugins/plugin-7/items [<'16732569923.desktop'>, <'16732569924.desktop'>, <'16732569925.desktop'>]
+/plugins/plugin-7/move-first true
+/plugins/plugin-8 'separator'
+/plugins/plugin-900 'pager'
+/plugins/plugin-900/miniature-view true
+/plugins/plugin-900/rows uint32 2

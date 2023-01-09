@@ -1,4 +1,4 @@
-SUBDIRS=emblems kali-logos
+SUBDIRS=emblems kali-logos xfce-panel-profiles
 DESKTOP_BACKGROUND=kali-layers
 LOGIN_BACKGROUND=kali-actiniaria
 
