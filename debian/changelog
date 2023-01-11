@@ -1,3 +1,14 @@
+kali-themes (2023.1.1) kali-dev; urgency=medium
+
+  * Xfce: Improve wording of autostart file that mutes motherboard beep
+  * Xfce: add custom kali panel layouts for xfce4-panel-profiles
+  * Fix xfce-panel-profiles/Makefile
+  * Symlink xubuntu-logo-menu.svg to kali panel icon
+  * Xfce: rename panel profile 'Kali Light' as 'Kali Slim'
+  * Xfce: rename panel profile 'Kali Light' as 'Kali compact'
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 11 Jan 2023 11:23:43 +0100
+
 kali-themes (2023.1.0) kali-dev; urgency=medium
 
   * Xfce: panel vpn script show also ip for tap interfaces
