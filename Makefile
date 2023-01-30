@@ -1,6 +1,6 @@
 SUBDIRS=emblems kali-logos xfce-panel-profiles
 DESKTOP_BACKGROUND=kali-layers
-LOGIN_BACKGROUND=kali-actiniaria
+LOGIN_BACKGROUND=kali-laminaria
 
 build:
 	bin/update-default-backgrounds $(DESKTOP_BACKGROUND) $(LOGIN_BACKGROUND)
