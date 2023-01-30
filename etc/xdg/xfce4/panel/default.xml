@@ -110,7 +110,7 @@
     <property name="plugin-14" type="string" value="systray">
       <property name="size-max" type="uint" value="22"/>
       <property name="square-icons" type="bool" value="true"/>
-      <property name="symbolic-icons" type="bool" value="true"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
     </property>
     <property name="plugin-15" type="string" value="genmon"/>
     <property name="plugin-16" type="string" value="pulseaudio"/>
