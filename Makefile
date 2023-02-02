@@ -1,5 +1,5 @@
 SUBDIRS=emblems kali-logos xfce-panel-profiles
-DESKTOP_BACKGROUND=kali-layers
+DESKTOP_BACKGROUND=kali-moto
 LOGIN_BACKGROUND=kali-laminaria
 
 build:
