@@ -1,3 +1,20 @@
+kali-themes (2023.1.2) kali-dev; urgency=medium
+
+  * Xfce: set lightdm themes to dark
+  * New boot background
+  * Optimize boot images
+  * Grub: make timeout label visible with new background
+  * Revert "Xfce: set lightdm themes to dark"
+  * Configure new login background
+  * Set dependency for new wallpapers package
+  * Xfce: use non-symbolic icons in systray
+  * Improve monospace colors in cherrytree
+  * Add open-terminal-here shortcut for nautilus
+  * Set kali-moto as default background
+  * Make lintian happy
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 06 Feb 2023 11:40:38 +0100
+
 kali-themes (2023.1.1) kali-dev; urgency=medium
 
   * Xfce: Improve wording of autostart file that mutes motherboard beep
