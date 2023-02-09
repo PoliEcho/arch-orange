@@ -61,6 +61,7 @@ Depends:
  fonts-firacode,
  gtk2-engines-pixbuf,
  kali-themes-common (= ${source:Version}),
+ kde-style-breeze,
  librsvg2-common,
  plymouth-label,
  ${misc:Depends},
