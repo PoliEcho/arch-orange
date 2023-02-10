@@ -101,3 +101,16 @@ Depends:
 Description: Configure Phosh desktop to use the Kali theme
  Installing this package should configure Phosh desktop to use the Kali theme
  by default.
+
+Package: kali-themes-purple
+Architecture: all
+Depends:
+ kali-themes,
+ ${misc:Depends},
+Description: Configure all desktops to use the Kali Purple theme
+ Installing this package should configure most desktops to use the Kali Purple
+ theme by default.
+ .
+ The actual artwork files are provided by kali-themes-common but this package
+ provides configuration files and other settings for each desktop so that
+ they use the Kali Purple theme by default.
