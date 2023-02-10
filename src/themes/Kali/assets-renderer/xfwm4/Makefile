@@ -10,7 +10,7 @@ build: $(ASSETS)
 	for src_file in $(ASSETS); \
 	do \
 		variant=$$(basename $${src_file%.svg}) ; \
-		mkdir -p $$variant $$variant@1.5 $$variant@2 ; \
+		mkdir -p $$variant $$variant@2 ; \
 		for i in $$(xargs < $(INDEX)) ; \
 		do \
 			echo ; \
@@ -28,18 +28,14 @@ build: $(ASSETS)
 			&& $(OPTIPNG) $$variant@2/$$i.png ; \
 		done ; \
 	done
-	mkdir -p $(THEMES_DIR)Kali-Light/xfwm4/
-	mkdir -p $(THEMES_DIR)Kali-Dark/xfwm4/
-	mkdir -p $(THEMES_DIR)Kali-Light-HiDPI/xfwm4/
-	mkdir -p $(THEMES_DIR)Kali-Dark-HiDPI/xfwm4/
-	mkdir -p $(THEMES_DIR)Kali-Light-xHiDPI/xfwm4/
-	mkdir -p $(THEMES_DIR)Kali-Dark-xHiDPI/xfwm4/
-	cp assets-light/* $(THEMES_DIR)Kali-Light/xfwm4/
-	cp assets-dark/* $(THEMES_DIR)Kali-Dark/xfwm4/
-	cp assets-light@1.5/* $(THEMES_DIR)Kali-Light-HiDPI/xfwm4/
-	cp assets-dark@1.5/* $(THEMES_DIR)Kali-Dark-HiDPI/xfwm4/
-	cp assets-light@2/* $(THEMES_DIR)Kali-Light-xHiDPI/xfwm4/
-	cp assets-dark@2/* $(THEMES_DIR)Kali-Dark-xHiDPI/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Dark/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light-xHiDPI/xfwm4/
+	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Dark-xHiDPI/xfwm4/
+	cp assets-light/* $(THEMES_DIR)Kali$(VARIANT)-Light/xfwm4/
+	cp assets-dark/* $(THEMES_DIR)Kali$(VARIANT)-Dark/xfwm4/
+	cp assets-light@2/* $(THEMES_DIR)Kali$(VARIANT)-Light-xHiDPI/xfwm4/
+	cp assets-dark@2/* $(THEMES_DIR)Kali$(VARIANT)-Dark-xHiDPI/xfwm4/
 
 clean:
-	-rm -r assets-light assets-light@1.5 assets-light@2 assets-dark assets-dark@1.5 assets-dark@2
+	-rm -r assets-light assets-light@2 assets-dark assets-dark@2

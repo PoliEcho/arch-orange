@@ -1,0 +1,1 @@
+../../../Kali/assets-renderer/xfwm4/assets.txt

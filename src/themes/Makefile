@@ -1,4 +1,4 @@
-THEME_SRC=Kali/
+THEME_SRC=Kali-Purple/
 SUBDIRS=$(foreach SUBDIR,gtk2 gtk3 xfwm4,assets-renderer/$(SUBDIR)) sass
 
 .PHONY: build $(SUBDIRS) clean
@@ -6,7 +6,8 @@ SUBDIRS=$(foreach SUBDIR,gtk2 gtk3 xfwm4,assets-renderer/$(SUBDIR)) sass
 build: $(SUBDIRS)
 
 $(SUBDIRS):
-	$(MAKE) -C $(THEME_SRC)$@ build
+	$(MAKE) -C Kali/$@ build
+	$(MAKE) -C Kali-Purple/$@ build VARIANT='-Purple'
 
 clean:
-	$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(THEME_SRC)$(SUBDIR) clean &&) true
+	$(foreach THEME_SRC,Kali Kali-Purple,$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(THEME_SRC)/$(SUBDIR) clean &&)) true

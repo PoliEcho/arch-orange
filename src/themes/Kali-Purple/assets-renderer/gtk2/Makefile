@@ -1,0 +1,1 @@
+../../../Kali/assets-renderer/gtk2/Makefile
