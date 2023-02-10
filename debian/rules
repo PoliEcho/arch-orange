@@ -16,5 +16,6 @@ override_dh_installgsettings:
 	# With priority 21 settings overrides kali-defaults (20) and desktop-base (10)
 	dh_installgsettings --priority 21
 	cd debian/kali-themes-mobile/usr/share/glib-2.0/schemas/ && \
-	  mv 21_kali-themes-mobile.gschema.override 22_kali-themes-mobile.gschema.override && \
+	  mv 21_kali-themes-mobile.gschema.override 22_kali-themes-mobile.gschema.override
+	cd debian/kali-themes-purple/usr/share/glib-2.0/schemas/ && \
 	  mv 21_kali-themes-purple.gschema.override 22_kali-themes-purple.gschema.override
