@@ -1,10 +1,10 @@
 [org.gnome.desktop.interface]
 color-scheme = 'prefer-light'
-gtk-theme = 'adw-gtk3-light'
+gtk-theme = 'adw-gtk3'
 icon-theme = 'Flat-Remix-Purple-Light'
 
 [org.gnome.desktop.wm.preferences]
-theme = 'adw-gtk3-light'
+theme = 'adw-gtk3'
 
 [org.gnome.gedit.preferences.editor]
 scheme = 'Kali-Light'
