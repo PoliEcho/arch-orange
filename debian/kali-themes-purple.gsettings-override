@@ -1,0 +1,24 @@
+[org.gnome.desktop.interface]
+color-scheme = 'prefer-light'
+gtk-theme = 'adw-gtk3-light'
+icon-theme = 'Flat-Remix-Purple-Light'
+
+[org.gnome.desktop.wm.preferences]
+theme = 'adw-gtk3-light'
+
+[org.gnome.gedit.preferences.editor]
+scheme = 'Kali-Light'
+
+[org.gnome.TextEditor]
+style-scheme = 'Kali-Light'
+
+[org.gnome.shell.extensions.user-theme]
+name = 'Kali-Purple-Light'
+
+[org.gnome.Terminal.Legacy.Settings]
+theme-variant = 'light'
+
+# Configuration for xfce's text-editor
+[org.xfce.mousepad.preferences.view]
+color-scheme = 'Kali-Light'
+
