@@ -21,11 +21,11 @@ IntensityEffect=0
 [Colors:Button]
 BackgroundAlternate=35,37,46
 BackgroundNormal=35, 37, 46
-DecorationFocus=39,119,255
-DecorationHover=39,119,255
+DecorationFocus=164,0,164
+DecorationHover=164,0,164
 ForegroundActive=74,174,230
 ForegroundInactive=92,98,108
-ForegroundLink=39,119,255
+ForegroundLink=164,0,164
 ForegroundNegative=212,25,25
 ForegroundNeutral=253,125,0
 ForegroundNormal=255,255,255
@@ -34,7 +34,7 @@ ForegroundVisited=92,98,108
 
 [Colors:Selection]
 BackgroundAlternate=43,98,192
-BackgroundNormal=39,119,255
+BackgroundNormal=164,0,164
 DecorationFocus=38,86,168
 DecorationHover=38,86,168
 ForegroundActive=255,255,255
@@ -49,11 +49,11 @@ ForegroundVisited=204,204,204
 [Colors:Tooltip]
 BackgroundAlternate=51,51,51
 BackgroundNormal=35, 37, 46
-DecorationFocus=39,119,255
+DecorationFocus=164,0,164
 DecorationHover=43,98,192
 ForegroundActive=74,174,230
 ForegroundInactive=92,98,108
-ForegroundLink=39,119,255
+ForegroundLink=164,0,164
 ForegroundNegative=212,25,25
 ForegroundNeutral=253,125,0
 ForegroundNormal=255,255,255
@@ -63,11 +63,11 @@ ForegroundVisited=92,98,108
 [Colors:View]
 BackgroundAlternate=35,37,46
 BackgroundNormal=35, 37, 46
-DecorationFocus=39,119,255
-DecorationHover=39,119,255
+DecorationFocus=164,0,164
+DecorationHover=164,0,164
 ForegroundActive=74,174,230
 ForegroundInactive=92,98,108
-ForegroundLink=39,119,255
+ForegroundLink=164,0,164
 ForegroundNegative=212,25,25
 ForegroundNeutral=253,125,0
 ForegroundNormal=255,255,255
@@ -77,11 +77,11 @@ ForegroundVisited=92,98,108
 [Colors:Window]
 BackgroundAlternate=35,37,46
 BackgroundNormal=35, 37, 46
-DecorationFocus=39,119,255
-DecorationHover=39,119,255
+DecorationFocus=164,0,164
+DecorationHover=164,0,164
 ForegroundActive=74,174,230
 ForegroundInactive=92,98,108
-ForegroundLink=39,119,255
+ForegroundLink=164,0,164
 ForegroundNegative=212,25,25
 ForegroundNeutral=253,125,0
 ForegroundNormal=255,255,255
@@ -91,8 +91,6 @@ ForegroundVisited=92,98,108
 [General]
 fixed=Fira Code,10,-1,5,50,0,0,0,0,0,Regular
 BrowserApplication=default-browser.desktop
-ColorScheme=KaliLight
-Name=Kali-Light
 shadeSortColumn=true
 widgetStyle=Breeze
 
