@@ -1,3 +1,8 @@
+[org.gnome.desktop.background]
+picture-options = 'zoom'
+picture-uri = 'file:///usr/share/backgrounds/kali/kali-purple.xml'
+picture-uri-dark = 'file:///usr/share/backgrounds/kali/kali-purple.xml'
+
 [org.gnome.desktop.interface]
 color-scheme = 'prefer-light'
 gtk-theme = 'adw-gtk3'
