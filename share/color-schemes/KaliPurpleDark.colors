@@ -19,8 +19,8 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=246,246,246
-BackgroundNormal=255,255,255
+BackgroundAlternate=35,37,46
+BackgroundNormal=35, 37, 46
 DecorationFocus=164,0,164
 DecorationHover=164,0,164
 ForegroundActive=74,174,230
@@ -28,7 +28,7 @@ ForegroundInactive=92,98,108
 ForegroundLink=164,0,164
 ForegroundNegative=212,25,25
 ForegroundNeutral=253,125,0
-ForegroundNormal=0,0,0
+ForegroundNormal=255,255,255
 ForegroundPositive=25,161,135
 ForegroundVisited=92,98,108
 
@@ -48,7 +48,7 @@ ForegroundVisited=204,204,204
 
 [Colors:Tooltip]
 BackgroundAlternate=51,51,51
-BackgroundNormal=39,42,52
+BackgroundNormal=35, 37, 46
 DecorationFocus=164,0,164
 DecorationHover=43,98,192
 ForegroundActive=74,174,230
@@ -61,8 +61,8 @@ ForegroundPositive=25,161,135
 ForegroundVisited=92,98,108
 
 [Colors:View]
-BackgroundAlternate=246,246,246
-BackgroundNormal=255,255,255
+BackgroundAlternate=35,37,46
+BackgroundNormal=35, 37, 46
 DecorationFocus=164,0,164
 DecorationHover=164,0,164
 ForegroundActive=74,174,230
@@ -70,13 +70,13 @@ ForegroundInactive=92,98,108
 ForegroundLink=164,0,164
 ForegroundNegative=212,25,25
 ForegroundNeutral=253,125,0
-ForegroundNormal=0,0,0
+ForegroundNormal=255,255,255
 ForegroundPositive=25,161,135
 ForegroundVisited=92,98,108
 
 [Colors:Window]
-BackgroundAlternate=246,246,246
-BackgroundNormal=255,255,255
+BackgroundAlternate=35,37,46
+BackgroundNormal=35, 37, 46
 DecorationFocus=164,0,164
 DecorationHover=164,0,164
 ForegroundActive=74,174,230
@@ -84,23 +84,17 @@ ForegroundInactive=92,98,108
 ForegroundLink=164,0,164
 ForegroundNegative=212,25,25
 ForegroundNeutral=253,125,0
-ForegroundNormal=0,0,0
+ForegroundNormal=255,255,255
 ForegroundPositive=25,161,135
 ForegroundVisited=92,98,108
 
 [General]
-fixed=Fira Code,10,-1,5,50,0,0,0,0,0,Regular
-BrowserApplication=default-browser.desktop
+ColorScheme=Kali-Dark
+Name=Kali-Dark
 shadeSortColumn=true
-widgetStyle=Breeze
-
-[Icons]
-Theme=Flat-Remix-Purple-Light
 
 [KDE]
-LookAndFeelPackage=Kali-Purple-Light
 contrast=4
-widgetStyle=Breeze
 
 [WM]
 activeBackground=35, 37, 46
