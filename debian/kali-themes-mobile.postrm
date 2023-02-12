@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+PLASMA_DESKTOP_FILE=/usr/share/plasma/desktoptheme/kali/metadata.desktop
+
+if [ "$1" = "remove" ]; then
+    rm -f "${PLASMA_DESKTOP_FILE}"
+    dpkg-divert --rename --package kali-themes-mobile \
+        --divert "${PLASMA_DESKTOP_FILE}.original" \
+        --remove "${PLASMA_DESKTOP_FILE}"
+fi
+
+#DEBHELPER#
