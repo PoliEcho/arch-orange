@@ -146,7 +146,7 @@ kali-themes (2022.2.3) kali-dev; urgency=medium
   * Gnome-Shell: generate new gnome themes
   * Gnome-Shell: reduce font size
   * Gnome-Shell: update theme tweaks for search-entry, search-results, and 
-    window-picker
+  window-picker
   * Gnome-Shell: remove border to search results
   * Gnome-Shell: update slider theme tweaks
   * Gnome-Shell: remove workspaces-switcher theme tweaks

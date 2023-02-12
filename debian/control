@@ -9,7 +9,7 @@ Build-Depends:
  debhelper-compat (= 13),
  librsvg2-bin,
  optipng,
-Standards-Version: 4.6.1
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Vcs-Git: https://gitlab.com/kalilinux/packages/kali-themes.git
 Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes

@@ -1,0 +1,1 @@
+package-contains-file-in-etc-skel [etc/skel/.config/*]
