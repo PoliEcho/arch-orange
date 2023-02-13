@@ -1,3 +1,29 @@
+kali-themes (2023.1.3) kali-dev; urgency=medium
+
+  * Qt: set breeze as default theme
+  * Add config for alacritty
+  * Icons: Add Flat-Remix Purple variant
+  * Add Kali Purple themes
+  * Qt: add themes for Kali Purple
+  * gsettings for Kali Purple
+  * Revert "Qt: set breeze as default theme"
+  * Set kali-themes-purple package layout
+  * Add Kali Purple settings
+  * Fix Kali Purple themes for GNOME
+  * Fix debian/rules
+  * Fix name of adw-gtk3 theme
+  * Configure background for kali purple in all desktops
+  * Set symlink for kali purple background on xfce
+  * KDE: set color-scheme for Kali Purple
+  * Some package fixes
+  * Add Kali Purple themes for KDE Plasma
+  * KDE: tweak Kali Purple themes
+  * Configure all terminals for Kali Purple themes
+  * Make piuparts happy
+  * Force install config files
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 13 Feb 2023 12:19:12 +0100
+
 kali-themes (2023.1.2) kali-dev; urgency=medium
 
   * Xfce: set lightdm themes to dark
@@ -146,7 +172,7 @@ kali-themes (2022.2.3) kali-dev; urgency=medium
   * Gnome-Shell: generate new gnome themes
   * Gnome-Shell: reduce font size
   * Gnome-Shell: update theme tweaks for search-entry, search-results, and 
-  window-picker
+    window-picker
   * Gnome-Shell: remove border to search results
   * Gnome-Shell: update slider theme tweaks
   * Gnome-Shell: remove workspaces-switcher theme tweaks
