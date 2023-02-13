@@ -7,6 +7,7 @@ FILES_TO_DIVERT="
 /etc/lightdm/lightdm-gtk-greeter.conf
 /etc/plymouth/plymouthd.conf
 /etc/sddm.conf.d/kde_settings.conf
+/etc/xdg/alacritty/alacritty.yml
 /etc/xdg/compton.conf
 /etc/xdg/gtk-3.0/settings.ini
 /etc/xdg/kdeglobals
@@ -117,9 +118,12 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/menus/xfce-settings-manager.menu force
 	    install_config_file /etc/xdg/Thunar/accels.scm force
 	    install_config_file /etc/xdg/Thunar/uca.xml force
-	    install_config_file /etc/xdg/xfce4/panel/default.xml force
 	    install_config_file /etc/xdg/xfce4/whiskermenu/defaults.rc force
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml force
+	fi
+	if dpkg --compare-versions "$2" lt "2023.1.3"; then
+	    install_config_file /etc/xdg/alacritty/alacritty.yml force
+	    install_config_file /etc/xdg/xfce4/panel/default.xml force
 	fi
 	# Install remaining new files
 	install_all
