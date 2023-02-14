@@ -94,7 +94,7 @@ Description: Transitional package to install kali-themes
 Package: kali-themes-mobile
 Architecture: all
 Depends:
- kali-themes,
+ kali-themes (= ${source:Version}),
  kali-wallpapers-mobile-2023,
  adw-gtk3-kali,
  ${misc:Depends},
@@ -105,7 +105,7 @@ Description: Configure Phosh desktop to use the Kali theme
 Package: kali-themes-purple
 Architecture: all
 Depends:
- kali-themes,
+ kali-themes (= ${source:Version}),
  ${misc:Depends},
 Description: Configure all desktops to use the Kali Purple theme
  Installing this package should configure most desktops to use the Kali Purple
