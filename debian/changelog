@@ -1,3 +1,9 @@
+kali-themes (2023.1.5) kali-dev; urgency=medium
+
+  * Icons: Add Purple variant for kali-menu icon
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 17 Feb 2023 16:59:50 +0100
+
 kali-themes (2023.1.4) kali-dev; urgency=medium
 
   * Remove trailing whitespace in changelog
