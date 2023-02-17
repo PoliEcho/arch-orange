@@ -33,7 +33,7 @@ files are stored in /usr/share/kali-themes/etc/ and copied in their
 target location by the postinst script (see debian/kali-themes.postinst).
 
 When you add a new file that needs to be diverted, you can update
-the list in "files-to-divert" and run "debian/update-maintainer-scripts"
+the list in "files-to-divert" and run "bin/update-maintainer-scripts"
 to update the list of files in the 3 maintainer scripts.
 
 ## wallpapers
