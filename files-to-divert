@@ -5,6 +5,7 @@
 /etc/xdg/alacritty/alacritty.yml
 /etc/xdg/compton.conf
 /etc/xdg/gtk-3.0/settings.ini
+/etc/xdg/kcm-about-distrorc
 /etc/xdg/kdeglobals
 /etc/xdg/kickoffrc
 /etc/xdg/konsolerc
