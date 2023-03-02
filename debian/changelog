@@ -1,3 +1,11 @@
+kali-themes (2023.1.6) kali-dev; urgency=medium
+
+  * KDE: xdg-user-dirs fix is now included in desktop-base
+  * Divert kcm-about-distrorc from desktop-base to show Kali instead of Debian
+  * KDE: dirty fix for blurry background image
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 02 Mar 2023 17:32:42 +0100
+
 kali-themes (2023.1.5) kali-dev; urgency=medium
 
   * Icons: Add Purple variant for kali-menu icon
