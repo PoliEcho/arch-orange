@@ -87,7 +87,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
     # Some people use the *-bin packages without using GRUB as bootloader
     # (see #851893 for more context).
     if dpkg-query --list "grub-*" | grep -v "^... grub\(-common\|-emu\|[^[:space:]]*\(-bin\|-doc\)\)" | grep -q "^[ih][HUFWti] " \
-            && which update-grub > /dev/null ; then
+            && command -v update-grub > /dev/null ; then
         # Ensure the background image file has actually been written to disc
         # before updating.
         sync
@@ -98,7 +98,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
         update-grub || echo "Updating grub failed, report success anyway!"
     fi
 
-    if which update-initramfs > /dev/null; then
+    if command -v update-initramfs > /dev/null; then
         update-initramfs -u
     fi
 

@@ -160,11 +160,11 @@ if [ "$1" = "configure" ]; then
         sed -i 's/grub-16x9\.png/grub-4x3.png/' /boot/grub/themes/kali/theme.txt
     fi
     # Rebuild the grub configuration with our config changes
-    if which update-grub >/dev/null; then
+    if command -v update-grub >/dev/null; then
 	update-grub || true
     fi
     # Rebuild the initrd for plymouth
-    if which update-initramfs >/dev/null; then
+    if command -v update-initramfs >/dev/null; then
 	update-initramfs -u
     fi
 fi
