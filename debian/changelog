@@ -1,3 +1,14 @@
+kali-themes (2023.1.7) kali-dev; urgency=medium
+
+  [ Arnaud Rebillout ]
+  * Replace 'which' with 'command -v'
+
+  [ Daniel Ruiz de Alegría ]
+  * Revert "KDE: dirty fix for blurry background image"
+  * KDE: fix purple theme configuration
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 09 Mar 2023 13:11:22 +0100
+
 kali-themes (2023.1.6) kali-dev; urgency=medium
 
   * KDE: xdg-user-dirs fix is now included in desktop-base
