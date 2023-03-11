@@ -1,3 +1,9 @@
+kali-themes (2023.1.8) kali-dev; urgency=medium
+
+  * Fix purple themes
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Sat, 11 Mar 2023 10:02:06 +0100
+
 kali-themes (2023.1.7) kali-dev; urgency=medium
 
   [ Arnaud Rebillout ]
