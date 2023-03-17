@@ -1,10 +1,12 @@
 include ../../Makefile.inc
 
 THEMES_DIR=../../../../share/themes/
+TARGETS=$(patsubst %.scss, %.css, $(wildcard *.scss))
 
 .PHONY: build clean
 
-build: clean $(patsubst %.scss, %.css, $(wildcard *.scss))
+build: clean
+	$(MAKE) $(TARGETS)
 	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light/gtk-3.0/
 	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-3.0/
 	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light/gtk-4.0/

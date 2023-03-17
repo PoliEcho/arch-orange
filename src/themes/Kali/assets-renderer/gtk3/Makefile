@@ -32,9 +32,9 @@ build: $(SRC_FILE)
 	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light/gtk-3.0/
 	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light/gtk-4.0/
 	cp assets/* $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-3.0/assets/
-	ln -nrsvf $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali-Light/gtk-3.0/assets
-	ln -nrsvf $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali-Dark/gtk-4.0/assets
-	ln -nrsvf $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali-Light/gtk-4.0/assets
+	ln -nrsvf $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali$(VARIANT)-Light/gtk-3.0/assets
+	ln -nrsvf $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-4.0/assets
+	ln -nrsvf $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-3.0/assets/ $(THEMES_DIR)Kali$(VARIANT)-Light/gtk-4.0/assets
 
 clean:
 	-rm -r $(ASSETS_DIR)
