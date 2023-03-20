@@ -1,3 +1,9 @@
+kali-themes (2023.2.0) kali-dev; urgency=medium
+
+  * Fix Makefile scripts
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 20 Mar 2023 17:30:03 +0100
+
 kali-themes (2023.1.8) kali-dev; urgency=medium
 
   * Fix purple themes
