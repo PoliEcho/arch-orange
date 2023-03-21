@@ -1,5 +1,11 @@
-$overview_transparent_bg: transparentize(white, .9);
 $dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
+
+%overview-transparent-bg {
+  $_overview_transparent_bg: transparentize(white, .9); 
+
+  background-color: $_overview_transparent_bg;
+  box-shadow: inset 0 0 0 1px $_overview_transparent_bg;
+}
 
 // Dropshadow for large icons
 .icon-dropshadow {
@@ -132,11 +138,11 @@ $dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
 /* Search */
 // search entry
 .search-entry {
+  @extend %overview-transparent-bg;
   $_text-shadow: 0px 1px 2px transparentize(black, 0.5);
   color: black;
   text-shadow: $_text-shadow;
   font-weight: bold;
-  background-color: $overview_transparent_bg;
   font-size: 1.1em;
   transition-duration: 200ms;
 
@@ -171,8 +177,7 @@ $dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
 
 // search results
 .search-section-content {
-  background-color: $overview_transparent_bg;
-  box-shadow: inset 0 0 0 1px $overview_transparent_bg;
+  @extend %overview-transparent-bg;
 }
 
 // search result provider
@@ -191,13 +196,35 @@ $dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
   }
 }
 
-.dash-background, .dash-separator { background: $overview_transparent_bg; }
+.dash-background, .dash-separator {
+  @extend %overview-transparent-bg;
+}
 
 /* App Grid */
+#overview { color: $osd_fg_color; }
+
 // Icon tiles in the app grid
-.app-well-app { color: white; }
+.app-well-app.app-folder {
+  @include overview_icon(white, $flat: false);
+  .overview-icon {
+    @extend %overview-transparent-bg;
+  }
+}
 
 .app-folder-dialog {
   background: black;
-  box-shadow: 0 0 20px lighten(black, 1%);
+  box-shadow: 0 0 100px lighten(black, 4%);
+
+  & .folder-name-container .folder-name-entry { color: white; }
 }
+
+/* Workspace pager */
+// thumbnails in overview
+.workspace-thumbnails {
+  .workspace-thumbnail {
+    @extend %overview-transparent-bg;
+  }
+}
+
+// selected indicator
+.workspace-thumbnail-indicator { border: 2px solid white; }
