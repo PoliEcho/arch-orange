@@ -134,6 +134,14 @@ $dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
 .datemenu-today-button {
   &:insensitive { color: inherit; }
 }
+/* Quick Settings */
+.quick-toggle-menu {
+  & .header {
+    & .icon {
+      &.active { color: $selected_fg_color; }
+    }
+  }
+}
 
 /* Search */
 // search entry
