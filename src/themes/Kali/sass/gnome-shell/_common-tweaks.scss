@@ -138,30 +138,27 @@ $dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
 /* Search */
 // search entry
 .search-entry {
-  @extend %overview-transparent-bg;
   $_text-shadow: 0px 1px 2px transparentize(black, 0.5);
-  color: black;
-  text-shadow: $_text-shadow;
-  font-weight: bold;
+
+  @extend %overview-transparent-bg;
+
+  width: 21em;
+  padding: .6em .8em;
   font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  text-shadow: $_text-shadow;
   transition-duration: 200ms;
 
-  StLabel.hint-text { color: $osd_fg_color; }
-
-  &, &:focus, &:hover {
-    width: 21em;
-    padding: .6em .8em;
-    border: none;
-  }
+  &, StLabel.hint-text { color: $osd_fg_color; }
 
   &:focus, &:hover {
     background-color: white;
-    color: black;
     font-weight: normal;
     box-shadow: none;
     text-shadow: none;
 
-    StLabel.hint-text { color: black; }
+    &, StLabel.hint-text { color: black; }
 
     .search-entry-icon {
       color: black;
