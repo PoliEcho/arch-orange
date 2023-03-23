@@ -65,7 +65,8 @@ Depends:
  plymouth-label,
  ${misc:Depends},
 Breaks:
- gnome-shell (<< 44.0),
+ gnome-shell (>= ${gnome:NextVersion}),
+ gnome-shell (<< ${gnome:Version}),
  kali-defaults (<< 2019.4.0),
  kali-desktop-xfce (<< 2020.2.18),
  kali-menu (<< 2019.4.4),
