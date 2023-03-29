@@ -1,3 +1,19 @@
+kali-themes (2023.2.1) kali-experimental; urgency=medium
+
+  * Gnome-Shell: sync upstream
+  * Gnome-Shell: add missing color variables
+  * Gnome-Shell: update search result
+  * Gnome-Shell: update dashboard and icon-grid
+  * Gnome-Shell: sync _colors.scss with upstream changes
+  * Gnome-Shell: regenerate themes
+  * Set min version for gnome-shell
+  * Gnome-Shell: update search entry
+  * Gnome-Shell: fix icon color in quick settings using light theme
+  * Use gnome:Version and gnome:NextVersion variables for 'Breaks' conditions
+  * Better use numbered gnome-shell versions in 'Breaks' conditions
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 29 Mar 2023 23:28:04 +0200
+
 kali-themes (2023.2.0) kali-dev; urgency=medium
 
   * Fix Makefile scripts
