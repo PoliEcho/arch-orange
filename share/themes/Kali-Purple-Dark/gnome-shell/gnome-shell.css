@@ -2827,26 +2827,27 @@ StScrollBar {
 .datemenu-today-button:insensitive {
   color: inherit; }
 
+/* Quick Settings */
+.quick-toggle-menu .header .icon.active {
+  color: #ffffff; }
+
 /* Search */
 .search-entry {
-  color: black;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-  font-weight: bold;
+  width: 21em;
+  padding: .6em .8em;
   font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   transition-duration: 200ms; }
-  .search-entry StLabel.hint-text {
+  .search-entry, .search-entry StLabel.hint-text {
     color: white; }
-  .search-entry, .search-entry:focus, .search-entry:hover {
-    width: 21em;
-    padding: .6em .8em;
-    border: none; }
   .search-entry:focus, .search-entry:hover {
     background-color: white;
-    color: black;
     font-weight: normal;
     box-shadow: none;
     text-shadow: none; }
-    .search-entry:focus StLabel.hint-text, .search-entry:hover StLabel.hint-text {
+    .search-entry:focus, .search-entry:focus StLabel.hint-text, .search-entry:hover, .search-entry:hover StLabel.hint-text {
       color: black; }
     .search-entry:focus .search-entry-icon, .search-entry:hover .search-entry-icon {
       color: black;
@@ -2868,7 +2869,7 @@ StScrollBar {
     icon-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
 
 /* App Grid */
-#overview {
+#overview, .app-well-app, .grid-search-result {
   color: white; }
 
 .app-well-app.app-folder, .app-folder.grid-search-result {
@@ -2897,9 +2898,14 @@ StScrollBar {
 
 .app-folder-dialog {
   background: black;
+  color: white;
   box-shadow: 0 0 100px #0a0a0a; }
   .app-folder-dialog .folder-name-container .folder-name-entry {
     color: white; }
+
+/* OSD */
+.osd-window, .workspace-switcher {
+  margin-bottom: 128px; }
 
 /* Workspace pager */
 .workspace-thumbnail-indicator {
