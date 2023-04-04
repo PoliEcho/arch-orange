@@ -17,6 +17,9 @@ scheme = 'Kali-Light'
 [org.gnome.TextEditor]
 style-scheme = 'Kali-Light'
 
+[org.gnome.shell]
+favorite-apps = ['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop', 'firefox-esr.desktop']
+
 [org.gnome.shell.extensions.user-theme]
 name = 'Kali-Purple-Light'
 
