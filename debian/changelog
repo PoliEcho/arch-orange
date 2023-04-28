@@ -1,3 +1,9 @@
+kali-themes (2023.2.3) kali-dev; urgency=medium
+
+  * Update icons from kali-menu
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 28 Apr 2023 11:24:22 +0200
+
 kali-themes (2023.2.2) kali-dev; urgency=medium
 
   * Gnome-Shell: minor theme fixes
