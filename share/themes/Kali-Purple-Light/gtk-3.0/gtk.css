@@ -49,7 +49,7 @@
     color: #5c616c;
     background-color: #e6e6e6; }
   .gtkstyle-fallback:disabled {
-    color: #aeb0b6;
+    color: #9da0a7;
     background-color: #fdfdfd; }
   .gtkstyle-fallback:selected {
     color: #ffffff;
@@ -76,7 +76,7 @@ textview text {
   .view text:disabled,
   iconview text:disabled,
   textview text:disabled {
-    color: #aeb0b6;
+    color: #9da0a7;
     background-color: #fdfdfd; }
   .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
   .view text:selected:focus,
@@ -122,7 +122,7 @@ label {
     background-color: #a400a4;
     color: #ffffff; }
   label:disabled {
-    color: #aeb0b6; }
+    color: #9da0a7; }
     button label:disabled {
       color: inherit; }
     label:disabled:backdrop {
@@ -266,7 +266,7 @@ entry {
     border-color: #a400a4; }
   spinbutton:disabled:not(.vertical),
   entry:disabled {
-    color: #aeb0b6;
+    color: #9da0a7;
     border-color: #d9d9d9;
     background-color: #fdfdfd;
     box-shadow: none; }
@@ -580,8 +580,8 @@ button {
     -gtk-icon-shadow: none; }
   notebook > header > tabs > arrow:disabled,
   button:disabled {
-    color: #aeb0b6;
-    border-color: #d9d9d9;
+    color: #9da0a7;
+    border-color: #e6e6e6;
     background-image: image(#fdfdfd);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -589,8 +589,8 @@ button {
     notebook > header > tabs > arrow:disabled:active, notebook > header > tabs > arrow:disabled:checked,
     button:disabled:active,
     button:disabled:checked {
-      color: #aeb0b6;
-      border-color: #d9d9d9;
+      color: #9da0a7;
+      border-color: #e6e6e6;
       background-image: image(#eaeaea);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
   notebook > header > tabs > arrow.image-button,
@@ -879,8 +879,8 @@ button.suggested-action {
     color: rgba(164, 0, 164, 0.8); }
   
   button.suggested-action:disabled {
-    color: #aeb0b6;
-    border-color: #d9d9d9;
+    color: #9da0a7;
+    border-color: #e6e6e6;
     background-image: image(#fdfdfd);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -1025,8 +1025,8 @@ button.destructive-action {
     color: rgba(212, 25, 25, 0.8); }
   
   button.destructive-action:disabled {
-    color: #aeb0b6;
-    border-color: #d9d9d9;
+    color: #9da0a7;
+    border-color: #e6e6e6;
     background-image: image(#fdfdfd);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -1188,15 +1188,15 @@ stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attenti
     text-shadow: none;
     -gtk-icon-shadow: none; }
   .inline-toolbar toolbutton > button:disabled {
-    color: #aeb0b6;
-    border-color: #d9d9d9;
+    color: #9da0a7;
+    border-color: #e6e6e6;
     background-image: image(#fdfdfd);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
     .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked {
-      color: #aeb0b6;
-      border-color: #d9d9d9;
+      color: #9da0a7;
+      border-color: #e6e6e6;
       background-image: image(#eaeaea);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
   .inline-toolbar toolbutton > button:backdrop {
@@ -1438,7 +1438,7 @@ spinbutton {
         color: #5c616c;
         background-color: rgba(92, 97, 108, 0.05); }
       spinbutton:not(.vertical) button:disabled {
-        color: rgba(174, 176, 182, 0.3);
+        color: rgba(157, 160, 167, 0.3);
         background-color: transparent; }
       spinbutton:not(.vertical) button:active {
         background-color: rgba(0, 0, 0, 0.1);
@@ -1513,7 +1513,7 @@ spinbutton {
     .osd spinbutton:not(.vertical) button:dir(rtl):first-child {
       border-radius: 4px 0 0 4px; }
   spinbutton.vertical:disabled {
-    color: #aeb0b6; }
+    color: #9da0a7; }
   spinbutton.vertical:backdrop:disabled {
     color: #d9d9d9; }
   spinbutton.vertical:drop(active) {
@@ -1848,8 +1848,8 @@ headerbar {
           border-color: #580058; }
         .selection-mode .titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode.titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode headerbar button.suggested-action:disabled,
         headerbar.selection-mode button.suggested-action:disabled {
-          color: #aeb0b6;
-          border-color: #d9d9d9;
+          color: #9da0a7;
+          border-color: #e6e6e6;
           background-image: image(#fdfdfd);
           text-shadow: none;
           -gtk-icon-shadow: none;
@@ -2024,7 +2024,7 @@ treeview.view {
     border-left-color: #d280d2;
     border-top-color: rgba(92, 97, 108, 0.1); }
   treeview.view:disabled {
-    color: #aeb0b6; }
+    color: #9da0a7; }
     treeview.view:disabled:selected {
       color: #c866c8; }
       treeview.view:disabled:selected:backdrop {
@@ -2161,7 +2161,7 @@ menubar,
       color: #710071; }
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
-      color: #aeb0b6;
+      color: #9da0a7;
       box-shadow: none; }
   menubar .csd.popup decoration,
   .menubar .csd.popup decoration {
@@ -2199,7 +2199,7 @@ menu,
     menu menuitem:disabled,
     .menu menuitem:disabled,
     .context-menu menuitem:disabled {
-      color: #aeb0b6; }
+      color: #9da0a7; }
       menu menuitem:disabled:backdrop,
       .menu menuitem:disabled:backdrop,
       .context-menu menuitem:disabled:backdrop {
@@ -2671,7 +2671,7 @@ switch {
     background-color: #a400a4;
     text-shadow: 0 1px rgba(88, 0, 88, 0.5), 0 0 2px rgba(255, 255, 255, 0.6); }
   switch:disabled {
-    color: #aeb0b6;
+    color: #9da0a7;
     border-color: #d9d9d9;
     background-color: #fdfdfd;
     text-shadow: none; }
@@ -2713,8 +2713,8 @@ switch {
   switch:checked > slider {
     border: 1px solid #3e003e; }
   switch:disabled slider {
-    color: #aeb0b6;
-    border-color: #d9d9d9;
+    color: #9da0a7;
+    border-color: #e6e6e6;
     background-image: image(#fdfdfd);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -3181,8 +3181,8 @@ scale {
     scale slider:active {
       border-color: #580058; }
     scale slider:disabled {
-      color: #aeb0b6;
-      border-color: #d9d9d9;
+      color: #9da0a7;
+      border-color: #e6e6e6;
       background-image: image(#fdfdfd);
       text-shadow: none;
       -gtk-icon-shadow: none;
@@ -4014,7 +4014,7 @@ expander title > arrow {
   expander title > arrow:hover {
     color: #aaaeb7; }
   expander title > arrow:disabled {
-    color: #aeb0b6; }
+    color: #9da0a7; }
   expander title > arrow:disabled:backdrop {
     color: #d9d9d9; }
   expander title > arrow:checked {
@@ -4039,9 +4039,9 @@ calendar {
     calendar.button:backdrop {
       color: rgba(174, 176, 182, 0.45); }
     calendar.button:disabled {
-      color: rgba(174, 176, 182, 0.45); }
+      color: rgba(157, 160, 167, 0.45); }
   calendar.highlight {
-    color: #aeb0b6; }
+    color: #9da0a7; }
     calendar.highlight:backdrop {
       color: #d9d9d9; }
   calendar:backdrop {
@@ -4144,7 +4144,7 @@ placessidebar row {
   placessidebar row:selected {
     color: #ffffff; }
   placessidebar row:disabled {
-    color: #aeb0b6; }
+    color: #9da0a7; }
   placessidebar row:backdrop {
     color: #aeb0b6; }
     placessidebar row:backdrop:selected {
@@ -4292,8 +4292,8 @@ infobar {
         text-shadow: none;
         -gtk-icon-shadow: none; }
       infobar.info button:disabled, infobar.question button:disabled, infobar.warning button:disabled, infobar.error button:disabled {
-        color: #aeb0b6;
-        border-color: #d9d9d9;
+        color: #9da0a7;
+        border-color: #e6e6e6;
         background-image: image(#fdfdfd);
         text-shadow: none;
         -gtk-icon-shadow: none;
@@ -4766,7 +4766,7 @@ row.expander {
   row.expander:checked image.expander-row-arrow:not(:disabled) {
     color: #a400a4; }
   row.expander image.expander-row-arrow:disabled {
-    color: #aeb0b6; }
+    color: #9da0a7; }
 
 flap > dimming,
 deck > dimming,
@@ -6461,7 +6461,7 @@ wnck-pager {
     color: #5c616c;
     font-weight: normal; }
     .budgie-popover:not(.budgie-menu) button.flat:not(.image-button):disabled {
-      color: #aeb0b6; }
+      color: #9da0a7; }
   .budgie-popover.budgie-menu .container {
     padding: 0; }
   .budgie-popover.user-menu .container {
@@ -6757,7 +6757,7 @@ base background color of insensitive widgets */
 @define-color insensitive_bg_color #fdfdfd;
 /*
 text foreground color of insensitive widgets */
-@define-color insensitive_fg_color #aeb0b6;
+@define-color insensitive_fg_color #9da0a7;
 /*
 insensitive text widgets and the like base background color */
 @define-color insensitive_base_color #fafafa;

@@ -526,14 +526,14 @@ button {
   notebook > header > tabs > arrow:disabled,
   button:disabled {
     color: #888a8d;
-    border-color: #0d0e11;
+    border-color: #17191f;
     background-image: image(#242731);
     -gtk-icon-filter: opacity(0.5); }
     notebook > header > tabs > arrow:disabled:active, notebook > header > tabs > arrow:disabled:checked,
     button:disabled:active,
     button:disabled:checked {
       color: #888a8d;
-      border-color: #0d0e11;
+      border-color: #17191f;
       background-image: image(#1a1c23);
       box-shadow: none; }
   button.sidebar-button, notebook > header > tabs > arrow, windowcontrols button, notebook > header > tabs > arrow.flat,
@@ -746,7 +746,7 @@ button.suggested-action {
   
   button.suggested-action:disabled {
     color: #888a8d;
-    border-color: #0d0e11;
+    border-color: #17191f;
     background-image: image(#242731); }
     
     button.suggested-action:disabled:active,
@@ -831,7 +831,7 @@ button.destructive-action {
   
   button.destructive-action:disabled {
     color: #888a8d;
-    border-color: #0d0e11;
+    border-color: #17191f;
     background-image: image(#242731); }
     
     button.destructive-action:disabled:active,
@@ -1014,7 +1014,7 @@ modelbutton.flat arrow {
     box-shadow: none; }
   .toolbar button:disabled {
     color: #888a8d;
-    border-color: #0d0e11;
+    border-color: #17191f;
     background-image: image(#242731); }
   .toolbar button:backdrop {
     color: #888a8d;
@@ -2178,7 +2178,7 @@ switch {
     border: 1px solid #0b000b; }
   switch:disabled > slider {
     color: #888a8d;
-    border-color: #0d0e11;
+    border-color: #17191f;
     background-image: image(#242731); }
   row:selected switch {
     outline-color: rgba(255, 255, 255, 0.3); }
@@ -2449,7 +2449,7 @@ progressbar > trough, scale > trough > fill, scale > trough {
     background-color: #0a0a0d; }
   progressbar > trough:disabled, scale > trough > fill:disabled, scale > trough:disabled {
     background-color: #242731;
-    border-color: #0d0e11; }
+    border-color: #17191f; }
   row:selected progressbar > trough, row:selected scale > trough > fill, row:selected scale > trough {
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #0b000b; }
@@ -2538,7 +2538,7 @@ scale {
       border-color: #0b000b; }
     scale > trough > slider:disabled {
       color: #888a8d;
-      border-color: #0d0e11;
+      border-color: #17191f;
       background-image: image(#242731); }
     row:selected scale > trough > slider:disabled, row:selected scale > trough > slider {
       border-color: #0b000b; }
