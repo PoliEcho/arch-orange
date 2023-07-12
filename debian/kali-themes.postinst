@@ -134,7 +134,7 @@ if [ "$1" = "configure" ]; then
     fi
     # Configure /root/.face to have a red-background avatar
     if [ ! -e /root/.face ]; then
-        cp /usr/share/kali-themes/.face-root.svg /root/.face
+        cp /usr/share/kali-themes/face-root.svg /root/.face
     fi
     ln -sf /root/.face /root/.face.icon
     # If installed, replace default-browser with firefox in xfce4-panel

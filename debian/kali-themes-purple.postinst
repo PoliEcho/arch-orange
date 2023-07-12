@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+ICON_FILE=/etc/skel/.face
+
+if [ "$1" = "configure" ]; then
+    dpkg-divert --rename --package kali-themes-purple \
+        --divert "${ICON_FILE}.original" \
+        --add "${ICON_FILE}"
+    cp /usr/share/kali-themes/face-purple.svg "${ICON_FILE}"
+fi
+
+#DEBHELPER#

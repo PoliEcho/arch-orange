@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+ICON_FILE=/etc/skel/.face
+
+if [ "$1" = "remove" ]; then
+    rm -f "${ICON_FILE}"
+    dpkg-divert --rename --package kali-themes-purple \
+        --divert "${ICON_FILE}.original" \
+        --remove "${ICON_FILE}"
+fi
+
+#DEBHELPER#
