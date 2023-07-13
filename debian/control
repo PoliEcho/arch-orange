@@ -108,6 +108,10 @@ Architecture: all
 Depends:
  kali-themes (= ${source:Version}),
  ${misc:Depends},
+Breaks:
+ kali-themes (<< 2023.3.1),
+Replaces:
+ kali-themes (<< 2023.3.1),
 Description: Configure all desktops to use the Kali Purple theme
  Installing this package should configure most desktops to use the Kali Purple
  theme by default.

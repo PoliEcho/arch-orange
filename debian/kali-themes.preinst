@@ -77,9 +77,6 @@ case "$1" in
 		setup_diversion "$file"
 	    fi
 	done
-	if dpkg --compare-versions "$2" lt "2023.3.1"; then
-	    rm /etc/xdg/plasma-workspace/env/kali-themes-purple.sh
-	fi
     ;;
 esac
 
