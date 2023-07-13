@@ -7,8 +7,9 @@ kali-themes (2023.3.1) kali-dev; urgency=medium
   * Fix moved file to kali-themes-purple via 'Breaks' parameter
   * Add purple face icon
   * Remove old config file in postinst
+  * Remove config file to avoid conflict with kali-themes-purple
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 13 Jul 2023 14:29:38 +0200
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 13 Jul 2023 16:08:14 +0200
 
 kali-themes (2023.3.0) kali-dev; urgency=medium
 
