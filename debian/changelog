@@ -1,3 +1,15 @@
+kali-themes (2023.3.1) kali-dev; urgency=medium
+
+  * Icons: Update Flat-Remix icon themes
+  * Icons: fix symlink for actions/symbolic
+  * Move kali-purple env file for plasma
+  * Remove config file to avoid conflict with kali-themes-purple
+  * Fix moved file to kali-themes-purple via 'Breaks' parameter
+  * Add purple face icon
+  * Remove old config file in postinst
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 13 Jul 2023 14:29:38 +0200
+
 kali-themes (2023.3.0) kali-dev; urgency=medium
 
   * Add symlink for impacket-scripts
