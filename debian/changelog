@@ -1,3 +1,13 @@
+kali-themes (2023.4.0) kali-dev; urgency=medium
+
+  * Add kali autopilot icon
+  * Add gvm icon
+  * Add rekono icon
+  * Add kaboxer-rekono.svg symlink
+  * Remove rekono top shadow
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 18 Aug 2023 12:22:41 +0200
+
 kali-themes (2023.3.3) kali-dev; urgency=medium
 
   * Fix updated icons from kali-menu
