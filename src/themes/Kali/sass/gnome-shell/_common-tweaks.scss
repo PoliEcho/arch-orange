@@ -84,62 +84,49 @@ $dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
 
   StIcon { icon-shadow: $_panel_text_shadow; }
 
-  &.unlock-screen,
-  &.login-screen,
-  &.lock-screen,
-  &:overview {
-    background-color: transparent;
-    .panel-button {
-      &, &:hover, &:active, &:focus, &:overview, &:checked { color: white; }
-    }
-  }
-
   .panel-button {
     color: $_panel_fg;
-    &:hover, &:active, &:focus, &:overview, &:checked {
-      color: $_panel_fg;
-      box-shadow: inset 0 0 0 100px rgba(255, 255, 255, if($variant == 'light', 1, .2));
-    }
-    &.screen-recording-indicator { color: white; }
-  }
 
-  .panel-button.clock-display {
-    // Move highlight from .panel-button to .clock
-    &:hover, &:active, &:overview, &:focus, &:checked {
-      box-shadow: none;
-
-      .clock {
-        box-shadow: inset 0 0 0 100px rgba(255, 255, 255, if($variant == 'light', 1, .2));
+    &:active, &:focus, &:checked {
+      box-shadow: inset 0 0 0 100px transparentize(white, if($variant == 'light', .25, .75));
+      &:hover {
+        box-shadow: inset 0 0 0 100px transparentize(white, if($variant == 'light', .15, .65));
       }
     }
-  }
 
-  #panelActivities.panel-button {
-    margin-left: .4em;
-    StLabel {
-      background-image: if($variant == 'light', url("assets/view-grid-symbolic.svg"),
-                                          url("assets/view-grid-symbolic-dark.svg"));
-      background-size: contain;
-      width: 1.5em;
-      height: 1.5em;
-      color: transparent;
+    &:hover {
+      box-shadow: inset 0 0 0 100px transparentize(white, if($variant == 'light', 0, .8));
     }
 
-    &:overview StLabel {
-      background-image: url("assets/view-grid-symbolic-dark.svg");
-    }
-  }
-}
+    &.clock-display {
+      color: $_panel_fg;
 
-/* Date/Time Menu */
-.datemenu-today-button {
-  &:insensitive { color: inherit; }
-}
-/* Quick Settings */
-.quick-toggle-menu {
-  & .header {
-    & .icon {
-      &.active { color: $selected_fg_color; }
+      &:active, &:focus, &:checked {
+        .clock {
+          box-shadow: inset 0 0 0 100px transparentize(white, if($variant == 'light', .25, .75));
+          &:hover {
+            box-shadow: inset 0 0 0 100px transparentize(white, if($variant == 'light', .15, .65));
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: none !important;
+        .clock {
+          box-shadow: inset 0 0 0 100px transparentize(white, if($variant == 'light', 0, .8));
+        }
+      }
+    }
+
+    &#panelActivities {
+      & .workspace-dot {
+        background-color: $_panel_fg;
+      }
+    }
+
+    &.screen-recording-indicator,
+    &.screen-sharing-indicator {
+      color: white;
     }
   }
 }
@@ -219,10 +206,7 @@ $dialog_box_shadow: 0 2px 6px -2px transparentize(black, .8);
 
 .app-folder-dialog {
   background: black;
-  color: $osd_fg_color;
   box-shadow: 0 0 100px lighten(black, 4%);
-
-  & .folder-name-container .folder-name-entry { color: white; }
 }
 
 /* OSD */
