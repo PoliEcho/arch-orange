@@ -119,7 +119,6 @@ if [ "$1" = "configure" ]; then
 	    install_config_file /etc/xdg/menus/xfce-settings-manager.menu force
 	    install_config_file /etc/xdg/Thunar/accels.scm force
 	    install_config_file /etc/xdg/Thunar/uca.xml force
-	    install_config_file /etc/xdg/xfce4/whiskermenu/defaults.rc force
 	    install_config_file /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml force
 	fi
 	if dpkg --compare-versions "$2" lt "2023.1.3"; then
@@ -128,6 +127,9 @@ if [ "$1" = "configure" ]; then
 	fi
 	if dpkg --compare-versions "$2" lt "2023.1.6"; then
 	    install_config_file /etc/xdg/kcm-about-distrorc force
+	fi
+	if dpkg --compare-versions "$2" lt "2023.4.1"; then
+	    install_config_file /etc/xdg/xfce4/whiskermenu/defaults.rc force
 	fi
 	# Install remaining new files
 	install_all
