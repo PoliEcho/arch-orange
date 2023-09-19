@@ -1,3 +1,13 @@
+kali-themes (2023.4.1) kali-dev; urgency=medium
+
+  * Icons: Add impacket-scripts symlink icon
+  * Icons: Add dirsearch icon
+  * Icons: Add villain icon
+  * Icons: Update rekono app icon
+  * Update whiskermenu settings for version 2.8.0
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Tue, 19 Sep 2023 16:54:59 +0200
+
 kali-themes (2023.4.0) kali-dev; urgency=medium
 
   * Add kali autopilot icon
