@@ -6134,6 +6134,10 @@ terminal-window notebook scrollbar,
 .mate-terminal notebook scrollbar {
   background: #fafafa; }
 
+terminal-window menubar,
+.mate-terminal menubar {
+  background: white; }
+
 /* GNOME TWEAKS */
 list.tweak-categories separator {
   background: transparent; }
