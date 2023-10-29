@@ -2978,6 +2978,12 @@ StScrollBar {
 .icon-dropshadow {
   icon-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
 
+/* Slider */
+.slider {
+  -barlevel-border-width: 0;
+  -barlevel-height: 6px;
+  -slider-handle-radius: 0; }
+
 /* Message List */
 .message-list-controls {
   spacing: 12px;
