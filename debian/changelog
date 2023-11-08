@@ -1,3 +1,19 @@
+kali-themes (2023.4.2) kali-experimental; urgency=medium
+
+  * Make SUBDIRS parameter modifiable in makefile
+  * Fix transparent menubar in gnome-terminal
+  * Improve color-scheme for gtk sourceview theme
+  * Gnome-Shell: Update upstream theme for version 45.rc
+  * Gnome-Shell: Update theme tweaks
+  * Update gnome-shell versions in control file 'Breaks'
+  * Gnome-Shell: Regenerate theme
+  * Gnome-Shell: Remove unneeded assets
+  * Gnome-Shell: update sync script upstream version to 45.0
+  * Gnome-Shell: Remove slider handle
+  * Gnome-Shell: regenerate themes
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 08 Nov 2023 13:34:52 +0100
+
 kali-themes (2023.4.1) kali-dev; urgency=medium
 
   * Icons: Add impacket-scripts symlink icon
