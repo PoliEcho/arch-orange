@@ -1,3 +1,10 @@
+kali-themes (2023.4.3) kali-dev; urgency=medium
+
+  * Add settings for qt6ct
+  * Add themes for qt6
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 15 Nov 2023 16:30:00 +0100
+
 kali-themes (2023.4.2) kali-experimental; urgency=medium
 
   * Make SUBDIRS parameter modifiable in makefile
