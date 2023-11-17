@@ -1,3 +1,11 @@
+kali-themes (2023.4.4) kali-dev; urgency=medium
+
+  * Improve qt themes
+  * Icons: Add missing category icons from kali-menu
+  * Icons: Update app icons from kali-menu
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 17 Nov 2023 14:12:43 +0100
+
 kali-themes (2023.4.3) kali-dev; urgency=medium
 
   * Add settings for qt6ct
