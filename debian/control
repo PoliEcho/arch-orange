@@ -17,13 +17,15 @@ Vcs-Browser: https://gitlab.com/kalilinux/packages/kali-themes
 Package: kali-themes-common
 Architecture: all
 Depends:
- kali-wallpapers-2023,
+ kali-wallpapers-2024,
  ${misc:Depends},
 Suggests:
  gtk2-engines-pixbuf,
  kali-wallpapers-2019.4,
  kali-wallpapers-2020.4,
+ kali-wallpapers-2021.4,
  kali-wallpapers-2022,
+ kali-wallpapers-2023,
  kali-wallpapers-legacy,
  librsvg2-common,
 Breaks:
