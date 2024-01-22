@@ -1,12 +1,14 @@
 #!/bin/sh
 
 DESTDIR=share/desktop-base/kali-theme/
-DESKTOP_BACKGROUND=$1
-LOGIN_BACKGROUND=$2
+DESKTOP_BACKGROUND=$(echo $1 | sed 's/\..\+//')
+DESKTOP_BACKGROUND_EXTENSION=$(echo $1 | grep -o '\..\+')
+LOGIN_BACKGROUND=$(echo $2 | sed 's/\..\+//')
+LOGIN_BACKGROUND_EXTENSION=$(echo $2 | grep -o '\..\+')
 
 # login/lockscreen
 ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND.xml ${DESTDIR}lockscreen/gnome-background.xml
-ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND-16x9.png ${DESTDIR}login/background
+ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND-16x9${LOGIN_BACKGROUND_EXTENSION} ${DESTDIR}login/background
 
 # desktop background
 kde_wallpaper=$(echo $DESKTOP_BACKGROUND | sed -E 's/(^|-)([a-z])/\U\2/g')
@@ -17,4 +19,4 @@ sed -i "s/defaultWallpaperTheme=.*/defaultWallpaperTheme=${kde_wallpaper}/" shar
 
 # default background symlink for XFCE
 mkdir -p share/backgrounds/kali-16x9
-ln -sf $DESKTOP_BACKGROUND.png share/backgrounds/kali-16x9/default
+ln -sf $DESKTOP_BACKGROUND${DESKTOP_BACKGROUND_EXTENSION} share/backgrounds/kali-16x9/default
