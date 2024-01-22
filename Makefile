@@ -1,6 +1,6 @@
 SUBDIRS=emblems kali-logos xfce-panel-profiles
-DESKTOP_BACKGROUND=kali-moto
-LOGIN_BACKGROUND=kali-laminaria
+DESKTOP_BACKGROUND=kali-ferrofluid
+LOGIN_BACKGROUND=kali-aqua
 
 build:
 	bin/update-default-backgrounds $(DESKTOP_BACKGROUND) $(LOGIN_BACKGROUND)

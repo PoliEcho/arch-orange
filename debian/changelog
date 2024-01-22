@@ -7,8 +7,9 @@ kali-themes (2024.1.0) kali-dev; urgency=medium
   * Optimize boot menu background
   * Depend on 2024 wallpapers package
   * Add bottom black gradient to iso boot background
+  * Configure new  default wallpapers
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 22 Jan 2024 12:22:17 +0100
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 22 Jan 2024 13:32:57 +0100
 
 kali-themes (2023.4.5) kali-dev; urgency=medium
 
