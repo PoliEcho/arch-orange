@@ -1,3 +1,15 @@
+kali-themes (2024.1.0) kali-dev; urgency=medium
+
+  * Recover previous boot menu backgrounds
+  * Upload first update for boot menu backgrounds
+  * Update boot menu background
+  * Add info about all boot menu file locations
+  * Optimize boot menu background
+  * Depend on 2024 wallpapers package
+  * Add bottom black gradient to iso boot background
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 22 Jan 2024 12:22:17 +0100
+
 kali-themes (2023.4.5) kali-dev; urgency=medium
 
   * Add qt6ct themes for Kali-Purple
