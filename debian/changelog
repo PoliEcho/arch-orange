@@ -9,8 +9,9 @@ kali-themes (2024.1.0) kali-dev; urgency=medium
   * Add bottom black gradient to iso boot background
   * Configure new  default wallpapers
   * Use jpg file for background and login images
+  * Use image without extension desktop-base desktop-background
 
- -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Mon, 22 Jan 2024 14:46:04 +0100
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Wed, 24 Jan 2024 08:38:33 +0100
 
 kali-themes (2023.4.5) kali-dev; urgency=medium
 

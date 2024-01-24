@@ -10,7 +10,7 @@ if [ "$1" = "remove" ]; then
     # Remove background alternatives for theme packages
     update-alternatives --remove \
 	desktop-background \
-	/usr/share/desktop-base/kali-theme/wallpaper/contents/images/3840x2160.png
+	/usr/share/backgrounds/kali-16x9/default
 
     # Remove desktop-background.xml alternatives
     update-alternatives --remove \

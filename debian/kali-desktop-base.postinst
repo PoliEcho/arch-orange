@@ -30,7 +30,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
     # Desktop background alternatives
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-background \
-	desktop-background /usr/share/desktop-base/kali-theme/wallpaper/contents/images/3840x2160.png 210
+	desktop-background /usr/share/backgrounds/kali-16x9/default 210
 
     # Set up an alternative for the XML version of the background
     # (for GNOME)
@@ -177,6 +177,10 @@ EOF
             desktop-login-background \
             /usr/share/backgrounds/kali/kali-light.svg
 
+    elif dpkg --compare-versions "$2" lt-nl "2024.1.0"; then
+        update-alternatives --remove \
+            desktop-background \
+            /usr/share/desktop-base/kali-theme/wallpaper/contents/images/3840x2160.png
     fi
 fi
 
