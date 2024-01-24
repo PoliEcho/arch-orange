@@ -18,6 +18,7 @@ FallbackTheme=default
 
 [Wallpaper]
 defaultWallpaperTheme=KaliFerrofluid
+defaultFileSuffix=.jpg
 defaultWidth=3840
 defaultHeight=2160
 
