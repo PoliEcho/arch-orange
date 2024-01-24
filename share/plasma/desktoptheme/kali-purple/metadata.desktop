@@ -17,7 +17,8 @@ X-Plasma-API=5.0
 FallbackTheme=default
 
 [Wallpaper]
-defaultWallpaperTheme=KaliPurple
+defaultWallpaperTheme=KaliPurpleWhirlwind
+defaultFileSuffix=.jpg
 defaultWidth=3840
 defaultHeight=2160
 
