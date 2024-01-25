@@ -16,6 +16,7 @@ ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND-16x9${LOGIN_BACKGROUND_EXTEN
 kde_wallpaper=$(echo $DESKTOP_BACKGROUND | sed -E 's/(^|-)([a-z])/\U\2/g')
 kde_wallpaper_purple=$(echo $DESKTOP_BACKGROUND_PURPLE | sed -E 's/(^|-)([a-z])/\U\2/g')
 ln -sfv ../../../backgrounds/kali/$DESKTOP_BACKGROUND.xml ${DESTDIR}/wallpaper/gnome-background.xml
+ln -sfv ../../../backgrounds/kali/$DESKTOP_BACKGROUND_PURPLE.xml ${DESTDIR}/wallpaper/gnome-background-purple.xml
 ln -nsfv ../../../wallpapers/$kde_wallpaper/contents ${DESTDIR}/wallpaper/contents
 sed -i "s/defaultWallpaperTheme=.*/defaultWallpaperTheme=${kde_wallpaper}/" share/plasma/desktoptheme/kali/metadata.desktop
 sed -i "s/defaultFileSuffix=.*/defaultFileSuffix=${DESKTOP_BACKGROUND_EXTENSION}/" share/plasma/desktoptheme/kali/metadata.desktop
