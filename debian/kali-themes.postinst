@@ -124,13 +124,15 @@ if [ "$1" = "configure" ]; then
 	fi
 	if dpkg --compare-versions "$2" lt "2023.1.3"; then
 	    install_config_file /etc/xdg/alacritty/alacritty.yml force
-	    install_config_file /etc/xdg/xfce4/panel/default.xml force
 	fi
 	if dpkg --compare-versions "$2" lt "2023.1.6"; then
 	    install_config_file /etc/xdg/kcm-about-distrorc force
 	fi
 	if dpkg --compare-versions "$2" lt "2023.4.1"; then
 	    install_config_file /etc/xdg/xfce4/whiskermenu/defaults.rc force
+	fi
+	if dpkg --compare-versions "$2" lt "2024.1.3"; then
+	    install_config_file /etc/xdg/xfce4/panel/default.xml force
 	fi
 	# Install remaining new files
 	install_all
