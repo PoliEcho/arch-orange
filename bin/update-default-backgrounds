@@ -9,15 +9,15 @@ LOGIN_BACKGROUND=$(echo $3 | sed 's/\..\+//')
 LOGIN_BACKGROUND_EXTENSION=$(echo $3 | grep -o '\..\+')
 
 # login/lockscreen
-ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND.xml ${DESTDIR}/lockscreen/gnome-background.xml
-ln -sfv ../../../backgrounds/kali/$LOGIN_BACKGROUND-16x9${LOGIN_BACKGROUND_EXTENSION} ${DESTDIR}/login/background
+ln -sfv ../../../backgrounds/kali/${LOGIN_BACKGROUND}.xml ${DESTDIR}/lockscreen/gnome-background.xml
+ln -sfv ../../../backgrounds/kali/${LOGIN_BACKGROUND}-16x9${LOGIN_BACKGROUND_EXTENSION} ${DESTDIR}/login/background
 
 # Desktop background
-kde_wallpaper=$(echo $DESKTOP_BACKGROUND | sed -E 's/(^|-)([a-z])/\U\2/g')
-kde_wallpaper_purple=$(echo $DESKTOP_BACKGROUND_PURPLE | sed -E 's/(^|-)([a-z])/\U\2/g')
-ln -sfv ../../../backgrounds/kali/$DESKTOP_BACKGROUND.xml ${DESTDIR}/wallpaper/gnome-background.xml
-ln -sfv ../../../backgrounds/kali/$DESKTOP_BACKGROUND_PURPLE.xml ${DESTDIR}/wallpaper/gnome-background-purple.xml
-ln -nsfv ../../../wallpapers/$kde_wallpaper/contents ${DESTDIR}/wallpaper/contents
+kde_wallpaper=$(echo ${DESKTOP_BACKGROUND} | sed -E 's/(^|-)([a-z])/\U\2/g')
+kde_wallpaper_purple=$(echo ${DESKTOP_BACKGROUND_PURPLE} | sed -E 's/(^|-)([a-z])/\U\2/g')
+ln -sfv ../../../backgrounds/kali/${DESKTOP_BACKGROUND}.xml ${DESTDIR}/wallpaper/gnome-background.xml
+ln -sfv ../../../backgrounds/kali/${DESKTOP_BACKGROUND_PURPLE}.xml ${DESTDIR}/wallpaper/gnome-background-purple.xml
+ln -nsfv ../../../wallpapers/${kde_wallpaper}/contents ${DESTDIR}/wallpaper/contents
 sed -i "s/defaultWallpaperTheme=.*/defaultWallpaperTheme=${kde_wallpaper}/" share/plasma/desktoptheme/kali/metadata.desktop
 sed -i "s/defaultFileSuffix=.*/defaultFileSuffix=${DESKTOP_BACKGROUND_EXTENSION}/" share/plasma/desktoptheme/kali/metadata.desktop
 sed -i "s/defaultWallpaperTheme=.*/defaultWallpaperTheme=${kde_wallpaper_purple}/" share/plasma/desktoptheme/kali-purple/metadata.desktop
@@ -25,6 +25,6 @@ sed -i "s/defaultFileSuffix=.*/defaultFileSuffix=${DESKTOP_BACKGROUND_PURPLE_EXT
 
 # default background symlink for XFCE
 mkdir -p share/backgrounds/kali-16x9
-ln -sf $DESKTOP_BACKGROUND${DESKTOP_BACKGROUND_EXTENSION} share/backgrounds/kali-16x9/default
+ln -sf ${DESKTOP_BACKGROUND}${DESKTOP_BACKGROUND_EXTENSION} share/backgrounds/kali-16x9/default
 sed -i '/default-purple/d' debian/kali-themes-purple.links
 echo "/usr/share/backgrounds/kali-16x9/${DESKTOP_BACKGROUND_PURPLE}${DESKTOP_BACKGROUND_PURPLE_EXTENSION} /usr/share/backgrounds/kali-16x9/default-purple" >> debian/kali-themes-purple.links
