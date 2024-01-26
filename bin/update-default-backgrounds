@@ -26,4 +26,5 @@ sed -i "s/defaultFileSuffix=.*/defaultFileSuffix=${DESKTOP_BACKGROUND_PURPLE_EXT
 # default background symlink for XFCE
 mkdir -p share/backgrounds/kali-16x9
 ln -sf $DESKTOP_BACKGROUND${DESKTOP_BACKGROUND_EXTENSION} share/backgrounds/kali-16x9/default
-ln -sf $DESKTOP_BACKGROUND_PURPLE${DESKTOP_BACKGROUND_PURPLE_EXTENSION} share/backgrounds/kali-16x9/default-purple
+sed -i '/default-purple/d' debian/kali-themes-purple.links
+echo "/usr/share/backgrounds/kali-16x9/${DESKTOP_BACKGROUND_PURPLE}${DESKTOP_BACKGROUND_PURPLE_EXTENSION} /usr/share/backgrounds/kali-16x9/default-purple" >> debian/kali-themes-purple.links
