@@ -1,3 +1,10 @@
+kali-themes (2024.1.5) kali-dev; urgency=medium
+
+  * Fix optimized png boot background not working
+  * Upload correct images
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 02 Feb 2024 17:34:40 +0100
+
 kali-themes (2024.1.4) kali-dev; urgency=medium
 
   * Improve readability of boot menu background
