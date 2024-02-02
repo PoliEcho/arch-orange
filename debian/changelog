@@ -1,3 +1,18 @@
+kali-themes (2024.1.4) kali-dev; urgency=medium
+
+  * Improve readability of boot menu background
+  * Optimize boot png assets
+  * Remove text from desktop-base logo
+  * Icons: Add missing icon hwloc
+  * Icons: Add app icon symlinks
+  * Icons: copy Flat-Remix icon theme update
+  * Icons: Add missing KDE backups app icon
+  * Icons: Add new gimp app
+  * Remove wrong icon
+  * Add sparrow-wifi app icon
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Fri, 02 Feb 2024 10:02:58 +0100
+
 kali-themes (2024.1.3) kali-dev; urgency=medium
 
   * Set correct wallpaper in gnome for Kali Purple
