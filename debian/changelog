@@ -1,3 +1,14 @@
+kali-themes (2024.1.6) kali-dev; urgency=medium
+
+  [ Lucas Parsy ]
+  * copy vpn ip when clicking on its icon in xfce taskbar
+
+  [ Daniel Ruiz de Alegría ]
+  * Icons: add gtkhash app icon
+  * XFCE: genmon script tweaks
+
+ -- Daniel Ruiz de Alegría <daniruiz@kali.org>  Thu, 08 Feb 2024 13:04:40 +0100
+
 kali-themes (2024.1.5) kali-dev; urgency=medium
 
   * Fix optimized png boot background not working
