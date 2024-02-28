@@ -16,6 +16,17 @@
 /plugins/plugin-12/expand true
 /plugins/plugin-12/style uint32 0
 /plugins/plugin-13 'cpugraph'
+/plugins/plugin-13/bars 1
+/plugins/plugin-13/bars-color [<0.0>, <1.0>, <0.8784313725490196>, <1.0>]
+/plugins/plugin-13/border 0
+/plugins/plugin-13/color-mode 1
+/plugins/plugin-13/foreground-1 [<0.15294117647058825>, <0.46666666666666656>, <1.0>, <1.0>]
+/plugins/plugin-13/foreground-2 [<0.0>, <1.0>, <0.8784313725490196>, <1.0>]
+/plugins/plugin-13/frame 0
+/plugins/plugin-13/mode 1
+/plugins/plugin-13/size 128
+/plugins/plugin-13/time-scale 0
+/plugins/plugin-13/update-interval 0
 /plugins/plugin-14 'systray'
 /plugins/plugin-14/size-max uint32 22
 /plugins/plugin-14/square-icons true
