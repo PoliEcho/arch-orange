@@ -1,9 +1,0 @@
-$variant: 'light';
-$selected_bg_color: #a400a4;
-$selected_fg_color: #ffffff;
-
-@import "common/_colors"; //use gtk colors
-@import "gnome-shell/upstream/gnome-shell-sass/_drawing";
-@import "gnome-shell/upstream/gnome-shell-sass/_common";
-@import "gnome-shell/upstream/gnome-shell-sass/_widgets";
-@import "gnome-shell/_common-tweaks";

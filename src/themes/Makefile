@@ -7,7 +7,6 @@ build: $(SUBDIRS)
 
 $(SUBDIRS):
 	$(MAKE) -C Kali/$@ build
-	$(MAKE) -C Kali-Purple/$@ build VARIANT='-Purple'
 
 clean:
 	$(foreach THEME_SRC,Kali Kali-Purple,$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(THEME_SRC)/$(SUBDIR) clean &&)) true

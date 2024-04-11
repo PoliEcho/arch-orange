@@ -1,1 +1,0 @@
-../../../Kali/assets-renderer/xfwm4/Makefile
