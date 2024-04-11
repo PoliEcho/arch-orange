@@ -70,7 +70,7 @@
 		<g>
 				<rect x="1.9531" y="86.25" width="378.05" height="74.219" style="fill:#1f232a"/>
 				<rect x="470.7" y="4" width="165.3" height="472" style="fill:#2c2f3a"/>
-				<rect x="597" y="4" width="18" height="472" style="fill:#2777ff"/>
+				<rect x="597" y="4" width="18" height="472" style="fill:#ff9d1e"/>
 				<rect x="224" y="5" width="68" height="48" style="fill:#1f232a"/>
 				<g id="entry" transform="translate(3,-36)">
 						<rect x="7" y="86" width="10" height="32" rx="0" ry="0" style="color:#000000;fill:#23252e"/>
@@ -103,8 +103,8 @@
 				</g>
 				<g id="scrollbar-vert-slider-active" transform="translate(0,-8)">
 						<rect x="266" y="31" width="13" height="13" style="fill:none"/>
-						<a transform="translate(-30,34)" style="fill:#8db7ff">
-								<rect x="300" width="6" height="7" rx="3" ry="3" style="fill:#2777ff"/>
+						<a transform="translate(-30,34)" style="fill:#ffc680">
+								<rect x="300" width="6" height="7" rx="3" ry="3" style="fill:#ff9d1e"/>
 						</a>
 				</g>
 				<g id="scrollbar-vert-trough" transform="translate(-80)">
@@ -129,12 +129,12 @@
 				</g>
 				<g id="scrollbar-horz-slider-active" transform="translate(0,-8)">
 						<rect transform="rotate(90)" x="14.5" y="-279" width="13" height="13" style="fill:none"/>
-						<a transform="matrix(0,1,-1,0,276,-281.5)" style="fill:#8db7ff">
-								<rect x="300" width="6" height="7" rx="3" ry="3" style="fill:#2777ff"/>
+						<a transform="matrix(0,1,-1,0,276,-281.5)" style="fill:#ffc680">
+								<rect x="300" width="6" height="7" rx="3" ry="3" style="fill:#ff9d1e"/>
 						</a>
 				</g>
 				<rect id="line" x="474" y="7" width="1" height="1" style="fill-opacity:.1"/>
-				<rect id="menubar-item-active" x="211" y="7" width="1" height="3" style="fill:#2777ff"/>
+				<rect id="menubar-item-active" x="211" y="7" width="1" height="3" style="fill:#ff9d1e"/>
 				<g id="menu-radio-insensitive" transform="translate(456,-419)">
 						<rect x="160" y="487" width="16" height="16" style="color:#bebebe;fill:none"/>
 						<path d="m167.99 488.51c-3.5876 0-6.5009 2.9134-6.5009 6.5009 0 3.5875 2.9134 6.5009 6.5009 6.5009 3.5875 0 6.5009-2.9134 6.5009-6.5009 0-3.5876-2.9134-6.5009-6.5009-6.5009z" style="color:#bebebe;fill:none;stroke-width:.99817;stroke:#919494;text-decoration-line:none;text-indent:0pt;text-transform:none"/>
@@ -298,14 +298,14 @@
 				</g>
 				<g id="progressbar-horz" transform="translate(-12,-42)">
 						<g transform="translate(105,68)">
-								<rect x="31.5" y=".5" width="4" height="3" ry="1.5" style="color:#000000;fill:#2777ff"/>
-								<rect x="31.5" y=".5" width="4" height="3" ry="1.5" style="color:#000000;fill:none;stroke:#00348d"/>
+								<rect x="31.5" y=".5" width="4" height="3" ry="1.5" style="color:#000000;fill:#ff9d1e"/>
+								<rect x="31.5" y=".5" width="4" height="3" ry="1.5" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="progressbar-vert" transform="translate(-12,-46)">
 						<g transform="matrix(0,-1,1,0,148,107)">
-								<rect x="31.5" y="1.5" width="4" height="3" ry="1.5" style="color:#000000;fill:#2777ff"/>
-								<rect x="31.5" y="1.5" width="4" height="3" ry="1.5" style="color:#000000;fill:none;stroke:#00348d"/>
+								<rect x="31.5" y="1.5" width="4" height="3" ry="1.5" style="color:#000000;fill:#ff9d1e"/>
+								<rect x="31.5" y="1.5" width="4" height="3" ry="1.5" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="focus">
@@ -333,7 +333,7 @@
 						<rect x="133" y="84" width="26" height="26" rx="0" ry="0" style="color:#000000;fill:none"/>
 						<g transform="translate(135,86)">
 								<rect x="1.5" y="1.5" width="19" height="19" rx="19" ry="19" style="color:#000000;fill:#0f1014"/>
-								<rect x="1.5" y="1.5" width="19" height="19" rx="19" ry="19" style="color:#000000;fill:none;stroke:#2777ff"/>
+								<rect x="1.5" y="1.5" width="19" height="19" rx="19" ry="19" style="color:#000000;fill:none;stroke:#ff9d1e"/>
 						</g>
 				</g>
 				<g id="scale-slider-insensitive" transform="translate(49,230)">
@@ -359,8 +359,8 @@
 				<g id="scale-vert-trough-active" transform="translate(-181.5,175.5)">
 						<rect transform="rotate(90)" x="107.5" y="-360.5" width="23" height="26" rx="0" ry="0" style="color:#000000;fill:none"/>
 						<g transform="matrix(0,1,-1,0,352.5,85.5)">
-								<rect x="31.5" y="3.5" width="4" height="3" ry="1.5" style="color:#000000;fill:#2777ff"/>
-								<rect x="31.5" y="3.5" width="4" height="3" rx="0" ry="1.5" style="color:#000000;fill:none;stroke:#00348d"/>
+								<rect x="31.5" y="3.5" width="4" height="3" ry="1.5" style="color:#000000;fill:#ff9d1e"/>
+								<rect x="31.5" y="3.5" width="4" height="3" rx="0" ry="1.5" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="progressbar-horz-trough" transform="translate(-12,-14)">
@@ -388,8 +388,8 @@
 				<g id="scale-horz-trough-active" transform="translate(-189,176)">
 						<rect x="312" y="94" width="23" height="26" rx="0" ry="0" style="color:#000000;fill:none"/>
 						<g transform="translate(290,102)">
-								<rect x="31.5" y="3.5" width="4" height="3" ry="1.5" style="color:#000000;fill:#2777ff"/>
-								<rect x="31.5" y="3.5" width="4" height="3" rx="0" ry="1.5" style="color:#000000;fill:none;stroke:#00348d"/>
+								<rect x="31.5" y="3.5" width="4" height="3" ry="1.5" style="color:#000000;fill:#ff9d1e"/>
+								<rect x="31.5" y="3.5" width="4" height="3" rx="0" ry="1.5" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 						<rect x="312.48" y="107.22" width=".1" height=".1" style="fill:#ccc"/>
 				</g>
@@ -405,10 +405,10 @@
 						<rect x="50" y="50" width="10" height="32" rx="0" ry="0" style="color:#000000;fill:#23252e"/>
 						<rect x="51.5" y="51.5" width="7" height="29" rx="2.5" ry="2.5" style="color:#000000;fill:#292c37"/>
 						<g transform="translate(50,-30)" clip-path="url(#clipPath6964)" style="stroke-width:.1">
-								<rect x="1.5" y="81.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:none;stroke-width:3;stroke:#2777ff"/>
+								<rect x="1.5" y="81.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:none;stroke-width:3;stroke:#ff9d1e"/>
 						</g>
 						<g transform="translate(50,-30)">
-								<rect x="1.5" y="81.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:none;stroke:#00348d"/>
+								<rect x="1.5" y="81.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="combo-entry-ltr-entry" transform="translate(3,-35)" style="fill:#23252e">
@@ -461,10 +461,10 @@
 						<rect x="47" y="125" width="10" height="32" rx="0" ry="0" style="color:#000000;fill:#23252e"/>
 						<rect x="48.5" y="126.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:#292c37"/>
 						<g transform="translate(47,45)" clip-path="url(#clipPath7300)" style="stroke-width:.1">
-								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke-width:3;stroke:#2777ff"/>
+								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke-width:3;stroke:#ff9d1e"/>
 						</g>
 						<g transform="translate(47,45)">
-								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke:#00348d"/>
+								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="combo-entry-ltr-entry-insensitive" transform="translate(63,-35)">
@@ -527,10 +527,10 @@
 						<rect x="48.5" y="126.5" width="7" height="29" rx="2.5" ry="2.5" style="color:#000000;fill:#292c37"/>
 						<rect x="47" y="125" width="10" height="32" rx="0" ry="0" style="color:#000000;fill:none"/>
 						<g transform="translate(47,45)" clip-path="url(#clipPath7300)" style="stroke-width:.1">
-								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke-width:3;stroke:#2777ff"/>
+								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke-width:3;stroke:#ff9d1e"/>
 						</g>
 						<g transform="translate(47,45)">
-								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke:#00348d"/>
+								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="combo-entry-rtl-entry-insensitive" transform="matrix(-1,0,0,1,193,-35)">
@@ -633,8 +633,8 @@
 				</g>
 				<g id="scrollbar-vert-slider-active-rtl" transform="matrix(-1,0,0,1,545,8)">
 						<rect x="266" y="31" width="13" height="13" style="fill:none"/>
-						<a transform="translate(-30,34)" style="fill:#8db7ff">
-								<rect x="300" width="6" height="7" rx="3" ry="3" style="fill:#2777ff"/>
+						<a transform="translate(-30,34)" style="fill:#ffc680">
+								<rect x="300" width="6" height="7" rx="3" ry="3" style="fill:#ff9d1e"/>
 						</a>
 				</g>
 				<g id="treeview-separator-rtl" transform="matrix(-1,0,0,1,966,0)">
@@ -918,10 +918,10 @@
 						<rect x="47" y="48" width="10" height="32" rx="0" ry="0" style="color:#000000;fill:#292c37"/>
 						<rect x="48.5" y="49.5" width="7" height="29" rx="2.5" ry="2.5" style="color:#000000;fill:#292c37"/>
 						<g transform="translate(47,-32)" clip-path="url(#clipPath6964)" style="stroke-width:.1">
-								<rect x="1.5" y="81.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:none;stroke-width:3;stroke:#2777ff"/>
+								<rect x="1.5" y="81.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:none;stroke-width:3;stroke:#ff9d1e"/>
 						</g>
 						<g transform="translate(47,-32)">
-								<rect x="1.5" y="81.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:none;stroke:#00348d"/>
+								<rect x="1.5" y="81.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="notebook-combo-entry-ltr-entry" transform="translate(193,-35)">
@@ -938,10 +938,10 @@
 						<rect x="48.5" y="126.5" width="7" height="29" rx="3" ry="3" style="color:#000000;fill:url(#linearGradient5090)"/>
 						<rect x="47" y="125" width="10" height="32" rx="0" ry="0" style="color:#000000;fill:#292c37"/>
 						<g transform="translate(47,45)" clip-path="url(#clipPath7300)" style="stroke-width:.1">
-								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke-width:3;stroke:#2777ff"/>
+								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke-width:3;stroke:#ff9d1e"/>
 						</g>
 						<g transform="translate(47,45)">
-								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke:#00348d"/>
+								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="notebook-combo-entry-ltr-entry-insensitive" transform="translate(253,-35)">
@@ -968,10 +968,10 @@
 						<rect x="47" y="125" width="10" height="32" rx="0" ry="0" style="color:#000000;fill:#292c37"/>
 						<rect x="48.5" y="126.5" width="7" height="29" rx="2.5" ry="2.5" style="color:#000000;fill:#292c37"/>
 						<g transform="translate(47,45)" clip-path="url(#clipPath7300)" style="stroke-width:.1">
-								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke-width:3;stroke:#2777ff"/>
+								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke-width:3;stroke:#ff9d1e"/>
 						</g>
 						<g transform="translate(47,45)">
-								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke:#00348d"/>
+								<path d="m4.5 81.5h5v29h-5c-1.662 0-3-1.338-3-3v-23c0-1.662 1.338-3 3-3z" style="color:#000000;fill:none;stroke:#d67600"/>
 						</g>
 				</g>
 				<g id="notebook-combo-entry-rtl-entry-insensitive" transform="matrix(-1,0,0,1,381,-35)">
@@ -1110,14 +1110,14 @@
 				<g id="radio-checked" transform="matrix(.93341 0 0 .9329 -69.559 -24.037)">
 						<rect x="456.99" y="261.98" width="17.141" height="17.151" style="color:#000000;fill:none"/>
 						<g id="g44759">
-								<rect x="457.52" y="262.52" width="16.079" height="16.07" rx="8.4419" ry="8.5877" style="color-rendering:auto;color:#000000;fill:#2777ff;image-rendering:auto;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;stroke-linejoin:round;stroke-width:1.0716;stroke:#0051da"/>
+								<rect x="457.52" y="262.52" width="16.079" height="16.07" rx="8.4419" ry="8.5877" style="color-rendering:auto;color:#000000;fill:#ff9d1e;image-rendering:auto;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;stroke-linejoin:round;stroke-width:1.0716;stroke:#de800c"/>
 								<path d="m458.1 270.96c-6e-3 -0.1285-0.0361-0.26665-0.0361-0.39681 0-4.157 3.3447-7.5035 7.4994-7.5035s7.4994 3.3466 7.4994 7.5035c0 0.13016-0.0295 0.26831-0.036 0.39681-0.38268-3.7929-3.5684-6.7459-7.4634-6.7459s-7.0807 2.9531-7.4633 6.7459z" style="color-rendering:auto;color:#000000;fill-opacity:.2;fill:#fff;image-rendering:auto;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000"/>
 						</g>
 						<rect x="462.35" y="267.34" width="6.4281" height="6.4316" rx="3.214" ry="3.214" style="color:#000000;fill:#fff"/>
 				</g>
 				<g id="checkbox-checked" transform="matrix(.99651 0 0 .9981 240.26 190.09)">
 						<g id="g20526">
-								<rect x="37.375" y="30.834" width="15.053" height="15.024" rx="3.0554" ry="3.092" style="color:#000000;fill:#2777ff;stroke-linejoin:round;stroke-width:1.0027;stroke:#0051da"/>
+								<rect x="37.375" y="30.834" width="15.053" height="15.024" rx="3.0554" ry="3.092" style="color:#000000;fill:#ff9d1e;stroke-linejoin:round;stroke-width:1.0027;stroke:#de800c"/>
 								<path d="m37.877 34.716v-1.0019c0-1.3364 1.0474-2.3795 2.3513-2.3795h9.3427c1.3039 0 2.3199 1.0431 2.3199 2.3795v1.0019c0-1.3364-1.0161-2.3795-2.3199-2.3795h-9.3427c-1.3039 0-2.3513 1.0431-2.3513 2.3795z" style="color:#000000;fill:#fff;opacity:.2;text-decoration-line:none;text-indent:0;text-transform:none"/>
 						</g>
 						<rect x="36.906" y="30.333" width="16.024" height="16.03" style="color:#000000;fill:none"/>
@@ -1141,7 +1141,7 @@
 				</g>
 				<g id="checkbox-checked-hover" transform="matrix(.99851 0 0 .9981 240.15 210.09)">
 						<rect x="36.906" y="30.333" width="16.024" height="16.03" style="color:#000000;fill:none"/>
-						<rect id="rect5147-9-1-5-7-6-4-2" x="37.402" y="30.834" width="15.027" height="15.024" rx="3.0045" ry="3.0057" style="color-rendering:auto;color:#000000;fill:#3a83ff;image-rendering:auto;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;stroke-linejoin:round;stroke-width:1.0017;stroke:#0051da"/>
+						<rect id="rect5147-9-1-5-7-6-4-2" x="37.402" y="30.834" width="15.027" height="15.024" rx="3.0045" ry="3.0057" style="color-rendering:auto;color:#000000;fill:#ff9d1e;image-rendering:auto;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;stroke-linejoin:round;stroke-width:1.0017;stroke:#de800c"/>
 						<use transform="matrix(.998 0 0 1 .10594 1.7278e-5)" width="1000" height="1052.3622" xlink:href="#g5708"/>
 				</g>
 				<g id="checkbox-mixed-hover" transform="translate(280 210)">
@@ -1151,10 +1151,10 @@
 				</g>
 				<g id="radio-checked-hover" transform="matrix(.93893 0 0 .93842 -72.084 -5.4838)">
 						<rect x="456.99" y="261.98" width="17.041" height="17.05" style="color:#000000;fill:none"/>
-						<g id="g7025-8-2" transform="matrix(.99706 0 0 .99706 250.6 .77046)" style="stroke:#0051da">
-								<g transform="matrix(.50892 0 0 .5174 181.79 197.56)" style="stroke:#0051da">
-										<g style="stroke:#0051da">
-												<rect x="50.562" y="125.54" width="31.501" height="30.968" rx="16.539" ry="16.549" style="color:#000000;fill:#3a83ff;stroke-linejoin:round;stroke-width:2.0822;stroke:#0051da"/>
+						<g id="g7025-8-2" transform="matrix(.99706 0 0 .99706 250.6 .77046)" style="stroke:#de800c">
+								<g transform="matrix(.50892 0 0 .5174 181.79 197.56)" style="stroke:#de800c">
+										<g style="stroke:#de800c">
+												<rect x="50.562" y="125.54" width="31.501" height="30.968" rx="16.539" ry="16.549" style="color:#000000;fill:#ff9d1e;stroke-linejoin:round;stroke-width:2.0822;stroke:#de800c"/>
 										</g>
 								</g>
 						</g>
