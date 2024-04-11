@@ -1,3 +1,5 @@
+# **This is fork of https://gitlab.com/kalilinux/packages/kali-themes.git**
+
 # kali-themes
 
 This package joins together all files that are related to theming
