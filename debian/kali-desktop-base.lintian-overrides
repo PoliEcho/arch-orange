@@ -1,7 +1,0 @@
-package-contains-empty-directory [usr/share/desktop-base/]
-package-contains-empty-directory [usr/share/icons/vendor/128x128/emblems/]
-package-contains-empty-directory [usr/share/icons/vendor/256x256/emblems/]
-package-contains-empty-directory [usr/share/icons/vendor/64x64/emblems/]
-package-contains-empty-directory [usr/share/icons/vendor/scalable/emblems/]
-package-contains-empty-directory [usr/share/images/desktop-base/]
-package-contains-empty-directory [usr/share/wallpapers/]

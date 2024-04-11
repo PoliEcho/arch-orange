@@ -239,7 +239,7 @@ $z-depth-4: rgba(0, 0, 0, 0.34);
 // main menu styling
 .workspace-switcher {
   .workspace-layout {
-    border: 0 solid $panel_bg;
+    border: 0 solid $panel_bg_color;
 
     .top &,
     .bottom & {
@@ -254,7 +254,7 @@ $z-depth-4: rgba(0, 0, 0, 0.34);
 
   .workspace-item,
   .workspace-add-button {
-    border: 0 solid darken($panel_bg, 5%);
+    border: 0 solid darken($panel_bg_color, 5%);
 
     .top &,
     .bottom & {
@@ -269,7 +269,7 @@ $z-depth-4: rgba(0, 0, 0, 0.34);
 
   .workspace-item {
 
-    &.current-workspace { background-color: darken($panel_bg, 5%); }
+    &.current-workspace { background-color: darken($panel_bg_color, 5%); }
   }
 
   .workspace-add-button {

@@ -1,5 +1,0 @@
-# Those are created by "make install"
-share/* usr/share/
-usr/share/icons/
-usr/share/images/
-usr/share/xfce4-panel-profiles/

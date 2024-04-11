@@ -104,7 +104,7 @@ list.tweak-categories separator {
 
 /* XFCE4 PANEL */
 .xfce4-panel {
-  &.background { background: $panel_bg; }
+  &.background { background: $panel_bg_color; }
 
   button {
     border: 0;
@@ -113,7 +113,7 @@ list.tweak-categories separator {
     box-shadow: none;
     text-shadow: none;
     background: transparent;
-    color: $panel_fg;
+    color: $panel_fg_color;
 
     $_highlight_bg_color: if($variant=='light', $bg_color, rgba(black, .2));
 
@@ -212,7 +212,7 @@ wnck-pager {
 
 .lightdm-gtk-greeter {
   #panel_window {
-    background: $panel_bg;
+    background: $panel_bg_color;
     color: $fg_color;
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -220,7 +220,7 @@ wnck-pager {
 
   #login_window {
     border: 0;
-    background-color: $panel_bg;
+    background-color: $panel_bg_color;
     border-radius: $button_radius;
     box-shadow: inset 0 1px transparentize(white, .85);
 
