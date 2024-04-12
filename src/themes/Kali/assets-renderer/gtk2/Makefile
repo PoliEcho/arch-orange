@@ -30,10 +30,10 @@ build: $(SRC_FILE) $(SRC_FILE_DARK)
 		            --export-png=$(ASSETS_DIR_DARK)/$$i.png $(SRC_FILE_DARK) > /dev/null 2>&1 \
 		&& $(OPTIPNG) $(ASSETS_DIR_DARK)/$$i.png ; \
 	done
-	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light/gtk-2.0/assets/
-	cp assets/* $(THEMES_DIR)Kali$(VARIANT)-Light/gtk-2.0/assets/
-	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-2.0/assets/
-	cp assets-dark/* $(THEMES_DIR)Kali$(VARIANT)-Dark/gtk-2.0/assets/
+	mkdir -p $(THEMES_DIR)Kaliish-orange$(VARIANT)-Light/gtk-2.0/assets/
+	cp assets/* $(THEMES_DIR)Kaliish-orange$(VARIANT)-Light/gtk-2.0/assets/
+	mkdir -p $(THEMES_DIR)Kaliish-orange$(VARIANT)-Dark/gtk-2.0/assets/
+	cp assets-dark/* $(THEMES_DIR)Kaliish-orange$(VARIANT)-Dark/gtk-2.0/assets/
 
 clean:
 	-rm -r $(ASSETS_DIR) $(ASSETS_DIR_DARK)

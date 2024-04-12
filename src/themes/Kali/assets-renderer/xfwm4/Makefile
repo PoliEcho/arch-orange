@@ -28,14 +28,14 @@ build: $(ASSETS)
 			&& $(OPTIPNG) $$variant@2/$$i.png ; \
 		done ; \
 	done
-	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light/xfwm4/
-	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Dark/xfwm4/
-	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Light-xHiDPI/xfwm4/
-	mkdir -p $(THEMES_DIR)Kali$(VARIANT)-Dark-xHiDPI/xfwm4/
-	cp assets-light/* $(THEMES_DIR)Kali$(VARIANT)-Light/xfwm4/
-	cp assets-dark/* $(THEMES_DIR)Kali$(VARIANT)-Dark/xfwm4/
-	cp assets-light@2/* $(THEMES_DIR)Kali$(VARIANT)-Light-xHiDPI/xfwm4/
-	cp assets-dark@2/* $(THEMES_DIR)Kali$(VARIANT)-Dark-xHiDPI/xfwm4/
+	mkdir -p $(THEMES_DIR)Kaliish-orange$(VARIANT)-Light/xfwm4/
+	mkdir -p $(THEMES_DIR)Kaliish-orange$(VARIANT)-Dark/xfwm4/
+	mkdir -p $(THEMES_DIR)Kaliish-orange$(VARIANT)-Light-xHiDPI/xfwm4/
+	mkdir -p $(THEMES_DIR)Kaliish-orange$(VARIANT)-Dark-xHiDPI/xfwm4/
+	cp assets-light/* $(THEMES_DIR)Kaliish-orange$(VARIANT)-Light/xfwm4/
+	cp assets-dark/* $(THEMES_DIR)Kaliish-orange$(VARIANT)-Dark/xfwm4/
+	cp assets-light@2/* $(THEMES_DIR)Kaliish-orange$(VARIANT)-Light-xHiDPI/xfwm4/
+	cp assets-dark@2/* $(THEMES_DIR)Kaliish-orange$(VARIANT)-Dark-xHiDPI/xfwm4/
 
 clean:
 	-rm -r assets-light assets-light@2 assets-dark assets-dark@2

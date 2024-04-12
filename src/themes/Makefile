@@ -9,3 +9,4 @@ $(SUBDIRS):
 
 clean:
 	$(foreach THEME_SRC,Kali,$(foreach SUBDIR,$(SUBDIRS),$(MAKE) -C $(THEME_SRC)/$(SUBDIR) clean &&)) true
+	rm -fr ../../share/themes/*
