@@ -1,0 +1,13 @@
+name: Test is build outputs error
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  test_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: make
