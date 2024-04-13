@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Kaliish-orange-Dark
+Comment=Orange theme based on Kali-dark theme
+Encoding=UTF-8
+
+
+[X-GNOME-Metatheme]
+GtkTheme=Kaliish-orange-Dark
+MetacityTheme=Kaliish-orange-Dark
+ButtonLayout=:minimize,maximize,close
