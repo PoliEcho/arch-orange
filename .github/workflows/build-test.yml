@@ -1,4 +1,4 @@
-name: Test if build outputs error
+name: build_test
 
 on:
   push:
