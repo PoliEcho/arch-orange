@@ -14,5 +14,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: sudo apt update
-      - run: sudo apt install inkscape optipng -y
+      - run: sudo apt install inkscape optipng sassc -y
       - run: make
