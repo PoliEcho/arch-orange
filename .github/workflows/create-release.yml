@@ -1,0 +1,24 @@
+name: Creates new release
+            
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    name: "Release"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: sudo apt update
+    - run: sudo apt install inkscape optipng sassc -y
+    - run: make
+    - run: (cd ./share/themes && tar -czvf Kaliish-orange.tar.gz * && mv Kaliish-orange.tar.gz ../../)
+
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            Kaliish-orange.tar.gz

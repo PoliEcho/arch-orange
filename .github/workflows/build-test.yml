@@ -1,4 +1,4 @@
-name: Test is build outputs error
+name: Test if build outputs error
 
 on:
   push:
