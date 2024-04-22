@@ -6,7 +6,10 @@ This is modified Kali default theme with arguably too much orange.
 # How to install:
 
 ## Download latest release
-[here](./releases)
+> [here](./releases)
+Extract Kaliish-orange.tar.gz to:
+for all users /usr/share/themes/
+for single user ~/.themes/
 
 ## Compile:
 
