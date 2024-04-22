@@ -7,9 +7,9 @@ This is modified Kali default theme with arguably too much orange.
 
 ## Download latest release
 > [here](./releases)
-Extract Kaliish-orange.tar.gz to:
-for all users /usr/share/themes/
-for single user ~/.themes/
+> Extract Kaliish-orange.tar.gz to:
+> for all users /usr/share/themes/
+> for single user ~/.themes/
 
 ## Compile:
 
